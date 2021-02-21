@@ -1,0 +1,211 @@
+Attaching to postgres, mysql, mongo
+[33mmysql       |[0m 2021-02-04 23:01:42+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.23-1debian10 started.
+[33mmysql       |[0m 2021-02-04 23:01:42+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql       |[0m 2021-02-04 23:01:42+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.23-1debian10 started.
+[33mmysql       |[0m 2021-02-04 23:01:42+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql       |[0m 2021-02-04T23:01:42.743917Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.23) initializing of server in progress as process 44
+[33mmysql       |[0m 2021-02-04T23:01:42.753460Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql       |[0m 2021-02-04T23:01:43.842787Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql       |[0m 2021-02-04T23:01:46.179878Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql       |[0m 2021-02-04 23:01:50+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql       |[0m 2021-02-04 23:01:50+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql       |[0m 2021-02-04T23:01:50.497462Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.23) starting as process 89
+[33mmysql       |[0m 2021-02-04T23:01:50.520715Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql       |[0m 2021-02-04T23:01:50.744946Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql       |[0m 2021-02-04T23:01:50.841676Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql       |[0m 2021-02-04T23:01:51.008848Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql       |[0m 2021-02-04T23:01:51.009038Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql       |[0m 2021-02-04T23:01:51.012551Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql       |[0m 2021-02-04T23:01:51.031393Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.23'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql       |[0m 2021-02-04 23:01:51+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql       |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql       |[0m Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+[33mmysql       |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql       |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql       |[0m 
+[33mmysql       |[0m 2021-02-04 23:01:53+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql       |[0m 2021-02-04T23:01:53.157772Z 10 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.23).
+[33mmysql       |[0m 2021-02-04T23:01:55.100926Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.23)  MySQL Community Server - GPL.
+[33mmysql       |[0m 2021-02-04 23:01:55+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql       |[0m 
+[33mmysql       |[0m 2021-02-04 23:01:55+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql       |[0m 
+[33mmysql       |[0m 2021-02-04T23:01:55.397642Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.23) starting as process 1
+[33mmysql       |[0m 2021-02-04T23:01:55.405755Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql       |[0m 2021-02-04T23:01:55.657299Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql       |[0m 2021-02-04T23:01:55.752633Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[33mmysql       |[0m 2021-02-04T23:01:55.877788Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql       |[0m 2021-02-04T23:01:55.877942Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql       |[0m 2021-02-04T23:01:55.881602Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql       |[0m 2021-02-04T23:01:55.899658Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.23'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql       |[0m 2021-02-04T23:04:51.911883Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.23).
+[33mmysql       |[0m 2021-02-04T23:04:52.973461Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.23)  MySQL Community Server - GPL.
+[33mmysql       |[0m 2021-02-04 23:38:51+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.23-1debian10 started.
+[33mmysql       |[0m 2021-02-04 23:38:51+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql       |[0m 2021-02-04 23:38:51+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.23-1debian10 started.
+[33mmysql       |[0m 2021-02-04T23:38:52.264639Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.23) starting as process 1
+[33mmysql       |[0m 2021-02-04T23:38:52.271947Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql       |[0m 2021-02-04T23:38:52.498319Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql       |[0m 2021-02-04T23:38:52.624155Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[33mmysql       |[0m 2021-02-04T23:38:52.739916Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql       |[0m 2021-02-04T23:38:52.740144Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql       |[0m 2021-02-04T23:38:52.744204Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql       |[0m 2021-02-04T23:38:52.764474Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.23'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[32mpostgres    |[0m The files belonging to this database system will be owned by user "postgres".
+[32mpostgres    |[0m This user must also own the server process.
+[32mpostgres    |[0m 
+[32mpostgres    |[0m The database cluster will be initialized with locale "en_US.utf8".
+[32mpostgres    |[0m The default database encoding has accordingly been set to "UTF8".
+[32mpostgres    |[0m The default text search configuration will be set to "english".
+[32mpostgres    |[0m 
+[32mpostgres    |[0m Data page checksums are disabled.
+[32mpostgres    |[0m 
+[32mpostgres    |[0m fixing permissions on existing directory /var/lib/postgresql/data ... ok
+[32mpostgres    |[0m creating subdirectories ... ok
+[32mpostgres    |[0m selecting dynamic shared memory implementation ... posix
+[32mpostgres    |[0m selecting default max_connections ... 100
+[32mpostgres    |[0m selecting default shared_buffers ... 128MB
+[32mpostgres    |[0m selecting default time zone ... Etc/UTC
+[32mpostgres    |[0m creating configuration files ... ok
+[32mpostgres    |[0m running bootstrap script ... ok
+[32mpostgres    |[0m performing post-bootstrap initialization ... ok
+[32mpostgres    |[0m syncing data to disk ... ok
+[32mpostgres    |[0m 
+[32mpostgres    |[0m 
+[32mpostgres    |[0m Success. You can now start the database server using:
+[32mpostgres    |[0m 
+[32mpostgres    |[0m     pg_ctl -D /var/lib/postgresql/data -l logfile start
+[32mpostgres    |[0m 
+[32mpostgres    |[0m initdb: warning: enabling "trust" authentication for local connections
+[32mpostgres    |[0m You can change this by editing pg_hba.conf or using the option -A, or
+[32mpostgres    |[0m --auth-local and --auth-host, the next time you run initdb.
+[32mpostgres    |[0m waiting for server to start....2021-02-04 23:38:52.711 UTC [47] LOG:  starting PostgreSQL 13.1 (Debian 13.1-1.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit
+[32mpostgres    |[0m 2021-02-04 23:38:52.713 UTC [47] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[32mpostgres    |[0m 2021-02-04 23:38:52.720 UTC [48] LOG:  database system was shut down at 2021-02-04 23:38:52 UTC
+[32mpostgres    |[0m 2021-02-04 23:38:52.726 UTC [47] LOG:  database system is ready to accept connections
+[32mpostgres    |[0m  done
+[32mpostgres    |[0m server started
+[32mpostgres    |[0m 
+[32mpostgres    |[0m /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+[32mpostgres    |[0m 
+[32mpostgres    |[0m waiting for server to shut down...2021-02-04 23:38:52.841 UTC [47] LOG:  received fast shutdown request
+[32mpostgres    |[0m .2021-02-04 23:38:52.845 UTC [47] LOG:  aborting any active transactions
+[32mpostgres    |[0m 2021-02-04 23:38:52.846 UTC [47] LOG:  background worker "logical replication launcher" (PID 54) exited with exit code 1
+[32mpostgres    |[0m 2021-02-04 23:38:52.846 UTC [49] LOG:  shutting down
+[32mpostgres    |[0m 2021-02-04 23:38:52.866 UTC [47] LOG:  database system is shut down
+[32mpostgres    |[0m  done
+[32mpostgres    |[0m server stopped
+[32mpostgres    |[0m 
+[32mpostgres    |[0m PostgreSQL init process complete; ready for start up.
+[32mpostgres    |[0m 
+[32mpostgres    |[0m 2021-02-04 23:38:52.965 UTC [1] LOG:  starting PostgreSQL 13.1 (Debian 13.1-1.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit
+[32mpostgres    |[0m 2021-02-04 23:38:52.965 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[32mpostgres    |[0m 2021-02-04 23:38:52.965 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[32mpostgres    |[0m 2021-02-04 23:38:52.973 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[32mpostgres    |[0m 2021-02-04 23:38:52.984 UTC [66] LOG:  database system was shut down at 2021-02-04 23:38:52 UTC
+[32mpostgres    |[0m 2021-02-04 23:38:52.991 UTC [1] LOG:  database system is ready to accept connections
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:42.548+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:42.550+00:00"},"s":"W",  "c":"ASIO",     "id":22601,   "ctx":"main","msg":"No TransportLayer configured during NetworkInterface startup"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:42.550+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:42.550+00:00"},"s":"I",  "c":"STORAGE",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"e2ace837c9e5"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:42.550+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"4.4.3","gitVersion":"913d6b62acfbb344dde1b116f4161360acd8fd13","openSSLVersion":"OpenSSL 1.1.1  11 Sep 2018","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu1804","distarch":"x86_64","target_arch":"x86_64"}}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:42.550+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"18.04"}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:42.550+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"*"}}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:42.552+00:00"},"s":"I",  "c":"STORAGE",  "id":22297,   "ctx":"initandlisten","msg":"Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem","tags":["startupWarnings"]}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:42.552+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=3473M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress,compact_progress],"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.327+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1612479703:327964][1:0x7f4ed7231ac0], txn-recover: [WT_VERB_RECOVERY | WT_VERB_RECOVERY_PROGRESS] Set global recovery timestamp: (0, 0)"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.328+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1612479703:328016][1:0x7f4ed7231ac0], txn-recover: [WT_VERB_RECOVERY | WT_VERB_RECOVERY_PROGRESS] Set global oldest timestamp: (0, 0)"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.418+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":866}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.418+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.475+00:00"},"s":"I",  "c":"STORAGE",  "id":4366408, "ctx":"initandlisten","msg":"No table logging settings modifications are required for existing WiredTiger tables","attr":{"loggingEnabled":true}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.475+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.486+00:00"},"s":"W",  "c":"CONTROL",  "id":22120,   "ctx":"initandlisten","msg":"Access control is not enabled for the database. Read and write access to data and configuration is unrestricted","tags":["startupWarnings"]}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.487+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"initandlisten","msg":"createCollection","attr":{"namespace":"admin.system.version","uuidDisposition":"provided","uuid":{"uuid":{"$uuid":"5b9039ca-63c1-42b9-9268-bab268f96a83"}},"options":{"uuid":{"$uuid":"5b9039ca-63c1-42b9-9268-bab268f96a83"}}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.507+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"initandlisten","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"admin.system.version","index":"_id_","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.508+00:00"},"s":"I",  "c":"COMMAND",  "id":20459,   "ctx":"initandlisten","msg":"Setting featureCompatibilityVersion","attr":{"newVersion":"4.4"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.508+00:00"},"s":"I",  "c":"STORAGE",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.509+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"initandlisten","msg":"createCollection","attr":{"namespace":"local.startup_log","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"26fb5821-7e9d-4031-9bfe-4ae13a63eeed"}},"options":{"capped":true,"size":10485760}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.527+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"initandlisten","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"local.startup_log","index":"_id_","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.528+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.530+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.530+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.530+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.530+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"LogicalSessionCacheRefresh","msg":"createCollection","attr":{"namespace":"config.system.sessions","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"a20f8e60-d841-4b86-8004-7d4c321e3b28"}},"options":{}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.530+00:00"},"s":"I",  "c":"CONTROL",  "id":20712,   "ctx":"LogicalSessionCacheReap","msg":"Sessions collection is not set up; waiting until next sessions reap interval","attr":{"error":"NamespaceNotFound: config.system.sessions does not exist"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.571+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"LogicalSessionCacheRefresh","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"config.system.sessions","index":"_id_","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:01:43.571+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"LogicalSessionCacheRefresh","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"config.system.sessions","index":"lsidTTLIndex","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.917+00:00"},"s":"I",  "c":"CONTROL",  "id":23377,   "ctx":"SignalHandler","msg":"Received signal","attr":{"signal":15,"error":"Terminated"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.917+00:00"},"s":"I",  "c":"CONTROL",  "id":23378,   "ctx":"SignalHandler","msg":"Signal was sent by kill(2)","attr":{"pid":0,"uid":0}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.917+00:00"},"s":"I",  "c":"CONTROL",  "id":23381,   "ctx":"SignalHandler","msg":"will terminate after current cmd ends"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.917+00:00"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"SignalHandler","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":10000}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.918+00:00"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"SignalHandler","msg":"Shutting down the MirrorMaestro"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.918+00:00"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"SignalHandler","msg":"Shutting down the WaitForMajorityService"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.918+00:00"},"s":"I",  "c":"CONTROL",  "id":4784903, "ctx":"SignalHandler","msg":"Shutting down the LogicalSessionCache"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.918+00:00"},"s":"I",  "c":"NETWORK",  "id":20562,   "ctx":"SignalHandler","msg":"Shutdown: going to close listening sockets"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.918+00:00"},"s":"I",  "c":"NETWORK",  "id":23017,   "ctx":"listener","msg":"removing socket file","attr":{"path":"/tmp/mongodb-27017.sock"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.918+00:00"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"SignalHandler","msg":"Shutting down the global connection pool"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.918+00:00"},"s":"I",  "c":"STORAGE",  "id":4784906, "ctx":"SignalHandler","msg":"Shutting down the FlowControlTicketholder"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.918+00:00"},"s":"I",  "c":"-",        "id":20520,   "ctx":"SignalHandler","msg":"Stopping further Flow Control ticket acquisitions."}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.918+00:00"},"s":"I",  "c":"STORAGE",  "id":4784908, "ctx":"SignalHandler","msg":"Shutting down the PeriodicThreadToAbortExpiredTransactions"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"STORAGE",  "id":4784934, "ctx":"SignalHandler","msg":"Shutting down the PeriodicThreadToDecreaseSnapshotHistoryCachePressure"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"REPL",     "id":4784909, "ctx":"SignalHandler","msg":"Shutting down the ReplicationCoordinator"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"SHARDING", "id":4784910, "ctx":"SignalHandler","msg":"Shutting down the ShardingInitializationMongoD"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"REPL",     "id":4784911, "ctx":"SignalHandler","msg":"Enqueuing the ReplicationStateTransitionLock for shutdown"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"-",        "id":4784912, "ctx":"SignalHandler","msg":"Killing all operations for shutdown"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"-",        "id":4695300, "ctx":"SignalHandler","msg":"Interrupted all currently running operations","attr":{"opsKilled":3}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"COMMAND",  "id":4784913, "ctx":"SignalHandler","msg":"Shutting down all open transactions"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"REPL",     "id":4784914, "ctx":"SignalHandler","msg":"Acquiring the ReplicationStateTransitionLock for shutdown"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"INDEX",    "id":4784915, "ctx":"SignalHandler","msg":"Shutting down the IndexBuildsCoordinator"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"REPL",     "id":4784916, "ctx":"SignalHandler","msg":"Reacquiring the ReplicationStateTransitionLock for shutdown"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"REPL",     "id":4784917, "ctx":"SignalHandler","msg":"Attempting to mark clean shutdown"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"SignalHandler","msg":"Shutting down the ReplicaSetMonitor"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"SHARDING", "id":4784921, "ctx":"SignalHandler","msg":"Shutting down the MigrationUtilExecutor"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"CONTROL",  "id":4784925, "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"CONTROL",  "id":20609,   "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"STORAGE",  "id":4784927, "ctx":"SignalHandler","msg":"Shutting down the HealthLog"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"STORAGE",  "id":4784929, "ctx":"SignalHandler","msg":"Acquiring the global lock for shutdown"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"STORAGE",  "id":4784930, "ctx":"SignalHandler","msg":"Shutting down the storage engine"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"STORAGE",  "id":20282,   "ctx":"SignalHandler","msg":"Deregistering all the collections"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"STORAGE",  "id":22261,   "ctx":"SignalHandler","msg":"Timestamp monitor shutting down"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.920+00:00"},"s":"I",  "c":"STORAGE",  "id":22317,   "ctx":"SignalHandler","msg":"WiredTigerKVEngine shutting down"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.921+00:00"},"s":"I",  "c":"STORAGE",  "id":22318,   "ctx":"SignalHandler","msg":"Shutting down session sweeper thread"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.921+00:00"},"s":"I",  "c":"STORAGE",  "id":22319,   "ctx":"SignalHandler","msg":"Finished shutting down session sweeper thread"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.921+00:00"},"s":"I",  "c":"STORAGE",  "id":22320,   "ctx":"SignalHandler","msg":"Shutting down journal flusher thread"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.921+00:00"},"s":"I",  "c":"STORAGE",  "id":22321,   "ctx":"SignalHandler","msg":"Finished shutting down journal flusher thread"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.921+00:00"},"s":"I",  "c":"STORAGE",  "id":22322,   "ctx":"SignalHandler","msg":"Shutting down checkpoint thread"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.921+00:00"},"s":"I",  "c":"STORAGE",  "id":22323,   "ctx":"SignalHandler","msg":"Finished shutting down checkpoint thread"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.921+00:00"},"s":"I",  "c":"STORAGE",  "id":4795902, "ctx":"SignalHandler","msg":"Closing WiredTiger","attr":{"closeConfig":"leak_memory=true,"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.944+00:00"},"s":"I",  "c":"STORAGE",  "id":4795901, "ctx":"SignalHandler","msg":"WiredTiger closed","attr":{"durationMillis":23}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.945+00:00"},"s":"I",  "c":"STORAGE",  "id":22279,   "ctx":"SignalHandler","msg":"shutdown: removing fs lock..."}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.945+00:00"},"s":"I",  "c":"-",        "id":4784931, "ctx":"SignalHandler","msg":"Dropping the scope cache for shutdown"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.945+00:00"},"s":"I",  "c":"FTDC",     "id":4784926, "ctx":"SignalHandler","msg":"Shutting down full-time data capture"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.945+00:00"},"s":"I",  "c":"FTDC",     "id":20626,   "ctx":"SignalHandler","msg":"Shutting down full-time diagnostic data capture"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.952+00:00"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"SignalHandler","msg":"Now exiting"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:04:51.952+00:00"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"SignalHandler","msg":"Shutting down","attr":{"exitCode":0}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:51.938+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:51.940+00:00"},"s":"W",  "c":"ASIO",     "id":22601,   "ctx":"main","msg":"No TransportLayer configured during NetworkInterface startup"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:51.940+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:51.941+00:00"},"s":"I",  "c":"STORAGE",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"e2ace837c9e5"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:51.941+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"4.4.3","gitVersion":"913d6b62acfbb344dde1b116f4161360acd8fd13","openSSLVersion":"OpenSSL 1.1.1  11 Sep 2018","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu1804","distarch":"x86_64","target_arch":"x86_64"}}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:51.941+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"18.04"}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:51.941+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"*"}}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:51.941+00:00"},"s":"I",  "c":"STORAGE",  "id":22270,   "ctx":"initandlisten","msg":"Storage engine to use detected by data files","attr":{"dbpath":"/data/db","storageEngine":"wiredTiger"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:51.941+00:00"},"s":"I",  "c":"STORAGE",  "id":22297,   "ctx":"initandlisten","msg":"Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem","tags":["startupWarnings"]}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:51.942+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=3473M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress,compact_progress],"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:52.655+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1612481932:654983][1:0x7f56b9e04ac0], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 1 through 2"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:52.724+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1612481932:724382][1:0x7f56b9e04ac0], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 2 through 2"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:52.793+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1612481932:793213][1:0x7f56b9e04ac0], txn-recover: [WT_VERB_RECOVERY | WT_VERB_RECOVERY_PROGRESS] Main recovery loop: starting at 1/27136 to 2/256"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:52.876+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1612481932:876123][1:0x7f56b9e04ac0], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 1 through 2"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:52.925+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1612481932:925609][1:0x7f56b9e04ac0], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 2 through 2"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:52.964+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1612481932:964766][1:0x7f56b9e04ac0], txn-recover: [WT_VERB_RECOVERY | WT_VERB_RECOVERY_PROGRESS] Set global recovery timestamp: (0, 0)"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:52.964+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1612481932:964818][1:0x7f56b9e04ac0], txn-recover: [WT_VERB_RECOVERY | WT_VERB_RECOVERY_PROGRESS] Set global oldest timestamp: (0, 0)"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:53.007+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":1065}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:53.007+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:53.008+00:00"},"s":"I",  "c":"STORAGE",  "id":4366408, "ctx":"initandlisten","msg":"No table logging settings modifications are required for existing WiredTiger tables","attr":{"loggingEnabled":true}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:53.009+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:53.015+00:00"},"s":"W",  "c":"CONTROL",  "id":22120,   "ctx":"initandlisten","msg":"Access control is not enabled for the database. Read and write access to data and configuration is unrestricted","tags":["startupWarnings"]}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:53.016+00:00"},"s":"I",  "c":"STORAGE",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:53.017+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:53.018+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:53.018+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+[36mmongo       |[0m {"t":{"$date":"2021-02-04T23:38:53.018+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}

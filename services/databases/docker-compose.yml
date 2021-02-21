@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    # environment:
+    #   MONGO_INITDB_DATABASE: db_name
+    #   MONGO_INITDB_ROOT_USERNAME:
+    #   MONGO_INITDB_ROOT_PASSWORD:
+    ports:
+    - 27017-27019:27017-27019
+    command: --verbose  # debug level
+
+  mysql:
+    image: mysql
+    container_name: mysql
+    volumes:
+      - ./logs/mysql:/var/log/mysql # to get the folder of mysql in my logs/mysql
+    environment:
+      MYSQL_DATABASE: mydb
+      # MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+    - 3306:3306
+    command: --log_error_verbosity=3 --general_log --general_log_file='/var/log/mysql/mysql.log' --log-output=FILE
+
+  postgres:
+    image: postgres
+    container_name: postgres
+    volumes:
+      - ./logs/postgres:/logs:z
+    #   - ./logs/postgres:/log/postgres
+    environment:
+      POSTGRES_PASSWORD: password
+    # command: ["postgres", "-c", "log_directory=/log/postgres", "-c", "log_filename=postgres.log", 
+    #                       "-c", "log_statement=all", "-c", "logging_collector=on"]
+    command: postgres -c logging_collector=on -c log_directory=/logs -c log_filename='postgres.log' -c log_statement=all

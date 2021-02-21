@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    archiveBaseName = 'service-classifier'
+    version = '0.0.1'
+}
+
+dependencies {
+	implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '1.9.3'
+	implementation group: 'org.apache.uima', name: 'uimaj-core', version: '3.1.1'
+	implementation group: 'edu.stanford.nlp', name: 'stanford-corenlp', version: '4.2.0'
+	
+}

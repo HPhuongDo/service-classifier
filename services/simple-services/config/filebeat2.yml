@@ -1,0 +1,28 @@
+filebeat.config:
+  modules:
+    path: ${path.config}/modules.d/*.yml
+    reload.enabled: false
+
+filebeat.autodiscover:
+  providers:
+    - type: docker
+      hints.enabled: true
+
+processors:
+- add_cloud_metadata: ~
+
+output.kafka:
+  hosts: ["kafka:9092"]
+  topic: 'log'
+  partition.round_robin:
+    reachable_only: false
+  required_acks: 1
+  compression: gzip
+  max_message_bytes: 1000000
+
+output.logstash:
+  hosts: ["logstash:5044"]
+
+  worker: 2
+  compression_level: 3
+

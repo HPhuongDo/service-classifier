@@ -1,0 +1,52 @@
+[33mmysql       |[0m 2021-02-04 23:01:42+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.23-1debian10 started.
+[33mmysql       |[0m 2021-02-04 23:01:42+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql       |[0m 2021-02-04 23:01:42+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.23-1debian10 started.
+[33mmysql       |[0m 2021-02-04 23:01:42+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql       |[0m 2021-02-04T23:01:42.743917Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.23) initializing of server in progress as process 44
+[33mmysql       |[0m 2021-02-04T23:01:42.753460Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql       |[0m 2021-02-04T23:01:43.842787Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql       |[0m 2021-02-04T23:01:46.179878Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql       |[0m 2021-02-04 23:01:50+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql       |[0m 2021-02-04 23:01:50+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql       |[0m 2021-02-04T23:01:50.497462Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.23) starting as process 89
+[33mmysql       |[0m 2021-02-04T23:01:50.520715Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql       |[0m 2021-02-04T23:01:50.744946Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql       |[0m 2021-02-04T23:01:50.841676Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql       |[0m 2021-02-04T23:01:51.008848Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql       |[0m 2021-02-04T23:01:51.009038Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql       |[0m 2021-02-04T23:01:51.012551Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql       |[0m 2021-02-04T23:01:51.031393Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.23'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql       |[0m 2021-02-04 23:01:51+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql       |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql       |[0m Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+[33mmysql       |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql       |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql       |[0m 
+[33mmysql       |[0m 2021-02-04 23:01:53+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql       |[0m 2021-02-04T23:01:53.157772Z 10 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.23).
+[33mmysql       |[0m 2021-02-04T23:01:55.100926Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.23)  MySQL Community Server - GPL.
+[33mmysql       |[0m 2021-02-04 23:01:55+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql       |[0m 
+[33mmysql       |[0m 2021-02-04 23:01:55+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql       |[0m 
+[33mmysql       |[0m 2021-02-04T23:01:55.397642Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.23) starting as process 1
+[33mmysql       |[0m 2021-02-04T23:01:55.405755Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql       |[0m 2021-02-04T23:01:55.657299Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql       |[0m 2021-02-04T23:01:55.752633Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[33mmysql       |[0m 2021-02-04T23:01:55.877788Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql       |[0m 2021-02-04T23:01:55.877942Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql       |[0m 2021-02-04T23:01:55.881602Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql       |[0m 2021-02-04T23:01:55.899658Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.23'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql       |[0m 2021-02-04T23:04:51.911883Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.23).
+[33mmysql       |[0m 2021-02-04T23:04:52.973461Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.23)  MySQL Community Server - GPL.
+[33mmysql       |[0m 2021-02-04 23:38:51+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.23-1debian10 started.
+[33mmysql       |[0m 2021-02-04 23:38:51+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql       |[0m 2021-02-04 23:38:51+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.23-1debian10 started.
+[33mmysql       |[0m 2021-02-04T23:38:52.264639Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.23) starting as process 1
+[33mmysql       |[0m 2021-02-04T23:38:52.271947Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql       |[0m 2021-02-04T23:38:52.498319Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql       |[0m 2021-02-04T23:38:52.624155Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[33mmysql       |[0m 2021-02-04T23:38:52.739916Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql       |[0m 2021-02-04T23:38:52.740144Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql       |[0m 2021-02-04T23:38:52.744204Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql       |[0m 2021-02-04T23:38:52.764474Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.23'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
