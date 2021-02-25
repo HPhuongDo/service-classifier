@@ -1,0 +1,3 @@
+['', 'skipping', 'a', 'file', 'to', 'with', 'is', 'log', 'exited', '2021-02-18', '2021-02-21', 'could', 'not', 'attaching', '|\x1b[0m', 'code', 'permission']
+['', 'is', 'see', '-', 'access', 'new', '0\x1b[0m', 'socket', 'at', 'operations', 'wait', 'resource', 'logging', 'write', 'not', 'configuration', 'the', 'all', 'code', 'shutting', 'set', 'data', 'configured', 'on', 'to', 'are', 'exited', 'if', 'attaching', 'tls', '|\x1b[0m', 'this', 'for', 'existing', 'log', 'by', 'recovery', 'starting', 'with', 'global', 'down', 'through', 'and', 'use']
+['', 'directory', 'to', 'with', 'is', 'log', 'exited', 'not', 'attaching', '|\x1b[0m', 'open', 'code']
