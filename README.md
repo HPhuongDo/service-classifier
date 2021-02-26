@@ -1,5 +1,5 @@
 # ServiceClassifier
-This service currently finds common keywords (nouns) between mongo and mysql logs using Apache OpenNLP.
+This service currently finds common keywords (nouns) between mongo and mysql logs using Apache OpenNLP and StanfordNLP.
 
 ## To start the services and logging (in the background)
 $ ./start.sh

@@ -5,11 +5,24 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.io.Reader;
+import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Properties;
 import java.util.Scanner;
 
+import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.ling.Word;
+import edu.stanford.nlp.pipeline.Annotation;
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.process.PTBTokenizer;
+import edu.stanford.nlp.util.CoreMap;
 import opennlp.tools.postag.POSModel;
 import opennlp.tools.postag.POSTaggerME;
 import opennlp.tools.tokenize.SimpleTokenizer;
@@ -25,7 +38,7 @@ public class Main {
 	public enum Model{
 		OPEN_NLP,
 		UIMA,
-		Stanford_NLP
+		STANFORD_NLP
 	}
 	
 	public static void main(String[] args) {
@@ -33,19 +46,19 @@ public class Main {
 		File mongo = new File(path+"mongo/mongo_queries.log");
 		File mysql = new File(path+"mysql/mysql_queries.log");
 		// extract unique words
-		HashSet<String> mongoWords = readFileToWords(Model.OPEN_NLP, mongo);
-		HashSet<String> mysqlWords = readFileToWords(Model.OPEN_NLP, mysql);
+		HashSet<String> mongoWords = readFileToWords(Model.STANFORD_NLP, mongo);
+		HashSet<String> mysqlWords = readFileToWords(Model.STANFORD_NLP, mysql);
 		
-		writeWordsToFile(mongoWords, "src/main/resources/analysis/OpenNLP/mongo_words.txt");
-		writeWordsToFile(mysqlWords, "src/main/resources/analysis/OpenNLP/mysql_words.txt");
+		writeWordsToFile(mongoWords, "src/main/resources/analysis/StanfordNLP/mongo_words.txt");
+		writeWordsToFile(mysqlWords, "src/main/resources/analysis/StanfordNLP/mysql_words.txt");
 		
 		// find common words
 		mysqlWords.retainAll(mongoWords);
-		writeWordsToFile(mysqlWords, "src/main/resources/analysis/OpenNLP/common_words.txt");
+		writeWordsToFile(mysqlWords, "src/main/resources/analysis/StanfordNLP/common_words.txt");
 
 		// extract nouns as keywords
-		HashSet<String> commonKeywords = extractKeywords(Model.OPEN_NLP, mysqlWords.toArray(new String[mysqlWords.size()]));
-		writeWordsToFile(commonKeywords, "src/main/resources/analysis/OpenNLP/common_keywords_POS_perceptron.txt");
+		HashSet<String> commonKeywords = extractKeywords(Model.STANFORD_NLP, mysqlWords.toArray(new String[mysqlWords.size()]));
+		writeWordsToFile(commonKeywords, "src/main/resources/analysis/StanfordNLP/common_keywords_StanfordNLP.txt");
 		
 		System.out.println("Finished.");
 	}
@@ -62,7 +75,7 @@ public class Main {
 	        while (sc.hasNextLine()) {
 	            String line = sc.nextLine();
 	            line = line.replaceAll("[^a-zA-Z ]", " ").toLowerCase();
-	            words.addAll(Arrays.asList(tokenize(model, line)));
+	            words.addAll(tokenize(model, line));
 	        }
 	        sc.close();
 	    } 
@@ -75,15 +88,21 @@ public class Main {
 	/**
 	 * tokenize into words using character classes
 	 */
-	public static String[] tokenize(Model model, String line) {
+	public static List<String> tokenize(Model model, String line) {
 		switch(model) {
 		case OPEN_NLP:
-			SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
-			String tokens[] = tokenizer.tokenize(line);
-			return tokens;
+			SimpleTokenizer simpleTokenizer = SimpleTokenizer.INSTANCE;
+			return Arrays.asList(simpleTokenizer.tokenize(line));
+		case STANFORD_NLP:
+			Reader r = new StringReader(line);
+			PTBTokenizer<Word> ptbTokenizer = PTBTokenizer.newPTBTokenizer(r);
+			ArrayList<String> words = new ArrayList<String>();
+			while (ptbTokenizer.hasNext()) {
+				Word w = ptbTokenizer.next();
+				words.add(w.word());
+			}
+			return words;
 		case UIMA:
-			return null;
-		case Stanford_NLP:
 			return null;
 		default:
 			return null;
@@ -114,10 +133,10 @@ public class Main {
 	 * @return
 	 */
 	public static HashSet<String> extractKeywords(Model model, String[] words) {
+		HashSet<String> keywords = new HashSet<String>();
 		switch (model) {
 		case OPEN_NLP:
 			try {
-				HashSet<String> keywords = new HashSet<String>();
 				InputStream inputStreamPOSTagger = Main.class.getResourceAsStream("/models/en-pos-perceptron.bin");
 				POSModel posModel = new POSModel(inputStreamPOSTagger);
 				POSTaggerME posTagger = new POSTaggerME(posModel);
@@ -132,6 +151,27 @@ public class Main {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+		case STANFORD_NLP:
+			Properties props = new Properties();
+	        props.setProperty("annotators", "tokenize, ssplit, pos");
+			StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+			// extract nouns
+			String str = String.join(" ", words);
+			Annotation document = new Annotation(str);
+			pipeline.annotate(document);
+			List<CoreMap> sentences = document.get(SentencesAnnotation.class);
+			for(CoreMap sentence: sentences) {
+				  // traversing the words in the current sentence
+				  // a CoreLabel is a CoreMap with additional token-specific methods
+				  for (CoreLabel token: sentence.get(TokensAnnotation.class)) {
+				    // this is the POS tag of the token
+				    String pos = token.get(PartOfSpeechAnnotation.class);
+				    if (pos.startsWith("N")) {
+						keywords.add(token.originalText());
+					}
+				  }
+			}
+			return keywords;
 		default:
 			return null;
 		}
