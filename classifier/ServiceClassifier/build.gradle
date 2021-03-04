@@ -11,9 +11,7 @@ jar {
 }
 
 dependencies {
-	implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '1.9.3'
 	implementation group: 'edu.stanford.nlp', name: 'stanford-corenlp', version: '4.2.0'
 	implementation group: 'edu.stanford.nlp', name: 'stanford-corenlp', version: '4.2.0', classifier: 'models'
-	implementation group: 'org.apache.uima', name: 'uimaj-core', version: '3.1.1'
 	
 }
