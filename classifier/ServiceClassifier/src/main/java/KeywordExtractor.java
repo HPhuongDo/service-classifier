@@ -12,10 +12,11 @@ import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
+import edu.stanford.nlp.util.logging.RedwoodConfiguration;
 
 /**
  * Use StanfordNLP
- * given a log document, tokenize, lemmatize, extract keywords (verbs and nouns)
+ * given a log document, tokenize, lemmatize, extract UNIQUE keywords (verbs and nouns)
  * @author phuong
  *
  */
@@ -23,6 +24,7 @@ public class KeywordExtractor {
 	File file;
 	
 	public KeywordExtractor(File file) {
+		RedwoodConfiguration.current().clear().apply();	// to disable logging from StanfordNLP
 		this.file = file;
 	}
 

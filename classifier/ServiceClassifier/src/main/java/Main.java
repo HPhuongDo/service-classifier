@@ -1,32 +1,10 @@
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.io.Reader;
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.io.InputStreamReader;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Properties;
-import java.util.Scanner;
-
-import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.ling.Word;
-import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.process.PTBTokenizer;
-import edu.stanford.nlp.util.CoreMap;
-import opennlp.tools.postag.POSModel;
-import opennlp.tools.postag.POSTaggerME;
-import opennlp.tools.tokenize.SimpleTokenizer;
 
 /**
  * Find common words between mongo and mysql logs
@@ -38,6 +16,23 @@ public class Main {
 	
 	public static void main(String[] args) {
 		System.out.println("Starting service classifier...");
+		
+		// TF-IDF Cosine Similarity
+		try {
+			ProcessBuilder processBuilder = new ProcessBuilder("python3", 
+					"/home/phuong/Documents/Master-thesis/implementation/text_similarity.py");
+		    processBuilder.redirectErrorStream(true);
+		    Process p = processBuilder.start();
+			BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
+			String s = null;
+			while ((s = stdInput.readLine()) != null) {
+				System.out.println("TF-IDF Cosine Similarity: "+s);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		// Jaccard Similarity: common/total
 		File mongo = new File(path+"mongo/mongo_queries.log");
 		File mysql = new File(path+"mysql/mysql_queries.log");
 		
@@ -45,6 +40,8 @@ public class Main {
 		KeywordExtractor mysqlExtractor = new KeywordExtractor(mysql);
 		HashSet<String> mongoWords = mongoExtractor.extract();
 		HashSet<String> mysqlWords = mysqlExtractor.extract();
+		
+		int sum = mysqlWords.size() + mongoWords.size();
 
 		writeWordsToFile(mongoWords, "src/main/resources/analysis/lemmatized/mongo_words_queries.txt");
 		writeWordsToFile(mysqlWords, "src/main/resources/analysis/lemmatized/mysql_words_queries.txt");
@@ -52,7 +49,9 @@ public class Main {
 		// find common words
 		mysqlWords.retainAll(mongoWords);
 		writeWordsToFile(mysqlWords, "src/main/resources/analysis/lemmatized/common_keywords_queries.txt");
-
+		
+		System.out.println("Jaccard Similarity: "+(double)mysqlWords.size()/sum);
+		
 		System.out.println("Finished.");
 	}
 	
