@@ -39,7 +39,8 @@ public class KeywordExtractor {
 	        Scanner sc = new Scanner(this.file);
 	        while (sc.hasNextLine()) {
 	            String line = sc.nextLine();
-	            line = line.replaceAll("[^a-zA-Z ]", " ").toLowerCase();
+	            // remove ANSI color codes
+	            line = line.replaceAll("\\x1b\\[[0-9;]*m", " ").replaceAll("[^a-zA-Z ]", " ").toLowerCase();
 	            words.addAll(extractKeywords(line));
 	        }
 	        sc.close();

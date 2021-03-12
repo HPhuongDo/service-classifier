@@ -1,12 +1,14 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import re
+import sys
 
 path = '/home/phuong/Documents/Master-thesis/implementation/'
 
-with open(path+'services/databases/logs/mysql/mysql_queries.log', 'r') as file:
-    file1 = file.read().replace('\n', ' ').lower()
-with open(path+'services/databases/logs/mongo/mongo_queries.log', 'r') as file:
-    file2 = file.read().replace('\n', ' ').lower()
+with open(sys.argv[1], 'r') as file:
+    file1 = re.sub('\\x1b\\[[0-9;]*m', ' ', file.read().replace('\n', ' ')).lower()
+with open(sys.argv[2], 'r') as file:
+    file2 = re.sub('\\x1b\\[[0-9;]*m', ' ', file.read().replace('\n', ' ')).lower()
 
 # Create TfidfVectorizer object
 vectorizer = TfidfVectorizer()

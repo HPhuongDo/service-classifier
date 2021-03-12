@@ -12,7 +12,9 @@ import java.util.HashSet;
  *
  */
 public class Main {
-	public static final String path = "/home/phuong/Documents/Master-thesis/implementation/services/databases/logs/";
+	public static final String path = "/home/phuong/Documents/Master-thesis/implementation/services/webapi/logs/";
+	public static final String file1Path = path+"nginx/nginx_request.log";
+	public static final String file2Path = path+"flask-api/flask-api.log";
 	
 	public static void main(String[] args) {
 		System.out.println("Starting service classifier...");
@@ -20,7 +22,7 @@ public class Main {
 		// TF-IDF Cosine Similarity
 		try {
 			ProcessBuilder processBuilder = new ProcessBuilder("python3", 
-					"/home/phuong/Documents/Master-thesis/implementation/text_similarity.py");
+					"/home/phuong/Documents/Master-thesis/implementation/text_similarity.py", file1Path, file2Path);
 		    processBuilder.redirectErrorStream(true);
 		    Process p = processBuilder.start();
 			BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
@@ -33,24 +35,24 @@ public class Main {
 		}
 
 		// Jaccard Similarity: common/total
-		File mongo = new File(path+"mongo/mongo_queries.log");
-		File mysql = new File(path+"mysql/mysql_queries.log");
+		File file1 = new File(file1Path);
+		File file2 = new File(file2Path);
 		
-		KeywordExtractor mongoExtractor = new KeywordExtractor(mongo);
-		KeywordExtractor mysqlExtractor = new KeywordExtractor(mysql);
-		HashSet<String> mongoWords = mongoExtractor.extract();
-		HashSet<String> mysqlWords = mysqlExtractor.extract();
+		KeywordExtractor file1Extractor = new KeywordExtractor(file1);
+		KeywordExtractor file2Extractor = new KeywordExtractor(file2);
+		HashSet<String> file1Words = file1Extractor.extract();
+		HashSet<String> file2Words = file2Extractor.extract();
 		
-		int sum = mysqlWords.size() + mongoWords.size();
+		int sum = file2Words.size() + file1Words.size();
 
-		writeWordsToFile(mongoWords, "src/main/resources/analysis/lemmatized/mongo_words_queries.txt");
-		writeWordsToFile(mysqlWords, "src/main/resources/analysis/lemmatized/mysql_words_queries.txt");
+		writeWordsToFile(file1Words, "src/main/resources/analysis/webapi/nginx_words_request.txt");
+		writeWordsToFile(file2Words, "src/main/resources/analysis/webapi/flask_words_request.txt");
 
 		// find common words
-		mysqlWords.retainAll(mongoWords);
-		writeWordsToFile(mysqlWords, "src/main/resources/analysis/lemmatized/common_keywords_queries.txt");
+		file2Words.retainAll(file1Words);
+		writeWordsToFile(file2Words, "src/main/resources/analysis/webapi/common_keywords_request.txt");
 		
-		System.out.println("Jaccard Similarity: "+(double)mysqlWords.size()/sum);
+		System.out.println("Jaccard Similarity: "+(double)file2Words.size()/sum);
 		
 		System.out.println("Finished.");
 	}
