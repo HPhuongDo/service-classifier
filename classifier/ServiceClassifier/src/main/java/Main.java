@@ -1,10 +1,14 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Scanner;
 
 /**
  * Find common words between mongo and mysql logs
@@ -12,17 +16,36 @@ import java.util.HashSet;
  *
  */
 public class Main {
-	public static final String path = "/home/phuong/Documents/Master-thesis/implementation/services/webapi/logs/";
-	public static final String file1Path = path+"nginx/nginx_request.log";
-	public static final String file2Path = path+"flask-api/flask-api.log";
+	public static final String path = "/home/phuong/Documents/Master-thesis/implementation/classifier/ServiceClassifier/src/main/resources/";
+	public static final String fileToComparePath = path+"logs/microservices/docker-compose_carts-db_1.log";
+	public static final String fileToClassifyPath = path+"logs/microservices/docker-compose_carts_1.log";
+//	public static final String keywordsPath = path+"categories/database/keywords_db.txt";
+	public static final String keywordsPath = path+"categories/backend/keywords_backend.txt";
 	
 	public static void main(String[] args) {
 		System.out.println("Starting service classifier...");
-		
+//        ClassLoader classLoader = Main.class.getClassLoader();
+//        String pathFile1 = classLoader.getResource(file1Path).getPath();
+//        String pathFile2 = classLoader.getResource(file2Path).getPath();
+
 		// TF-IDF Cosine Similarity
+		calculateTFIDF(fileToComparePath, fileToClassifyPath);
+		
+		// Jaccard Similarity: common/total
+		calculateJaccard(fileToComparePath, fileToClassifyPath);
+		
+		System.out.println("Finished.");
+	}
+	
+	/**
+	 * TF-IDF similarity
+	 * @param fileToComparePath
+	 * @param fileToClassifyPath
+	 */
+	public static void calculateTFIDF(String fileToComparePath, String fileToClassifyPath) {
 		try {
 			ProcessBuilder processBuilder = new ProcessBuilder("python3", 
-					"/home/phuong/Documents/Master-thesis/implementation/text_similarity.py", file1Path, file2Path);
+					"/home/phuong/Documents/Master-thesis/implementation/text_similarity.py", fileToComparePath, fileToClassifyPath);
 		    processBuilder.redirectErrorStream(true);
 		    Process p = processBuilder.start();
 			BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
@@ -34,27 +57,60 @@ public class Main {
 			e.printStackTrace();
 		}
 
-		// Jaccard Similarity: common/total
-		File file1 = new File(file1Path);
-		File file2 = new File(file2Path);
+	}
+	
+	/**
+	 * Jaccard similarity with extra weight on keywords of type
+	 * @param fileToComparePath
+	 * @param fileToClassifyPath
+	 */
+	public static void calculateJaccard(String fileToComparePath, String fileToClassifyPath) {
+		File fileToCompare = new File(fileToComparePath);
+		File fileToClassify = new File(fileToClassifyPath);
 		
-		KeywordExtractor file1Extractor = new KeywordExtractor(file1);
-		KeywordExtractor file2Extractor = new KeywordExtractor(file2);
+		KeywordExtractor file1Extractor = new KeywordExtractor(fileToCompare);
+		KeywordExtractor file2Extractor = new KeywordExtractor(fileToClassify);
 		HashSet<String> file1Words = file1Extractor.extract();
 		HashSet<String> file2Words = file2Extractor.extract();
 		
 		int sum = file2Words.size() + file1Words.size();
 
-		writeWordsToFile(file1Words, "src/main/resources/analysis/webapi/nginx_words_request.txt");
-		writeWordsToFile(file2Words, "src/main/resources/analysis/webapi/flask_words_request.txt");
+//		writeWordsToFile(file1Words, "src/main/resources/analysis/difference/nginx_words_request.txt");
+//		writeWordsToFile(file2Words, "src/main/resources/analysis/difference/flask_words_request.txt");
 
 		// find common words
 		file2Words.retainAll(file1Words);
-		writeWordsToFile(file2Words, "src/main/resources/analysis/webapi/common_keywords_request.txt");
+		ArrayList<String> words = getKeywordsOfType();
+		double jaccard = file2Words.size();
+		for (String word : file2Words) {
+			if (words.contains(word)) {
+				jaccard++;	// add another point for an important word
+			}
+		}
+		jaccard /= sum;
+//		writeWordsToFile(file2Words, "src/main/resources/categories/backend/common_keywords_carts_orders.txt");
 		
-		System.out.println("Jaccard Similarity: "+(double)file2Words.size()/sum);
-		
-		System.out.println("Finished.");
+		System.out.println("Jaccard Similarity: "+jaccard);
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public static ArrayList<String> getKeywordsOfType() {
+		ArrayList<String> words = new ArrayList<String>();
+		try {
+	        Scanner sc = new Scanner(new File(keywordsPath));
+	        while (sc.hasNextLine()) {
+	            String line = sc.nextLine();
+	            words.add(line);
+	        }
+	        sc.close();
+	    } 
+	    catch (FileNotFoundException e) {
+	        e.printStackTrace();
+	    }
+		return words;
 	}
 	
 	/**
@@ -66,7 +122,7 @@ public class Main {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
 //			PrintWriter writer = new PrintWriter(new File(Main.class.getResource(filePath).getPath()));
 			for(String word : words) {
-				writer.append('\n');
+				writer.append(' ');
 			    writer.append(word);
 			}
 			writer.close();

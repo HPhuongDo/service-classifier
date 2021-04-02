@@ -1,0 +1,10 @@
+db
+directory
+use
+database
+wait
+wiredtiger
+mongodb
+command
+query
+table
