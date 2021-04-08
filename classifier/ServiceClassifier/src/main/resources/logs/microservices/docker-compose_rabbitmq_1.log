@@ -1,0 +1,248 @@
+
+              RabbitMQ 3.6.8. Copyright (C) 2007-2016 Pivotal Software, Inc.
+  ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
+  ##  ##
+  ##########  Logs: tty
+  ######  ##        tty
+  ##########
+              Starting broker...
+
+=INFO REPORT==== 18-Mar-2021::20:32:38 ===
+Starting RabbitMQ 3.6.8 on Erlang 19.3
+Copyright (C) 2007-2016 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 18-Mar-2021::20:32:38 ===
+node           : rabbit@rabbitmq
+home dir       : /var/lib/rabbitmq
+config file(s) : /etc/rabbitmq/rabbitmq.config
+cookie hash    : /6WqKZlhtT7R5vX/t5C2OQ==
+log            : tty
+sasl log       : tty
+database dir   : /var/lib/rabbitmq/mnesia/rabbit@rabbitmq
+
+=INFO REPORT==== 18-Mar-2021::20:32:41 ===
+Memory limit set to 3188MB of 7971MB total.
+
+=INFO REPORT==== 18-Mar-2021::20:32:41 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 18-Mar-2021::20:32:41 ===
+Limiting to approx 1048476 file handles (943626 sockets)
+
+=INFO REPORT==== 18-Mar-2021::20:32:41 ===
+FHC read buffering:  OFF
+FHC write buffering: ON
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+Database directory at /var/lib/rabbitmq/mnesia/rabbit@rabbitmq is empty. Initialising from scratch...
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+    application: mnesia
+    exited: stopped
+    type: temporary
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+Adding vhost '/'
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+Creating user 'guest'
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+Setting user tags for user 'guest' to [administrator]
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+Setting permissions for 'guest' in '/' to '.*', '.*', '.*'
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 18-Mar-2021::20:32:42 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+started TCP Listener on [::]:5672
+ completed with 0 plugins.
+
+=INFO REPORT==== 18-Mar-2021::20:32:42 ===
+Server startup complete; 0 plugins started.
+
+=INFO REPORT==== 18-Mar-2021::20:32:45 ===
+accepting AMQP connection <0.382.0> (172.26.0.6:58412 -> 172.26.0.14:5672)
+
+=INFO REPORT==== 18-Mar-2021::20:32:45 ===
+connection <0.382.0> (172.26.0.6:58412 -> 172.26.0.14:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=INFO REPORT==== 18-Mar-2021::20:33:31 ===
+accepting AMQP connection <0.401.0> (172.26.0.8:50166 -> 172.26.0.14:5672)
+
+=INFO REPORT==== 18-Mar-2021::20:33:32 ===
+connection <0.401.0> (172.26.0.8:50166 -> 172.26.0.14:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=INFO REPORT==== 18-Mar-2021::20:49:43 ===
+Starting RabbitMQ 3.6.8 on Erlang 19.3
+Copyright (C) 2007-2016 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+              RabbitMQ 3.6.8. Copyright (C) 2007-2016 Pivotal Software, Inc.
+  ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
+  ##  ##
+  ##########  Logs: tty
+  ######  ##        tty
+  ##########
+              Starting broker...
+
+=INFO REPORT==== 18-Mar-2021::20:49:43 ===
+node           : rabbit@rabbitmq
+home dir       : /var/lib/rabbitmq
+config file(s) : /etc/rabbitmq/rabbitmq.config
+cookie hash    : /6WqKZlhtT7R5vX/t5C2OQ==
+log            : tty
+sasl log       : tty
+database dir   : /var/lib/rabbitmq/mnesia/rabbit@rabbitmq
+
+=INFO REPORT==== 18-Mar-2021::20:49:45 ===
+Memory limit set to 3188MB of 7971MB total.
+
+=INFO REPORT==== 18-Mar-2021::20:49:45 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 18-Mar-2021::20:49:45 ===
+Limiting to approx 1048476 file handles (943626 sockets)
+
+=INFO REPORT==== 18-Mar-2021::20:49:45 ===
+FHC read buffering:  OFF
+FHC write buffering: ON
+
+=INFO REPORT==== 18-Mar-2021::20:49:45 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 18-Mar-2021::20:49:45 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 18-Mar-2021::20:49:45 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 18-Mar-2021::20:49:45 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 18-Mar-2021::20:49:45 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 18-Mar-2021::20:49:45 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 18-Mar-2021::20:49:45 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 18-Mar-2021::20:49:45 ===
+started TCP Listener on [::]:5672
+ completed with 0 plugins.
+
+=INFO REPORT==== 18-Mar-2021::20:49:45 ===
+Server startup complete; 0 plugins started.
+
+=INFO REPORT==== 18-Mar-2021::20:49:53 ===
+accepting AMQP connection <0.309.0> (172.26.0.14:59890 -> 172.26.0.7:5672)
+
+=INFO REPORT==== 18-Mar-2021::20:49:53 ===
+connection <0.309.0> (172.26.0.14:59890 -> 172.26.0.7:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=INFO REPORT==== 18-Mar-2021::20:50:43 ===
+accepting AMQP connection <0.326.0> (172.26.0.9:32996 -> 172.26.0.7:5672)
+
+=INFO REPORT==== 18-Mar-2021::20:50:43 ===
+connection <0.326.0> (172.26.0.9:32996 -> 172.26.0.7:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=INFO REPORT==== 18-Mar-2021::21:09:08 ===
+Starting RabbitMQ 3.6.8 on Erlang 19.3
+Copyright (C) 2007-2016 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+              RabbitMQ 3.6.8. Copyright (C) 2007-2016 Pivotal Software, Inc.
+  ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
+  ##  ##
+  ##########  Logs: tty
+  ######  ##        tty
+  ##########
+              Starting broker...
+
+=INFO REPORT==== 18-Mar-2021::21:09:08 ===
+node           : rabbit@rabbitmq
+home dir       : /var/lib/rabbitmq
+config file(s) : /etc/rabbitmq/rabbitmq.config
+cookie hash    : /6WqKZlhtT7R5vX/t5C2OQ==
+log            : tty
+sasl log       : tty
+database dir   : /var/lib/rabbitmq/mnesia/rabbit@rabbitmq
+
+=INFO REPORT==== 18-Mar-2021::21:09:10 ===
+Memory limit set to 3188MB of 7971MB total.
+
+=INFO REPORT==== 18-Mar-2021::21:09:10 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 18-Mar-2021::21:09:10 ===
+Limiting to approx 1048476 file handles (943626 sockets)
+
+=INFO REPORT==== 18-Mar-2021::21:09:10 ===
+FHC read buffering:  OFF
+FHC write buffering: ON
+
+=INFO REPORT==== 18-Mar-2021::21:09:10 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 18-Mar-2021::21:09:10 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 18-Mar-2021::21:09:10 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 18-Mar-2021::21:09:10 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 18-Mar-2021::21:09:10 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 18-Mar-2021::21:09:10 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 18-Mar-2021::21:09:10 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 18-Mar-2021::21:09:10 ===
+started TCP Listener on [::]:5672
+ completed with 0 plugins.
+
+=INFO REPORT==== 18-Mar-2021::21:09:10 ===
+Server startup complete; 0 plugins started.
+
+=INFO REPORT==== 18-Mar-2021::21:09:16 ===
+accepting AMQP connection <0.289.0> (172.26.0.12:40396 -> 172.26.0.13:5672)
+
+=INFO REPORT==== 18-Mar-2021::21:09:16 ===
+connection <0.289.0> (172.26.0.12:40396 -> 172.26.0.13:5672): user 'guest' authenticated and granted access to vhost '/'
+
+=INFO REPORT==== 18-Mar-2021::21:10:04 ===
+accepting AMQP connection <0.306.0> (172.26.0.6:60182 -> 172.26.0.13:5672)
+
+=INFO REPORT==== 18-Mar-2021::21:10:05 ===
+connection <0.306.0> (172.26.0.6:60182 -> 172.26.0.13:5672): user 'guest' authenticated and granted access to vhost '/'

@@ -1,0 +1,117 @@
+2021-03-18T20:32:35.797+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=orders-db
+2021-03-18T20:32:35.825+0000 I CONTROL  [initandlisten] db version v3.4.24
+2021-03-18T20:32:35.825+0000 I CONTROL  [initandlisten] git version: 865b4f6a96d0f5425e39a18337105f33e8db504d
+2021-03-18T20:32:35.825+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2021-03-18T20:32:35.825+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-03-18T20:32:35.825+0000 I CONTROL  [initandlisten] modules: none
+2021-03-18T20:32:35.825+0000 I CONTROL  [initandlisten] build environment:
+2021-03-18T20:32:35.825+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-03-18T20:32:35.825+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2021-03-18T20:32:35.825+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-03-18T20:32:35.825+0000 I CONTROL  [initandlisten] options: {}
+2021-03-18T20:32:35.832+0000 I STORAGE  [initandlisten] 
+2021-03-18T20:32:35.832+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2021-03-18T20:32:35.832+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2021-03-18T20:32:35.832+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3473M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-03-18T20:32:35.937+0000 I CONTROL  [initandlisten] 
+2021-03-18T20:32:35.938+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-03-18T20:32:35.938+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-03-18T20:32:35.938+0000 I CONTROL  [initandlisten] 
+2021-03-18T20:32:35.959+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2021-03-18T20:32:36.001+0000 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2021-03-18T20:32:36.001+0000 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2021-03-18T20:32:36.011+0000 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2021-03-18T20:32:36.011+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2021-03-18T20:32:36.016+0000 I NETWORK  [thread1] waiting for connections on port 27017
+2021-03-18T20:32:49.560+0000 I NETWORK  [thread1] connection accepted from 172.26.0.10:43714 #1 (1 connection now open)
+2021-03-18T20:33:32.160+0000 I NETWORK  [thread1] connection accepted from 172.26.0.10:43888 #2 (2 connections now open)
+2021-03-18T20:33:32.160+0000 I NETWORK  [thread1] connection accepted from 172.26.0.10:43886 #3 (3 connections now open)
+2021-03-18T20:48:54.111+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2021-03-18T20:48:54.117+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-03-18T20:48:54.117+0000 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2021-03-18T20:48:54.117+0000 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2021-03-18T20:48:54.117+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2021-03-18T20:48:54.117+0000 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2021-03-18T20:48:54.129+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-03-18T20:48:54.159+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-03-18T20:48:54.222+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-03-18T20:48:54.223+0000 I CONTROL  [signalProcessingThread] now exiting
+2021-03-18T20:48:54.223+0000 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-03-18T20:49:38.607+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=orders-db
+2021-03-18T20:49:38.608+0000 I CONTROL  [initandlisten] db version v3.4.24
+2021-03-18T20:49:38.608+0000 I CONTROL  [initandlisten] git version: 865b4f6a96d0f5425e39a18337105f33e8db504d
+2021-03-18T20:49:38.608+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2021-03-18T20:49:38.608+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-03-18T20:49:38.608+0000 I CONTROL  [initandlisten] modules: none
+2021-03-18T20:49:38.608+0000 I CONTROL  [initandlisten] build environment:
+2021-03-18T20:49:38.608+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-03-18T20:49:38.608+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2021-03-18T20:49:38.608+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-03-18T20:49:38.608+0000 I CONTROL  [initandlisten] options: {}
+2021-03-18T20:49:38.614+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-03-18T20:49:38.614+0000 I STORAGE  [initandlisten] 
+2021-03-18T20:49:38.614+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2021-03-18T20:49:38.614+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2021-03-18T20:49:38.614+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3473M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-03-18T20:49:38.765+0000 I STORAGE  [initandlisten] WiredTiger message [1616100578:765288][1:0x7fe0c72c6d40], txn-recover: Main recovery loop: starting at 1/37760
+2021-03-18T20:49:38.856+0000 I STORAGE  [initandlisten] WiredTiger message [1616100578:856319][1:0x7fe0c72c6d40], txn-recover: Recovering log 1 through 2
+2021-03-18T20:49:38.913+0000 I STORAGE  [initandlisten] WiredTiger message [1616100578:913092][1:0x7fe0c72c6d40], txn-recover: Recovering log 2 through 2
+2021-03-18T20:49:39.005+0000 I CONTROL  [initandlisten] 
+2021-03-18T20:49:39.005+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-03-18T20:49:39.005+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-03-18T20:49:39.005+0000 I CONTROL  [initandlisten] 
+2021-03-18T20:49:39.018+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2021-03-18T20:49:39.019+0000 I NETWORK  [thread1] waiting for connections on port 27017
+2021-03-18T20:49:56.158+0000 I NETWORK  [thread1] connection accepted from 172.26.0.16:55042 #1 (1 connection now open)
+2021-03-18T20:50:43.640+0000 I NETWORK  [thread1] connection accepted from 172.26.0.16:55144 #2 (2 connections now open)
+2021-03-18T20:50:43.640+0000 I NETWORK  [thread1] connection accepted from 172.26.0.16:55146 #3 (3 connections now open)
+2021-03-18T21:08:08.928+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2021-03-18T21:08:08.971+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-03-18T21:08:08.973+0000 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2021-03-18T21:08:08.973+0000 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2021-03-18T21:08:08.976+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2021-03-18T21:08:08.976+0000 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2021-03-18T21:08:08.990+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-03-18T21:08:09.005+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-03-18T21:08:09.126+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-03-18T21:08:09.126+0000 I CONTROL  [signalProcessingThread] now exiting
+2021-03-18T21:08:09.126+0000 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-03-18T21:09:03.647+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=orders-db
+2021-03-18T21:09:03.647+0000 I CONTROL  [initandlisten] db version v3.4.24
+2021-03-18T21:09:03.647+0000 I CONTROL  [initandlisten] git version: 865b4f6a96d0f5425e39a18337105f33e8db504d
+2021-03-18T21:09:03.647+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2021-03-18T21:09:03.647+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-03-18T21:09:03.647+0000 I CONTROL  [initandlisten] modules: none
+2021-03-18T21:09:03.647+0000 I CONTROL  [initandlisten] build environment:
+2021-03-18T21:09:03.647+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-03-18T21:09:03.647+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2021-03-18T21:09:03.647+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-03-18T21:09:03.647+0000 I CONTROL  [initandlisten] options: {}
+2021-03-18T21:09:03.651+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-03-18T21:09:03.651+0000 I STORAGE  [initandlisten] 
+2021-03-18T21:09:03.651+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2021-03-18T21:09:03.651+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2021-03-18T21:09:03.651+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3473M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-03-18T21:09:03.875+0000 I STORAGE  [initandlisten] WiredTiger message [1616101743:875373][1:0x7f6d9fda0d40], txn-recover: Main recovery loop: starting at 2/22784
+2021-03-18T21:09:04.032+0000 I STORAGE  [initandlisten] WiredTiger message [1616101744:32177][1:0x7f6d9fda0d40], txn-recover: Recovering log 2 through 3
+2021-03-18T21:09:04.122+0000 I STORAGE  [initandlisten] WiredTiger message [1616101744:122591][1:0x7f6d9fda0d40], txn-recover: Recovering log 3 through 3
+2021-03-18T21:09:04.242+0000 I CONTROL  [initandlisten] 
+2021-03-18T21:09:04.242+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-03-18T21:09:04.242+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-03-18T21:09:04.242+0000 I CONTROL  [initandlisten] 
+2021-03-18T21:09:04.251+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2021-03-18T21:09:04.254+0000 I NETWORK  [thread1] waiting for connections on port 27017
+2021-03-18T21:09:14.878+0000 I NETWORK  [thread1] connection accepted from 172.26.0.3:49652 #1 (1 connection now open)
+2021-03-18T21:10:05.113+0000 I NETWORK  [thread1] connection accepted from 172.26.0.3:49810 #2 (2 connections now open)
+2021-03-18T21:10:05.114+0000 I NETWORK  [thread1] connection accepted from 172.26.0.3:49808 #3 (3 connections now open)
+2021-03-18T21:11:54.683+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2021-03-18T21:11:54.683+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-03-18T21:11:54.683+0000 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2021-03-18T21:11:54.683+0000 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2021-03-18T21:11:54.683+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2021-03-18T21:11:54.683+0000 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2021-03-18T21:11:54.683+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-03-18T21:11:54.685+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-03-18T21:11:54.818+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-03-18T21:11:54.818+0000 I CONTROL  [signalProcessingThread] now exiting
+2021-03-18T21:11:54.818+0000 I CONTROL  [signalProcessingThread] shutting down with code:0

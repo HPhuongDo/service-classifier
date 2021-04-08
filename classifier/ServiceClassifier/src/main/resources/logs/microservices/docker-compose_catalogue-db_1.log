@@ -1,0 +1,10 @@
+Initializing database
+Database initialized
+MySQL init process in progress...
+
+/usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/dump.sql
+
+
+
+MySQL init process done. Ready for start up.
+

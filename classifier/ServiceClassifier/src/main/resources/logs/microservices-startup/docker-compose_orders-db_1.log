@@ -1,0 +1,26 @@
+2021-03-18T21:34:01.620+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=orders-db
+2021-03-18T21:34:01.622+0000 I CONTROL  [initandlisten] db version v3.4.24
+2021-03-18T21:34:01.622+0000 I CONTROL  [initandlisten] git version: 865b4f6a96d0f5425e39a18337105f33e8db504d
+2021-03-18T21:34:01.622+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2021-03-18T21:34:01.622+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-03-18T21:34:01.622+0000 I CONTROL  [initandlisten] modules: none
+2021-03-18T21:34:01.622+0000 I CONTROL  [initandlisten] build environment:
+2021-03-18T21:34:01.622+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-03-18T21:34:01.622+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2021-03-18T21:34:01.622+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-03-18T21:34:01.622+0000 I CONTROL  [initandlisten] options: {}
+2021-03-18T21:34:01.627+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-03-18T21:34:01.627+0000 I STORAGE  [initandlisten] 
+2021-03-18T21:34:01.627+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2021-03-18T21:34:01.627+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2021-03-18T21:34:01.627+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3473M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-03-18T21:34:01.815+0000 I STORAGE  [initandlisten] WiredTiger message [1616103241:815781][1:0x7f94de924d40], txn-recover: Main recovery loop: starting at 5/20736
+2021-03-18T21:34:01.939+0000 I STORAGE  [initandlisten] WiredTiger message [1616103241:939558][1:0x7f94de924d40], txn-recover: Recovering log 5 through 6
+2021-03-18T21:34:02.006+0000 I STORAGE  [initandlisten] WiredTiger message [1616103242:6425][1:0x7f94de924d40], txn-recover: Recovering log 6 through 6
+2021-03-18T21:34:02.148+0000 I CONTROL  [initandlisten] 
+2021-03-18T21:34:02.148+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-03-18T21:34:02.148+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-03-18T21:34:02.148+0000 I CONTROL  [initandlisten] 
+2021-03-18T21:34:02.164+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2021-03-18T21:34:02.164+0000 I NETWORK  [thread1] waiting for connections on port 27017
+2021-03-18T21:34:18.136+0000 I NETWORK  [thread1] connection accepted from 172.26.0.14:48538 #1 (1 connection now open)
