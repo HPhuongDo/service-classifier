@@ -1,5 +1,6 @@
 # ServiceClassifier
-This service currently finds common keywords (nouns) between mongo and mysql logs using Apache OpenNLP and StanfordNLP.
+- uses StanfordNLP to extract keywords
+- calculates Jaccard Similarity, TF-IDF Cosine Similarity, and GloVe Cosine Similarity of log files
 
 ## To start the services and logging (in the background)
 $ ./start.sh
