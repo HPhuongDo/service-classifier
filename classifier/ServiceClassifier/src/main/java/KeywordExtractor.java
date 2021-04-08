@@ -1,5 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Properties;
@@ -29,7 +31,7 @@ public class KeywordExtractor {
 	}
 
 	/**
-	 * read file, convert to lower case, remove non-letter characters, extract keywords
+	 * read file, convert to lower case, remove non-letter characters and one-letter words, extract keywords
 	 * @param file
 	 * @return unique keywords of file
 	 */
@@ -39,8 +41,9 @@ public class KeywordExtractor {
 	        Scanner sc = new Scanner(this.file);
 	        while (sc.hasNextLine()) {
 	            String line = sc.nextLine();
-	            // remove ANSI color codes
-	            line = line.replaceAll("\\x1b\\[[0-9;]*m", " ").replaceAll("[^a-zA-Z ]", " ").toLowerCase();
+	            // remove ANSI color codes, non-characters and one-letter words
+	            line = line.replaceAll("\\x1b\\[[0-9;]*m", " ").replaceAll("[^a-zA-Z ]", " ").replaceAll("\\b[\\w']{1}\\b", "")
+	            		.toLowerCase();
 	            words.addAll(extractKeywords(line));
 	        }
 	        sc.close();
@@ -50,11 +53,35 @@ public class KeywordExtractor {
 	    }
 		return words;
 	}
+	
+	/**
+	 * clean the file of color codes, non-characters and one-letter words
+	 * @return Bag of Words
+	 */
+	public List<String> clean(){
+		List<String> words = new ArrayList<String>();
+		try {
+	        Scanner sc = new Scanner(this.file);
+	        while (sc.hasNextLine()) {
+	            String line = sc.nextLine();
+	            // remove ANSI color codes, non-characters and one-letter words
+	            line = line.replaceAll("\\x1b\\[[0-9;]*m", " ").replaceAll("[^a-zA-Z ]", " ").replaceAll("\\b[\\w']{1}\\b", "")
+	            		.toLowerCase();
+	            words.addAll(Arrays.asList(line.split("\\s+")));
+	        }
+	        sc.close();
+	    } 
+	    catch (FileNotFoundException e) {
+	        e.printStackTrace();
+	    }
+		return words;
+		
+	}
 
 	/**
 	 * tokenize into words using character classes
 	 * get POS and Lemma
-	 * @return set of unique words in base form
+	 * @return set of unique nouns and verbs in base form
 	 */
 	private HashSet<String> extractKeywords(String line) {
 		HashSet<String> keywords = new HashSet<String>();

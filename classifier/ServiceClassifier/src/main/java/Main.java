@@ -7,7 +7,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -17,10 +19,11 @@ import java.util.Scanner;
  */
 public class Main {
 	public static final String path = "/home/phuong/Documents/Master-thesis/implementation/classifier/ServiceClassifier/src/main/resources/";
-	public static final String fileToComparePath = path+"logs/microservices/docker-compose_carts-db_1.log";
-	public static final String fileToClassifyPath = path+"logs/microservices/docker-compose_carts_1.log";
-//	public static final String keywordsPath = path+"categories/database/keywords_db.txt";
-	public static final String keywordsPath = path+"categories/backend/keywords_backend.txt";
+//	public static final String fileToComparePath = path+"logs/microservices-startup/docker-compose_orders-db_1.log";
+	public static final String fileToComparePath = "/home/phuong/Documents/Master-thesis/implementation/services/databases/logs/mongo/mongo_startup.log";
+	public static final String fileToClassifyPath = path+"logs/microservices-startup/docker-compose_carts-db_1.log";
+	public static final String keywordsPath = path+"categories/database/keywords_mongo-db.txt";
+//	public static final String keywordsPath = path+"categories/backend/keywords_backend.txt";
 	
 	public static void main(String[] args) {
 		System.out.println("Starting service classifier...");
@@ -33,6 +36,10 @@ public class Main {
 		
 		// Jaccard Similarity: common/total
 		calculateJaccard(fileToComparePath, fileToClassifyPath);
+		
+//		File fileToCompare = new File(fileToComparePath);
+//		KeywordExtractor file1Extractor = new KeywordExtractor(fileToCompare);
+//		writeWordsToFile(file1Extractor.clean(), path + "BoW_springboot-ref.txt");
 		
 		System.out.println("Finished.");
 	}
@@ -80,8 +87,8 @@ public class Main {
 
 		// find common words
 		file2Words.retainAll(file1Words);
-		ArrayList<String> words = getKeywordsOfType();
 		double jaccard = file2Words.size();
+		ArrayList<String> words = getKeywordsOfType();
 		for (String word : file2Words) {
 			if (words.contains(word)) {
 				jaccard++;	// add another point for an important word
@@ -117,7 +124,7 @@ public class Main {
 	 * 
 	 * @param words
 	 */
-	public static void writeWordsToFile(HashSet<String> words, String filePath) {
+	public static void writeWordsToFile(Collection<String> words, String filePath) {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
 //			PrintWriter writer = new PrintWriter(new File(Main.class.getResource(filePath).getPath()));

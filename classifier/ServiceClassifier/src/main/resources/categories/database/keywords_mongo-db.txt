@@ -1,0 +1,15 @@
+initandlisten
+control
+storage
+data
+wiredtiger
+db
+the
+log
+engine
+lis
+version
+mongodb
+config
+for
+true

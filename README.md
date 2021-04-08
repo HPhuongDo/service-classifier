@@ -1,6 +1,10 @@
 # ServiceClassifier
 - uses StanfordNLP to extract keywords
-- calculates Jaccard Similarity, TF-IDF Cosine Similarity, and GloVe Cosine Similarity of log files
+- calculates (Java and external Python):
+    - Jaccard Similarity
+    - TF-IDF Cosine Similarity
+    - GloVe Cosine Similarity
+    - Weighted Jaccard Similarity using keywords generated from Latent Semantic Indexing ("database" topic)
 
 ## To start the services and logging (in the background)
 $ ./start.sh
