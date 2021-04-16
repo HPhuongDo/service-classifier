@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
@@ -68,6 +69,7 @@ public class Main {
 	
 	/**
 	 * Jaccard similarity with extra weight on keywords of type
+	 * Weighted Jaccard using Vector formular: sum min(Xi, Yi) / sum max(Xi, Yi)
 	 * @param fileToComparePath
 	 * @param fileToClassifyPath
 	 */
@@ -88,10 +90,13 @@ public class Main {
 		// find common words
 		file2Words.retainAll(file1Words);
 		double jaccard = file2Words.size();
-		ArrayList<String> words = getKeywordsOfType();
+		HashMap<String, Double> words = getKeywordsOfType();
 		for (String word : file2Words) {
-			if (words.contains(word)) {
-				jaccard++;	// add another point for an important word
+			if (words.containsKey(word)) {
+				jaccard +=words.get(word);	// add weight for an important word
+				sum +=words.get(word);
+//				jaccard++;
+//				sum++;
 			}
 		}
 		jaccard /= sum;
@@ -104,13 +109,14 @@ public class Main {
 	 * 
 	 * @return
 	 */
-	public static ArrayList<String> getKeywordsOfType() {
-		ArrayList<String> words = new ArrayList<String>();
+	public static HashMap<String, Double> getKeywordsOfType() {
+		HashMap<String, Double> words = new HashMap<String, Double>();
 		try {
 	        Scanner sc = new Scanner(new File(keywordsPath));
 	        while (sc.hasNextLine()) {
 	            String line = sc.nextLine();
-	            words.add(line);
+	            String[] wordPairs =  line.split(";");
+	            words.put(wordPairs[0], Double.parseDouble(wordPairs[1]));
 	        }
 	        sc.close();
 	    } 
