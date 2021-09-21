@@ -1,0 +1,16 @@
+2021-05-26T00:56:48.248873542Z  + sudo -E kolla_set_configs
+2021-05-26T00:56:48.289336826Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T00:56:48.289386181Z  INFO:__main__:Validating config file
+2021-05-26T00:56:48.289483744Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T00:56:48.289497347Z  INFO:__main__:Copying service configuration files
+2021-05-26T00:56:48.289685829Z  INFO:__main__:Copying /var/lib/kolla/config_files/rabbitmq-erlang.cookie to /var/lib/rabbitmq/.erlang.cookie
+2021-05-26T00:56:48.290137627Z  INFO:__main__:Setting permission for /var/lib/rabbitmq/.erlang.cookie
+2021-05-26T00:56:48.290160769Z  INFO:__main__:Writing out command to execute
+2021-05-26T00:56:48.294913350Z  ++ cat /run_command
+2021-05-26T00:56:48.295800132Z  + CMD='sleep infinity'
+2021-05-26T00:56:48.295819040Z  + ARGS=
+2021-05-26T00:56:48.295854616Z  + sudo kolla_copy_cacerts
+2021-05-26T00:56:48.301803019Z  + [[ ! -n '' ]]
+2021-05-26T00:56:48.301824656Z  + . kolla_extend_start
+2021-05-26T00:56:48.301972915Z  + echo 'Running command: '\''sleep infinity'\'''
+2021-05-26T00:56:48.302006628Z  + exec sleep infinity

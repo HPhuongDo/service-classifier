@@ -1,0 +1,74 @@
+2021-05-26T02:10:59.210486247Z  + sudo -E kolla_set_configs
+2021-05-26T02:10:59.260226872Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T02:10:59.260325759Z  INFO:__main__:Validating config file
+2021-05-26T02:10:59.260361759Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T02:10:59.260408797Z  INFO:__main__:Copying service configuration files
+2021-05-26T02:10:59.260543275Z  INFO:__main__:Copying /var/lib/kolla/config_files/keystone-startup.sh to /usr/bin/keystone-startup.sh
+2021-05-26T02:10:59.261474900Z  INFO:__main__:Setting permission for /usr/bin/keystone-startup.sh
+2021-05-26T02:10:59.261574826Z  INFO:__main__:Deleting /etc/keystone/keystone.conf
+2021-05-26T02:10:59.261688778Z  INFO:__main__:Copying /var/lib/kolla/config_files/keystone.conf to /etc/keystone/keystone.conf
+2021-05-26T02:10:59.262062666Z  INFO:__main__:Setting permission for /etc/keystone/keystone.conf
+2021-05-26T02:10:59.262234380Z  INFO:__main__:Copying /var/lib/kolla/config_files/wsgi-keystone.conf to /etc/apache2/conf-enabled/wsgi-keystone.conf
+2021-05-26T02:10:59.262518776Z  INFO:__main__:Setting permission for /etc/apache2/conf-enabled/wsgi-keystone.conf
+2021-05-26T02:10:59.262586046Z  INFO:__main__:Writing out command to execute
+2021-05-26T02:10:59.262970395Z  INFO:__main__:Setting permission for /var/log/kolla
+2021-05-26T02:10:59.263138848Z  INFO:__main__:Setting permission for /var/log/kolla/keystone/keystone.log
+2021-05-26T02:10:59.263390241Z  INFO:__main__:Setting permission for /etc/keystone/fernet-keys
+2021-05-26T02:10:59.269240669Z  ++ cat /run_command
+2021-05-26T02:10:59.269930427Z  + CMD=/usr/bin/keystone-startup.sh
+2021-05-26T02:10:59.269938968Z  + ARGS=
+2021-05-26T02:10:59.269963594Z  + sudo kolla_copy_cacerts
+2021-05-26T02:10:59.277001763Z  + [[ ! -n '' ]]
+2021-05-26T02:10:59.277021025Z  + . kolla_extend_start
+2021-05-26T02:10:59.277071320Z  ++ KEYSTONE_LOG_DIR=/var/log/kolla/keystone
+2021-05-26T02:10:59.277104046Z  ++ [[ ! -d /var/log/kolla/keystone ]]
+2021-05-26T02:10:59.277392426Z  +++ stat -c %U:%G /var/log/kolla/keystone
+2021-05-26T02:10:59.278536648Z  ++ [[ keystone:kolla != \k\e\y\s\t\o\n\e\:\k\o\l\l\a ]]
+2021-05-26T02:10:59.278575206Z  ++ '[' '!' -f /var/log/kolla/keystone/keystone.log ']'
+2021-05-26T02:10:59.278861536Z  +++ stat -c %U:%G /var/log/kolla/keystone/keystone.log
+2021-05-26T02:10:59.280023678Z  ++ [[ keystone:keystone != \k\e\y\s\t\o\n\e\:\k\e\y\s\t\o\n\e ]]
+2021-05-26T02:10:59.280312306Z  +++ stat -c %a /var/log/kolla/keystone
+2021-05-26T02:10:59.281102016Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T02:10:59.281113763Z  ++ chmod 755 /var/log/kolla/keystone
+2021-05-26T02:10:59.281834916Z  ++ EXTRA_KEYSTONE_MANAGE_ARGS=
+2021-05-26T02:10:59.281893169Z  ++ [[ -n '' ]]
+2021-05-26T02:10:59.281950929Z  ++ [[ -n '' ]]
+2021-05-26T02:10:59.281999409Z  ++ [[ -n '' ]]
+2021-05-26T02:10:59.282008739Z  ++ . /usr/local/bin/kolla_httpd_setup
+2021-05-26T02:10:59.282447087Z  ++++ whoami
+2021-05-26T02:10:59.290798182Z  +++ [[ root == \r\o\o\t ]]
+2021-05-26T02:10:59.290815428Z  +++ [[ ubuntu =~ debian|ubuntu ]]
+2021-05-26T02:10:59.290846256Z  +++ APACHE_CONFDIR=
+2021-05-26T02:10:59.290859822Z  +++ . /etc/apache2/envvars
+2021-05-26T02:10:59.290932082Z  ++++ unset HOME
+2021-05-26T02:10:59.290997103Z  ++++ '[' '' '!=' '' ']'
+2021-05-26T02:10:59.291006069Z  ++++ SUFFIX=
+2021-05-26T02:10:59.291039316Z  ++++ export APACHE_RUN_USER=www-data
+2021-05-26T02:10:59.291046045Z  ++++ APACHE_RUN_USER=www-data
+2021-05-26T02:10:59.291052712Z  ++++ export APACHE_RUN_GROUP=www-data
+2021-05-26T02:10:59.291056562Z  ++++ APACHE_RUN_GROUP=www-data
+2021-05-26T02:10:59.291123771Z  ++++ export APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-26T02:10:59.291134216Z  ++++ APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-26T02:10:59.291140818Z  ++++ export APACHE_RUN_DIR=/var/run/apache2
+2021-05-26T02:10:59.291146457Z  ++++ APACHE_RUN_DIR=/var/run/apache2
+2021-05-26T02:10:59.291152752Z  ++++ export APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-26T02:10:59.291158115Z  ++++ APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-26T02:10:59.291195158Z  ++++ export APACHE_LOG_DIR=/var/log/apache2
+2021-05-26T02:10:59.291201847Z  ++++ APACHE_LOG_DIR=/var/log/apache2
+2021-05-26T02:10:59.291207957Z  ++++ export LANG=C
+2021-05-26T02:10:59.291211523Z  ++++ LANG=C
+2021-05-26T02:10:59.291257136Z  ++++ export LANG
+2021-05-26T02:10:59.291317893Z  +++ install -d /var/run/apache2/
+2021-05-26T02:10:59.322197456Z  +++ rm -rf '/var/run/apache2/*'
+2021-05-26T02:10:59.323031482Z  +++ [[ ubuntu = centos ]]
+2021-05-26T02:10:59.323045931Z  ++ ARGS=-DFOREGROUND
+2021-05-26T02:10:59.323088738Z  + echo 'Running command: '\''/usr/bin/keystone-startup.sh -DFOREGROUND'\'''
+2021-05-26T02:10:59.323150648Z  + exec /usr/bin/keystone-startup.sh -DFOREGROUND
+2021-05-26T02:10:59.324255321Z  + set -o errexit
+2021-05-26T02:10:59.324262119Z  + set -o pipefail
+2021-05-26T02:10:59.324265877Z  + FERNET_KEY_DIR=/etc/keystone/fernet-keys
+2021-05-26T02:10:59.324282653Z  + n=0
+2021-05-26T02:10:59.324453661Z  + '[' '!' -f /etc/keystone/fernet-keys/0 ']'
+2021-05-26T02:10:59.324476983Z  + exec /usr/sbin/apache2 -DFOREGROUND
+2021-05-26T02:10:59.517688498Z  [Wed May 26 04:10:59.517551 2021] [core:warn] [pid 9:tid 140425565211712] AH00114: Useless use of AllowOverride in line 18 of /etc/apache2/conf-enabled/wsgi-keystone.conf.
+2021-05-26T02:10:59.518232566Z  AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 130.149.249.200. Set the 'ServerName' directive globally to suppress this message

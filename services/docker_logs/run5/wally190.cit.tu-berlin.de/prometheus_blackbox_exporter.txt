@@ -1,0 +1,29 @@
+2021-05-25T23:29:24.970155625Z  + sudo -E kolla_set_configs
+2021-05-25T23:29:25.015426341Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T23:29:25.015699433Z  INFO:__main__:Validating config file
+2021-05-25T23:29:25.015720829Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T23:29:25.015837270Z  INFO:__main__:Copying service configuration files
+2021-05-25T23:29:25.016090026Z  INFO:__main__:Copying /var/lib/kolla/config_files/prometheus-blackbox-exporter.yml to /etc/prometheus/blackbox.yml
+2021-05-25T23:29:25.016577091Z  INFO:__main__:Setting permission for /etc/prometheus/blackbox.yml
+2021-05-25T23:29:25.016635720Z  INFO:__main__:Writing out command to execute
+2021-05-25T23:29:25.016871700Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus
+2021-05-25T23:29:25.017004460Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus/cadvisor.WARNING
+2021-05-25T23:29:25.017061133Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus/cadvisor.INFO
+2021-05-25T23:29:25.017127712Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus/cadvisor.wally190.root.log.INFO.20210526-012917.7
+2021-05-25T23:29:25.017184162Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus/cadvisor.wally190.root.log.WARNING.20210526-012917.7
+2021-05-25T23:29:25.022218183Z  ++ cat /run_command
+2021-05-25T23:29:25.023021341Z  + CMD='/opt/blackbox_exporter/blackbox_exporter --config.file=/etc/prometheus/blackbox.yml --web.listen-address=130.149.249.200:9115 --log.level=info'
+2021-05-25T23:29:25.023030432Z  + ARGS=
+2021-05-25T23:29:25.023053467Z  + sudo kolla_copy_cacerts
+2021-05-25T23:29:25.029564947Z  + [[ ! -n '' ]]
+2021-05-25T23:29:25.029587920Z  + . kolla_extend_start
+2021-05-25T23:29:25.029706112Z  ++ [[ ! -d /var/log/kolla/prometheus ]]
+2021-05-25T23:29:25.030168899Z  +++ stat -c %a /var/log/kolla/prometheus
+2021-05-25T23:29:25.031607768Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T23:29:25.031627283Z  ++ chmod 755 /var/log/kolla/prometheus
+2021-05-25T23:29:25.033075500Z  + echo 'Running command: '\''/opt/blackbox_exporter/blackbox_exporter --config.file=/etc/prometheus/blackbox.yml --web.listen-address=130.149.249.200:9115 --log.level=info'\'''
+2021-05-25T23:29:25.033148561Z  + exec /opt/blackbox_exporter/blackbox_exporter --config.file=/etc/prometheus/blackbox.yml --web.listen-address=130.149.249.200:9115 --log.level=info
+2021-05-25T23:29:25.037460346Z  level=info ts=2021-05-25T23:29:25.037Z caller=main.go:212 msg="Starting blackbox_exporter" version="(version=0.16.0, branch=HEAD, revision=991f89846ae10db22a3933356a7d196642fcb9a9)"
+2021-05-25T23:29:25.037486511Z  level=info ts=2021-05-25T23:29:25.037Z caller=main.go:213 msg="Build context" (gogo1.13.4,userroot@64f600555645,date20191111-16:27:24)=(MISSING)
+2021-05-25T23:29:25.037979684Z  level=info ts=2021-05-25T23:29:25.037Z caller=main.go:225 msg="Loaded config file"
+2021-05-25T23:29:25.038319786Z  level=info ts=2021-05-25T23:29:25.038Z caller=main.go:369 msg="Listening on address" address=130.149.249.200:9115

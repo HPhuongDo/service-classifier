@@ -1,0 +1,55 @@
+2021-05-26T02:37:43.286858586Z  + sudo -E kolla_set_configs
+2021-05-26T02:37:43.347150723Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T02:37:43.347262983Z  INFO:__main__:Validating config file
+2021-05-26T02:37:43.347306191Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T02:37:43.347373192Z  INFO:__main__:Copying service configuration files
+2021-05-26T02:37:43.347487253Z  INFO:__main__:Deleting /etc/heat/heat.conf
+2021-05-26T02:37:43.347828104Z  INFO:__main__:Copying /var/lib/kolla/config_files/heat.conf to /etc/heat/heat.conf
+2021-05-26T02:37:43.452946522Z  INFO:__main__:Setting permission for /etc/heat/heat.conf
+2021-05-26T02:37:43.453070454Z  INFO:__main__:Copying /var/lib/kolla/config_files/wsgi-heat-api.conf to /etc/apache2/conf-enabled/wsgi-heat-api.conf
+2021-05-26T02:37:43.454005262Z  INFO:__main__:Setting permission for /etc/apache2/conf-enabled/wsgi-heat-api.conf
+2021-05-26T02:37:43.454076466Z  INFO:__main__:Writing out command to execute
+2021-05-26T02:37:43.454858113Z  INFO:__main__:Setting permission for /var/log/kolla/heat
+2021-05-26T02:37:43.465221311Z  ++ cat /run_command
+2021-05-26T02:37:43.512678233Z  + CMD='/usr/sbin/apache2 -DFOREGROUND'
+2021-05-26T02:37:43.512762030Z  + ARGS=
+2021-05-26T02:37:43.512771739Z  + sudo kolla_copy_cacerts
+2021-05-26T02:37:43.539698648Z  + [[ ! -n '' ]]
+2021-05-26T02:37:43.539730676Z  + . kolla_extend_start
+2021-05-26T02:37:43.540108947Z  ++ [[ ! -d /var/log/kolla/heat ]]
+2021-05-26T02:37:43.540424582Z  +++ stat -c %a /var/log/kolla/heat
+2021-05-26T02:37:43.543234524Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T02:37:43.543287338Z  ++ chmod 755 /var/log/kolla/heat
+2021-05-26T02:37:43.549739071Z  ++ . /usr/local/bin/kolla_heat_extend_start
+2021-05-26T02:37:43.550157419Z  +++ [[ -n '' ]]
+2021-05-26T02:37:43.550167385Z  +++ . /usr/local/bin/kolla_httpd_setup
+2021-05-26T02:37:43.555155486Z  +++++ whoami
+2021-05-26T02:37:43.555182782Z  ++++ [[ root == \r\o\o\t ]]
+2021-05-26T02:37:43.555189615Z  ++++ [[ ubuntu =~ debian|ubuntu ]]
+2021-05-26T02:37:43.555194909Z  ++++ APACHE_CONFDIR=
+2021-05-26T02:37:43.555199671Z  ++++ . /etc/apache2/envvars
+2021-05-26T02:37:43.555205858Z  +++++ unset HOME
+2021-05-26T02:37:43.555210691Z  +++++ '[' '' '!=' '' ']'
+2021-05-26T02:37:43.555215471Z  +++++ SUFFIX=
+2021-05-26T02:37:43.555220271Z  +++++ export APACHE_RUN_USER=www-data
+2021-05-26T02:37:43.555225232Z  +++++ APACHE_RUN_USER=www-data
+2021-05-26T02:37:43.555230154Z  +++++ export APACHE_RUN_GROUP=www-data
+2021-05-26T02:37:43.555235045Z  +++++ APACHE_RUN_GROUP=www-data
+2021-05-26T02:37:43.555239971Z  +++++ export APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-26T02:37:43.555258591Z  +++++ APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-26T02:37:43.555264865Z  +++++ export APACHE_RUN_DIR=/var/run/apache2
+2021-05-26T02:37:43.555269734Z  +++++ APACHE_RUN_DIR=/var/run/apache2
+2021-05-26T02:37:43.555274649Z  +++++ export APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-26T02:37:43.555279692Z  +++++ APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-26T02:37:43.555284372Z  +++++ export APACHE_LOG_DIR=/var/log/apache2
+2021-05-26T02:37:43.555289165Z  +++++ APACHE_LOG_DIR=/var/log/apache2
+2021-05-26T02:37:43.555293928Z  +++++ export LANG=C
+2021-05-26T02:37:43.555298727Z  +++++ LANG=C
+2021-05-26T02:37:43.555303743Z  +++++ export LANG
+2021-05-26T02:37:43.555308587Z  ++++ install -d /var/run/apache2/
+2021-05-26T02:37:43.568325748Z  ++++ rm -rf '/var/run/apache2/*'
+2021-05-26T02:37:43.568356371Z  ++++ [[ ubuntu = centos ]]
+2021-05-26T02:37:43.568362663Z  + echo 'Running command: '\''/usr/sbin/apache2 -DFOREGROUND'\'''
+2021-05-26T02:37:43.568368132Z  + exec /usr/sbin/apache2 -DFOREGROUND
+2021-05-26T02:37:43.614212294Z  [Wed May 26 04:37:43.614025 2021] [core:warn] [pid 8:tid 140007272254528] AH00114: Useless use of AllowOverride in line 11 of /etc/apache2/conf-enabled/wsgi-heat-api.conf.
+2021-05-26T02:37:43.615015812Z  AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 130.149.249.200. Set the 'ServerName' directive globally to suppress this message

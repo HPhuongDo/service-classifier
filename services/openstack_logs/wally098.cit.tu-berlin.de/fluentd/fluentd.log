@@ -1,0 +1,816 @@
+2021-06-09 14:03:06 +0200 [info]: parsing config file is succeeded path="/etc/td-agent/td-agent.conf"
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-elasticsearch' version '5.0.3'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-flowcounter-simple' version '0.1.0'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-grep' version '0.3.4'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-grok-parser' version '2.6.2'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-kafka' version '0.16.1'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-parser' version '0.6.1'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-prometheus' version '2.0.1'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-prometheus' version '1.8.5'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-prometheus_pushgateway' version '0.0.2'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-record-modifier' version '2.1.0'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-rewrite-tag-filter' version '2.4.0'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-s3' version '1.6.0'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-sd-dns' version '0.1.0'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-systemd' version '1.0.2'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-td' version '1.1.0'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-utmpx' version '0.5.0'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluent-plugin-webhdfs' version '1.4.0'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluentd' version '1.12.3'
+2021-06-09 14:03:06 +0200 [info]: gem 'fluentd' version '0.12.43'
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616665baec8 @keys="programname">, /^(cinder-api-access|cloudkitty-api-access|gnocchi-api-access|horizon-access|keystone-apache-admin-access|keystone-apache-public-access|monasca-api-access|octavia-api-access|placement-api-access|panko-api-access)$/, "", "apache_access", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616665b8538 @keys="programname">, /^(aodh_wsgi_access|barbican_api_uwsgi_access|zun_api_wsgi_access|vitrage_wsgi_access)$/, "", "wsgi_access", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616665f26c0 @keys="programname">, /^(nova-api|nova-compute|nova-compute-ironic|nova-conductor|nova-manage|nova-novncproxy|nova-scheduler|nova-placement-api|placement-api|privsep-helper)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616665e3968 @keys="programname">, /^(sahara-api|sahara-engine)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616665e22e8 @keys="programname">, /^(neutron-server|neutron-openvswitch-agent|neutron-ns-metadata-proxy|neutron-metadata-agent|neutron-l3-agent|neutron-dhcp-agent)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x000056166659b528 @keys="programname">, /^(magnum-conductor|magnum-api)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000561666599ef8 @keys="programname">, /^(keystone)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000561666536600 @keys="programname">, /^(heat-engine|heat-api|heat-api-cfn)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616665258f0 @keys="programname">, /^(glance-api)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000561666508de0 @keys="programname">, /^(cloudkitty-storage-init|cloudkitty-processor|cloudkitty-dbsync|cloudkitty-api)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616664f6320 @keys="programname">, /^(ceilometer-polling|ceilometer-agent-notification)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616664f4fc0 @keys="programname">, /^(barbican-api|barbican-worker|barbican-keystone-listener|barbican-db-manage|app)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000561665fa6988 @keys="programname">, /^(aodh-notifier|aodh-listener|aodh-evaluator|aodh-dbsync)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x000056166656d0d8 @keys="programname">, /^(cyborg-api|cyborg-conductor|cyborg-agent)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000561666555410 @keys="programname">, /^(cinder-api|cinder-scheduler|cinder-manage|cinder-volume|cinder-backup|privsep-helper)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000561666605158 @keys="programname">, /^(mistral-server|mistral-engine|mistral-executor)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616665ead80 @keys="programname">, /^(designate-api|designate-central|designate-manage|designate-mdns|designate-sink|designate-worker)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616665dfb10 @keys="programname">, /^(manila-api|manila-data|manila-manage|manila-share|manila-scheduler)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616665dd040 @keys="programname">, /^(trove-api|trove-conductor|trove-manage|trove-taskmanager)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000561666550de8 @keys="programname">, /^(murano-api|murano-engine)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x000056166651b968 @keys="programname">, /^(senlin-api|senlin-conductor|senlin-engine|senlin-health-manager)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616664fecc8 @keys="programname">, /^(watcher-api|watcher-applier|watcher-db-manage|watcher-decision-engine)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616660f4970 @keys="programname">, /^(freezer-api|freezer-api_access|freezer-manage)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616669dba20 @keys="programname">, /^(octavia-api|octavia-health-manager|octavia-housekeeping|octavia-worker)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616669da850 @keys="programname">, /^(zun-api|zun-compute|zun-cni-daemon)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616669d9888 @keys="programname">, /^(kuryr-server)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616669d8cd0 @keys="programname">, /^(gnocchi-api|gnocchi-statsd|gnocchi-metricd|gnocchi-upgrade)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616669bfd48 @keys="programname">, /^(ironic-api|ironic-conductor|ironic-inspector)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616669beb28 @keys="programname">, /^(panko-api|panko-dbsync)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616669bd9f8 @keys="programname">, /^(tacker-server|tacker-conductor)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616666de110 @keys="programname">, /^(vitrage-ml|vitrage-notifier|vitrage-graph|vitrage-persistor)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616666dcd10 @keys="programname">, /^(blazar-api|blazar-manager)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616666d7680 @keys="programname">, /^(monasca-api|monasca-notification|monasca-persister|agent-collector|agent-forwarder|agent-statsd)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616666d5e48 @keys="programname">, /^(masakari-engine|masakari-api)$/, "", "openstack_python", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x00005616666d44a8 @keys="programname">, /.+/, "", "unmatched", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: Payload [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000561666e7c188 @keys="Payload">, /^\d{6}/, "", "infra.mariadb.mysqld_safe", nil]
+2021-06-09 14:03:06 +0200 [info]: adding rewrite_tag_filter rule: Payload [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000561666ccae20 @keys="Payload">, /^\d{4}-\d{2}-\d{2}/, "", "infra.mariadb.mysqld", nil]
+2021-06-09 14:03:06 +0200 [info]: Expanded the pattern \[%{HTTPDATE:Timestamp}\] "(?:%{WORD:http_method} %{NOTSPACE:http_url}(?: HTTP/%{NUMBER:http_version})?|%{DATA:rawrequest})" %{NUMBER:http_status} (?:\d+|-) into \[(?<Timestamp>(?:(?:(?:0[1-9])|(?:[12][0-9])|(?:3[01])|[1-9]))/(?:\b(?:[Jj]an(?:uary|uar)?|[Ff]eb(?:ruary|ruar)?|[Mm](?:a|ä)?r(?:ch|z)?|[Aa]pr(?:il)?|[Mm]a(?:y|i)?|[Jj]un(?:e|i)?|[Jj]ul(?:y|i)?|[Aa]ug(?:ust)?|[Ss]ep(?:tember)?|[Oo](?:c|k)?t(?:ober)?|[Nn]ov(?:ember)?|[Dd]e(?:c|z)(?:ember)?)\b)/(?:(?>\d\d){1,2}):(?:(?!<[0-9])(?:(?:2[0123]|[01]?[0-9])):(?:(?:[0-5][0-9]))(?::(?:(?:(?:[0-5]?[0-9]|60)(?:[:.,][0-9]+)?)))(?![0-9])) (?:(?:[+-]?(?:[0-9]+))))\] "(?:(?<http_method>\b\w+\b) (?<http_url>\S+)(?: HTTP/(?<http_version>(?:(?:(?<![0-9.+-])(?>[+-]?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+)))))))?|(?<rawrequest>.*?))" (?<http_status>(?:(?:(?<![0-9.+-])(?>[+-]?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+)))))) (?:\d+|-)
+2021-06-09 14:03:06 +0200 [info]: Expanded the pattern %{IPORHOST:clientip} %{HTTPDUSER:ident} %{USER:auth} \[%{HTTPDATE:Timestamp}\] "(?:%{WORD:http_method} %{NOTSPACE:http_url}(?: HTTP/%{NUMBER:http_version})?|%{DATA:rawrequest})" %{NUMBER:http_status} (?:%{NUMBER:http_bytes}|-) (?:%{NUMBER:http_response_time_us}|-) %{QS:referrer} %{QS:agent} into (?<clientip>(?:(?:(?:(?:((([0-9A-Fa-f]{1,4}:){7}([0-9A-Fa-f]{1,4}|:))|(([0-9A-Fa-f]{1,4}:){6}(:[0-9A-Fa-f]{1,4}|((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){5}(((:[0-9A-Fa-f]{1,4}){1,2})|:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){4}(((:[0-9A-Fa-f]{1,4}){1,3})|((:[0-9A-Fa-f]{1,4})?:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){3}(((:[0-9A-Fa-f]{1,4}){1,4})|((:[0-9A-Fa-f]{1,4}){0,2}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){2}(((:[0-9A-Fa-f]{1,4}){1,5})|((:[0-9A-Fa-f]{1,4}){0,3}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){1}(((:[0-9A-Fa-f]{1,4}){1,6})|((:[0-9A-Fa-f]{1,4}){0,4}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(:(((:[0-9A-Fa-f]{1,4}){1,7})|((:[0-9A-Fa-f]{1,4}){0,5}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:)))(%.+)?)|(?:(?<![0-9])(?:(?:[0-1]?[0-9]{1,2}|2[0-4][0-9]|25[0-5])[.](?:[0-1]?[0-9]{1,2}|2[0-4][0-9]|25[0-5])[.](?:[0-1]?[0-9]{1,2}|2[0-4][0-9]|25[0-5])[.](?:[0-1]?[0-9]{1,2}|2[0-4][0-9]|25[0-5]))(?![0-9]))))|(?:\b(?:[0-9A-Za-z][0-9A-Za-z-]{0,62})(?:\.(?:[0-9A-Za-z][0-9A-Za-z-]{0,62}))*(\.?|\b)))) (?<ident>(?:(?:[a-zA-Z][a-zA-Z0-9_.+-=:]+)@(?:\b(?:[0-9A-Za-z][0-9A-Za-z-]{0,62})(?:\.(?:[0-9A-Za-z][0-9A-Za-z-]{0,62}))*(\.?|\b)))|(?:(?:[a-zA-Z0-9._-]+))) (?<auth>(?:[a-zA-Z0-9._-]+)) \[(?<Timestamp>(?:(?:(?:0[1-9])|(?:[12][0-9])|(?:3[01])|[1-9]))/(?:\b(?:[Jj]an(?:uary|uar)?|[Ff]eb(?:ruary|ruar)?|[Mm](?:a|ä)?r(?:ch|z)?|[Aa]pr(?:il)?|[Mm]a(?:y|i)?|[Jj]un(?:e|i)?|[Jj]ul(?:y|i)?|[Aa]ug(?:ust)?|[Ss]ep(?:tember)?|[Oo](?:c|k)?t(?:ober)?|[Nn]ov(?:ember)?|[Dd]e(?:c|z)(?:ember)?)\b)/(?:(?>\d\d){1,2}):(?:(?!<[0-9])(?:(?:2[0123]|[01]?[0-9])):(?:(?:[0-5][0-9]))(?::(?:(?:(?:[0-5]?[0-9]|60)(?:[:.,][0-9]+)?)))(?![0-9])) (?:(?:[+-]?(?:[0-9]+))))\] "(?:(?<http_method>\b\w+\b) (?<http_url>\S+)(?: HTTP/(?<http_version>(?:(?:(?<![0-9.+-])(?>[+-]?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+)))))))?|(?<rawrequest>.*?))" (?<http_status>(?:(?:(?<![0-9.+-])(?>[+-]?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+)))))) (?:(?<http_bytes>(?:(?:(?<![0-9.+-])(?>[+-]?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+))))))|-) (?:(?<http_response_time_us>(?:(?:(?<![0-9.+-])(?>[+-]?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+))))))|-) (?<referrer>(?:(?>(?<!\\)(?>"(?>\\.|[^\\"]+)+"|""|(?>'(?>\\.|[^\\']+)+')|''|(?>`(?>\\.|[^\\`]+)+`)|``)))) (?<agent>(?:(?>(?<!\\)(?>"(?>\\.|[^\\"]+)+"|""|(?>'(?>\\.|[^\\']+)+')|''|(?>`(?>\\.|[^\\`]+)+`)|``))))
+2021-06-09 14:03:06 +0200 [warn]: 'type' is deprecated parameter name. use '@type' instead.
+2021-06-09 14:03:06 +0200 [info]: 'flush_interval' is configured at out side of <buffer>. 'flush_mode' is set to 'interval' to keep existing behaviour
+2021-06-09 14:03:06 +0200 [warn]: 'type' is deprecated parameter name. use '@type' instead.
+2021-06-09 14:03:06 +0200 [info]: 'flush_interval' is configured at out side of <buffer>. 'flush_mode' is set to 'interval' to keep existing behaviour
+2021-06-09 14:03:06 +0200 [info]: 'flush_interval' is configured at out side of <buffer>. 'flush_mode' is set to 'interval' to keep existing behaviour
+2021-06-09 14:03:06 +0200 [warn]: define <match fluent.**> to capture fluentd logs in top level is deprecated. Use <label @FLUENT_LOG> instead
+2021-06-09 14:03:06 +0200 [info]: using configuration file: <ROOT>
+  <source>
+    @type tail
+    path "/var/log/kolla/glance/*.log,/var/log/kolla/glance-tls-proxy/*.log,/var/log/kolla/heat/*.log,/var/log/kolla/horizon/*.log,/var/log/kolla/keystone/*.log,/var/log/kolla/neutron/*.log,/var/log/kolla/nova/*.log"
+    exclude_path ["/var/log/kolla/monasca/agent*.log","/var/log/kolla/monasca/grafana.log","/var/log/kolla/monasca/monasca-api.log","/var/log/kolla/neutron/dnsmasq.log","/var/log/kolla/*/*-access.log","/var/log/kolla/*/*-error.log","/var/log/kolla/*/*_access.log","/var/log/kolla/*/*_error.log"]
+    pos_file "/var/run/td-agent/kolla-openstack.pos"
+    tag "kolla.*"
+    format multiline
+    format_firstline /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}.\d{3} \d+ \S+ \S+ \[(req-\S+ \S+ \S+ \S+ \S+ \S+|-)\]/
+    format1 /^(?<Timestamp>\S+ \S+) (?<Pid>\d+) (?<log_level>\S+) (?<python_module>\S+) (\[(req-(?<request_id>\S+) (?<user_id>\S+) (?<tenant_id>\S+) (?<domain_id>\S+) (?<user_domain>\S+) (?<project_domain>\S+)|-)\])? (?<Payload>.*)?$/
+    time_key Timestamp
+    keep_time_key true
+    time_format %F %T.%L
+    ignore_repeated_permission_error true
+    enable_watch_timer false
+    <parse>
+      time_key Timestamp
+      time_format %F %T.%L
+      keep_time_key true
+      format_firstline /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}.\d{3} \d+ \S+ \S+ \[(req-\S+ \S+ \S+ \S+ \S+ \S+|-)\]/
+      @type multiline
+      format1 /^(?<Timestamp>\S+ \S+) (?<Pid>\d+) (?<log_level>\S+) (?<python_module>\S+) (\[(req-(?<request_id>\S+) (?<user_id>\S+) (?<tenant_id>\S+) (?<domain_id>\S+) (?<user_domain>\S+) (?<project_domain>\S+)|-)\])? (?<Payload>.*)?$/
+      unmatched_lines 
+    </parse>
+  </source>
+  <source>
+    @type syslog
+    port 5140
+    bind "130.149.249.108"
+    tag "syslog"
+    severity_key "log_level"
+    source_hostname_key "Hostname"
+    format /^(?<Payload>.*)$/
+    <parse>
+      @type regexp
+      expression ^(?<Payload>.*)$
+    </parse>
+  </source>
+  <source>
+    @type tail
+    path "/var/log/kolla/mariadb/mariadb.log"
+    pos_file "/var/run/td-agent/mariadb.pos"
+    tag "infra.mariadb"
+    format multiline
+    format_firstline /^(\d{4}-\d{2}-\d{2}|\d{6}) /
+    format1 /^(?<Payload>.*)/
+    enable_watch_timer false
+    <parse>
+      format_firstline /^(\d{4}-\d{2}-\d{2}|\d{6}) /
+      @type multiline
+      format1 /^(?<Payload>.*)/
+      unmatched_lines 
+    </parse>
+  </source>
+  <source>
+    @type tail
+    path "/var/log/kolla/mariadb/xinetd.log"
+    pos_file "/var/run/td-agent/mariadb-xinetd.pos"
+    tag "infra.mariadb.xinetd"
+    format multiline
+    format_firstline /^\d{2}/\d{1,2}/\d{1,2}@\d{1,2}:\d{1,2}:\d{1,2}\: (START|EXIT)\: /
+    format1 /^(?<Timestamp>\S+) (?<Payload>.*)?$/
+    time_key Timestamp
+    keep_time_key true
+    time_format %y/%m/%d@%T
+    ignore_repeated_permission_error true
+    enable_watch_timer false
+    <parse>
+      time_key Timestamp
+      time_format %y/%m/%d@%T
+      keep_time_key true
+      format_firstline /^\d{2}/\d{1,2}/\d{1,2}@\d{1,2}:\d{1,2}:\d{1,2}\: (START|EXIT)\: /
+      @type multiline
+      format1 /^(?<Timestamp>\S+) (?<Payload>.*)?$/
+      unmatched_lines 
+    </parse>
+  </source>
+  <source>
+    @type tail
+    path "/var/log/kolla/rabbitmq/rabbit@wally098.log"
+    pos_file "/var/run/td-agent/rabbit.pos"
+    tag "infra.rabbit"
+    format multiline
+    format_firstline /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{3}/
+    format1 /^(?<Timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{3}) \[(?<log_level>\w+)\] (?<Payload>.*)/
+    enable_watch_timer false
+    <parse>
+      format_firstline /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{3}/
+      @type multiline
+      format1 /^(?<Timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{3}) \[(?<log_level>\w+)\] (?<Payload>.*)/
+      unmatched_lines 
+    </parse>
+  </source>
+  <source>
+    @type tail
+    path "/var/log/kolla/*/*-access.log,/var/log/kolla/*/*-error.log,/var/log/kolla/*/*_access.log,/var/log/kolla/*/*_error.log"
+    pos_file "/var/run/td-agent/kolla-openstack-wsgi.pos"
+    tag "kolla.*"
+    format /^(?<Payload>.*)$/
+    enable_watch_timer false
+    <parse>
+      @type regexp
+      expression ^(?<Payload>.*)$
+      unmatched_lines 
+    </parse>
+  </source>
+  <source>
+    @type tail
+    path "/var/log/kolla/libvirt/libvirtd.log"
+    pos_file "/var/run/td-agent/libvirt.pos"
+    tag "infra.libvirt"
+    format /^(?<Timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}.\d{3}\+\d{4}): (?<Pid>\d+): (?<log_level>\S+) : (?<Payload>.*)?$/
+    time_key Timestamp
+    time_format %F %T.%L%z
+    enable_watch_timer false
+    <parse>
+      time_key Timestamp
+      time_format %F %T.%L%z
+      @type regexp
+      expression ^(?<Timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}.\d{3}\+\d{4}): (?<Pid>\d+): (?<log_level>\S+) : (?<Payload>.*)?$
+      unmatched_lines 
+    </parse>
+  </source>
+  <source>
+    @type tail
+    path "/var/log/kolla/zookeeper/zookeeper.log"
+    pos_file "/var/run/td-agent/zookeeper.pos"
+    tag "infra.*"
+    format multiline
+    format_firstline /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3} \S+ \S+ \S+ .*$/
+    format1 /^(?<Timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3}) \[(?<server_id>\S+)\] \S+ (?<log_level>\S+) (?<Payload>.*)$/
+    time_key Timestamp
+    <parse>
+      time_key Timestamp
+      format_firstline /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3} \S+ \S+ \S+ .*$/
+      @type multiline
+      format1 /^(?<Timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3}) \[(?<server_id>\S+)\] \S+ (?<log_level>\S+) (?<Payload>.*)$/
+      unmatched_lines 
+    </parse>
+  </source>
+  <source>
+    @type tail
+    path "/var/log/kolla/kafka/controller.log, /var/log/kolla/kafka/server.log, /var/log/kolla/kafka/state-change.log"
+    pos_file "/var/run/td-agent/kafka.pos"
+    tag "infra.*"
+    format multiline
+    format_firstline /^\[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3}\] \S+ .*$/
+    format1 /^\[(?<Timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3})\] (?<log_level>\S+) (?<Payload>.*)$/
+    time_key Timestamp
+    <parse>
+      time_key Timestamp
+      format_firstline /^\[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3}\] \S+ .*$/
+      @type multiline
+      format1 /^\[(?<Timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3})\] (?<log_level>\S+) (?<Payload>.*)$/
+      unmatched_lines 
+    </parse>
+  </source>
+  <source>
+    @type tail
+    path "/var/log/kolla/monasca/agent*.log"
+    pos_file "/var/run/td-agent/monasca-agent.pos"
+    tag "kolla.*"
+    format multiline
+    format_firstline /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} \S+ \| \S+ \| \S+ \| .*$/
+    format1 /^(?<Timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} \S+) \| (?<log_level>\S+) \| (?<programname>\S+) \| (?<Payload>.*)$/
+    time_key Timestamp
+    <parse>
+      time_key Timestamp
+      format_firstline /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} \S+ \| \S+ \| \S+ \| .*$/
+      @type multiline
+      format1 /^(?<Timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} \S+) \| (?<log_level>\S+) \| (?<programname>\S+) \| (?<Payload>.*)$/
+      unmatched_lines 
+    </parse>
+  </source>
+  <source>
+    @type tail
+    path "/var/log/kolla/monasca/grafana.log"
+    pos_file "/var/run/td-agent/monasca-grafana.pos"
+    tag "infra.*"
+    format multiline
+    format_firstline /^t=\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\+\d{4} lvl=\S+ msg=.*$/
+    format1 /^t=(?<Timestamp>\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\+\d{4}) lvl=(?<log_level>\S+) msg=(?<Payload>.*)$/
+    time_key Timestamp
+    <parse>
+      time_key Timestamp
+      format_firstline /^t=\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\+\d{4} lvl=\S+ msg=.*$/
+      @type multiline
+      format1 /^t=(?<Timestamp>\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\+\d{4}) lvl=(?<log_level>\S+) msg=(?<Payload>.*)$/
+      unmatched_lines 
+    </parse>
+  </source>
+  <filter *.var.log.kolla.*.*.log>
+    @type record_transformer
+    <record>
+      Hostname ${hostname}
+      Logger openstack.${tag_parts[4]}
+      programname ${tag_parts[5]}
+    </record>
+  </filter>
+  <filter infra.var.log.kolla.*.*.log>
+    @type record_transformer
+    <record>
+      Logger ${tag_parts[4]}
+    </record>
+  </filter>
+  <filter infra.*>
+    @type record_transformer
+    <record>
+      Hostname ${hostname}
+      programname ${tag_parts[1]}
+    </record>
+  </filter>
+  <filter syslog.local0.**>
+    @type record_transformer
+    <record>
+      programname swift
+    </record>
+  </filter>
+  <filter syslog.local1.**>
+    @type record_transformer
+    <record>
+      programname haproxy
+    </record>
+  </filter>
+  <filter syslog.local2.**>
+    @type record_transformer
+    <record>
+      programname glance-tls-proxy
+    </record>
+  </filter>
+  <filter syslog.local4.**>
+    @type record_transformer
+    <record>
+      programname neutron-tls-proxy
+    </record>
+  </filter>
+  <filter fluent.**>
+    @type parser
+    key_name "message"
+    format /^(?<Payload>.*)$/
+    expression ^(?<Payload>.*)$
+    ignorecase false
+    multiline false
+    <format>
+      @type /^(?<Payload>.*)$/
+    </format>
+  </filter>
+  <filter fluent.**>
+    @type record_transformer
+    <record>
+      Hostname wally098
+      programname ${tag_parts[0]}
+      log_level ${tag_parts[1]}
+    </record>
+  </filter>
+  <match kolla.var.log.kolla.*.*.log>
+    @type rewrite_tag_filter
+    capitalize_regex_backreference yes
+    <rule>
+      key "programname"
+      pattern ^(cinder-api-access|cloudkitty-api-access|gnocchi-api-access|horizon-access|keystone-apache-admin-access|keystone-apache-public-access|monasca-api-access|octavia-api-access|placement-api-access|panko-api-access)$
+      tag "apache_access"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(aodh_wsgi_access|barbican_api_uwsgi_access|zun_api_wsgi_access|vitrage_wsgi_access)$
+      tag "wsgi_access"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(nova-api|nova-compute|nova-compute-ironic|nova-conductor|nova-manage|nova-novncproxy|nova-scheduler|nova-placement-api|placement-api|privsep-helper)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(sahara-api|sahara-engine)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(neutron-server|neutron-openvswitch-agent|neutron-ns-metadata-proxy|neutron-metadata-agent|neutron-l3-agent|neutron-dhcp-agent)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(magnum-conductor|magnum-api)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(keystone)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(heat-engine|heat-api|heat-api-cfn)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(glance-api)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(cloudkitty-storage-init|cloudkitty-processor|cloudkitty-dbsync|cloudkitty-api)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(ceilometer-polling|ceilometer-agent-notification)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(barbican-api|barbican-worker|barbican-keystone-listener|barbican-db-manage|app)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(aodh-notifier|aodh-listener|aodh-evaluator|aodh-dbsync)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(cyborg-api|cyborg-conductor|cyborg-agent)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(cinder-api|cinder-scheduler|cinder-manage|cinder-volume|cinder-backup|privsep-helper)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(mistral-server|mistral-engine|mistral-executor)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(designate-api|designate-central|designate-manage|designate-mdns|designate-sink|designate-worker)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(manila-api|manila-data|manila-manage|manila-share|manila-scheduler)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(trove-api|trove-conductor|trove-manage|trove-taskmanager)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(murano-api|murano-engine)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(senlin-api|senlin-conductor|senlin-engine|senlin-health-manager)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(watcher-api|watcher-applier|watcher-db-manage|watcher-decision-engine)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(freezer-api|freezer-api_access|freezer-manage)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(octavia-api|octavia-health-manager|octavia-housekeeping|octavia-worker)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(zun-api|zun-compute|zun-cni-daemon)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(kuryr-server)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(gnocchi-api|gnocchi-statsd|gnocchi-metricd|gnocchi-upgrade)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(ironic-api|ironic-conductor|ironic-inspector)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(panko-api|panko-dbsync)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(tacker-server|tacker-conductor)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(vitrage-ml|vitrage-notifier|vitrage-graph|vitrage-persistor)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(blazar-api|blazar-manager)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(monasca-api|monasca-notification|monasca-persister|agent-collector|agent-forwarder|agent-statsd)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern ^(masakari-engine|masakari-api)$
+      tag "openstack_python"
+    </rule>
+    <rule>
+      key "programname"
+      pattern .+
+      tag "unmatched"
+    </rule>
+  </match>
+  <match infra.mariadb>
+    @type rewrite_tag_filter
+    <rule>
+      key "Payload"
+      pattern /^\d{6}/
+      tag "infra.mariadb.mysqld_safe"
+    </rule>
+    <rule>
+      key "Payload"
+      pattern /^\d{4}-\d{2}-\d{2}/
+      tag "infra.mariadb.mysqld"
+    </rule>
+  </match>
+  <filter infra.mariadb.mysqld_safe>
+    @type parser
+    format /^(?<Timestamp>\d{6} {1,2}\d{1,2}:\d{1,2}:\d{1,2}) +(?<Payload>mysqld_safe .*)/
+    time_format "%y%m%d %k:%M:%S"
+    time_key "Timestamp"
+    key_name "Payload"
+    reserve_data true
+    expression ^(?<Timestamp>\d{6} {1,2}\d{1,2}:\d{1,2}:\d{1,2}) +(?<Payload>mysqld_safe .*)
+    ignorecase false
+    multiline false
+    <parse>
+      time_key Timestamp
+      time_format %y%m%d %k:%M:%S
+    </parse>
+    <inject>
+      time_key Timestamp
+      time_format %y%m%d %k:%M:%S
+    </inject>
+    <format>
+      @type /^(?<Timestamp>\d{6} {1,2}\d{1,2}:\d{1,2}:\d{1,2}) +(?<Payload>mysqld_safe .*)/
+    </format>
+  </filter>
+  <filter infra.mariadb.mysqld>
+    @type parser
+    format /^(?<Timestamp>\d{4}-\d{2}-\d{2} {1,2}\d{1,2}:\d{1,2}:\d{1,2}) +(?<Payload>\w+ +(\[(?<log_level>\w+)\]|\w+: +(?<log_level>\w+):).*)/
+    time_format "%Y-%m-%d %k:%M:%S"
+    time_key "Timestamp"
+    key_name "Payload"
+    reserve_data true
+    expression ^(?<Timestamp>\d{4}-\d{2}-\d{2} {1,2}\d{1,2}:\d{1,2}:\d{1,2}) +(?<Payload>\w+ +(\[(?<log_level>\w+)\]|\w+: +(?<log_level>\w+):).*)
+    ignorecase false
+    multiline false
+    <parse>
+      time_key Timestamp
+      time_format %Y-%m-%d %k:%M:%S
+    </parse>
+    <inject>
+      time_key Timestamp
+      time_format %Y-%m-%d %k:%M:%S
+    </inject>
+    <format>
+      @type /^(?<Timestamp>\d{4}-\d{2}-\d{2} {1,2}\d{1,2}:\d{1,2}:\d{1,2}) +(?<Payload>\w+ +(\[(?<log_level>\w+)\]|\w+: +(?<log_level>\w+):).*)/
+    </format>
+  </filter>
+  <filter infra.mariadb.*>
+    @type record_transformer
+    <record>
+      timestamp ${time}
+    </record>
+  </filter>
+  <filter apache_access>
+    @type parser
+    reserve_data true
+    format grok
+    key_name "Payload"
+    grok_pattern "\\[%{HTTPDATE:Timestamp}\\] \"(?:%{WORD:http_method} %{NOTSPACE:http_url}(?: HTTP/%{NUMBER:http_version})?|%{DATA:rawrequest})\" %{NUMBER:http_status} (?:\\d+|-)"
+    time_key "Timestamp"
+    time_format "%d/%b/%Y:%H:%M:%S %z"
+    keep_time_key true
+    <parse>
+      time_key Timestamp
+      time_format %d/%b/%Y:%H:%M:%S %z
+      keep_time_key true
+    </parse>
+    <inject>
+      time_key Timestamp
+      time_format %d/%b/%Y:%H:%M:%S %z
+    </inject>
+    <format>
+      @type grok
+    </format>
+  </filter>
+  <filter wsgi_access>
+    @type parser
+    reserve_data true
+    format grok
+    key_name "Payload"
+    grok_pattern "%{IPORHOST:clientip} %{HTTPDUSER:ident} %{USER:auth} \\[%{HTTPDATE:Timestamp}\\] \"(?:%{WORD:http_method} %{NOTSPACE:http_url}(?: HTTP/%{NUMBER:http_version})?|%{DATA:rawrequest})\" %{NUMBER:http_status} (?:%{NUMBER:http_bytes}|-) (?:%{NUMBER:http_response_time_us}|-) %{QS:referrer} %{QS:agent}"
+    time_key "Timestamp"
+    time_format "%d/%b/%Y:%H:%M:%S %z"
+    keep_time_key true
+    <parse>
+      time_key Timestamp
+      time_format %d/%b/%Y:%H:%M:%S %z
+      keep_time_key true
+    </parse>
+    <inject>
+      time_key Timestamp
+      time_format %d/%b/%Y:%H:%M:%S %z
+    </inject>
+    <format>
+      @type grok
+    </format>
+  </filter>
+  <match syslog.local0.**>
+    @type copy
+    <store>
+      @type "file"
+      path "/var/log/kolla/swift/swift_latest.*.log"
+      append true
+      compress gzip
+      <buffer>
+        timekey_use_utc 
+        path "/var/log/kolla/swift/swift_latest.*.log"
+      </buffer>
+    </store>
+    <store>
+      type elasticsearch
+      host "130.149.249.106"
+      port 9200
+      scheme http
+      logstash_format true
+      logstash_prefix "flog"
+      flush_interval 15s
+      reconnect_on_error true
+      buffer_type file
+      buffer_path /var/lib/fluentd/data/elasticsearch.buffer/local0.*
+      <buffer>
+        @type file
+        path /var/lib/fluentd/data/elasticsearch.buffer/local0.*
+        flush_interval 15s
+      </buffer>
+    </store>
+  </match>
+  <match syslog.local1.**>
+    @type copy
+    <store>
+      @type "file"
+      path "/var/log/kolla/haproxy/haproxy_latest.*.log"
+      output_tag false
+      output_time false
+      append true
+      compress gzip
+      <buffer>
+        timekey_use_utc 
+        path "/var/log/kolla/haproxy/haproxy_latest.*.log"
+      </buffer>
+      <format>
+        output_time false
+        output_tag false
+      </format>
+    </store>
+    <store>
+      type elasticsearch
+      host "130.149.249.106"
+      port 9200
+      scheme http
+      logstash_format true
+      logstash_prefix "flog"
+      flush_interval 15s
+      reconnect_on_error true
+      buffer_type file
+      buffer_path /var/lib/fluentd/data/elasticsearch.buffer/local1.*
+      <buffer>
+        @type file
+        path /var/lib/fluentd/data/elasticsearch.buffer/local1.*
+        flush_interval 15s
+      </buffer>
+    </store>
+  </match>
+  <match *.**>
+    @type copy
+    <store>
+      @type "elasticsearch"
+      host "130.149.249.106"
+      port 9200
+      scheme http
+      logstash_format true
+      logstash_prefix "flog"
+      flush_interval 15s
+      reconnect_on_error true
+      buffer_type file
+      buffer_path /var/lib/fluentd/data/elasticsearch.buffer/openstack.*
+      <buffer>
+        @type file
+        path /var/lib/fluentd/data/elasticsearch.buffer/openstack.*
+        flush_interval 15s
+      </buffer>
+    </store>
+  </match>
+</ROOT>
+2021-06-09 14:03:06 +0200 [info]: starting fluentd-1.12.3 pid=6 ruby="2.7.3"
+2021-06-09 14:03:06 +0200 [info]: spawn command to main:  cmdline=["/opt/td-agent/bin/ruby", "-Eascii-8bit:ascii-8bit", "/usr/sbin/td-agent", "-o", "/var/log/kolla/fluentd/fluentd.log", "--under-supervisor"]
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="*.var.log.kolla.*.*.log" type="record_transformer"
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="infra.var.log.kolla.*.*.log" type="record_transformer"
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="infra.*" type="record_transformer"
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="syslog.local0.**" type="record_transformer"
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="syslog.local1.**" type="record_transformer"
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="syslog.local2.**" type="record_transformer"
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="syslog.local4.**" type="record_transformer"
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="fluent.**" type="parser"
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="fluent.**" type="record_transformer"
+2021-06-09 14:03:07 +0200 [info]: adding match pattern="kolla.var.log.kolla.*.*.log" type="rewrite_tag_filter"
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca4a190 @keys="programname">, /^(cinder-api-access|cloudkitty-api-access|gnocchi-api-access|horizon-access|keystone-apache-admin-access|keystone-apache-public-access|monasca-api-access|octavia-api-access|placement-api-access|panko-api-access)$/, "", "apache_access", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca49600 @keys="programname">, /^(aodh_wsgi_access|barbican_api_uwsgi_access|zun_api_wsgi_access|vitrage_wsgi_access)$/, "", "wsgi_access", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca48bb0 @keys="programname">, /^(nova-api|nova-compute|nova-compute-ironic|nova-conductor|nova-manage|nova-novncproxy|nova-scheduler|nova-placement-api|placement-api|privsep-helper)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca27f78 @keys="programname">, /^(sahara-api|sahara-engine)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca26d30 @keys="programname">, /^(neutron-server|neutron-openvswitch-agent|neutron-ns-metadata-proxy|neutron-metadata-agent|neutron-l3-agent|neutron-dhcp-agent)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca264e8 @keys="programname">, /^(magnum-conductor|magnum-api)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca25110 @keys="programname">, /^(keystone)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca24738 @keys="programname">, /^(heat-engine|heat-api|heat-api-cfn)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca07b38 @keys="programname">, /^(glance-api)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca07138 @keys="programname">, /^(cloudkitty-storage-init|cloudkitty-processor|cloudkitty-dbsync|cloudkitty-api)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca06968 @keys="programname">, /^(ceilometer-polling|ceilometer-agent-notification)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca05db0 @keys="programname">, /^(barbican-api|barbican-worker|barbican-keystone-listener|barbican-db-manage|app)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca04c08 @keys="programname">, /^(aodh-notifier|aodh-listener|aodh-evaluator|aodh-dbsync)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7ca04280 @keys="programname">, /^(cyborg-api|cyborg-conductor|cyborg-agent)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c9d3568 @keys="programname">, /^(cinder-api|cinder-scheduler|cinder-manage|cinder-volume|cinder-backup|privsep-helper)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c9d27d0 @keys="programname">, /^(mistral-server|mistral-engine|mistral-executor)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c9d1cb8 @keys="programname">, /^(designate-api|designate-central|designate-manage|designate-mdns|designate-sink|designate-worker)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c9d11a0 @keys="programname">, /^(manila-api|manila-data|manila-manage|manila-share|manila-scheduler)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c9d06d8 @keys="programname">, /^(trove-api|trove-conductor|trove-manage|trove-taskmanager)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c9bb648 @keys="programname">, /^(murano-api|murano-engine)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c9baae0 @keys="programname">, /^(senlin-api|senlin-conductor|senlin-engine|senlin-health-manager)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c9ba0e0 @keys="programname">, /^(watcher-api|watcher-applier|watcher-db-manage|watcher-decision-engine)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c9b97d0 @keys="programname">, /^(freezer-api|freezer-api_access|freezer-manage)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c9b8e48 @keys="programname">, /^(octavia-api|octavia-health-manager|octavia-housekeeping|octavia-worker)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c9b8218 @keys="programname">, /^(zun-api|zun-compute|zun-cni-daemon)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c997428 @keys="programname">, /^(kuryr-server)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c9952b8 @keys="programname">, /^(gnocchi-api|gnocchi-statsd|gnocchi-metricd|gnocchi-upgrade)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c957b98 @keys="programname">, /^(ironic-api|ironic-conductor|ironic-inspector)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c956b08 @keys="programname">, /^(panko-api|panko-dbsync)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c955e10 @keys="programname">, /^(tacker-server|tacker-conductor)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c955078 @keys="programname">, /^(vitrage-ml|vitrage-notifier|vitrage-graph|vitrage-persistor)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c954650 @keys="programname">, /^(blazar-api|blazar-manager)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c963bf0 @keys="programname">, /^(monasca-api|monasca-notification|monasca-persister|agent-collector|agent-forwarder|agent-statsd)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c963560 @keys="programname">, /^(masakari-engine|masakari-api)$/, "", "openstack_python", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: programname [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c962ef8 @keys="programname">, /.+/, "", "unmatched", nil]
+2021-06-09 14:03:07 +0200 [info]: adding match pattern="infra.mariadb" type="rewrite_tag_filter"
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: Payload [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c8fede0 @keys="Payload">, /^\d{6}/, "", "infra.mariadb.mysqld_safe", nil]
+2021-06-09 14:03:07 +0200 [info]: #0 adding rewrite_tag_filter rule: Payload [#<Fluent::PluginHelper::RecordAccessor::Accessor:0x0000558e7c8fdfa8 @keys="Payload">, /^\d{4}-\d{2}-\d{2}/, "", "infra.mariadb.mysqld", nil]
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="infra.mariadb.mysqld_safe" type="parser"
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="infra.mariadb.mysqld" type="parser"
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="infra.mariadb.*" type="record_transformer"
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="apache_access" type="parser"
+2021-06-09 14:03:07 +0200 [info]: #0 Expanded the pattern \[%{HTTPDATE:Timestamp}\] "(?:%{WORD:http_method} %{NOTSPACE:http_url}(?: HTTP/%{NUMBER:http_version})?|%{DATA:rawrequest})" %{NUMBER:http_status} (?:\d+|-) into \[(?<Timestamp>(?:(?:(?:0[1-9])|(?:[12][0-9])|(?:3[01])|[1-9]))/(?:\b(?:[Jj]an(?:uary|uar)?|[Ff]eb(?:ruary|ruar)?|[Mm](?:a|ä)?r(?:ch|z)?|[Aa]pr(?:il)?|[Mm]a(?:y|i)?|[Jj]un(?:e|i)?|[Jj]ul(?:y|i)?|[Aa]ug(?:ust)?|[Ss]ep(?:tember)?|[Oo](?:c|k)?t(?:ober)?|[Nn]ov(?:ember)?|[Dd]e(?:c|z)(?:ember)?)\b)/(?:(?>\d\d){1,2}):(?:(?!<[0-9])(?:(?:2[0123]|[01]?[0-9])):(?:(?:[0-5][0-9]))(?::(?:(?:(?:[0-5]?[0-9]|60)(?:[:.,][0-9]+)?)))(?![0-9])) (?:(?:[+-]?(?:[0-9]+))))\] "(?:(?<http_method>\b\w+\b) (?<http_url>\S+)(?: HTTP/(?<http_version>(?:(?:(?<![0-9.+-])(?>[+-]?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+)))))))?|(?<rawrequest>.*?))" (?<http_status>(?:(?:(?<![0-9.+-])(?>[+-]?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+)))))) (?:\d+|-)
+2021-06-09 14:03:07 +0200 [info]: adding filter pattern="wsgi_access" type="parser"
+2021-06-09 14:03:07 +0200 [info]: #0 Expanded the pattern %{IPORHOST:clientip} %{HTTPDUSER:ident} %{USER:auth} \[%{HTTPDATE:Timestamp}\] "(?:%{WORD:http_method} %{NOTSPACE:http_url}(?: HTTP/%{NUMBER:http_version})?|%{DATA:rawrequest})" %{NUMBER:http_status} (?:%{NUMBER:http_bytes}|-) (?:%{NUMBER:http_response_time_us}|-) %{QS:referrer} %{QS:agent} into (?<clientip>(?:(?:(?:(?:((([0-9A-Fa-f]{1,4}:){7}([0-9A-Fa-f]{1,4}|:))|(([0-9A-Fa-f]{1,4}:){6}(:[0-9A-Fa-f]{1,4}|((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){5}(((:[0-9A-Fa-f]{1,4}){1,2})|:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){4}(((:[0-9A-Fa-f]{1,4}){1,3})|((:[0-9A-Fa-f]{1,4})?:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){3}(((:[0-9A-Fa-f]{1,4}){1,4})|((:[0-9A-Fa-f]{1,4}){0,2}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){2}(((:[0-9A-Fa-f]{1,4}){1,5})|((:[0-9A-Fa-f]{1,4}){0,3}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){1}(((:[0-9A-Fa-f]{1,4}){1,6})|((:[0-9A-Fa-f]{1,4}){0,4}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(:(((:[0-9A-Fa-f]{1,4}){1,7})|((:[0-9A-Fa-f]{1,4}){0,5}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:)))(%.+)?)|(?:(?<![0-9])(?:(?:[0-1]?[0-9]{1,2}|2[0-4][0-9]|25[0-5])[.](?:[0-1]?[0-9]{1,2}|2[0-4][0-9]|25[0-5])[.](?:[0-1]?[0-9]{1,2}|2[0-4][0-9]|25[0-5])[.](?:[0-1]?[0-9]{1,2}|2[0-4][0-9]|25[0-5]))(?![0-9]))))|(?:\b(?:[0-9A-Za-z][0-9A-Za-z-]{0,62})(?:\.(?:[0-9A-Za-z][0-9A-Za-z-]{0,62}))*(\.?|\b)))) (?<ident>(?:(?:[a-zA-Z][a-zA-Z0-9_.+-=:]+)@(?:\b(?:[0-9A-Za-z][0-9A-Za-z-]{0,62})(?:\.(?:[0-9A-Za-z][0-9A-Za-z-]{0,62}))*(\.?|\b)))|(?:(?:[a-zA-Z0-9._-]+))) (?<auth>(?:[a-zA-Z0-9._-]+)) \[(?<Timestamp>(?:(?:(?:0[1-9])|(?:[12][0-9])|(?:3[01])|[1-9]))/(?:\b(?:[Jj]an(?:uary|uar)?|[Ff]eb(?:ruary|ruar)?|[Mm](?:a|ä)?r(?:ch|z)?|[Aa]pr(?:il)?|[Mm]a(?:y|i)?|[Jj]un(?:e|i)?|[Jj]ul(?:y|i)?|[Aa]ug(?:ust)?|[Ss]ep(?:tember)?|[Oo](?:c|k)?t(?:ober)?|[Nn]ov(?:ember)?|[Dd]e(?:c|z)(?:ember)?)\b)/(?:(?>\d\d){1,2}):(?:(?!<[0-9])(?:(?:2[0123]|[01]?[0-9])):(?:(?:[0-5][0-9]))(?::(?:(?:(?:[0-5]?[0-9]|60)(?:[:.,][0-9]+)?)))(?![0-9])) (?:(?:[+-]?(?:[0-9]+))))\] "(?:(?<http_method>\b\w+\b) (?<http_url>\S+)(?: HTTP/(?<http_version>(?:(?:(?<![0-9.+-])(?>[+-]?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+)))))))?|(?<rawrequest>.*?))" (?<http_status>(?:(?:(?<![0-9.+-])(?>[+-]?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+)))))) (?:(?<http_bytes>(?:(?:(?<![0-9.+-])(?>[+-]?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+))))))|-) (?:(?<http_response_time_us>(?:(?:(?<![0-9.+-])(?>[+-]?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+))))))|-) (?<referrer>(?:(?>(?<!\\)(?>"(?>\\.|[^\\"]+)+"|""|(?>'(?>\\.|[^\\']+)+')|''|(?>`(?>\\.|[^\\`]+)+`)|``)))) (?<agent>(?:(?>(?<!\\)(?>"(?>\\.|[^\\"]+)+"|""|(?>'(?>\\.|[^\\']+)+')|''|(?>`(?>\\.|[^\\`]+)+`)|``))))
+2021-06-09 14:03:07 +0200 [info]: adding match pattern="syslog.local0.**" type="copy"
+2021-06-09 14:03:07 +0200 [warn]: #0 'type' is deprecated parameter name. use '@type' instead.
+2021-06-09 14:03:07 +0200 [info]: #0 'flush_interval' is configured at out side of <buffer>. 'flush_mode' is set to 'interval' to keep existing behaviour
+2021-06-09 14:03:09 +0200 [warn]: #0 Could not communicate to Elasticsearch, resetting connection and trying again. Connection refused - connect(2) for 130.149.249.106:9200 (Errno::ECONNREFUSED)
+2021-06-09 14:03:09 +0200 [warn]: #0 Remaining retry: 14. Retry to communicate after 2 second(s).
+2021-06-09 14:03:13 +0200 [warn]: #0 Could not communicate to Elasticsearch, resetting connection and trying again. Connection refused - connect(2) for 130.149.249.106:9200 (Errno::ECONNREFUSED)
+2021-06-09 14:03:13 +0200 [warn]: #0 Remaining retry: 13. Retry to communicate after 4 second(s).
+2021-06-09 14:03:21 +0200 [warn]: #0 Could not communicate to Elasticsearch, resetting connection and trying again. Connection refused - connect(2) for 130.149.249.106:9200 (Errno::ECONNREFUSED)
+2021-06-09 14:03:21 +0200 [warn]: #0 Remaining retry: 12. Retry to communicate after 8 second(s).
+2021-06-09 14:03:37 +0200 [warn]: #0 Could not communicate to Elasticsearch, resetting connection and trying again. Connection refused - connect(2) for 130.149.249.106:9200 (Errno::ECONNREFUSED)
+2021-06-09 14:03:37 +0200 [warn]: #0 Remaining retry: 11. Retry to communicate after 16 second(s).
+2021-06-09 14:04:09 +0200 [warn]: #0 Could not communicate to Elasticsearch, resetting connection and trying again. Connection refused - connect(2) for 130.149.249.106:9200 (Errno::ECONNREFUSED)
+2021-06-09 14:04:09 +0200 [warn]: #0 Remaining retry: 10. Retry to communicate after 32 second(s).
+2021-06-09 14:05:13 +0200 [warn]: #0 Could not communicate to Elasticsearch, resetting connection and trying again. Connection refused - connect(2) for 130.149.249.106:9200 (Errno::ECONNREFUSED)
+2021-06-09 14:05:13 +0200 [warn]: #0 Remaining retry: 9. Retry to communicate after 64 second(s).
+2021-06-09 14:07:21 +0200 [warn]: #0 Could not communicate to Elasticsearch, resetting connection and trying again. Connection refused - connect(2) for 130.149.249.106:9200 (Errno::ECONNREFUSED)
+2021-06-09 14:07:21 +0200 [warn]: #0 Remaining retry: 8. Retry to communicate after 128 second(s).
+2021-06-09 14:11:37 +0200 [warn]: #0 Could not communicate to Elasticsearch, resetting connection and trying again. Connection refused - connect(2) for 130.149.249.106:9200 (Errno::ECONNREFUSED)
+2021-06-09 14:11:37 +0200 [warn]: #0 Remaining retry: 7. Retry to communicate after 256 second(s).
+2021-06-09 14:20:09 +0200 [warn]: #0 Could not communicate to Elasticsearch, resetting connection and trying again. Connection refused - connect(2) for 130.149.249.106:9200 (Errno::ECONNREFUSED)
+2021-06-09 14:20:09 +0200 [warn]: #0 Remaining retry: 6. Retry to communicate after 512 second(s).
+2021-06-09 14:20:09 +0200 [warn]: #0 Detected ES 7.x: `_doc` will be used as the document `_type`.
+2021-06-09 14:20:09 +0200 [info]: adding match pattern="syslog.local1.**" type="copy"
+2021-06-09 14:20:09 +0200 [warn]: #0 'type' is deprecated parameter name. use '@type' instead.
+2021-06-09 14:20:09 +0200 [info]: #0 'flush_interval' is configured at out side of <buffer>. 'flush_mode' is set to 'interval' to keep existing behaviour
+2021-06-09 14:20:09 +0200 [warn]: #0 Detected ES 7.x: `_doc` will be used as the document `_type`.
+2021-06-09 14:20:09 +0200 [info]: adding match pattern="*.**" type="copy"
+2021-06-09 14:20:09 +0200 [info]: #0 'flush_interval' is configured at out side of <buffer>. 'flush_mode' is set to 'interval' to keep existing behaviour
+2021-06-09 14:20:09 +0200 [warn]: #0 Detected ES 7.x: `_doc` will be used as the document `_type`.
+2021-06-09 14:20:09 +0200 [info]: adding source type="tail"
+2021-06-09 14:20:09 +0200 [info]: adding source type="syslog"
+2021-06-09 14:20:09 +0200 [info]: adding source type="tail"
+2021-06-09 14:20:09 +0200 [info]: adding source type="tail"
+2021-06-09 14:20:09 +0200 [info]: adding source type="tail"
+2021-06-09 14:20:09 +0200 [info]: adding source type="tail"
+2021-06-09 14:20:09 +0200 [info]: adding source type="tail"
+2021-06-09 14:20:09 +0200 [info]: adding source type="tail"
+2021-06-09 14:20:09 +0200 [info]: adding source type="tail"
+2021-06-09 14:20:09 +0200 [info]: adding source type="tail"
+2021-06-09 14:20:09 +0200 [info]: adding source type="tail"
+2021-06-09 14:20:09 +0200 [warn]: #0 define <match fluent.**> to capture fluentd logs in top level is deprecated. Use <label @FLUENT_LOG> instead
+2021-06-09 14:20:09 +0200 [warn]: section <format> is not used in <filter fluent.**>
+2021-06-09 14:20:09 +0200 [warn]: section <parse> is not used in <filter infra.mariadb.mysqld_safe>
+2021-06-09 14:20:09 +0200 [warn]: section <parse> is not used in <filter infra.mariadb.mysqld_safe>
+2021-06-09 14:20:09 +0200 [warn]: section <format> is not used in <filter infra.mariadb.mysqld_safe>
+2021-06-09 14:20:09 +0200 [warn]: section <parse> is not used in <filter infra.mariadb.mysqld>
+2021-06-09 14:20:09 +0200 [warn]: section <parse> is not used in <filter infra.mariadb.mysqld>
+2021-06-09 14:20:09 +0200 [warn]: section <format> is not used in <filter infra.mariadb.mysqld>
+2021-06-09 14:20:09 +0200 [warn]: section <parse> is not used in <filter apache_access> of grok plugin
+2021-06-09 14:20:09 +0200 [warn]: section <parse> is not used in <filter apache_access> of grok plugin
+2021-06-09 14:20:09 +0200 [warn]: section <parse> is not used in <filter apache_access> of grok plugin
+2021-06-09 14:20:09 +0200 [warn]: section <format> is not used in <filter apache_access> of grok plugin
+2021-06-09 14:20:09 +0200 [warn]: section <parse> is not used in <filter wsgi_access> of grok plugin
+2021-06-09 14:20:09 +0200 [warn]: section <parse> is not used in <filter wsgi_access> of grok plugin
+2021-06-09 14:20:09 +0200 [warn]: section <parse> is not used in <filter wsgi_access> of grok plugin
+2021-06-09 14:20:09 +0200 [warn]: section <format> is not used in <filter wsgi_access> of grok plugin
+2021-06-09 14:20:09 +0200 [info]: #0 starting fluentd worker pid=26 ppid=6 worker=0
+2021-06-09 14:20:09 +0200 [info]: #0 listening syslog socket on 130.149.249.108:5140 with udp
+2021-06-09 14:20:09 +0200 [info]: #0 fluentd worker is now running worker=0
+2021-06-09 14:20:09 +0200 [info]: #0 disable filter chain optimization because [Fluent::ParserFilter, Fluent::Plugin::RecordTransformerFilter] uses `#filter_stream` method.
+2021-06-09 14:20:09 +0200 [info]: #0 disable filter chain optimization because [Fluent::ParserFilter, Fluent::Plugin::RecordTransformerFilter] uses `#filter_stream` method.
+2021-06-09 14:26:09 +0200 [info]: #0 following tail of /var/log/kolla/libvirt/libvirtd.log
+2021-06-09 14:26:09 +0200 [info]: #0 following tail of /var/log/kolla/nova/nova-compute.log
+2021-06-09 14:34:09 +0200 [info]: #0 following tail of /var/log/kolla/neutron/neutron-openvswitch-agent.log
+2021-06-09 14:34:09 +0200 [info]: #0 following tail of /var/log/kolla/neutron/privsep-helper.log
+2021-06-16 11:05:09 +0200 [info]: #0 following tail of /var/log/kolla/nova/privsep-helper.log

@@ -34,5 +34,10 @@ Attaching to postgres
 [36mpostgres    |[0m 
 [36mpostgres    |[0m 2021-02-21 11:52:01.941 UTC [1] FATAL:  could not open log file "/logs/postgres.log": Permission denied
 [36mpostgres    |[0m 2021-02-21 11:52:01.942 UTC [1] LOG:  database system is shut down
+[36mpostgres    |[0m 
+[36mpostgres    |[0m PostgreSQL Database directory appears to contain a database; Skipping initialization
+[36mpostgres    |[0m 
+[36mpostgres    |[0m 2021-03-04 21:51:06.446 UTC [1] FATAL:  could not open log file "/logs/postgres.log": Permission denied
+[36mpostgres    |[0m 2021-03-04 21:51:06.450 UTC [1] LOG:  database system is shut down
 [36mpostgres exited with code 1
 [0m

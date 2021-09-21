@@ -1,0 +1,63 @@
+2021-05-25T22:06:38.343874784Z  + sudo -E kolla_set_configs
+2021-05-25T22:06:38.393850410Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:06:38.393929553Z  INFO:__main__:Validating config file
+2021-05-25T22:06:38.393955209Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:06:38.394001247Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:06:38.394109509Z  INFO:__main__:Deleting /etc/placement/placement.conf
+2021-05-25T22:06:38.394310486Z  INFO:__main__:Copying /var/lib/kolla/config_files/placement.conf to /etc/placement/placement.conf
+2021-05-25T22:06:38.394922265Z  INFO:__main__:Setting permission for /etc/placement/placement.conf
+2021-05-25T22:06:38.395175911Z  INFO:__main__:Copying /var/lib/kolla/config_files/placement-api-wsgi.conf to /etc/apache2/conf-enabled/00-placement-api.conf
+2021-05-25T22:06:38.395560518Z  INFO:__main__:Setting permission for /etc/apache2/conf-enabled/00-placement-api.conf
+2021-05-25T22:06:38.395684875Z  INFO:__main__:Copying /var/lib/kolla/config_files/migrate-db.rc to /etc/placement/migrate-db.rc
+2021-05-25T22:06:38.395869913Z  INFO:__main__:Setting permission for /etc/placement/migrate-db.rc
+2021-05-25T22:06:38.395921249Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:06:38.396152456Z  INFO:__main__:Setting permission for /var/log/kolla/placement
+2021-05-25T22:06:38.396248876Z  INFO:__main__:Setting permission for /var/log/kolla/placement/placement-api.log
+2021-05-25T22:06:38.396390880Z  INFO:__main__:Setting permission for /var/log/kolla/placement/placement-api.log
+2021-05-25T22:06:38.401874471Z  ++ cat /run_command
+2021-05-25T22:06:38.402587794Z  + CMD='/usr/sbin/apache2 -DFOREGROUND'
+2021-05-25T22:06:38.402601541Z  + ARGS=
+2021-05-25T22:06:38.402648773Z  + sudo kolla_copy_cacerts
+2021-05-25T22:06:38.412150741Z  + [[ ! -n '' ]]
+2021-05-25T22:06:38.412179499Z  + . kolla_extend_start
+2021-05-25T22:06:38.412247024Z  ++ [[ ! -d /var/log/kolla/placement ]]
+2021-05-25T22:06:38.412647436Z  +++ stat -c %U:%G /var/log/kolla/placement
+2021-05-25T22:06:38.413804587Z  ++ [[ placement:kolla != \p\l\a\c\e\m\e\n\t\:\k\o\l\l\a ]]
+2021-05-25T22:06:38.414102987Z  +++ stat -c %a /var/log/kolla/placement
+2021-05-25T22:06:38.415130498Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:06:38.415149239Z  ++ chmod 755 /var/log/kolla/placement
+2021-05-25T22:06:38.415898597Z  ++ chmod 644 /var/log/kolla/placement/placement-api.log
+2021-05-25T22:06:38.416667609Z  ++ . /usr/local/bin/kolla_placement_extend_start
+2021-05-25T22:06:38.416730643Z  +++ [[ -n '' ]]
+2021-05-25T22:06:38.416756429Z  +++ [[ -n '' ]]
+2021-05-25T22:06:38.416795832Z  +++ [[ -n '' ]]
+2021-05-25T22:06:38.416824905Z  +++ . /usr/local/bin/kolla_httpd_setup
+2021-05-25T22:06:38.417305065Z  +++++ whoami
+2021-05-25T22:06:38.418351009Z  ++++ [[ root == \r\o\o\t ]]
+2021-05-25T22:06:38.418360907Z  ++++ [[ ubuntu =~ debian|ubuntu ]]
+2021-05-25T22:06:38.418418673Z  ++++ APACHE_CONFDIR=
+2021-05-25T22:06:38.418432300Z  ++++ . /etc/apache2/envvars
+2021-05-25T22:06:38.418520605Z  +++++ unset HOME
+2021-05-25T22:06:38.418580185Z  +++++ '[' '' '!=' '' ']'
+2021-05-25T22:06:38.418590321Z  +++++ SUFFIX=
+2021-05-25T22:06:38.418640062Z  +++++ export APACHE_RUN_USER=www-data
+2021-05-25T22:06:38.418648401Z  +++++ APACHE_RUN_USER=www-data
+2021-05-25T22:06:38.418677057Z  +++++ export APACHE_RUN_GROUP=www-data
+2021-05-25T22:06:38.418690952Z  +++++ APACHE_RUN_GROUP=www-data
+2021-05-25T22:06:38.418702596Z  +++++ export APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-25T22:06:38.418726357Z  +++++ APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-25T22:06:38.418746841Z  +++++ export APACHE_RUN_DIR=/var/run/apache2
+2021-05-25T22:06:38.418757047Z  +++++ APACHE_RUN_DIR=/var/run/apache2
+2021-05-25T22:06:38.418785862Z  +++++ export APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-25T22:06:38.418794351Z  +++++ APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-25T22:06:38.418800404Z  +++++ export APACHE_LOG_DIR=/var/log/apache2
+2021-05-25T22:06:38.418804428Z  +++++ APACHE_LOG_DIR=/var/log/apache2
+2021-05-25T22:06:38.418830478Z  +++++ export LANG=C
+2021-05-25T22:06:38.418837973Z  +++++ LANG=C
+2021-05-25T22:06:38.418875179Z  +++++ export LANG
+2021-05-25T22:06:38.418942973Z  ++++ install -d /var/run/apache2/
+2021-05-25T22:06:38.420363432Z  ++++ rm -rf '/var/run/apache2/*'
+2021-05-25T22:06:38.421033430Z  ++++ [[ ubuntu = centos ]]
+2021-05-25T22:06:38.421077957Z  + echo 'Running command: '\''/usr/sbin/apache2 -DFOREGROUND'\'''
+2021-05-25T22:06:38.421122418Z  + exec /usr/sbin/apache2 -DFOREGROUND
+2021-05-25T22:06:38.452224099Z  AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 130.149.249.200. Set the 'ServerName' directive globally to suppress this message

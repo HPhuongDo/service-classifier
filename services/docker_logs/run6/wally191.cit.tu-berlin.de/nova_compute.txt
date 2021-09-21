@@ -1,0 +1,40 @@
+2021-05-26T00:10:24.348793267Z  + sudo -E kolla_set_configs
+2021-05-26T00:10:24.398191562Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T00:10:24.398230000Z  INFO:__main__:Validating config file
+2021-05-26T00:10:24.398252994Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T00:10:24.398261297Z  INFO:__main__:Copying service configuration files
+2021-05-26T00:10:24.398436423Z  INFO:__main__:Deleting /etc/nova/nova.conf
+2021-05-26T00:10:24.398645726Z  INFO:__main__:Copying /var/lib/kolla/config_files/nova.conf to /etc/nova/nova.conf
+2021-05-26T00:10:24.399228303Z  INFO:__main__:Setting permission for /etc/nova/nova.conf
+2021-05-26T00:10:24.399324208Z  INFO:__main__:Writing out command to execute
+2021-05-26T00:10:24.399659289Z  INFO:__main__:Setting permission for /var/lib/nova
+2021-05-26T00:10:24.399749277Z  INFO:__main__:Setting permission for /var/lib/nova/images
+2021-05-26T00:10:24.399757052Z  INFO:__main__:Setting permission for /var/lib/nova/instances
+2021-05-26T00:10:24.399827641Z  INFO:__main__:Setting permission for /var/lib/nova/buckets
+2021-05-26T00:10:24.399835425Z  INFO:__main__:Setting permission for /var/lib/nova/networks
+2021-05-26T00:10:24.399903672Z  INFO:__main__:Setting permission for /var/lib/nova/.ssh
+2021-05-26T00:10:24.399910163Z  INFO:__main__:Setting permission for /var/lib/nova/tmp
+2021-05-26T00:10:24.399990415Z  INFO:__main__:Setting permission for /var/lib/nova/keys
+2021-05-26T00:10:24.399997145Z  INFO:__main__:Setting permission for /var/lib/nova/CA
+2021-05-26T00:10:24.400135111Z  INFO:__main__:Setting permission for /var/lib/nova/.ssh/id_rsa
+2021-05-26T00:10:24.400172794Z  INFO:__main__:Setting permission for /var/lib/nova/.ssh/config
+2021-05-26T00:10:24.400217162Z  INFO:__main__:Setting permission for /var/lib/nova/.ssh/authorized_keys
+2021-05-26T00:10:24.400320192Z  INFO:__main__:Setting permission for /var/lib/nova/CA/reqs
+2021-05-26T00:10:24.400356366Z  INFO:__main__:Setting permission for /var/lib/nova/CA/newcerts
+2021-05-26T00:10:24.400400969Z  INFO:__main__:Setting permission for /var/lib/nova/CA/INTER
+2021-05-26T00:10:24.400435742Z  INFO:__main__:Setting permission for /var/lib/nova/CA/private
+2021-05-26T00:10:24.405988299Z  ++ cat /run_command
+2021-05-26T00:10:24.406712433Z  + CMD=nova-compute
+2021-05-26T00:10:24.406727356Z  + ARGS=
+2021-05-26T00:10:24.406733635Z  + sudo kolla_copy_cacerts
+2021-05-26T00:10:24.414089666Z  + [[ ! -n '' ]]
+2021-05-26T00:10:24.414114294Z  + . kolla_extend_start
+2021-05-26T00:10:24.414124172Z  ++ [[ ! -d /var/log/kolla/nova ]]
+2021-05-26T00:10:24.414164555Z  ++ mkdir -p /var/log/kolla/nova
+2021-05-26T00:10:24.415741326Z  +++ stat -c %a /var/log/kolla/nova
+2021-05-26T00:10:24.416873931Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T00:10:24.416909068Z  ++ chmod 755 /var/log/kolla/nova
+2021-05-26T00:10:24.417702317Z  ++ . /usr/local/bin/kolla_nova_extend_start
+2021-05-26T00:10:24.417718226Z  +++ [[ ! -d /var/lib/nova/instances ]]
+2021-05-26T00:10:24.417780105Z  + echo 'Running command: '\''nova-compute'\'''
+2021-05-26T00:10:24.417840133Z  + exec nova-compute

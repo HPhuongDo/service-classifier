@@ -1,0 +1,14 @@
+2021-05-25T22:59:30.029387822Z  + sudo -E kolla_set_configs
+2021-05-25T22:59:30.072222851Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:59:30.072519430Z  INFO:__main__:Validating config file
+2021-05-25T22:59:30.072532994Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:59:30.072581082Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:59:30.072602055Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:59:30.077916046Z  ++ cat /run_command
+2021-05-25T22:59:30.078714235Z  + CMD='/usr/bin/memcached -v -l 130.149.249.200 -p 11211 -c 5000 -U 0 -m 256'
+2021-05-25T22:59:30.078731885Z  + ARGS=
+2021-05-25T22:59:30.078739625Z  + sudo kolla_copy_cacerts
+2021-05-25T22:59:30.086625513Z  + [[ ! -n '' ]]
+2021-05-25T22:59:30.086657228Z  + . kolla_extend_start
+2021-05-25T22:59:30.086797363Z  + echo 'Running command: '\''/usr/bin/memcached -v -l 130.149.249.200 -p 11211 -c 5000 -U 0 -m 256'\'''
+2021-05-25T22:59:30.086822151Z  + exec /usr/bin/memcached -v -l 130.149.249.200 -p 11211 -c 5000 -U 0 -m 256

@@ -1,0 +1,38 @@
+2021-05-26T01:32:59.495841892Z  + sudo -E kolla_set_configs
+2021-05-26T01:32:59.543366882Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T01:32:59.543420992Z  INFO:__main__:Validating config file
+2021-05-26T01:32:59.543456754Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T01:32:59.543513676Z  INFO:__main__:Copying service configuration files
+2021-05-26T01:32:59.543673554Z  INFO:__main__:Deleting /etc/ssh/sshd_config
+2021-05-26T01:32:59.543851777Z  INFO:__main__:Copying /var/lib/kolla/config_files/sshd_config to /etc/ssh/sshd_config
+2021-05-26T01:32:59.544378332Z  INFO:__main__:Setting permission for /etc/ssh/sshd_config
+2021-05-26T01:32:59.544629639Z  INFO:__main__:Copying /var/lib/kolla/config_files/id_rsa.pub to /var/lib/keystone/.ssh/authorized_keys
+2021-05-26T01:32:59.544874087Z  INFO:__main__:Setting permission for /var/lib/keystone/.ssh/authorized_keys
+2021-05-26T01:32:59.544980245Z  INFO:__main__:Writing out command to execute
+2021-05-26T01:32:59.545239749Z  INFO:__main__:Setting permission for /etc/keystone/fernet-keys
+2021-05-26T01:32:59.550636095Z  ++ cat /run_command
+2021-05-26T01:32:59.551559199Z  + CMD='/usr/sbin/sshd -D'
+2021-05-26T01:32:59.551578529Z  + ARGS=
+2021-05-26T01:32:59.551597304Z  + sudo kolla_copy_cacerts
+2021-05-26T01:32:59.558431734Z  + [[ ! -n '' ]]
+2021-05-26T01:32:59.558451573Z  + . kolla_extend_start
+2021-05-26T01:32:59.558523777Z  ++ SSH_HOST_KEY_TYPES=("rsa" "dsa" "ecdsa" "ed25519")
+2021-05-26T01:32:59.558624991Z  ++ for key_type in ${SSH_HOST_KEY_TYPES[@]}
+2021-05-26T01:32:59.558633703Z  ++ KEY_PATH=/etc/ssh/ssh_host_rsa_key
+2021-05-26T01:32:59.558664379Z  ++ [[ ! -f /etc/ssh/ssh_host_rsa_key ]]
+2021-05-26T01:32:59.558727105Z  ++ for key_type in ${SSH_HOST_KEY_TYPES[@]}
+2021-05-26T01:32:59.558748123Z  ++ KEY_PATH=/etc/ssh/ssh_host_dsa_key
+2021-05-26T01:32:59.558768119Z  ++ [[ ! -f /etc/ssh/ssh_host_dsa_key ]]
+2021-05-26T01:32:59.558777595Z  ++ ssh-keygen -q -t dsa -f /etc/ssh/ssh_host_dsa_key -N ''
+2021-05-26T01:32:59.650669027Z  ++ for key_type in ${SSH_HOST_KEY_TYPES[@]}
+2021-05-26T01:32:59.650711351Z  ++ KEY_PATH=/etc/ssh/ssh_host_ecdsa_key
+2021-05-26T01:32:59.650718469Z  ++ [[ ! -f /etc/ssh/ssh_host_ecdsa_key ]]
+2021-05-26T01:32:59.650724761Z  ++ for key_type in ${SSH_HOST_KEY_TYPES[@]}
+2021-05-26T01:32:59.650730191Z  ++ KEY_PATH=/etc/ssh/ssh_host_ed25519_key
+2021-05-26T01:32:59.650744887Z  ++ [[ ! -f /etc/ssh/ssh_host_ed25519_key ]]
+2021-05-26T01:32:59.650752685Z  ++ mkdir -p /var/lib/keystone/.ssh
+2021-05-26T01:32:59.652105826Z  +++ stat -c %U:%G /var/lib/keystone/.ssh
+2021-05-26T01:32:59.653081068Z  ++ [[ root:root != \k\e\y\s\t\o\n\e\:\k\e\y\s\t\o\n\e ]]
+2021-05-26T01:32:59.653096028Z  ++ sudo chown keystone: /var/lib/keystone/.ssh
+2021-05-26T01:32:59.657804997Z  + echo 'Running command: '\''/usr/sbin/sshd -D'\'''
+2021-05-26T01:32:59.657868043Z  + exec /usr/sbin/sshd -D

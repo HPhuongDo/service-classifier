@@ -1,0 +1,31 @@
+2021-05-25T22:46:53.130566729Z  + sudo -E kolla_set_configs
+2021-05-25T22:46:53.178107526Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:46:53.178138123Z  INFO:__main__:Validating config file
+2021-05-25T22:46:53.178170317Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:46:53.178198595Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:46:53.178326822Z  INFO:__main__:Deleting /etc/heat/heat.conf
+2021-05-25T22:46:53.178569352Z  INFO:__main__:Copying /var/lib/kolla/config_files/heat.conf to /etc/heat/heat.conf
+2021-05-25T22:46:53.179038027Z  INFO:__main__:Setting permission for /etc/heat/heat.conf
+2021-05-25T22:46:53.179109421Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:46:53.179416108Z  INFO:__main__:Setting permission for /var/log/kolla/heat
+2021-05-25T22:46:53.179498502Z  INFO:__main__:Setting permission for /var/log/kolla/heat/apache-error.log
+2021-05-25T22:46:53.179527305Z  INFO:__main__:Setting permission for /var/log/kolla/heat/heat-api-cfn-error.log
+2021-05-25T22:46:53.179608581Z  INFO:__main__:Setting permission for /var/log/kolla/heat/apache-cfn-access.log
+2021-05-25T22:46:53.179645927Z  INFO:__main__:Setting permission for /var/log/kolla/heat/heat-api-access.log
+2021-05-25T22:46:53.179695821Z  INFO:__main__:Setting permission for /var/log/kolla/heat/heat-api-error.log
+2021-05-25T22:46:53.179736700Z  INFO:__main__:Setting permission for /var/log/kolla/heat/heat-api-cfn-access.log
+2021-05-25T22:46:53.179790030Z  INFO:__main__:Setting permission for /var/log/kolla/heat/apache-access.log
+2021-05-25T22:46:53.179833191Z  INFO:__main__:Setting permission for /var/log/kolla/heat/apache-cfn-error.log
+2021-05-25T22:46:53.185159142Z  ++ cat /run_command
+2021-05-25T22:46:53.186281748Z  + CMD=heat-engine
+2021-05-25T22:46:53.186296196Z  + ARGS=
+2021-05-25T22:46:53.186320359Z  + sudo kolla_copy_cacerts
+2021-05-25T22:46:53.194177674Z  + [[ ! -n '' ]]
+2021-05-25T22:46:53.194201555Z  + . kolla_extend_start
+2021-05-25T22:46:53.194333983Z  ++ [[ ! -d /var/log/kolla/heat ]]
+2021-05-25T22:46:53.194641599Z  +++ stat -c %a /var/log/kolla/heat
+2021-05-25T22:46:53.196021817Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:46:53.196082171Z  ++ chmod 755 /var/log/kolla/heat
+2021-05-25T22:46:53.197108393Z  ++ . /usr/local/bin/kolla_heat_extend_start
+2021-05-25T22:46:53.197193138Z  + echo 'Running command: '\''heat-engine'\'''
+2021-05-25T22:46:53.197261943Z  + exec heat-engine

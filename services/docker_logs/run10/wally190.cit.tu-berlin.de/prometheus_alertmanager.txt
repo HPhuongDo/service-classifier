@@ -1,0 +1,30 @@
+2021-05-26T02:06:13.633928854Z  + sudo -E kolla_set_configs
+2021-05-26T02:06:13.676413534Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T02:06:13.676804513Z  INFO:__main__:Validating config file
+2021-05-26T02:06:13.676845243Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T02:06:13.676862698Z  INFO:__main__:Copying service configuration files
+2021-05-26T02:06:13.677182765Z  INFO:__main__:Copying /var/lib/kolla/config_files/prometheus-alertmanager.yml to /etc/prometheus/alertmanager.yml
+2021-05-26T02:06:13.677778010Z  INFO:__main__:Setting permission for /etc/prometheus/alertmanager.yml
+2021-05-26T02:06:13.677843795Z  INFO:__main__:Writing out command to execute
+2021-05-26T02:06:13.678209775Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus
+2021-05-26T02:06:13.683592333Z  ++ cat /run_command
+2021-05-26T02:06:13.684330287Z  + CMD='/opt/prometheus_alertmanager/alertmanager --config.file=/etc/prometheus/alertmanager.yml --web.listen-address=130.149.249.200:9093 --web.external-url=http://130.149.249.200:9093  --storage.path /var/lib/prometheus'
+2021-05-26T02:06:13.684344817Z  + ARGS=
+2021-05-26T02:06:13.684349023Z  + sudo kolla_copy_cacerts
+2021-05-26T02:06:13.690386531Z  + [[ ! -n '' ]]
+2021-05-26T02:06:13.690410716Z  + . kolla_extend_start
+2021-05-26T02:06:13.690443408Z  ++ [[ ! -d /var/log/kolla/prometheus ]]
+2021-05-26T02:06:13.690798061Z  +++ stat -c %a /var/log/kolla/prometheus
+2021-05-26T02:06:13.691755513Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T02:06:13.691768962Z  ++ chmod 755 /var/log/kolla/prometheus
+2021-05-26T02:06:13.692539507Z  + echo 'Running command: '\''/opt/prometheus_alertmanager/alertmanager --config.file=/etc/prometheus/alertmanager.yml --web.listen-address=130.149.249.200:9093 --web.external-url=http://130.149.249.200:9093  --storage.path /var/lib/prometheus'\'''
+2021-05-26T02:06:13.693758689Z  + exec /opt/prometheus_alertmanager/alertmanager --config.file=/etc/prometheus/alertmanager.yml --web.listen-address=130.149.249.200:9093 --web.external-url=http://130.149.249.200:9093 --storage.path /var/lib/prometheus
+2021-05-26T02:06:13.753670215Z  level=info ts=2021-05-26T02:06:13.753Z caller=main.go:231 msg="Starting Alertmanager" version="(version=0.20.0, branch=HEAD, revision=f74be0400a6243d10bb53812d6fa408ad71ff32d)"
+2021-05-26T02:06:13.753705138Z  level=info ts=2021-05-26T02:06:13.753Z caller=main.go:232 build_context="(go=go1.13.5, user=root@00c3106655f8, date=20191211-14:13:14)"
+2021-05-26T02:06:13.756503824Z  level=info ts=2021-05-26T02:06:13.756Z caller=cluster.go:161 component=cluster msg="setting advertise address explicitly" addr=10.0.42.190 port=9094
+2021-05-26T02:06:13.757511702Z  level=info ts=2021-05-26T02:06:13.757Z caller=cluster.go:623 component=cluster msg="Waiting for gossip to settle..." interval=2s
+2021-05-26T02:06:13.787223209Z  level=info ts=2021-05-26T02:06:13.787Z caller=coordinator.go:119 component=configuration msg="Loading configuration file" file=/etc/prometheus/alertmanager.yml
+2021-05-26T02:06:13.787505195Z  level=info ts=2021-05-26T02:06:13.787Z caller=coordinator.go:131 component=configuration msg="Completed loading of configuration file" file=/etc/prometheus/alertmanager.yml
+2021-05-26T02:06:13.791481202Z  level=info ts=2021-05-26T02:06:13.791Z caller=main.go:497 msg=Listening address=130.149.249.200:9093
+2021-05-26T02:06:15.757775129Z  level=info ts=2021-05-26T02:06:15.757Z caller=cluster.go:648 component=cluster msg="gossip not settled" polls=0 before=0 now=1 elapsed=2.000124507s
+2021-05-26T02:06:23.758340438Z  level=info ts=2021-05-26T02:06:23.758Z caller=cluster.go:640 component=cluster msg="gossip settled; proceeding" elapsed=10.000703561s

@@ -1,0 +1,43 @@
+2021-05-25T22:28:35.302493812Z  + sudo -E kolla_set_configs
+2021-05-25T22:28:35.347899304Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:28:35.348167554Z  INFO:__main__:Validating config file
+2021-05-25T22:28:35.348188581Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:28:35.348276368Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:28:35.348367302Z  INFO:__main__:Deleting /etc/td-agent/td-agent.conf
+2021-05-25T22:28:35.348575332Z  INFO:__main__:Copying /var/lib/kolla/config_files/td-agent.conf to /etc/td-agent/td-agent.conf
+2021-05-25T22:28:35.349100211Z  INFO:__main__:Setting permission for /etc/td-agent/td-agent.conf
+2021-05-25T22:28:35.349172312Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:28:35.349562121Z  INFO:__main__:Setting permission for /var/lib/fluentd/data
+2021-05-25T22:28:35.354607727Z  ++ cat /run_command
+2021-05-25T22:28:35.355613061Z  + CMD='/usr/sbin/td-agent -o /var/log/kolla/fluentd/fluentd.log'
+2021-05-25T22:28:35.355631892Z  + ARGS=
+2021-05-25T22:28:35.355640552Z  + sudo kolla_copy_cacerts
+2021-05-25T22:28:35.362344328Z  + [[ ! -n '' ]]
+2021-05-25T22:28:35.362368147Z  + . kolla_extend_start
+2021-05-25T22:28:35.362629494Z  ++ [[ x86_64 == \x\8\6\_\6\4 ]]
+2021-05-25T22:28:35.362643605Z  ++ [[ ubuntu != \d\e\b\i\a\n ]]
+2021-05-25T22:28:35.362652332Z  ++ USERGROUP=td-agent:kolla
+2021-05-25T22:28:35.362659523Z  ++ FLUENTD=td-agent
+2021-05-25T22:28:35.362667031Z  ++ '[' '!' -d /var/log/kolla ']'
+2021-05-25T22:28:35.363127620Z  +++ stat -c %U:%G /var/log/kolla
+2021-05-25T22:28:35.364762559Z  ++ [[ root:kolla != \t\d\-\a\g\e\n\t\:\k\o\l\l\a ]]
+2021-05-25T22:28:35.364783481Z  ++ sudo chown td-agent:kolla /var/log/kolla
+2021-05-25T22:28:35.370802192Z  +++ stat -c %a /var/log/kolla
+2021-05-25T22:28:35.372315749Z  ++ [[ 2775 != \2\7\7\5 ]]
+2021-05-25T22:28:35.372367678Z  ++ [[ -d /var/lib/td-agent ]]
+2021-05-25T22:28:35.372822647Z  +++ stat -c %U:%G /var/lib/td-agent
+2021-05-25T22:28:35.374934886Z  ++ [[ td-agent:td-agent != \t\d\-\a\g\e\n\t\:\k\o\l\l\a ]]
+2021-05-25T22:28:35.374954663Z  ++ sudo chown td-agent:kolla /var/lib/td-agent
+2021-05-25T22:28:35.381870425Z  + echo 'Running command: '\''/usr/sbin/td-agent -o /var/log/kolla/fluentd/fluentd.log'\'''
+2021-05-25T22:28:35.381900613Z  + exec /usr/sbin/td-agent -o /var/log/kolla/fluentd/fluentd.log
+2021-05-25T22:37:24.347679153Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:37:25.466359436Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:41:23.585565070Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:46:22.726440548Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:48:14.064640426Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:48:23.157055154Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:48:39.239072947Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:49:26.293618625Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:49:53.367872578Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:50:32.424874408Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:50:55.465864571Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."

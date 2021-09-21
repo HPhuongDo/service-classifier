@@ -1,0 +1,70 @@
+2021-05-25T22:28:35.671580261Z  + sudo -E kolla_set_configs
+2021-05-25T22:28:35.722314865Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:28:35.722563964Z  INFO:__main__:Validating config file
+2021-05-25T22:28:35.722589949Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:28:35.722612363Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:28:35.722700249Z  INFO:__main__:Deleting /etc/td-agent/td-agent.conf
+2021-05-25T22:28:35.722877126Z  INFO:__main__:Copying /var/lib/kolla/config_files/td-agent.conf to /etc/td-agent/td-agent.conf
+2021-05-25T22:28:35.723419769Z  INFO:__main__:Setting permission for /etc/td-agent/td-agent.conf
+2021-05-25T22:28:35.723433531Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:28:35.723948994Z  INFO:__main__:Setting permission for /var/lib/fluentd/data
+2021-05-25T22:28:35.728968018Z  ++ cat /run_command
+2021-05-25T22:28:35.729891476Z  + CMD='/usr/sbin/td-agent -o /var/log/kolla/fluentd/fluentd.log'
+2021-05-25T22:28:35.729909653Z  + ARGS=
+2021-05-25T22:28:35.729916800Z  + sudo kolla_copy_cacerts
+2021-05-25T22:28:35.738913130Z  + [[ ! -n '' ]]
+2021-05-25T22:28:35.738952681Z  + . kolla_extend_start
+2021-05-25T22:28:35.739097264Z  ++ [[ x86_64 == \x\8\6\_\6\4 ]]
+2021-05-25T22:28:35.739110934Z  ++ [[ ubuntu != \d\e\b\i\a\n ]]
+2021-05-25T22:28:35.739116677Z  ++ USERGROUP=td-agent:kolla
+2021-05-25T22:28:35.739123907Z  ++ FLUENTD=td-agent
+2021-05-25T22:28:35.739176286Z  ++ '[' '!' -d /var/log/kolla ']'
+2021-05-25T22:28:35.739603460Z  +++ stat -c %U:%G /var/log/kolla
+2021-05-25T22:28:35.741475105Z  ++ [[ root:kolla != \t\d\-\a\g\e\n\t\:\k\o\l\l\a ]]
+2021-05-25T22:28:35.741503161Z  ++ sudo chown td-agent:kolla /var/log/kolla
+2021-05-25T22:28:35.748864506Z  +++ stat -c %a /var/log/kolla
+2021-05-25T22:28:35.749686164Z  ++ [[ 2775 != \2\7\7\5 ]]
+2021-05-25T22:28:35.749702817Z  ++ [[ -d /var/lib/td-agent ]]
+2021-05-25T22:28:35.750001364Z  +++ stat -c %U:%G /var/lib/td-agent
+2021-05-25T22:28:35.750981367Z  ++ [[ td-agent:td-agent != \t\d\-\a\g\e\n\t\:\k\o\l\l\a ]]
+2021-05-25T22:28:35.750996478Z  ++ sudo chown td-agent:kolla /var/lib/td-agent
+2021-05-25T22:28:35.756972532Z  + echo 'Running command: '\''/usr/sbin/td-agent -o /var/log/kolla/fluentd/fluentd.log'\'''
+2021-05-25T22:28:35.757004108Z  + exec /usr/sbin/td-agent -o /var/log/kolla/fluentd/fluentd.log
+2021-05-25T22:37:24.349096988Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:37:25.467898659Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:37:46.717390585Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:37:49.191857582Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:39:43.256116581Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:40:32.523121769Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:40:53.610992858Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:41:23.698940720Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:41:24.776636643Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:45:23.891006834Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:45:25.081277255Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:46:06.191181346Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:46:24.286260465Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:46:51.422510139Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:47:11.482308529Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:47:23.554313468Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:47:39.314377482Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:47:58.428574572Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:48:14.177953266Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:48:24.263391114Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:48:25.350772955Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:48:30.394831005Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:48:55.583779938Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:48:56.678807824Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:49:12.759030686Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:49:27.877294671Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:49:43.925844647Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:49:59.059358050Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:50:05.138344915Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:50:15.270212901Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:50:36.306885543Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:50:48.452043212Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:50:56.541077463Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:51:06.597227748Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:51:15.034765040Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:51:22.072186734Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:51:31.138626251Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-25T22:51:47.229636067Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."

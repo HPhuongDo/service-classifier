@@ -1,0 +1,41 @@
+2021-05-26T02:26:16.040682893Z  + sudo -E kolla_set_configs
+2021-05-26T02:26:16.088314372Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T02:26:16.088360937Z  INFO:__main__:Validating config file
+2021-05-26T02:26:16.088380919Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T02:26:16.088407560Z  INFO:__main__:Copying service configuration files
+2021-05-26T02:26:16.088503522Z  INFO:__main__:Deleting /etc/ssh/sshd_config
+2021-05-26T02:26:16.088740485Z  INFO:__main__:Copying /var/lib/kolla/config_files/sshd_config to /etc/ssh/sshd_config
+2021-05-26T02:26:16.089287778Z  INFO:__main__:Setting permission for /etc/ssh/sshd_config
+2021-05-26T02:26:16.089602364Z  INFO:__main__:Copying /var/lib/kolla/config_files/ssh_config to /var/lib/nova/.ssh/config
+2021-05-26T02:26:16.089869978Z  INFO:__main__:Setting permission for /var/lib/nova/.ssh/config
+2021-05-26T02:26:16.089990114Z  INFO:__main__:Copying /var/lib/kolla/config_files/id_rsa to /var/lib/nova/.ssh/id_rsa
+2021-05-26T02:26:16.090183746Z  INFO:__main__:Setting permission for /var/lib/nova/.ssh/id_rsa
+2021-05-26T02:26:16.090298039Z  INFO:__main__:Copying /var/lib/kolla/config_files/id_rsa.pub to /var/lib/nova/.ssh/authorized_keys
+2021-05-26T02:26:16.090508307Z  INFO:__main__:Setting permission for /var/lib/nova/.ssh/authorized_keys
+2021-05-26T02:26:16.090564839Z  INFO:__main__:Writing out command to execute
+2021-05-26T02:26:16.096252843Z  ++ cat /run_command
+2021-05-26T02:26:16.097112258Z  + CMD='/usr/sbin/sshd -D'
+2021-05-26T02:26:16.097778536Z  + ARGS=
+2021-05-26T02:26:16.097787369Z  + sudo kolla_copy_cacerts
+2021-05-26T02:26:16.105733062Z  + [[ ! -n '' ]]
+2021-05-26T02:26:16.105759824Z  + . kolla_extend_start
+2021-05-26T02:26:16.105764705Z  ++ SSH_HOST_KEY_TYPES=("rsa" "dsa" "ecdsa" "ed25519")
+2021-05-26T02:26:16.105855350Z  ++ for key_type in ${SSH_HOST_KEY_TYPES[@]}
+2021-05-26T02:26:16.105870355Z  ++ KEY_PATH=/etc/ssh/ssh_host_rsa_key
+2021-05-26T02:26:16.105877869Z  ++ [[ ! -f /etc/ssh/ssh_host_rsa_key ]]
+2021-05-26T02:26:16.105884511Z  ++ for key_type in ${SSH_HOST_KEY_TYPES[@]}
+2021-05-26T02:26:16.105888973Z  ++ KEY_PATH=/etc/ssh/ssh_host_dsa_key
+2021-05-26T02:26:16.105893010Z  ++ [[ ! -f /etc/ssh/ssh_host_dsa_key ]]
+2021-05-26T02:26:16.105907460Z  ++ ssh-keygen -q -t dsa -f /etc/ssh/ssh_host_dsa_key -N ''
+2021-05-26T02:26:16.275457372Z  ++ for key_type in ${SSH_HOST_KEY_TYPES[@]}
+2021-05-26T02:26:16.275484725Z  ++ KEY_PATH=/etc/ssh/ssh_host_ecdsa_key
+2021-05-26T02:26:16.275493837Z  ++ [[ ! -f /etc/ssh/ssh_host_ecdsa_key ]]
+2021-05-26T02:26:16.275501397Z  ++ for key_type in ${SSH_HOST_KEY_TYPES[@]}
+2021-05-26T02:26:16.275506310Z  ++ KEY_PATH=/etc/ssh/ssh_host_ed25519_key
+2021-05-26T02:26:16.275511022Z  ++ [[ ! -f /etc/ssh/ssh_host_ed25519_key ]]
+2021-05-26T02:26:16.275530790Z  ++ mkdir -p /var/lib/nova/.ssh
+2021-05-26T02:26:16.277334080Z  +++ stat -c %U:%G /var/lib/nova/.ssh
+2021-05-26T02:26:16.278884873Z  ++ [[ root:root != \n\o\v\a\:\n\o\v\a ]]
+2021-05-26T02:26:16.278902461Z  ++ chown nova: /var/lib/nova/.ssh
+2021-05-26T02:26:16.279857640Z  + echo 'Running command: '\''/usr/sbin/sshd -D'\'''
+2021-05-26T02:26:16.279866273Z  + exec /usr/sbin/sshd -D

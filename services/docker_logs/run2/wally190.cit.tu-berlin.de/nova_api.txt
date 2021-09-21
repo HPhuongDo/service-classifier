@@ -1,0 +1,196 @@
+2021-05-25T22:11:13.410353973Z  + sudo -E kolla_set_configs
+2021-05-25T22:11:13.453764556Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:11:13.453864671Z  INFO:__main__:Validating config file
+2021-05-25T22:11:13.453895530Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:11:13.453952673Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:11:13.454080343Z  INFO:__main__:Deleting /etc/nova/nova.conf
+2021-05-25T22:11:13.454279241Z  INFO:__main__:Copying /var/lib/kolla/config_files/nova.conf to /etc/nova/nova.conf
+2021-05-25T22:11:13.454782413Z  INFO:__main__:Setting permission for /etc/nova/nova.conf
+2021-05-25T22:11:13.454907200Z  INFO:__main__:Copying /var/lib/kolla/config_files/nova-api-wsgi.conf to /etc/apache2/conf-enabled/nova-api-wsgi.conf
+2021-05-25T22:11:13.455261807Z  INFO:__main__:Setting permission for /etc/apache2/conf-enabled/nova-api-wsgi.conf
+2021-05-25T22:11:13.455333319Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:11:13.455564633Z  INFO:__main__:Setting permission for /var/log/kolla/nova
+2021-05-25T22:11:13.455658670Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-scheduler.log
+2021-05-25T22:11:13.455745175Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-manage.log
+2021-05-25T22:11:13.461380876Z  ++ cat /run_command
+2021-05-25T22:11:13.462089076Z  + CMD='/usr/sbin/apache2 -DFOREGROUND'
+2021-05-25T22:11:13.462103751Z  + ARGS=
+2021-05-25T22:11:13.462118160Z  + sudo kolla_copy_cacerts
+2021-05-25T22:11:13.471554097Z  + [[ ! -n '' ]]
+2021-05-25T22:11:13.471593980Z  + . kolla_extend_start
+2021-05-25T22:11:13.471647302Z  ++ [[ ! -d /var/log/kolla/nova ]]
+2021-05-25T22:11:13.472040430Z  +++ stat -c %a /var/log/kolla/nova
+2021-05-25T22:11:13.473179269Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:11:13.473205350Z  ++ chmod 755 /var/log/kolla/nova
+2021-05-25T22:11:13.476552364Z  ++ . /usr/local/bin/kolla_nova_extend_start
+2021-05-25T22:11:13.476657984Z  +++ [[ -n '' ]]
+2021-05-25T22:11:13.476670637Z  +++ [[ -n '' ]]
+2021-05-25T22:11:13.476706898Z  +++ [[ -n '' ]]
+2021-05-25T22:11:13.476715502Z  +++ . /usr/local/bin/kolla_httpd_setup
+2021-05-25T22:11:13.477214259Z  +++++ whoami
+2021-05-25T22:11:13.478126139Z  ++++ [[ root == \r\o\o\t ]]
+2021-05-25T22:11:13.478145791Z  ++++ [[ ubuntu =~ debian|ubuntu ]]
+2021-05-25T22:11:13.478159354Z  ++++ APACHE_CONFDIR=
+2021-05-25T22:11:13.478165570Z  ++++ . /etc/apache2/envvars
+2021-05-25T22:11:13.478267483Z  +++++ unset HOME
+2021-05-25T22:11:13.478311213Z  +++++ '[' '' '!=' '' ']'
+2021-05-25T22:11:13.478320348Z  +++++ SUFFIX=
+2021-05-25T22:11:13.478369027Z  +++++ export APACHE_RUN_USER=www-data
+2021-05-25T22:11:13.478393269Z  +++++ APACHE_RUN_USER=www-data
+2021-05-25T22:11:13.478400070Z  +++++ export APACHE_RUN_GROUP=www-data
+2021-05-25T22:11:13.478403950Z  +++++ APACHE_RUN_GROUP=www-data
+2021-05-25T22:11:13.478420752Z  +++++ export APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-25T22:11:13.478432810Z  +++++ APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-25T22:11:13.478453186Z  +++++ export APACHE_RUN_DIR=/var/run/apache2
+2021-05-25T22:11:13.478461285Z  +++++ APACHE_RUN_DIR=/var/run/apache2
+2021-05-25T22:11:13.478467963Z  +++++ export APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-25T22:11:13.478472293Z  +++++ APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-25T22:11:13.478497539Z  +++++ export APACHE_LOG_DIR=/var/log/apache2
+2021-05-25T22:11:13.478505980Z  +++++ APACHE_LOG_DIR=/var/log/apache2
+2021-05-25T22:11:13.478512471Z  +++++ export LANG=C
+2021-05-25T22:11:13.478531086Z  +++++ LANG=C
+2021-05-25T22:11:13.478553542Z  +++++ export LANG
+2021-05-25T22:11:13.478641663Z  ++++ install -d /var/run/apache2/
+2021-05-25T22:11:13.480182395Z  ++++ rm -rf '/var/run/apache2/*'
+2021-05-25T22:11:13.480878341Z  ++++ [[ ubuntu = centos ]]
+2021-05-25T22:11:13.480928430Z  + echo 'Running command: '\''/usr/sbin/apache2 -DFOREGROUND'\'''
+2021-05-25T22:11:13.480962473Z  + exec /usr/sbin/apache2 -DFOREGROUND
+2021-05-25T22:11:13.500321022Z  AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 130.149.249.200. Set the 'ServerName' directive globally to suppress this message
+2021-05-25T22:19:36.143145430Z  + sudo -E kolla_set_configs
+2021-05-25T22:19:36.208984885Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:19:36.209096621Z  INFO:__main__:Validating config file
+2021-05-25T22:19:36.209157377Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:19:36.209214665Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:19:36.209335835Z  INFO:__main__:Deleting /etc/nova/nova.conf
+2021-05-25T22:19:36.209733358Z  INFO:__main__:Copying /var/lib/kolla/config_files/nova.conf to /etc/nova/nova.conf
+2021-05-25T22:19:36.210503340Z  INFO:__main__:Setting permission for /etc/nova/nova.conf
+2021-05-25T22:19:36.210626742Z  INFO:__main__:Deleting /etc/apache2/conf-enabled/nova-api-wsgi.conf
+2021-05-25T22:19:36.210758401Z  INFO:__main__:Copying /var/lib/kolla/config_files/nova-api-wsgi.conf to /etc/apache2/conf-enabled/nova-api-wsgi.conf
+2021-05-25T22:19:36.211065214Z  INFO:__main__:Setting permission for /etc/apache2/conf-enabled/nova-api-wsgi.conf
+2021-05-25T22:19:36.211159284Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:19:36.211501060Z  INFO:__main__:Setting permission for /var/log/kolla/nova
+2021-05-25T22:19:36.211641215Z  INFO:__main__:Setting permission for /var/log/kolla/nova/apache-error.log
+2021-05-25T22:19:36.211715172Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-metadata-access.log
+2021-05-25T22:19:36.211817260Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-metadata-error.log
+2021-05-25T22:19:36.211886090Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-scheduler.log
+2021-05-25T22:19:36.211947322Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-api-error.log
+2021-05-25T22:19:36.212022255Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-api-wsgi.log
+2021-05-25T22:19:36.212089001Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-metadata-wsgi.log
+2021-05-25T22:19:36.212165598Z  INFO:__main__:Setting permission for /var/log/kolla/nova/apache-access.log
+2021-05-25T22:19:36.212230177Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-api-access.log
+2021-05-25T22:19:36.212307026Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-conductor.log
+2021-05-25T22:19:36.212363633Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-novncproxy.log
+2021-05-25T22:19:36.212435205Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-manage.log
+2021-05-25T22:19:36.221572460Z  ++ cat /run_command
+2021-05-25T22:19:36.222284075Z  + CMD='/usr/sbin/apache2 -DFOREGROUND'
+2021-05-25T22:19:36.222308356Z  + ARGS=
+2021-05-25T22:19:36.222319784Z  + sudo kolla_copy_cacerts
+2021-05-25T22:19:36.230760683Z  + [[ ! -n '' ]]
+2021-05-25T22:19:36.230787686Z  + . kolla_extend_start
+2021-05-25T22:19:36.230830051Z  ++ [[ ! -d /var/log/kolla/nova ]]
+2021-05-25T22:19:36.231147466Z  +++ stat -c %a /var/log/kolla/nova
+2021-05-25T22:19:36.232288870Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:19:36.232300528Z  ++ chmod 755 /var/log/kolla/nova
+2021-05-25T22:19:36.233136880Z  ++ . /usr/local/bin/kolla_nova_extend_start
+2021-05-25T22:19:36.233239674Z  +++ [[ -n '' ]]
+2021-05-25T22:19:36.233264636Z  +++ [[ -n '' ]]
+2021-05-25T22:19:36.233289876Z  +++ [[ -n '' ]]
+2021-05-25T22:19:36.233315265Z  +++ . /usr/local/bin/kolla_httpd_setup
+2021-05-25T22:19:36.233775547Z  +++++ whoami
+2021-05-25T22:19:36.234495727Z  ++++ [[ root == \r\o\o\t ]]
+2021-05-25T22:19:36.234509190Z  ++++ [[ ubuntu =~ debian|ubuntu ]]
+2021-05-25T22:19:36.234546995Z  ++++ APACHE_CONFDIR=
+2021-05-25T22:19:36.234559057Z  ++++ . /etc/apache2/envvars
+2021-05-25T22:19:36.234602497Z  +++++ unset HOME
+2021-05-25T22:19:36.234683937Z  +++++ '[' '' '!=' '' ']'
+2021-05-25T22:19:36.234729077Z  +++++ SUFFIX=
+2021-05-25T22:19:36.234738996Z  +++++ export APACHE_RUN_USER=www-data
+2021-05-25T22:19:36.234761015Z  +++++ APACHE_RUN_USER=www-data
+2021-05-25T22:19:36.234772344Z  +++++ export APACHE_RUN_GROUP=www-data
+2021-05-25T22:19:36.234780539Z  +++++ APACHE_RUN_GROUP=www-data
+2021-05-25T22:19:36.234787443Z  +++++ export APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-25T22:19:36.234793859Z  +++++ APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-25T22:19:36.234800863Z  +++++ export APACHE_RUN_DIR=/var/run/apache2
+2021-05-25T22:19:36.234807280Z  +++++ APACHE_RUN_DIR=/var/run/apache2
+2021-05-25T22:19:36.234830767Z  +++++ export APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-25T22:19:36.234839126Z  +++++ APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-25T22:19:36.234867901Z  +++++ export APACHE_LOG_DIR=/var/log/apache2
+2021-05-25T22:19:36.234875537Z  +++++ APACHE_LOG_DIR=/var/log/apache2
+2021-05-25T22:19:36.234883845Z  +++++ export LANG=C
+2021-05-25T22:19:36.234895838Z  +++++ LANG=C
+2021-05-25T22:19:36.234942012Z  +++++ export LANG
+2021-05-25T22:19:36.235035523Z  ++++ install -d /var/run/apache2/
+2021-05-25T22:19:36.236716681Z  ++++ rm -rf '/var/run/apache2/*'
+2021-05-25T22:19:36.237509154Z  ++++ [[ ubuntu = centos ]]
+2021-05-25T22:19:36.237574692Z  + echo 'Running command: '\''/usr/sbin/apache2 -DFOREGROUND'\'''
+2021-05-25T22:19:36.237618287Z  + exec /usr/sbin/apache2 -DFOREGROUND
+2021-05-25T22:19:36.262301969Z  AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 130.149.249.200. Set the 'ServerName' directive globally to suppress this message
+2021-05-25T22:21:34.533264864Z  + sudo -E kolla_set_configs
+2021-05-25T22:21:34.574312173Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:21:34.574385170Z  INFO:__main__:Validating config file
+2021-05-25T22:21:34.574427947Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:21:34.574469016Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:21:34.574576977Z  INFO:__main__:Deleting /etc/nova/nova.conf
+2021-05-25T22:21:34.574841286Z  INFO:__main__:Copying /var/lib/kolla/config_files/nova.conf to /etc/nova/nova.conf
+2021-05-25T22:21:34.575500725Z  INFO:__main__:Setting permission for /etc/nova/nova.conf
+2021-05-25T22:21:34.575678310Z  INFO:__main__:Deleting /etc/apache2/conf-enabled/nova-api-wsgi.conf
+2021-05-25T22:21:34.575787973Z  INFO:__main__:Copying /var/lib/kolla/config_files/nova-api-wsgi.conf to /etc/apache2/conf-enabled/nova-api-wsgi.conf
+2021-05-25T22:21:34.576011134Z  INFO:__main__:Setting permission for /etc/apache2/conf-enabled/nova-api-wsgi.conf
+2021-05-25T22:21:34.576091322Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:21:34.576359927Z  INFO:__main__:Setting permission for /var/log/kolla/nova
+2021-05-25T22:21:34.576474980Z  INFO:__main__:Setting permission for /var/log/kolla/nova/apache-error.log
+2021-05-25T22:21:34.576530030Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-metadata-access.log
+2021-05-25T22:21:34.576602224Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-metadata-error.log
+2021-05-25T22:21:34.576655856Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-scheduler.log
+2021-05-25T22:21:34.576714751Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-api-error.log
+2021-05-25T22:21:34.576767258Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-api-wsgi.log
+2021-05-25T22:21:34.576830951Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-metadata-wsgi.log
+2021-05-25T22:21:34.576880342Z  INFO:__main__:Setting permission for /var/log/kolla/nova/apache-access.log
+2021-05-25T22:21:34.576937487Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-api-access.log
+2021-05-25T22:21:34.576990129Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-conductor.log
+2021-05-25T22:21:34.577047730Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-novncproxy.log
+2021-05-25T22:21:34.577095847Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-manage.log
+2021-05-25T22:21:34.583102292Z  ++ cat /run_command
+2021-05-25T22:21:34.583821784Z  + CMD='/usr/sbin/apache2 -DFOREGROUND'
+2021-05-25T22:21:34.583841649Z  + ARGS=
+2021-05-25T22:21:34.583860886Z  + sudo kolla_copy_cacerts
+2021-05-25T22:21:34.591163158Z  + [[ ! -n '' ]]
+2021-05-25T22:21:34.591198219Z  + . kolla_extend_start
+2021-05-25T22:21:34.591224310Z  ++ [[ ! -d /var/log/kolla/nova ]]
+2021-05-25T22:21:34.591548088Z  +++ stat -c %a /var/log/kolla/nova
+2021-05-25T22:21:34.592653707Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:21:34.592664845Z  ++ chmod 755 /var/log/kolla/nova
+2021-05-25T22:21:34.593450482Z  ++ . /usr/local/bin/kolla_nova_extend_start
+2021-05-25T22:21:34.593563249Z  +++ [[ -n '' ]]
+2021-05-25T22:21:34.593576177Z  +++ [[ -n '' ]]
+2021-05-25T22:21:34.593606557Z  +++ [[ -n '' ]]
+2021-05-25T22:21:34.593650011Z  +++ . /usr/local/bin/kolla_httpd_setup
+2021-05-25T22:21:34.594169327Z  +++++ whoami
+2021-05-25T22:21:34.594959709Z  ++++ [[ root == \r\o\o\t ]]
+2021-05-25T22:21:34.594970851Z  ++++ [[ ubuntu =~ debian|ubuntu ]]
+2021-05-25T22:21:34.595021128Z  ++++ APACHE_CONFDIR=
+2021-05-25T22:21:34.595028047Z  ++++ . /etc/apache2/envvars
+2021-05-25T22:21:34.595102970Z  +++++ unset HOME
+2021-05-25T22:21:34.595176235Z  +++++ '[' '' '!=' '' ']'
+2021-05-25T22:21:34.595184060Z  +++++ SUFFIX=
+2021-05-25T22:21:34.595217090Z  +++++ export APACHE_RUN_USER=www-data
+2021-05-25T22:21:34.595225439Z  +++++ APACHE_RUN_USER=www-data
+2021-05-25T22:21:34.595253411Z  +++++ export APACHE_RUN_GROUP=www-data
+2021-05-25T22:21:34.595259249Z  +++++ APACHE_RUN_GROUP=www-data
+2021-05-25T22:21:34.595292783Z  +++++ export APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-25T22:21:34.595301367Z  +++++ APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-25T22:21:34.595324245Z  +++++ export APACHE_RUN_DIR=/var/run/apache2
+2021-05-25T22:21:34.595332178Z  +++++ APACHE_RUN_DIR=/var/run/apache2
+2021-05-25T22:21:34.595364705Z  +++++ export APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-25T22:21:34.595374048Z  +++++ APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-25T22:21:34.595383924Z  +++++ export APACHE_LOG_DIR=/var/log/apache2
+2021-05-25T22:21:34.595387738Z  +++++ APACHE_LOG_DIR=/var/log/apache2
+2021-05-25T22:21:34.595399374Z  +++++ export LANG=C
+2021-05-25T22:21:34.595404974Z  +++++ LANG=C
+2021-05-25T22:21:34.595442863Z  +++++ export LANG
+2021-05-25T22:21:34.595526428Z  ++++ install -d /var/run/apache2/
+2021-05-25T22:21:34.596958310Z  ++++ rm -rf '/var/run/apache2/*'
+2021-05-25T22:21:34.597599027Z  ++++ [[ ubuntu = centos ]]
+2021-05-25T22:21:34.597651909Z  + echo 'Running command: '\''/usr/sbin/apache2 -DFOREGROUND'\'''
+2021-05-25T22:21:34.597695600Z  + exec /usr/sbin/apache2 -DFOREGROUND
+2021-05-25T22:21:34.622420952Z  AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 130.149.249.200. Set the 'ServerName' directive globally to suppress this message

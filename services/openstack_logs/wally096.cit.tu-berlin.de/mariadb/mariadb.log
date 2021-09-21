@@ -1,0 +1,1033 @@
+2021-06-09 14:04:46 6 [Warning] Failed to load slave replication state from table mysql.gtid_slave_pos: 1017: Can't find file: './mysql/' (errno: 2 "No such file or directory")
+210609 14:04:53 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql/
+2021-06-09 14:04:53 0 [Note] /usr/sbin/mysqld (mysqld 10.3.29-MariaDB-1:10.3.29+maria~focal-log) starting as process 276 ...
+2021-06-09 14:04:53 0 [Note] InnoDB: Using Linux native AIO
+2021-06-09 14:04:53 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-06-09 14:04:53 0 [Note] InnoDB: Uses event mutexes
+2021-06-09 14:04:53 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-06-09 14:04:53 0 [Note] InnoDB: Number of pools: 1
+2021-06-09 14:04:53 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2021-06-09 14:04:53 0 [Note] InnoDB: Initializing buffer pool, total size = 7G, instances = 8, chunk size = 128M
+2021-06-09 14:04:53 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-06-09 14:04:53 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-06-09 14:04:54 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2021-06-09 14:04:54 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-06-09 14:04:54 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-06-09 14:04:54 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2021-06-09 14:04:54 0 [Note] InnoDB: 10.3.29 started; log sequence number 1625595; transaction id 20
+2021-06-09 14:04:54 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2021-06-09 14:04:54 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-06-09 14:04:54 0 [Note] InnoDB: Buffer pool(s) load completed at 210609 14:04:54
+2021-06-09 14:04:54 0 [Note] Reading of all Master_info entries succeeded
+2021-06-09 14:04:54 0 [Note] Added new Master_info '' to hash table
+2021-06-09 14:04:54 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '10.3.29-MariaDB-1:10.3.29+maria~focal-log'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  mariadb.org binary distribution
+2021-06-09 14:04:54 0 [Note] /usr/sbin/mysqld (initiated by: root[root] @ localhost []): Normal shutdown
+2021-06-09 14:04:54 0 [Note] Event Scheduler: Purging the queue. 0 events
+2021-06-09 14:04:54 0 [Note] InnoDB: FTS optimize thread exiting.
+2021-06-09 14:04:54 0 [Note] InnoDB: Starting shutdown...
+2021-06-09 14:04:54 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2021-06-09 14:04:54 0 [Note] InnoDB: Buffer pool(s) dump completed at 210609 14:04:54
+2021-06-09 14:04:56 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2021-06-09 14:04:56 0 [Note] InnoDB: Shutdown completed; log sequence number 1625620; transaction id 23
+2021-06-09 14:04:56 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+210609 14:04:56 mysqld_safe mysqld from pid file /var/lib/mysql/mariadb.pid ended
+210609 14:05:03 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql/
+210609 14:05:03 mysqld_safe WSREP: Running position recovery with --disable-log-error  --pid-file='/var/lib/mysql//wally096-recover.pid'
+210609 14:05:06 mysqld_safe WSREP: Recovered position 00000000-0000-0000-0000-000000000000:-1
+2021-06-09 14:05:06 0 [Note] WSREP: Read nil XID from storage engines, skipping position init
+2021-06-09 14:05:06 0 [Note] /usr/sbin/mysqld (mysqld 10.3.29-MariaDB-1:10.3.29+maria~focal-log) starting as process 246 ...
+2021-06-09 14:05:06 0 [Note] WSREP: wsrep_load(): loading provider library '/usr/lib/galera/libgalera_smm.so'
+2021-06-09 14:05:06 0 [Note] WSREP: wsrep_load(): Galera 25.3.33(r15123524) by Codership Oy <info@codership.com> loaded successfully.
+2021-06-09 14:05:06 0 [Note] WSREP: CRC-32C: using 64-bit x86 acceleration.
+2021-06-09 14:05:06 0 [Warning] WSREP: Could not open state file for reading: '/var/lib/mysql//grastate.dat'
+2021-06-09 14:05:06 0 [Note] WSREP: Found saved state: 00000000-0000-0000-0000-000000000000:-1, safe_to_bootstrap: 1
+2021-06-09 14:05:06 0 [Note] WSREP: Passing config to GCS: base_dir = /var/lib/mysql/; base_host = 130.149.249.106; base_port = 4567; cert.log_conflicts = no; cert.optimistic_pa = yes; debug = no; evs.auto_evict = 0; evs.delay_margin = PT1S; evs.delayed_keep_period = PT30S; evs.inactive_check_period = PT0.5S; evs.inactive_timeout = PT15S; evs.join_retrans_period = PT1S; evs.max_install_timeouts = 3; evs.send_window = 4; evs.stats_report_period = PT1M; evs.suspect_timeout = PT5S; evs.user_send_window = 2; evs.view_forget_timeout = PT24H; gcache.dir = /var/lib/mysql/; gcache.keep_pages_size = 0; gcache.mem_size = 0; gcache.name = /var/lib/mysql//galera.cache; gcache.page_size = 128M; gcache.recover = no; gcache.size = 128M; gcomm.thread_prio = ; gcs.fc_debug = 0; gcs.fc_factor = 1.0; gcs.fc_limit = 16; gcs.fc_master_slave = no; gcs.max_packet_size = 64500; gcs.max_throttle = 0.25; gcs.recv_q_hard_limit = 9223372036854775807; gcs.recv_q_soft_limit = 0.25; gcs.sync_donor = no; gmcast.listen_addr = tcp://130.149.249.106:4567; gmcast.segment 
+2021-06-09 14:05:06 0 [Note] WSREP: GCache history reset: 00000000-0000-0000-0000-000000000000:0 -> 00000000-0000-0000-0000-000000000000:-1
+2021-06-09 14:05:06 0 [Note] WSREP: Assign initial position for certification: -1, protocol version: -1
+2021-06-09 14:05:06 0 [Note] WSREP: wsrep_sst_grab()
+2021-06-09 14:05:06 0 [Note] WSREP: Start replication
+2021-06-09 14:05:06 0 [Note] WSREP: 'wsrep-new-cluster' option used, bootstrapping the cluster
+2021-06-09 14:05:06 0 [Note] WSREP: Setting initial position to 00000000-0000-0000-0000-000000000000:-1
+2021-06-09 14:05:06 0 [Note] WSREP: protonet asio version 0
+2021-06-09 14:05:06 0 [Note] WSREP: Using CRC-32C for message checksums.
+2021-06-09 14:05:06 0 [Note] WSREP: backend: asio
+2021-06-09 14:05:06 0 [Note] WSREP: gcomm thread scheduling priority set to other:0 
+2021-06-09 14:05:06 0 [Warning] WSREP: access file(/var/lib/mysql//gvwstate.dat) failed(No such file or directory)
+2021-06-09 14:05:06 0 [Note] WSREP: restore pc from disk failed
+2021-06-09 14:05:06 0 [Note] WSREP: GMCast version 0
+2021-06-09 14:05:06 0 [Note] WSREP: (edfb938f, 'tcp://130.149.249.106:4567') listening at tcp://130.149.249.106:4567
+2021-06-09 14:05:06 0 [Note] WSREP: (edfb938f, 'tcp://130.149.249.106:4567') multicast: , ttl: 1
+2021-06-09 14:05:06 0 [Note] WSREP: EVS version 0
+2021-06-09 14:05:06 0 [Note] WSREP: gcomm: bootstrapping new group 'openstack'
+2021-06-09 14:05:06 0 [Note] WSREP: start_prim is enabled, turn off pc_recovery
+2021-06-09 14:05:06 0 [Note] WSREP: Node edfb938f state prim
+2021-06-09 14:05:06 0 [Note] WSREP: view(view_id(PRIM,edfb938f,1) memb {
+	edfb938f,0
+} joined {
+} left {
+} partitioned {
+})
+2021-06-09 14:05:06 0 [Note] WSREP: save pc into disk
+2021-06-09 14:05:06 0 [Note] WSREP: gcomm: connected
+2021-06-09 14:05:06 0 [Note] WSREP: Changing maximum packet size to 64500, resulting msg size: 32636
+2021-06-09 14:05:06 0 [Note] WSREP: Shifting CLOSED -> OPEN (TO: 0)
+2021-06-09 14:05:06 0 [Note] WSREP: Opened channel 'openstack'
+2021-06-09 14:05:06 0 [Note] WSREP: New COMPONENT: primary = yes, bootstrap = no, my_idx = 0, memb_num = 1
+2021-06-09 14:05:06 0 [Note] WSREP: Waiting for SST to complete.
+2021-06-09 14:05:06 0 [Note] WSREP: Starting new group from scratch: ee001a98-c91a-11eb-a897-7bc7ecdb800d
+2021-06-09 14:05:06 0 [Note] WSREP: STATE_EXCHANGE: sent state UUID: ee001d57-c91a-11eb-abcc-0b52df26d549
+2021-06-09 14:05:06 0 [Note] WSREP: STATE EXCHANGE: sent state msg: ee001d57-c91a-11eb-abcc-0b52df26d549
+2021-06-09 14:05:06 0 [Note] WSREP: STATE EXCHANGE: got state msg: ee001d57-c91a-11eb-abcc-0b52df26d549 from 0 (wally096)
+2021-06-09 14:05:06 0 [Note] WSREP: Quorum results:
+	version    = 6,
+	component  = PRIMARY,
+	conf_id    = 0,
+	members    = 1/1 (joined/total),
+	act_id     = 0,
+	last_appl. = -1,
+	protocols  = 0/9/3 (gcs/repl/appl),
+	group UUID = ee001a98-c91a-11eb-a897-7bc7ecdb800d
+2021-06-09 14:05:06 0 [Note] WSREP: Flow-control interval: [16, 16]
+2021-06-09 14:05:06 0 [Note] WSREP: Restored state OPEN -> JOINED (0)
+2021-06-09 14:05:06 0 [Note] WSREP: Member 0.0 (wally096) synced with group.
+2021-06-09 14:05:06 0 [Note] WSREP: Shifting JOINED -> SYNCED (TO: 0)
+2021-06-09 14:05:06 2 [Note] WSREP: REPL Protocols: 9 (4, 2)
+2021-06-09 14:05:06 2 [Note] WSREP: New cluster view: global state: ee001a98-c91a-11eb-a897-7bc7ecdb800d:0, view# 1: Primary, number of nodes: 1, my index: 0, protocol version 3
+2021-06-09 14:05:06 0 [Note] WSREP: SST complete, seqno: 0
+2021-06-09 14:05:06 0 [Note] InnoDB: Using Linux native AIO
+2021-06-09 14:05:06 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-06-09 14:05:06 0 [Note] InnoDB: Uses event mutexes
+2021-06-09 14:05:06 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-06-09 14:05:06 0 [Note] InnoDB: Number of pools: 1
+2021-06-09 14:05:06 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2021-06-09 14:05:06 0 [Note] InnoDB: Initializing buffer pool, total size = 7G, instances = 8, chunk size = 128M
+2021-06-09 14:05:06 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-06-09 14:05:06 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-06-09 14:05:06 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2021-06-09 14:05:06 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-06-09 14:05:06 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-06-09 14:05:06 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2021-06-09 14:05:06 0 [Note] InnoDB: 10.3.29 started; log sequence number 1625629; transaction id 20
+2021-06-09 14:05:06 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2021-06-09 14:05:06 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-06-09 14:05:06 0 [Note] InnoDB: Buffer pool(s) load completed at 210609 14:05:06
+2021-06-09 14:05:06 0 [Note] Server socket created on IP: '130.149.249.106'.
+2021-06-09 14:05:06 0 [Note] Reading of all Master_info entries succeeded
+2021-06-09 14:05:06 0 [Note] Added new Master_info '' to hash table
+2021-06-09 14:05:06 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '10.3.29-MariaDB-1:10.3.29+maria~focal-log'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+2021-06-09 14:05:06 2 [Note] WSREP: wsrep_notify_cmd is not defined, skipping notification.
+2021-06-09 14:05:06 2 [Note] WSREP: Assign initial position for certification: 0, protocol version: 4
+2021-06-09 14:05:06 0 [Note] WSREP: Service thread queue flushed.
+2021-06-09 14:05:06 2 [Note] WSREP: GCache history reset: 00000000-0000-0000-0000-000000000000:0 -> ee001a98-c91a-11eb-a897-7bc7ecdb800d:0
+2021-06-09 14:05:06 2 [Note] WSREP: Synchronized with group, ready for connections
+2021-06-09 14:05:06 2 [Note] WSREP: wsrep_notify_cmd is not defined, skipping notification.
+2021-06-09 14:05:22 0 [Note] /usr/sbin/mysqld (initiated by: unknown): Normal shutdown
+2021-06-09 14:05:22 0 [Note] WSREP: Stop replication
+2021-06-09 14:05:22 0 [Note] WSREP: Closing send monitor...
+2021-06-09 14:05:22 0 [Note] WSREP: Closed send monitor.
+2021-06-09 14:05:22 0 [Note] WSREP: gcomm: terminating thread
+2021-06-09 14:05:22 0 [Note] WSREP: gcomm: joining thread
+2021-06-09 14:05:22 0 [Note] WSREP: gcomm: closing backend
+2021-06-09 14:05:22 0 [Note] WSREP: view((empty))
+2021-06-09 14:05:22 0 [Note] WSREP: gcomm: closed
+2021-06-09 14:05:22 0 [Note] WSREP: Received self-leave message.
+2021-06-09 14:05:22 0 [Note] WSREP: Flow-control interval: [0, 0]
+2021-06-09 14:05:22 0 [Note] WSREP: Received SELF-LEAVE. Closing connection.
+2021-06-09 14:05:22 0 [Note] WSREP: Shifting SYNCED -> CLOSED (TO: 0)
+2021-06-09 14:05:22 0 [Note] WSREP: RECV thread exiting 0: Success
+2021-06-09 14:05:22 0 [Note] WSREP: recv_thread() joined.
+2021-06-09 14:05:22 0 [Note] WSREP: Closing replication queue.
+2021-06-09 14:05:22 0 [Note] WSREP: Closing slave action queue.
+2021-06-09 14:05:22 2 [Note] WSREP: New cluster view: global state: ee001a98-c91a-11eb-a897-7bc7ecdb800d:0, view# -1: non-Primary, number of nodes: 0, my index: -1, protocol version 3
+2021-06-09 14:05:22 2 [Note] WSREP: wsrep_notify_cmd is not defined, skipping notification.
+2021-06-09 14:05:22 2 [Note] WSREP: applier thread exiting (code:0)
+2021-06-09 14:05:22 9 [Note] WSREP: applier thread exiting (code:6)
+2021-06-09 14:05:22 10 [Note] WSREP: applier thread exiting (code:6)
+2021-06-09 14:05:22 11 [Note] WSREP: applier thread exiting (code:6)
+2021-06-09 14:05:24 1 [Note] WSREP: rollbacker thread exiting
+2021-06-09 14:05:24 0 [Note] Event Scheduler: Purging the queue. 0 events
+2021-06-09 14:05:24 0 [Note] InnoDB: FTS optimize thread exiting.
+2021-06-09 14:05:24 0 [Note] WSREP: dtor state: CLOSED
+2021-06-09 14:05:24 0 [Note] WSREP: apply mon: entered 0
+2021-06-09 14:05:24 0 [Note] WSREP: apply mon: entered 0
+2021-06-09 14:05:24 0 [Note] WSREP: mon: entered 3 oooe fraction 0 oool fraction 0
+2021-06-09 14:05:24 0 [Note] WSREP: cert index usage at exit 0
+2021-06-09 14:05:24 0 [Note] WSREP: cert trx map usage at exit 0
+2021-06-09 14:05:24 0 [Note] WSREP: deps set usage at exit 0
+2021-06-09 14:05:24 0 [Note] WSREP: avg deps dist 0
+2021-06-09 14:05:24 0 [Note] WSREP: avg cert interval 0
+2021-06-09 14:05:24 0 [Note] WSREP: cert index size 0
+2021-06-09 14:05:24 0 [Note] WSREP: Service thread queue flushed.
+2021-06-09 14:05:24 0 [Note] WSREP: wsdb trx map usage 0 conn query map usage 0
+2021-06-09 14:05:24 0 [Note] WSREP: MemPool(LocalTrxHandle): hit ratio: 0, misses: 0, in use: 0, in pool: 0
+2021-06-09 14:05:24 0 [Note] WSREP: MemPool(SlaveTrxHandle): hit ratio: 0, misses: 0, in use: 0, in pool: 0
+2021-06-09 14:05:24 0 [Note] WSREP: Flushing memory map to disk...
+2021-06-09 14:05:24 0 [Note] InnoDB: Starting shutdown...
+2021-06-09 14:05:24 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2021-06-09 14:05:24 0 [Note] InnoDB: Buffer pool(s) dump completed at 210609 14:05:24
+2021-06-09 14:05:26 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2021-06-09 14:05:26 0 [Note] InnoDB: Shutdown completed; log sequence number 1626703; transaction id 21
+2021-06-09 14:05:26 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+210609 14:05:26 mysqld_safe mysqld from pid file /var/lib/mysql/mariadb.pid ended
+210609 14:05:29 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql/
+210609 14:05:29 mysqld_safe WSREP: Running position recovery with --disable-log-error  --pid-file='/var/lib/mysql//wally096-recover.pid'
+210609 14:05:32 mysqld_safe WSREP: Recovered position ee001a98-c91a-11eb-a897-7bc7ecdb800d:0
+2021-06-09 14:05:32 0 [Note] /usr/sbin/mysqld (mysqld 10.3.29-MariaDB-1:10.3.29+maria~focal-log) starting as process 241 ...
+2021-06-09 14:05:32 0 [Note] WSREP: Read nil XID from storage engines, skipping position init
+2021-06-09 14:05:32 0 [Note] WSREP: wsrep_load(): loading provider library '/usr/lib/galera/libgalera_smm.so'
+2021-06-09 14:05:32 0 [Note] WSREP: wsrep_load(): Galera 25.3.33(r15123524) by Codership Oy <info@codership.com> loaded successfully.
+2021-06-09 14:05:32 0 [Note] WSREP: CRC-32C: using 64-bit x86 acceleration.
+2021-06-09 14:05:32 0 [Note] WSREP: Found saved state: ee001a98-c91a-11eb-a897-7bc7ecdb800d:0, safe_to_bootstrap: 1
+2021-06-09 14:05:32 0 [Note] WSREP: Passing config to GCS: base_dir = /var/lib/mysql/; base_host = 130.149.249.106; base_port = 4567; cert.log_conflicts = no; cert.optimistic_pa = yes; debug = no; evs.auto_evict = 0; evs.delay_margin = PT1S; evs.delayed_keep_period = PT30S; evs.inactive_check_period = PT0.5S; evs.inactive_timeout = PT15S; evs.join_retrans_period = PT1S; evs.max_install_timeouts = 3; evs.send_window = 4; evs.stats_report_period = PT1M; evs.suspect_timeout = PT5S; evs.user_send_window = 2; evs.view_forget_timeout = PT24H; gcache.dir = /var/lib/mysql/; gcache.keep_pages_size = 0; gcache.mem_size = 0; gcache.name = /var/lib/mysql//galera.cache; gcache.page_size = 128M; gcache.recover = no; gcache.size = 128M; gcomm.thread_prio = ; gcs.fc_debug = 0; gcs.fc_factor = 1.0; gcs.fc_limit = 16; gcs.fc_master_slave = no; gcs.max_packet_size = 64500; gcs.max_throttle = 0.25; gcs.recv_q_hard_limit = 9223372036854775807; gcs.recv_q_soft_limit = 0.25; gcs.sync_donor = no; gmcast.listen_addr = tcp://130.149.249.106:4567; gmcast.segment 
+2021-06-09 14:05:32 0 [Note] WSREP: Assign initial position for certification: 0, protocol version: -1
+2021-06-09 14:05:32 0 [Note] WSREP: wsrep_sst_grab()
+2021-06-09 14:05:32 0 [Note] WSREP: Start replication
+2021-06-09 14:05:32 0 [Note] WSREP: Setting initial position to ee001a98-c91a-11eb-a897-7bc7ecdb800d:0
+2021-06-09 14:05:32 0 [Note] WSREP: protonet asio version 0
+2021-06-09 14:05:32 0 [Note] WSREP: Using CRC-32C for message checksums.
+2021-06-09 14:05:32 0 [Note] WSREP: backend: asio
+2021-06-09 14:05:32 0 [Note] WSREP: gcomm thread scheduling priority set to other:0 
+2021-06-09 14:05:32 0 [Warning] WSREP: access file(/var/lib/mysql//gvwstate.dat) failed(No such file or directory)
+2021-06-09 14:05:32 0 [Note] WSREP: restore pc from disk failed
+2021-06-09 14:05:32 0 [Note] WSREP: GMCast version 0
+2021-06-09 14:05:32 0 [Note] WSREP: (fd5589d3, 'tcp://130.149.249.106:4567') listening at tcp://130.149.249.106:4567
+2021-06-09 14:05:32 0 [Note] WSREP: (fd5589d3, 'tcp://130.149.249.106:4567') multicast: , ttl: 1
+2021-06-09 14:05:32 0 [Note] WSREP: EVS version 0
+2021-06-09 14:05:32 0 [Note] WSREP: gcomm: connecting to group 'openstack', peer ''
+2021-06-09 14:05:32 0 [Note] WSREP: start_prim is enabled, turn off pc_recovery
+2021-06-09 14:05:32 0 [Note] WSREP: Node fd5589d3 state prim
+2021-06-09 14:05:32 0 [Note] WSREP: view(view_id(PRIM,fd5589d3,1) memb {
+	fd5589d3,0
+} joined {
+} left {
+} partitioned {
+})
+2021-06-09 14:05:32 0 [Note] WSREP: save pc into disk
+2021-06-09 14:05:32 0 [Note] WSREP: gcomm: connected
+2021-06-09 14:05:32 0 [Note] WSREP: Changing maximum packet size to 64500, resulting msg size: 32636
+2021-06-09 14:05:32 0 [Note] WSREP: Shifting CLOSED -> OPEN (TO: 0)
+2021-06-09 14:05:32 0 [Note] WSREP: Opened channel 'openstack'
+2021-06-09 14:05:32 0 [Note] WSREP: New COMPONENT: primary = yes, bootstrap = no, my_idx = 0, memb_num = 1
+2021-06-09 14:05:32 0 [Note] WSREP: Waiting for SST to complete.
+2021-06-09 14:05:32 0 [Note] WSREP: STATE_EXCHANGE: sent state UUID: fd595a59-c91a-11eb-9a03-63184847635d
+2021-06-09 14:05:32 0 [Note] WSREP: STATE EXCHANGE: sent state msg: fd595a59-c91a-11eb-9a03-63184847635d
+2021-06-09 14:05:32 0 [Note] WSREP: STATE EXCHANGE: got state msg: fd595a59-c91a-11eb-9a03-63184847635d from 0 (wally096)
+2021-06-09 14:05:32 0 [Note] WSREP: Quorum results:
+	version    = 6,
+	component  = PRIMARY,
+	conf_id    = 0,
+	members    = 1/1 (joined/total),
+	act_id     = 0,
+	last_appl. = -1,
+	protocols  = 0/9/3 (gcs/repl/appl),
+	group UUID = ee001a98-c91a-11eb-a897-7bc7ecdb800d
+2021-06-09 14:05:32 0 [Note] WSREP: Flow-control interval: [16, 16]
+2021-06-09 14:05:32 0 [Note] WSREP: Restored state OPEN -> JOINED (0)
+2021-06-09 14:05:32 0 [Note] WSREP: Member 0.0 (wally096) synced with group.
+2021-06-09 14:05:32 0 [Note] WSREP: Shifting JOINED -> SYNCED (TO: 0)
+2021-06-09 14:05:32 2 [Note] WSREP: REPL Protocols: 9 (4, 2)
+2021-06-09 14:05:32 2 [Note] WSREP: New cluster view: global state: ee001a98-c91a-11eb-a897-7bc7ecdb800d:0, view# 1: Primary, number of nodes: 1, my index: 0, protocol version 3
+2021-06-09 14:05:32 0 [Note] WSREP: SST complete, seqno: 0
+2021-06-09 14:05:32 0 [Note] InnoDB: Using Linux native AIO
+2021-06-09 14:05:32 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-06-09 14:05:32 0 [Note] InnoDB: Uses event mutexes
+2021-06-09 14:05:32 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-06-09 14:05:32 0 [Note] InnoDB: Number of pools: 1
+2021-06-09 14:05:32 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2021-06-09 14:05:32 0 [Note] InnoDB: Initializing buffer pool, total size = 7G, instances = 8, chunk size = 128M
+2021-06-09 14:05:32 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-06-09 14:05:32 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-06-09 14:05:32 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2021-06-09 14:05:32 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-06-09 14:05:32 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-06-09 14:05:32 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2021-06-09 14:05:32 0 [Note] InnoDB: 10.3.29 started; log sequence number 1626712; transaction id 20
+2021-06-09 14:05:32 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2021-06-09 14:05:32 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-06-09 14:05:32 0 [Note] InnoDB: Buffer pool(s) load completed at 210609 14:05:32
+2021-06-09 14:05:32 0 [Note] Server socket created on IP: '130.149.249.106'.
+2021-06-09 14:05:32 0 [Note] Reading of all Master_info entries succeeded
+2021-06-09 14:05:32 0 [Note] Added new Master_info '' to hash table
+2021-06-09 14:05:32 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '10.3.29-MariaDB-1:10.3.29+maria~focal-log'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+2021-06-09 14:05:32 2 [Note] WSREP: wsrep_notify_cmd is not defined, skipping notification.
+2021-06-09 14:05:32 2 [Note] WSREP: Assign initial position for certification: 0, protocol version: 4
+2021-06-09 14:05:32 0 [Note] WSREP: Service thread queue flushed.
+2021-06-09 14:05:32 2 [Note] WSREP: Synchronized with group, ready for connections
+2021-06-09 14:05:32 2 [Note] WSREP: wsrep_notify_cmd is not defined, skipping notification.
+2021-06-09 14:11:31 28 [Warning] Aborted connection 28 to db: 'keystone' user: 'keystone' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:12:02 29 [Warning] Aborted connection 29 to db: 'keystone' user: 'keystone' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:14:53 55 [Warning] Aborted connection 55 to db: 'glance' user: 'glance' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:14:53 56 [Warning] Aborted connection 56 to db: 'glance' user: 'glance' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:15:03 57 [Warning] Aborted connection 57 to db: 'glance' user: 'glance' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:16:31 74 [Warning] Aborted connection 74 to db: 'placement' user: 'placement' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:16:32 75 [Warning] Aborted connection 75 to db: 'placement' user: 'placement' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:17:34 83 [Warning] Aborted connection 83 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:18:42 93 [Warning] Aborted connection 93 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:18:42 84 [Warning] Aborted connection 84 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:18:51 95 [Warning] Aborted connection 95 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:18:59 96 [Warning] Aborted connection 96 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:19:01 98 [Warning] Aborted connection 98 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:19:01 99 [Warning] Aborted connection 99 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:19:01 97 [Warning] Aborted connection 97 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:20:54 110 [Warning] Aborted connection 110 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:21:02 111 [Warning] Aborted connection 111 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:21:10 112 [Warning] Aborted connection 112 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:26:10 305 [Warning] Aborted connection 305 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:26:16 312 [Warning] Aborted connection 312 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:26:16 311 [Warning] Aborted connection 311 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:36:04 908 [Warning] Aborted connection 908 to db: 'heat' user: 'heat' host: 'wally096' (Got an error reading communication packets)
+2021-06-09 14:50:09 2796 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-09 14:50:09 2782 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_bindings`
+2021-06-09 14:51:47 3101 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_bindings`
+2021-06-09 14:52:51 3381 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_binding_levels`
+2021-06-09 22:22:35 133 [Warning] Aborted connection 133 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:22:35 135 [Warning] Aborted connection 135 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:24:31 201 [Warning] Aborted connection 201 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:24:31 200 [Warning] Aborted connection 200 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:26:18 317 [Warning] Aborted connection 317 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:27:57 423 [Warning] Aborted connection 423 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:27:57 425 [Warning] Aborted connection 425 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:27:57 422 [Warning] Aborted connection 422 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:27:57 426 [Warning] Aborted connection 426 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:27:57 424 [Warning] Aborted connection 424 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:44:35 1665 [Warning] Aborted connection 1665 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:44:35 1667 [Warning] Aborted connection 1667 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:44:38 1679 [Warning] Aborted connection 1679 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:44:38 1681 [Warning] Aborted connection 1681 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:44:40 1695 [Warning] Aborted connection 1695 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:44:40 1697 [Warning] Aborted connection 1697 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:45:10 1817 [Warning] Aborted connection 1817 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:45:10 1819 [Warning] Aborted connection 1819 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:45:10 1816 [Warning] Aborted connection 1816 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:45:11 1818 [Warning] Aborted connection 1818 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:45:40 1911 [Warning] Aborted connection 1911 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:45:40 1913 [Warning] Aborted connection 1913 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:48:58 2564 [Warning] Aborted connection 2564 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:48:58 2565 [Warning] Aborted connection 2565 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:49:55 2742 [Warning] Aborted connection 2742 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:49:55 2748 [Warning] Aborted connection 2748 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:49:55 2749 [Warning] Aborted connection 2749 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:51:32 3076 [Warning] Aborted connection 3076 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:51:32 3075 [Warning] Aborted connection 3075 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:51:33 3070 [Warning] Aborted connection 3070 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:52:04 3197 [Warning] Aborted connection 3197 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:52:36 3316 [Warning] Aborted connection 3316 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:52:37 3323 [Warning] Aborted connection 3323 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:52:37 3320 [Warning] Aborted connection 3320 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:52:37 3314 [Warning] Aborted connection 3314 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:53:08 3431 [Warning] Aborted connection 3431 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:53:19 3465 [Warning] Aborted connection 3465 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:53:19 3466 [Warning] Aborted connection 3466 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:53:40 3535 [Warning] Aborted connection 3535 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:53:41 3545 [Warning] Aborted connection 3545 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:53:41 3538 [Warning] Aborted connection 3538 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:53:41 3533 [Warning] Aborted connection 3533 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:53:50 3570 [Warning] Aborted connection 3570 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:53:51 3571 [Warning] Aborted connection 3571 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:54:11 3641 [Warning] Aborted connection 3641 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:54:12 3645 [Warning] Aborted connection 3645 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:54:12 3643 [Warning] Aborted connection 3643 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:54:12 3639 [Warning] Aborted connection 3639 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:54:20 3672 [Warning] Aborted connection 3672 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 22:54:20 3673 [Warning] Aborted connection 3673 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:04:52 4812 [Warning] Aborted connection 4812 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:09:00 5518 [Warning] Aborted connection 5518 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:09:53 5675 [Warning] Aborted connection 5675 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:11:21 5907 [Warning] Aborted connection 5907 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:12:25 6079 [Warning] Aborted connection 6079 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:12:37 6097 [Warning] Aborted connection 6097 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:12:42 6132 [Warning] Aborted connection 6132 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:12:42 6134 [Warning] Aborted connection 6134 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:15:39 6360 [Warning] Aborted connection 6360 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:15:39 6363 [Warning] Aborted connection 6363 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:15:39 6364 [Warning] Aborted connection 6364 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:15:39 6366 [Warning] Aborted connection 6366 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:15:39 6370 [Warning] Aborted connection 6370 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:15:39 6371 [Warning] Aborted connection 6371 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:15:39 6372 [Warning] Aborted connection 6372 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:15:42 6380 [Warning] Aborted connection 6380 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:15:42 6381 [Warning] Aborted connection 6381 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:16:58 6480 [Warning] Aborted connection 6480 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:24:17 7021 [Warning] Aborted connection 7021 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:24:17 7023 [Warning] Aborted connection 7023 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:31:01 7513 [Warning] Aborted connection 7513 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:31:02 7520 [Warning] Aborted connection 7520 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:31:44 7570 [Warning] Aborted connection 7570 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:33:37 7722 [Warning] Aborted connection 7722 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:33:38 7729 [Warning] Aborted connection 7729 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:33:38 7730 [Warning] Aborted connection 7730 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:50:31 8975 [Warning] Aborted connection 8975 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:50:51 9006 [Warning] Aborted connection 9006 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:50:52 9008 [Warning] Aborted connection 9008 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:50:52 9009 [Warning] Aborted connection 9009 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:50:52 9014 [Warning] Aborted connection 9014 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:50:52 9015 [Warning] Aborted connection 9015 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:50:52 9013 [Warning] Aborted connection 9013 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:50:52 9018 [Warning] Aborted connection 9018 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-09 23:50:52 9019 [Warning] Aborted connection 9019 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-10 22:24:33 114600 [Warning] Aborted connection 114600 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-10 22:24:42 114598 [Warning] Aborted connection 114598 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-10 22:34:51 115359 [Warning] Aborted connection 115359 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-10 22:39:47 115710 [Warning] Aborted connection 115710 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-10 22:39:59 115731 [Warning] Aborted connection 115731 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-11 22:23:36 219440 [Warning] Aborted connection 219440 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-11 22:27:41 219743 [Warning] Aborted connection 219743 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-11 22:33:50 220198 [Warning] Aborted connection 220198 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-11 22:42:57 220881 [Warning] Aborted connection 220881 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-11 22:49:04 221327 [Warning] Aborted connection 221327 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-12 22:41:00 326698 [Warning] Aborted connection 326698 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-12 22:46:59 327138 [Warning] Aborted connection 327138 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-12 22:58:02 327950 [Warning] Aborted connection 327950 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-13 22:20:12 432943 [Warning] Aborted connection 432943 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-13 22:40:32 434448 [Warning] Aborted connection 434448 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-13 22:45:36 434815 [Warning] Aborted connection 434815 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-13 22:50:03 435145 [Warning] Aborted connection 435145 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-13 23:15:32 437008 [Warning] Aborted connection 437008 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-14 13:56:05 539865 [Warning] Aborted connection 539865 to db: 'keystone' user: 'keystone' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 13:56:16 539881 [Warning] Aborted connection 539881 to db: 'keystone' user: 'keystone' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 13:58:16 540056 [Warning] Aborted connection 540056 to db: 'glance' user: 'glance' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 13:58:17 540061 [Warning] Aborted connection 540061 to db: 'glance' user: 'glance' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 13:59:24 540158 [Warning] Aborted connection 540158 to db: 'placement' user: 'placement' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 13:59:25 540159 [Warning] Aborted connection 540159 to db: 'placement' user: 'placement' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 13:59:59 540215 [Warning] Aborted connection 540215 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:00:01 540217 [Warning] Aborted connection 540217 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:00:01 540218 [Warning] Aborted connection 540218 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:00:01 540216 [Warning] Aborted connection 540216 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:00:10 540226 [Warning] Aborted connection 540226 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:00:41 540271 [Warning] Aborted connection 540271 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:00:49 540278 [Warning] Aborted connection 540278 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:02:23 540405 [Warning] Aborted connection 540405 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:02:23 540404 [Warning] Aborted connection 540404 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:02:23 540403 [Warning] Aborted connection 540403 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:02:23 540402 [Warning] Aborted connection 540402 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:02:23 540401 [Warning] Aborted connection 540401 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:04:21 540599 [Warning] Aborted connection 540599 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:04:21 540581 [Warning] Aborted connection 540581 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:04:22 540594 [Warning] Aborted connection 540594 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:04:23 540597 [Warning] Aborted connection 540597 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:04:23 540584 [Warning] Aborted connection 540584 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:48:52 544050 [Warning] Aborted connection 544050 to db: 'keystone' user: 'keystone' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:49:03 544057 [Warning] Aborted connection 544057 to db: 'keystone' user: 'keystone' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:51:05 544245 [Warning] Aborted connection 544245 to db: 'glance' user: 'glance' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:51:07 544246 [Warning] Aborted connection 544246 to db: 'glance' user: 'glance' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:52:15 544346 [Warning] Aborted connection 544346 to db: 'placement' user: 'placement' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:52:16 544347 [Warning] Aborted connection 544347 to db: 'placement' user: 'placement' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:52:47 544382 [Warning] Aborted connection 544382 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:52:49 544387 [Warning] Aborted connection 544387 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:52:49 544388 [Warning] Aborted connection 544388 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:52:49 544383 [Warning] Aborted connection 544383 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:52:58 544409 [Warning] Aborted connection 544409 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:53:29 544447 [Warning] Aborted connection 544447 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:53:38 544457 [Warning] Aborted connection 544457 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 540522 [Warning] Aborted connection 540522 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 544579 [Warning] Aborted connection 544579 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 540415 [Warning] Aborted connection 540415 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 540525 [Warning] Aborted connection 540525 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 540526 [Warning] Aborted connection 540526 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 540529 [Warning] Aborted connection 540529 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 540531 [Warning] Aborted connection 540531 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 544578 [Warning] Aborted connection 544578 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 544571 [Warning] Aborted connection 544571 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 540528 [Warning] Aborted connection 540528 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 540524 [Warning] Aborted connection 540524 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 544569 [Warning] Aborted connection 544569 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 540530 [Warning] Aborted connection 540530 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 540523 [Warning] Aborted connection 540523 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 544570 [Warning] Aborted connection 544570 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 540419 [Warning] Aborted connection 540419 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 540416 [Warning] Aborted connection 540416 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:10 540527 [Warning] Aborted connection 540527 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540538 [Warning] Aborted connection 540538 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540541 [Warning] Aborted connection 540541 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540539 [Warning] Aborted connection 540539 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540540 [Warning] Aborted connection 540540 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540732 [Warning] Aborted connection 540732 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540729 [Warning] Aborted connection 540729 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540730 [Warning] Aborted connection 540730 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540731 [Warning] Aborted connection 540731 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540693 [Warning] Aborted connection 540693 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540690 [Warning] Aborted connection 540690 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540691 [Warning] Aborted connection 540691 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540692 [Warning] Aborted connection 540692 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540589 [Warning] Aborted connection 540589 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540586 [Warning] Aborted connection 540586 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540587 [Warning] Aborted connection 540587 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540588 [Warning] Aborted connection 540588 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540485 [Warning] Aborted connection 540485 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540482 [Warning] Aborted connection 540482 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540483 [Warning] Aborted connection 540483 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:55:16 540484 [Warning] Aborted connection 540484 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:57:03 544763 [Warning] Aborted connection 544763 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:57:03 544747 [Warning] Aborted connection 544747 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:57:04 544749 [Warning] Aborted connection 544749 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:57:06 544733 [Warning] Aborted connection 544733 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:57:06 544765 [Warning] Aborted connection 544765 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:57:06 540610 [Warning] Aborted connection 540610 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:57:06 540609 [Warning] Aborted connection 540609 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 14:57:06 540608 [Warning] Aborted connection 540608 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:26:09 546952 [Warning] Aborted connection 546952 to db: 'keystone' user: 'keystone' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:26:19 546964 [Warning] Aborted connection 546964 to db: 'keystone' user: 'keystone' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:28:22 547138 [Warning] Aborted connection 547138 to db: 'glance' user: 'glance' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:28:24 547142 [Warning] Aborted connection 547142 to db: 'glance' user: 'glance' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:29:34 547232 [Warning] Aborted connection 547232 to db: 'placement' user: 'placement' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:29:35 547233 [Warning] Aborted connection 547233 to db: 'placement' user: 'placement' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:30:06 547276 [Warning] Aborted connection 547276 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:30:09 547280 [Warning] Aborted connection 547280 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:30:09 547281 [Warning] Aborted connection 547281 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:30:09 547279 [Warning] Aborted connection 547279 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:30:17 547295 [Warning] Aborted connection 547295 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:30:47 547330 [Warning] Aborted connection 547330 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:30:55 547341 [Warning] Aborted connection 547341 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544646 [Warning] Aborted connection 544646 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544643 [Warning] Aborted connection 544643 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544644 [Warning] Aborted connection 544644 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544645 [Warning] Aborted connection 544645 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544855 [Warning] Aborted connection 544855 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544852 [Warning] Aborted connection 544852 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544853 [Warning] Aborted connection 544853 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544854 [Warning] Aborted connection 544854 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544863 [Warning] Aborted connection 544863 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544860 [Warning] Aborted connection 544860 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544861 [Warning] Aborted connection 544861 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544862 [Warning] Aborted connection 544862 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544755 [Warning] Aborted connection 544755 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544752 [Warning] Aborted connection 544752 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544753 [Warning] Aborted connection 544753 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544754 [Warning] Aborted connection 544754 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544712 [Warning] Aborted connection 544712 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544709 [Warning] Aborted connection 544709 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544710 [Warning] Aborted connection 544710 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:32:17 544711 [Warning] Aborted connection 544711 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:34:33 547637 [Warning] Aborted connection 547637 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:34:39 547646 [Warning] Aborted connection 547646 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:34:39 547645 [Warning] Aborted connection 547645 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 15:40:18 548090 [Warning] Aborted connection 548090 to db: 'heat' user: 'heat' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 16:09:08 550277 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-14 16:14:05 550871 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 16:16:27 551401 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 16:19:39 552043 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_bindings`
+2021-06-14 16:19:39 552044 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-14 16:20:02 552124 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 16:20:38 552199 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 16:21:25 552369 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-14 16:35:55 553935 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 16:36:02 544693 [Warning] Aborted connection 544693 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 16:36:02 544695 [Warning] Aborted connection 544695 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 16:36:29 544696 [Warning] Aborted connection 544696 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 16:36:40 544697 [Warning] Aborted connection 544697 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 16:36:40 544694 [Warning] Aborted connection 544694 to db: 'nova' user: 'nova' host: 'wally096' (Got an error reading communication packets)
+2021-06-14 16:38:03 554367 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_bindings`
+2021-06-14 16:38:03 554369 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-14 16:38:26 554403 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 16:40:35 554861 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_binding_levels`
+2021-06-14 16:41:42 555103 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_bindings`
+2021-06-14 16:53:29 556552 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 16:55:14 556908 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 16:59:32 557773 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 17:00:43 557970 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 17:06:03 558597 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 17:06:46 558744 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 17:06:47 558826 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 17:08:19 559210 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 17:15:13 561323 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-14 22:55:15 544592 [Warning] Aborted connection 544592 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-14 22:55:15 544590 [Warning] Aborted connection 544590 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-14 22:57:10 544778 [Warning] Aborted connection 544778 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-14 22:57:10 544777 [Warning] Aborted connection 544777 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-14 23:34:42 547652 [Warning] Aborted connection 547652 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  0:13:46 550830 [Warning] Aborted connection 550830 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  0:13:46 550832 [Warning] Aborted connection 550832 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  0:14:17 550956 [Warning] Aborted connection 550956 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  0:14:17 550958 [Warning] Aborted connection 550958 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  0:14:51 551089 [Warning] Aborted connection 551089 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  0:14:51 551091 [Warning] Aborted connection 551091 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  0:17:53 551718 [Warning] Aborted connection 551718 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  0:17:53 551720 [Warning] Aborted connection 551720 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  0:20:10 552144 [Warning] Aborted connection 552144 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  0:20:10 552146 [Warning] Aborted connection 552146 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:13:43 560830 [Warning] Aborted connection 560830 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:13:43 560829 [Warning] Aborted connection 560829 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:13:43 560821 [Warning] Aborted connection 560821 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:14:05 560965 [Warning] Aborted connection 560965 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:14:05 560963 [Warning] Aborted connection 560963 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:14:06 560956 [Warning] Aborted connection 560956 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:14:29 561087 [Warning] Aborted connection 561087 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:14:45 561126 [Warning] Aborted connection 561126 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:14:45 561127 [Warning] Aborted connection 561127 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:14:55 561221 [Warning] Aborted connection 561221 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:14:55 561222 [Warning] Aborted connection 561222 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:00 561250 [Warning] Aborted connection 561250 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:00 561251 [Warning] Aborted connection 561251 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:09 561299 [Warning] Aborted connection 561299 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:09 561301 [Warning] Aborted connection 561301 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:16 561333 [Warning] Aborted connection 561333 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:16 561335 [Warning] Aborted connection 561335 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:25 561394 [Warning] Aborted connection 561394 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:25 561395 [Warning] Aborted connection 561395 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:26 561398 [Warning] Aborted connection 561398 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:26 561397 [Warning] Aborted connection 561397 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:26 561393 [Warning] Aborted connection 561393 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:38 561419 [Warning] Aborted connection 561419 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:38 561422 [Warning] Aborted connection 561422 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:38 561456 [Warning] Aborted connection 561456 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:38 561457 [Warning] Aborted connection 561457 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:38 561464 [Warning] Aborted connection 561464 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:38 561463 [Warning] Aborted connection 561463 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:39 561455 [Warning] Aborted connection 561455 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:39 561469 [Warning] Aborted connection 561469 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:39 561470 [Warning] Aborted connection 561470 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:46 561497 [Warning] Aborted connection 561497 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:46 561498 [Warning] Aborted connection 561498 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:46 561503 [Warning] Aborted connection 561503 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:46 561501 [Warning] Aborted connection 561501 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:47 561496 [Warning] Aborted connection 561496 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:15:50 561489 [Warning] Aborted connection 561489 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:16:02 561567 [Warning] Aborted connection 561567 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:16:02 561568 [Warning] Aborted connection 561568 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:16:07 561578 [Warning] Aborted connection 561578 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:16:11 561598 [Warning] Aborted connection 561598 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:16:13 561610 [Warning] Aborted connection 561610 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:16:14 561613 [Warning] Aborted connection 561613 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:33:09 562882 [Warning] Aborted connection 562882 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:33:10 562885 [Warning] Aborted connection 562885 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:33:10 562887 [Warning] Aborted connection 562887 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:33:10 562884 [Warning] Aborted connection 562884 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:33:10 562886 [Warning] Aborted connection 562886 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:33:10 562892 [Warning] Aborted connection 562892 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:33:10 562893 [Warning] Aborted connection 562893 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:23 563129 [Warning] Aborted connection 563129 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:23 563132 [Warning] Aborted connection 563132 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:23 563126 [Warning] Aborted connection 563126 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:23 563130 [Warning] Aborted connection 563130 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:23 563134 [Warning] Aborted connection 563134 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:32 563146 [Warning] Aborted connection 563146 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:32 563150 [Warning] Aborted connection 563150 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:32 563152 [Warning] Aborted connection 563152 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:32 563148 [Warning] Aborted connection 563148 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:32 563151 [Warning] Aborted connection 563151 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:32 563153 [Warning] Aborted connection 563153 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:32 563154 [Warning] Aborted connection 563154 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:32 563133 [Warning] Aborted connection 563133 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:33 563157 [Warning] Aborted connection 563157 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:33 563163 [Warning] Aborted connection 563163 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:33 563145 [Warning] Aborted connection 563145 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:33 563164 [Warning] Aborted connection 563164 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:34 563167 [Warning] Aborted connection 563167 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:34 563156 [Warning] Aborted connection 563156 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15  1:36:34 563155 [Warning] Aborted connection 563155 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15 23:32:46 660760 [Warning] Aborted connection 660760 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15 23:33:04 660786 [Warning] Aborted connection 660786 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-15 23:58:15 662637 [Warning] Aborted connection 662637 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 11:04:50 747901 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 11:04:58 747968 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 11:06:33 748651 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_bindings`
+2021-06-16 11:06:38 748660 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 11:07:27 749016 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 11:08:03 749252 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 11:08:28 749443 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 11:36:37 752691 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 11:37:48 753086 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 11:39:15 753559 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 11:39:57 753787 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 11:40:38 754029 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:04:50 756756 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:05:52 757149 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:06:34 757387 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:06:37 757406 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:07:22 757711 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:07:29 757748 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:09:30 758535 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:11:01 759120 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:12:39 759632 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:12:52 759772 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_binding_levels`
+2021-06-16 12:44:58 763333 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:45:09 763392 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:45:46 763664 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-16 12:46:21 763961 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`securitygroupportbindings`
+2021-06-16 12:47:39 764584 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:49:02 765230 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:49:04 765281 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:49:15 765354 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:49:32 765476 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 12:50:25 765849 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-16 12:50:51 766075 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_binding_levels`
+2021-06-16 12:59:51 767481 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-16 13:02:33 767973 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:10:01 769347 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:11:50 769707 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:12:28 769829 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:13:18 770020 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-16 13:13:18 770019 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_bindings`
+2021-06-16 13:15:22 770384 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:22:04 771160 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:24:42 772545 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:24:44 772589 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:25:12 772784 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:25:44 773063 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:25:52 773130 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:26:10 773289 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:26:18 773382 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:27:10 773758 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:27:25 773951 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:28:37 774544 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:29:00 774791 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:29:03 774842 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_binding_levels`
+2021-06-16 13:34:04 775905 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:36:08 777161 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 13:36:56 777466 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:00:52 780930 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:25:08 783982 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:25:09 783982 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:25:37 784251 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-16 14:26:21 784632 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:26:38 784881 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:26:42 784861 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`securitygroupportbindings`
+2021-06-16 14:26:57 785047 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:27:15 785174 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:27:16 785188 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:27:41 785451 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:28:24 785939 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:28:48 786116 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:51:21 789376 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:52:10 789772 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:52:16 789823 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:52:36 789947 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:52:52 790123 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:53:26 790401 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:53:58 790686 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:57:23 792428 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-16 14:58:06 792844 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_binding_levels`
+2021-06-16 14:58:06 792842 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-16 22:24:35 783501 [Warning] Aborted connection 783501 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:24:35 783502 [Warning] Aborted connection 783502 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:24:35 783504 [Warning] Aborted connection 783504 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:24:35 783500 [Warning] Aborted connection 783500 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:24:35 783503 [Warning] Aborted connection 783503 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:28:41 786067 [Warning] Aborted connection 786067 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:28:41 786069 [Warning] Aborted connection 786069 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:29:09 786285 [Warning] Aborted connection 786285 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:29:09 786287 [Warning] Aborted connection 786287 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:29:15 786334 [Warning] Aborted connection 786334 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:29:15 786335 [Warning] Aborted connection 786335 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:51:26 789446 [Warning] Aborted connection 789446 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:51:26 789447 [Warning] Aborted connection 789447 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:55:47 791693 [Warning] Aborted connection 791693 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:55:47 791688 [Warning] Aborted connection 791688 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:55:48 791682 [Warning] Aborted connection 791682 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:57:52 792727 [Warning] Aborted connection 792727 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:02 792832 [Warning] Aborted connection 792832 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:02 792829 [Warning] Aborted connection 792829 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:03 792827 [Warning] Aborted connection 792827 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:04 792848 [Warning] Aborted connection 792848 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:04 792849 [Warning] Aborted connection 792849 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:18 792988 [Warning] Aborted connection 792988 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:20 793005 [Warning] Aborted connection 793005 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:21 793008 [Warning] Aborted connection 793008 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:21 792999 [Warning] Aborted connection 792999 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:21 793014 [Warning] Aborted connection 793014 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:22 792992 [Warning] Aborted connection 792992 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:22 793011 [Warning] Aborted connection 793011 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:23 792995 [Warning] Aborted connection 792995 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:25 792987 [Warning] Aborted connection 792987 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:26 793050 [Warning] Aborted connection 793050 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:26 793046 [Warning] Aborted connection 793046 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 22:58:26 793030 [Warning] Aborted connection 793030 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 23:04:58 793901 [Warning] Aborted connection 793901 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 23:04:58 793898 [Warning] Aborted connection 793898 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 23:04:58 793899 [Warning] Aborted connection 793899 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 23:04:58 793902 [Warning] Aborted connection 793902 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 23:04:58 793900 [Warning] Aborted connection 793900 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 23:14:26 794644 [Warning] Aborted connection 794644 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 23:14:26 794646 [Warning] Aborted connection 794646 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 23:14:28 794651 [Warning] Aborted connection 794651 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 23:14:28 794662 [Warning] Aborted connection 794662 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-16 23:14:35 794647 [Warning] Aborted connection 794647 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:02:13 798218 [Warning] Aborted connection 798218 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:06:10 798528 [Warning] Aborted connection 798528 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:06:10 798533 [Warning] Aborted connection 798533 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:06:10 798535 [Warning] Aborted connection 798535 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:06:10 798537 [Warning] Aborted connection 798537 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:07:03 798599 [Warning] Aborted connection 798599 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:07:03 798601 [Warning] Aborted connection 798601 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:07:03 798606 [Warning] Aborted connection 798606 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:07:03 798608 [Warning] Aborted connection 798608 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:07:03 798607 [Warning] Aborted connection 798607 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:13 798723 [Warning] Aborted connection 798723 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:28 798749 [Warning] Aborted connection 798749 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:28 798750 [Warning] Aborted connection 798750 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:28 798755 [Warning] Aborted connection 798755 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:28 798757 [Warning] Aborted connection 798757 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:29 798756 [Warning] Aborted connection 798756 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:29 798758 [Warning] Aborted connection 798758 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:29 798759 [Warning] Aborted connection 798759 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:29 798754 [Warning] Aborted connection 798754 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:29 798760 [Warning] Aborted connection 798760 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:29 798761 [Warning] Aborted connection 798761 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:29 798762 [Warning] Aborted connection 798762 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:29 798763 [Warning] Aborted connection 798763 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:29 798752 [Warning] Aborted connection 798752 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:30 798765 [Warning] Aborted connection 798765 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17  0:08:30 798764 [Warning] Aborted connection 798764 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17 22:55:12 899779 [Warning] Aborted connection 899779 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17 23:29:48 902357 [Warning] Aborted connection 902357 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-17 23:30:28 902413 [Warning] Aborted connection 902413 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-18  0:05:16 904988 [Warning] Aborted connection 904988 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-18 23:09:25 1008201 [Warning] Aborted connection 1008201 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-18 23:09:50 1008234 [Warning] Aborted connection 1008234 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-18 23:28:08 1009643 [Warning] Aborted connection 1009643 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-18 23:28:52 1009703 [Warning] Aborted connection 1009703 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-19  0:04:14 1012432 [Warning] Aborted connection 1012432 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-19 23:08:00 1118757 [Warning] Aborted connection 1118757 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-19 23:26:45 1120152 [Warning] Aborted connection 1120152 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-19 23:26:54 1120170 [Warning] Aborted connection 1120170 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-19 23:27:21 1120204 [Warning] Aborted connection 1120204 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-20  0:02:18 1122773 [Warning] Aborted connection 1122773 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-20 23:25:51 1228871 [Warning] Aborted connection 1228871 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-20 23:26:04 1228890 [Warning] Aborted connection 1228890 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-21  0:01:29 1231619 [Warning] Aborted connection 1231619 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-21 23:10:24 1336328 [Warning] Aborted connection 1336328 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-21 23:23:44 1337369 [Warning] Aborted connection 1337369 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-21 23:24:33 1337435 [Warning] Aborted connection 1337435 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-21 23:34:13 1338196 [Warning] Aborted connection 1338196 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-22  0:00:08 1340228 [Warning] Aborted connection 1340228 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-22 23:22:25 1445559 [Warning] Aborted connection 1445559 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-22 23:22:54 1445590 [Warning] Aborted connection 1445590 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-22 23:42:44 1447029 [Warning] Aborted connection 1447029 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-22 23:58:24 1448174 [Warning] Aborted connection 1448174 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23  1:11:03 1490478 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-23  1:11:13 1490533 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:11:49 1490832 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:12:23 1491195 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:13:27 1491724 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-23  1:13:41 1491890 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:14:34 1492368 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:14:37 1492351 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:14:56 1492493 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:15:09 1492706 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:15:31 1492874 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:29:04 1495090 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:30:04 1495645 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-23  1:30:16 1495701 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:31:29 1496369 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:31:55 1496579 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:32:13 1496689 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:33:36 1497487 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:33:46 1497568 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:34:04 1497729 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:34:05 1497729 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:34:34 1497945 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:34:59 1498168 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:35:01 1498246 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_binding_levels`
+2021-06-23  1:35:04 1498279 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:58:19 1502635 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_binding_levels`
+2021-06-23  1:59:19 1503354 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  1:59:35 1503659 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`securitygroupportbindings`
+2021-06-23  2:00:16 1504128 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:00:37 1504333 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_binding_levels`
+2021-06-23  2:03:01 1506204 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:03:34 1506670 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:08:45 1508042 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:10:02 1508866 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:10:02 1508866 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:10:20 1509109 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:10:24 1509167 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:10:28 1509211 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`securitygroupportbindings`
+2021-06-23  2:11:17 1509790 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:11:29 1509943 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:11:32 1510006 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:11:47 1510237 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`portsecuritybindings`
+2021-06-23  2:11:54 1510358 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:12:00 1510443 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:12:54 1511161 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:13:00 1511235 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:13:26 1511518 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:13:53 1511982 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_binding_levels`
+2021-06-23  2:13:55 1511981 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:14:57 1512686 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:15:25 1513144 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:15:37 1513346 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:25:52 1515419 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_bindings`
+2021-06-23  2:26:51 1516087 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:28:42 1517147 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:29:01 1517275 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`securitygroupportbindings`
+2021-06-23  2:29:26 1517487 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:29:44 1517671 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:30:02 1517900 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:30:25 1518053 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_bindings`
+2021-06-23  2:30:42 1518197 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:30:43 1518235 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:30:47 1518280 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:30:57 1518293 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_bindings`
+2021-06-23  2:31:25 1518578 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:31:37 1518649 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`ml2_port_bindings`
+2021-06-23  2:32:16 1519047 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:32:46 1519283 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:32:47 1519323 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23  2:32:56 1519363 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-23 10:30:42 1518167 [Warning] Aborted connection 1518167 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:30:42 1518160 [Warning] Aborted connection 1518160 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:30:42 1518147 [Warning] Aborted connection 1518147 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:31:37 1518690 [Warning] Aborted connection 1518690 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:31:37 1518692 [Warning] Aborted connection 1518692 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:09 1518982 [Warning] Aborted connection 1518982 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:10 1518992 [Warning] Aborted connection 1518992 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:10 1518984 [Warning] Aborted connection 1518984 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:10 1518983 [Warning] Aborted connection 1518983 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:10 1518974 [Warning] Aborted connection 1518974 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:11 1519000 [Warning] Aborted connection 1519000 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:11 1518997 [Warning] Aborted connection 1518997 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:12 1518976 [Warning] Aborted connection 1518976 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:16 1519051 [Warning] Aborted connection 1519051 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:22 1519111 [Warning] Aborted connection 1519111 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:22 1519112 [Warning] Aborted connection 1519112 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:28 1519125 [Warning] Aborted connection 1519125 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:28 1519126 [Warning] Aborted connection 1519126 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:38 1519253 [Warning] Aborted connection 1519253 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:39 1519263 [Warning] Aborted connection 1519263 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:39 1519258 [Warning] Aborted connection 1519258 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:39 1519251 [Warning] Aborted connection 1519251 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:43 1519296 [Warning] Aborted connection 1519296 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:44 1519305 [Warning] Aborted connection 1519305 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:44 1519307 [Warning] Aborted connection 1519307 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:44 1519304 [Warning] Aborted connection 1519304 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:45 1519295 [Warning] Aborted connection 1519295 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:49 1519332 [Warning] Aborted connection 1519332 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:49 1519333 [Warning] Aborted connection 1519333 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:53 1519364 [Warning] Aborted connection 1519364 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:54 1519365 [Warning] Aborted connection 1519365 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:58 1519418 [Warning] Aborted connection 1519418 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:32:58 1519417 [Warning] Aborted connection 1519417 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:33:00 1519368 [Warning] Aborted connection 1519368 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:33:04 1519445 [Warning] Aborted connection 1519445 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:33:08 1519441 [Warning] Aborted connection 1519441 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:33:13 1519470 [Warning] Aborted connection 1519470 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:39:09 1519936 [Warning] Aborted connection 1519936 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:47:57 1520612 [Warning] Aborted connection 1520612 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 10:47:57 1520613 [Warning] Aborted connection 1520613 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 11:02:29 1521835 [Warning] Aborted connection 1521835 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 11:08:12 1522337 [Warning] Aborted connection 1522337 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 11:08:12 1522338 [Warning] Aborted connection 1522338 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 11:08:12 1522339 [Warning] Aborted connection 1522339 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 11:08:23 1522360 [Warning] Aborted connection 1522360 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 11:08:24 1522361 [Warning] Aborted connection 1522361 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 11:40:08 1524755 [Warning] Aborted connection 1524755 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 11:40:08 1524757 [Warning] Aborted connection 1524757 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:26:17 1559855 [Warning] Aborted connection 1559855 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:27:58 1560040 [Warning] Aborted connection 1560040 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:39:16 1561130 [Warning] Aborted connection 1561130 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:43:02 1561501 [Warning] Aborted connection 1561501 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:44:41 1561670 [Warning] Aborted connection 1561670 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:44:47 1561696 [Warning] Aborted connection 1561696 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:44:48 1561698 [Warning] Aborted connection 1561698 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:47:52 1562084 [Warning] Aborted connection 1562084 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:47:52 1562090 [Warning] Aborted connection 1562090 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:47:52 1562088 [Warning] Aborted connection 1562088 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:47:53 1562081 [Warning] Aborted connection 1562081 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:48:16 1562157 [Warning] Aborted connection 1562157 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:48:16 1562156 [Warning] Aborted connection 1562156 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:48:16 1562161 [Warning] Aborted connection 1562161 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:48:16 1562165 [Warning] Aborted connection 1562165 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:48:16 1562163 [Warning] Aborted connection 1562163 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:48:17 1562159 [Warning] Aborted connection 1562159 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:48:17 1562175 [Warning] Aborted connection 1562175 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:48:22 1562158 [Warning] Aborted connection 1562158 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:50:46 1562394 [Warning] Aborted connection 1562394 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:50:46 1562396 [Warning] Aborted connection 1562396 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:50:46 1562399 [Warning] Aborted connection 1562399 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:50:46 1562398 [Warning] Aborted connection 1562398 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:50:56 1562417 [Warning] Aborted connection 1562417 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:55:56 1562843 [Warning] Aborted connection 1562843 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:55:56 1562847 [Warning] Aborted connection 1562847 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:55:56 1562851 [Warning] Aborted connection 1562851 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:55:56 1562850 [Warning] Aborted connection 1562850 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:55:57 1562855 [Warning] Aborted connection 1562855 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:55:57 1562859 [Warning] Aborted connection 1562859 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:55:57 1562858 [Warning] Aborted connection 1562858 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:55:57 1562853 [Warning] Aborted connection 1562853 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:55:58 1562864 [Warning] Aborted connection 1562864 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:56:00 1562852 [Warning] Aborted connection 1562852 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:56:01 1562870 [Warning] Aborted connection 1562870 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:56:01 1562881 [Warning] Aborted connection 1562881 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:56:02 1562873 [Warning] Aborted connection 1562873 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:56:02 1562875 [Warning] Aborted connection 1562875 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:56:02 1562861 [Warning] Aborted connection 1562861 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:56:02 1562848 [Warning] Aborted connection 1562848 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:56:02 1562862 [Warning] Aborted connection 1562862 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:56:02 1562845 [Warning] Aborted connection 1562845 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:56:05 1562888 [Warning] Aborted connection 1562888 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 19:56:08 1562893 [Warning] Aborted connection 1562893 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 23:20:29 1578259 [Warning] Aborted connection 1578259 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 23:20:37 1578260 [Warning] Aborted connection 1578260 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 23:30:38 1579028 [Warning] Aborted connection 1579028 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-23 23:46:03 1580165 [Warning] Aborted connection 1580165 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-24  0:01:19 1581298 [Warning] Aborted connection 1581298 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-24 23:19:55 1686153 [Warning] Aborted connection 1686153 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-24 23:35:10 1687322 [Warning] Aborted connection 1687322 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-25  0:05:46 1689672 [Warning] Aborted connection 1689672 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-25  0:10:50 1690066 [Warning] Aborted connection 1690066 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-25 23:27:30 1794281 [Warning] Aborted connection 1794281 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-25 23:43:18 1795492 [Warning] Aborted connection 1795492 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-26  0:07:57 1797418 [Warning] Aborted connection 1797418 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-26  0:13:02 1797828 [Warning] Aborted connection 1797828 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:37:58 1935316 [Warning] Aborted connection 1935316 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:37:58 1935314 [Warning] Aborted connection 1935314 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:37:58 1935308 [Warning] Aborted connection 1935308 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:38:20 1935406 [Warning] Aborted connection 1935406 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:38:20 1935405 [Warning] Aborted connection 1935405 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:38:20 1935398 [Warning] Aborted connection 1935398 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:38:44 1935506 [Warning] Aborted connection 1935506 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:38:46 1935512 [Warning] Aborted connection 1935512 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:40:05 1935655 [Warning] Aborted connection 1935655 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:40:05 1935654 [Warning] Aborted connection 1935654 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:40:05 1935653 [Warning] Aborted connection 1935653 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:48:04 1936279 [Warning] Aborted connection 1936279 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:50:47 1936533 [Warning] Aborted connection 1936533 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:50:47 1936532 [Warning] Aborted connection 1936532 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:50:48 1936539 [Warning] Aborted connection 1936539 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:50:50 1936551 [Warning] Aborted connection 1936551 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:50:59 1936575 [Warning] Aborted connection 1936575 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  6:50:59 1936576 [Warning] Aborted connection 1936576 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:05:47 1937775 [Warning] Aborted connection 1937775 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:05:48 1937780 [Warning] Aborted connection 1937780 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:05:48 1937779 [Warning] Aborted connection 1937779 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:05:48 1937785 [Warning] Aborted connection 1937785 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:05:49 1937792 [Warning] Aborted connection 1937792 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:05:49 1937793 [Warning] Aborted connection 1937793 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:05:49 1937789 [Warning] Aborted connection 1937789 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:05:49 1937795 [Warning] Aborted connection 1937795 to db: 'nova_cell0' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:05:49 1937782 [Warning] Aborted connection 1937782 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:05:50 1937796 [Warning] Aborted connection 1937796 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:05:59 1937817 [Warning] Aborted connection 1937817 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:00 1937825 [Warning] Aborted connection 1937825 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:00 1937826 [Warning] Aborted connection 1937826 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:02 1937834 [Warning] Aborted connection 1937834 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:02 1937835 [Warning] Aborted connection 1937835 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:02 1937837 [Warning] Aborted connection 1937837 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:03 1937833 [Warning] Aborted connection 1937833 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:03 1937838 [Warning] Aborted connection 1937838 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:04 1937823 [Warning] Aborted connection 1937823 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:04 1937810 [Warning] Aborted connection 1937810 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:04 1937842 [Warning] Aborted connection 1937842 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:05 1937851 [Warning] Aborted connection 1937851 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:05 1937852 [Warning] Aborted connection 1937852 to db: 'nova' user: 'nova' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:05 1937853 [Warning] Aborted connection 1937853 to db: 'nova_api' user: 'nova_api' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:08 1937860 [Warning] Aborted connection 1937860 to db: 'glance' user: 'glance' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:10 1937854 [Warning] Aborted connection 1937854 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:10 1937868 [Warning] Aborted connection 1937868 to db: 'neutron' user: 'neutron' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:11 1937870 [Warning] Aborted connection 1937870 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:12 1937863 [Warning] Aborted connection 1937863 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:13 1937875 [Warning] Aborted connection 1937875 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:13 1937872 [Warning] Aborted connection 1937872 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27  7:06:13 1937871 [Warning] Aborted connection 1937871 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27 23:24:50 2011705 [Warning] Aborted connection 2011705 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27 23:34:30 2012457 [Warning] Aborted connection 2012457 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-27 23:49:52 2013645 [Warning] Aborted connection 2013645 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-28  0:05:04 2014820 [Warning] Aborted connection 2014820 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-28  0:30:29 2016793 [Warning] Aborted connection 2016793 to db: 'keystone' user: 'keystone' host: 'wally096' (Got timeout reading communication packets)
+2021-06-28  1:28:45 2057915 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`
+2021-06-28  1:36:23 2058701 [ERROR] InnoDB: WSREP: referenced FK check fail: Lock wait index `PRIMARY` table `neutron`.`provisioningblocks`

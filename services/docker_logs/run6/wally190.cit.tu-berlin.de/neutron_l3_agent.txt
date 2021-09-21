@@ -1,0 +1,141 @@
+2021-05-26T00:14:55.990514696Z  + sudo -E kolla_set_configs
+2021-05-26T00:14:56.036622243Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T00:14:56.036708926Z  INFO:__main__:Validating config file
+2021-05-26T00:14:56.036767925Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T00:14:56.036784719Z  INFO:__main__:Copying service configuration files
+2021-05-26T00:14:56.036936303Z  INFO:__main__:Copying /var/lib/kolla/config_files/neutron-l3-agent-wrapper.sh to /usr/local/bin/neutron-l3-agent-wrapper.sh
+2021-05-26T00:14:56.037431514Z  INFO:__main__:Setting permission for /usr/local/bin/neutron-l3-agent-wrapper.sh
+2021-05-26T00:14:56.037598219Z  INFO:__main__:Deleting /etc/neutron/neutron.conf
+2021-05-26T00:14:56.037775662Z  INFO:__main__:Copying /var/lib/kolla/config_files/neutron.conf to /etc/neutron/neutron.conf
+2021-05-26T00:14:56.037988715Z  INFO:__main__:Setting permission for /etc/neutron/neutron.conf
+2021-05-26T00:14:56.038096122Z  INFO:__main__:Copying /var/lib/kolla/config_files/neutron_vpnaas.conf to /etc/neutron/neutron_vpnaas.conf
+2021-05-26T00:14:56.038286274Z  INFO:__main__:Setting permission for /etc/neutron/neutron_vpnaas.conf
+2021-05-26T00:14:56.038379127Z  INFO:__main__:Deleting /etc/neutron/l3_agent.ini
+2021-05-26T00:14:56.038468547Z  INFO:__main__:Copying /var/lib/kolla/config_files/l3_agent.ini to /etc/neutron/l3_agent.ini
+2021-05-26T00:14:56.038677492Z  INFO:__main__:Setting permission for /etc/neutron/l3_agent.ini
+2021-05-26T00:14:56.038733987Z  INFO:__main__:Writing out command to execute
+2021-05-26T00:14:56.038973496Z  INFO:__main__:Setting permission for /var/log/kolla/neutron
+2021-05-26T00:14:56.039060658Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-openvswitch-agent.log
+2021-05-26T00:14:56.039150960Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/privsep-helper.log
+2021-05-26T00:14:56.039218090Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-server.log
+2021-05-26T00:14:56.039263673Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-dhcp-agent.log
+2021-05-26T00:14:56.039372833Z  INFO:__main__:Setting permission for /var/lib/neutron/kolla
+2021-05-26T00:14:56.044546666Z  ++ cat /run_command
+2021-05-26T00:14:56.045365198Z  + CMD=/usr/local/bin/neutron-l3-agent-wrapper.sh
+2021-05-26T00:14:56.045383340Z  + ARGS=
+2021-05-26T00:14:56.045391462Z  + sudo kolla_copy_cacerts
+2021-05-26T00:14:56.053559029Z  + [[ ! -n '' ]]
+2021-05-26T00:14:56.055599683Z  + . kolla_extend_start
+2021-05-26T00:14:56.055617566Z  ++ [[ ! -d /var/log/kolla/neutron ]]
+2021-05-26T00:14:56.055626027Z  +++ stat -c %a /var/log/kolla/neutron
+2021-05-26T00:14:56.055632403Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T00:14:56.055638643Z  ++ chmod 755 /var/log/kolla/neutron
+2021-05-26T00:14:56.055892842Z  ++ [[ ubuntu == \c\e\n\t\o\s ]]
+2021-05-26T00:14:56.055931854Z  ++ export UPDATE_ALTERNATIVES=/usr/bin/update-alternatives
+2021-05-26T00:14:56.055953982Z  ++ UPDATE_ALTERNATIVES=/usr/bin/update-alternatives
+2021-05-26T00:14:56.056043736Z  ++ /usr/bin/update-alternatives --query iptables
+2021-05-26T00:14:56.057225737Z  ++ KOLLA_LEGACY_IPTABLES=false
+2021-05-26T00:14:56.057233856Z  ++ [[ false == \t\r\u\e ]]
+2021-05-26T00:14:56.057239391Z  ++ sudo /usr/bin/update-alternatives --auto iptables
+2021-05-26T00:14:56.150017164Z  ++ sudo /usr/bin/update-alternatives --auto ip6tables
+2021-05-26T00:14:56.157007091Z  ++ . /usr/local/bin/kolla_neutron_extend_start
+2021-05-26T00:14:56.157019915Z  + echo 'Running command: '\''/usr/local/bin/neutron-l3-agent-wrapper.sh'\'''
+2021-05-26T00:14:56.157024296Z  + exec /usr/local/bin/neutron-l3-agent-wrapper.sh
+2021-05-26T00:19:18.746032070Z  + sudo -E kolla_set_configs
+2021-05-26T00:19:18.797754357Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T00:19:18.797857607Z  INFO:__main__:Validating config file
+2021-05-26T00:19:18.797915294Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T00:19:18.797948425Z  INFO:__main__:Copying service configuration files
+2021-05-26T00:19:18.798057705Z  INFO:__main__:Deleting /usr/local/bin/neutron-l3-agent-wrapper.sh
+2021-05-26T00:19:18.798235788Z  INFO:__main__:Copying /var/lib/kolla/config_files/neutron-l3-agent-wrapper.sh to /usr/local/bin/neutron-l3-agent-wrapper.sh
+2021-05-26T00:19:18.799545777Z  INFO:__main__:Setting permission for /usr/local/bin/neutron-l3-agent-wrapper.sh
+2021-05-26T00:19:18.799658306Z  INFO:__main__:Deleting /etc/neutron/neutron.conf
+2021-05-26T00:19:18.799818120Z  INFO:__main__:Copying /var/lib/kolla/config_files/neutron.conf to /etc/neutron/neutron.conf
+2021-05-26T00:19:18.800127280Z  INFO:__main__:Setting permission for /etc/neutron/neutron.conf
+2021-05-26T00:19:18.800232912Z  INFO:__main__:Deleting /etc/neutron/neutron_vpnaas.conf
+2021-05-26T00:19:18.800331146Z  INFO:__main__:Copying /var/lib/kolla/config_files/neutron_vpnaas.conf to /etc/neutron/neutron_vpnaas.conf
+2021-05-26T00:19:18.800578673Z  INFO:__main__:Setting permission for /etc/neutron/neutron_vpnaas.conf
+2021-05-26T00:19:18.800670676Z  INFO:__main__:Deleting /etc/neutron/l3_agent.ini
+2021-05-26T00:19:18.800800344Z  INFO:__main__:Copying /var/lib/kolla/config_files/l3_agent.ini to /etc/neutron/l3_agent.ini
+2021-05-26T00:19:18.801066139Z  INFO:__main__:Setting permission for /etc/neutron/l3_agent.ini
+2021-05-26T00:19:18.801141551Z  INFO:__main__:Writing out command to execute
+2021-05-26T00:19:18.801446013Z  INFO:__main__:Setting permission for /var/log/kolla/neutron
+2021-05-26T00:19:18.801563760Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-openvswitch-agent.log
+2021-05-26T00:19:18.801625344Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/privsep-helper.log
+2021-05-26T00:19:18.801690424Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-metadata-agent.log
+2021-05-26T00:19:18.801753994Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-l3-agent.log
+2021-05-26T00:19:18.801824485Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-server.log
+2021-05-26T00:19:18.801964178Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/dnsmasq.log
+2021-05-26T00:19:18.801976095Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-dhcp-agent.log
+2021-05-26T00:19:18.802096173Z  INFO:__main__:Setting permission for /var/lib/neutron/kolla
+2021-05-26T00:19:18.802184964Z  INFO:__main__:Setting permission for /var/lib/neutron/kolla/metadata_proxy
+2021-05-26T00:19:18.821007908Z  ++ cat /run_command
+2021-05-26T00:19:18.821651593Z  + CMD=/usr/local/bin/neutron-l3-agent-wrapper.sh
+2021-05-26T00:19:18.821663536Z  + ARGS=
+2021-05-26T00:19:18.821679906Z  + sudo kolla_copy_cacerts
+2021-05-26T00:19:18.828031699Z  + [[ ! -n '' ]]
+2021-05-26T00:19:18.828057565Z  + . kolla_extend_start
+2021-05-26T00:19:18.828157005Z  ++ [[ ! -d /var/log/kolla/neutron ]]
+2021-05-26T00:19:18.828476447Z  +++ stat -c %a /var/log/kolla/neutron
+2021-05-26T00:19:18.829290161Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T00:19:18.829299129Z  ++ chmod 755 /var/log/kolla/neutron
+2021-05-26T00:19:18.830105461Z  ++ [[ ubuntu == \c\e\n\t\o\s ]]
+2021-05-26T00:19:18.830116417Z  ++ export UPDATE_ALTERNATIVES=/usr/bin/update-alternatives
+2021-05-26T00:19:18.830120894Z  ++ UPDATE_ALTERNATIVES=/usr/bin/update-alternatives
+2021-05-26T00:19:18.830193139Z  ++ /usr/bin/update-alternatives --query iptables
+2021-05-26T00:19:18.830916366Z  ++ KOLLA_LEGACY_IPTABLES=false
+2021-05-26T00:19:18.830931412Z  ++ [[ false == \t\r\u\e ]]
+2021-05-26T00:19:18.830954425Z  ++ sudo /usr/bin/update-alternatives --auto iptables
+2021-05-26T00:19:18.836986287Z  ++ sudo /usr/bin/update-alternatives --auto ip6tables
+2021-05-26T00:19:18.843723638Z  ++ . /usr/local/bin/kolla_neutron_extend_start
+2021-05-26T00:19:18.843779193Z  + echo 'Running command: '\''/usr/local/bin/neutron-l3-agent-wrapper.sh'\'''
+2021-05-26T00:19:18.843803588Z  + exec /usr/local/bin/neutron-l3-agent-wrapper.sh
+2021-05-26T00:20:18.735115721Z  + sudo -E kolla_set_configs
+2021-05-26T00:20:18.797528534Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T00:20:18.797706013Z  INFO:__main__:Validating config file
+2021-05-26T00:20:18.797718065Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T00:20:18.797763413Z  INFO:__main__:Copying service configuration files
+2021-05-26T00:20:18.797870065Z  INFO:__main__:Deleting /usr/local/bin/neutron-l3-agent-wrapper.sh
+2021-05-26T00:20:18.798065381Z  INFO:__main__:Copying /var/lib/kolla/config_files/neutron-l3-agent-wrapper.sh to /usr/local/bin/neutron-l3-agent-wrapper.sh
+2021-05-26T00:20:18.799568924Z  INFO:__main__:Setting permission for /usr/local/bin/neutron-l3-agent-wrapper.sh
+2021-05-26T00:20:18.799666908Z  INFO:__main__:Deleting /etc/neutron/neutron.conf
+2021-05-26T00:20:18.799869174Z  INFO:__main__:Copying /var/lib/kolla/config_files/neutron.conf to /etc/neutron/neutron.conf
+2021-05-26T00:20:18.800235008Z  INFO:__main__:Setting permission for /etc/neutron/neutron.conf
+2021-05-26T00:20:18.800366101Z  INFO:__main__:Deleting /etc/neutron/neutron_vpnaas.conf
+2021-05-26T00:20:18.800473609Z  INFO:__main__:Copying /var/lib/kolla/config_files/neutron_vpnaas.conf to /etc/neutron/neutron_vpnaas.conf
+2021-05-26T00:20:18.800733831Z  INFO:__main__:Setting permission for /etc/neutron/neutron_vpnaas.conf
+2021-05-26T00:20:18.800846863Z  INFO:__main__:Deleting /etc/neutron/l3_agent.ini
+2021-05-26T00:20:18.800991756Z  INFO:__main__:Copying /var/lib/kolla/config_files/l3_agent.ini to /etc/neutron/l3_agent.ini
+2021-05-26T00:20:18.801328774Z  INFO:__main__:Setting permission for /etc/neutron/l3_agent.ini
+2021-05-26T00:20:18.801389606Z  INFO:__main__:Writing out command to execute
+2021-05-26T00:20:18.801889141Z  INFO:__main__:Setting permission for /var/log/kolla/neutron
+2021-05-26T00:20:18.802026661Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-openvswitch-agent.log
+2021-05-26T00:20:18.802095696Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/privsep-helper.log
+2021-05-26T00:20:18.802176703Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-metadata-agent.log
+2021-05-26T00:20:18.802235741Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-l3-agent.log
+2021-05-26T00:20:18.802300420Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-server.log
+2021-05-26T00:20:18.802367955Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/dnsmasq.log
+2021-05-26T00:20:18.802438667Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-dhcp-agent.log
+2021-05-26T00:20:18.802603054Z  INFO:__main__:Setting permission for /var/lib/neutron/kolla
+2021-05-26T00:20:18.802705093Z  INFO:__main__:Setting permission for /var/lib/neutron/kolla/metadata_proxy
+2021-05-26T00:20:18.811545027Z  ++ cat /run_command
+2021-05-26T00:20:18.812444696Z  + CMD=/usr/local/bin/neutron-l3-agent-wrapper.sh
+2021-05-26T00:20:18.812461224Z  + ARGS=
+2021-05-26T00:20:18.812468180Z  + sudo kolla_copy_cacerts
+2021-05-26T00:20:18.819971937Z  + [[ ! -n '' ]]
+2021-05-26T00:20:18.820005272Z  + . kolla_extend_start
+2021-05-26T00:20:18.820055765Z  ++ [[ ! -d /var/log/kolla/neutron ]]
+2021-05-26T00:20:18.820351277Z  +++ stat -c %a /var/log/kolla/neutron
+2021-05-26T00:20:18.821465177Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T00:20:18.821475706Z  ++ chmod 755 /var/log/kolla/neutron
+2021-05-26T00:20:18.822336971Z  ++ [[ ubuntu == \c\e\n\t\o\s ]]
+2021-05-26T00:20:18.822350936Z  ++ export UPDATE_ALTERNATIVES=/usr/bin/update-alternatives
+2021-05-26T00:20:18.822399080Z  ++ UPDATE_ALTERNATIVES=/usr/bin/update-alternatives
+2021-05-26T00:20:18.822451280Z  ++ /usr/bin/update-alternatives --query iptables
+2021-05-26T00:20:18.823538743Z  ++ KOLLA_LEGACY_IPTABLES=false
+2021-05-26T00:20:18.823550730Z  ++ [[ false == \t\r\u\e ]]
+2021-05-26T00:20:18.823558703Z  ++ sudo /usr/bin/update-alternatives --auto iptables
+2021-05-26T00:20:18.830538743Z  ++ sudo /usr/bin/update-alternatives --auto ip6tables
+2021-05-26T00:20:18.837203061Z  ++ . /usr/local/bin/kolla_neutron_extend_start
+2021-05-26T00:20:18.837236069Z  + echo 'Running command: '\''/usr/local/bin/neutron-l3-agent-wrapper.sh'\'''
+2021-05-26T00:20:18.837275834Z  + exec /usr/local/bin/neutron-l3-agent-wrapper.sh

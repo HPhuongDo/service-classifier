@@ -1,0 +1,791 @@
+2021-05-25T22:47:03.798384696Z  + sudo -E kolla_set_configs
+2021-05-25T22:47:03.842199881Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:47:03.842254521Z  INFO:__main__:Validating config file
+2021-05-25T22:47:03.842298807Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:47:03.842330726Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:47:03.842467461Z  INFO:__main__:Copying /var/lib/kolla/config_files/horizon.conf to /etc/apache2/conf-enabled/000-default.conf
+2021-05-25T22:47:03.843092151Z  INFO:__main__:Setting permission for /etc/apache2/conf-enabled/000-default.conf
+2021-05-25T22:47:03.843228270Z  INFO:__main__:Copying /var/lib/kolla/config_files/local_settings to /etc/openstack-dashboard/local_settings
+2021-05-25T22:47:03.843643476Z  INFO:__main__:Setting permission for /etc/openstack-dashboard/local_settings
+2021-05-25T22:47:03.843769702Z  INFO:__main__:Copying /var/lib/kolla/config_files/custom_local_settings to /etc/openstack-dashboard/custom_local_settings
+2021-05-25T22:47:03.843955698Z  INFO:__main__:Setting permission for /etc/openstack-dashboard/custom_local_settings
+2021-05-25T22:47:03.844025579Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:47:03.849630520Z  ++ cat /run_command
+2021-05-25T22:47:03.850351993Z  + CMD='/usr/sbin/apache2 -DFOREGROUND'
+2021-05-25T22:47:03.850363950Z  + ARGS=
+2021-05-25T22:47:03.850395411Z  + sudo kolla_copy_cacerts
+2021-05-25T22:47:03.859289552Z  + [[ ! -n '' ]]
+2021-05-25T22:47:03.859311364Z  + . kolla_extend_start
+2021-05-25T22:47:03.859322836Z  ++ set -o errexit
+2021-05-25T22:47:03.859331651Z  ++ FORCE_GENERATE=no
+2021-05-25T22:47:03.859339133Z  ++ HASH_PATH=/var/lib/kolla/.settings.md5sum.txt
+2021-05-25T22:47:03.859434899Z  ++ [[ binary == \b\i\n\a\r\y ]]
+2021-05-25T22:47:03.859445900Z  ++ [[ ubuntu == \d\e\b\i\a\n ]]
+2021-05-25T22:47:03.859450529Z  ++ [[ ubuntu == \u\b\u\n\t\u ]]
+2021-05-25T22:47:03.859454497Z  ++ SITE_PACKAGES=/usr/lib/python3/dist-packages
+2021-05-25T22:47:03.859486541Z  ++ [[ -f /var/lib/kolla/venv/bin/python ]]
+2021-05-25T22:47:03.859501711Z  ++ MANAGE_PY='/usr/bin/python3.8 /usr/bin/manage.py'
+2021-05-25T22:47:03.859573387Z  ++ [[ binary == \s\o\u\r\c\e ]]
+2021-05-25T22:47:03.859579411Z  ++ [[ ubuntu == \d\e\b\i\a\n ]]
+2021-05-25T22:47:03.859671540Z  ++ [[ -f /etc/openstack-dashboard/custom_local_settings ]]
+2021-05-25T22:47:03.859680669Z  ++ CUSTOM_SETTINGS_FILE=/usr/lib/python3/dist-packages/openstack_dashboard/local/custom_local_settings.py
+2021-05-25T22:47:03.859687733Z  ++ [[ binary == \b\i\n\a\r\y ]]
+2021-05-25T22:47:03.859694524Z  ++ [[ ubuntu =~ ubuntu ]]
+2021-05-25T22:47:03.859748651Z  ++ CUSTOM_SETTINGS_FILE=/usr/share/openstack-dashboard/openstack_dashboard/local/custom_local_settings.py
+2021-05-25T22:47:03.859768372Z  ++ [[ ! -L /usr/share/openstack-dashboard/openstack_dashboard/local/custom_local_settings.py ]]
+2021-05-25T22:47:03.859815394Z  ++ ln -s /etc/openstack-dashboard/custom_local_settings /usr/share/openstack-dashboard/openstack_dashboard/local/custom_local_settings.py
+2021-05-25T22:47:03.860790281Z  ++ [[ -n '' ]]
+2021-05-25T22:47:03.861840268Z  ++ config_blazar_dashboard
+2021-05-25T22:47:03.861866386Z  ++ for file in ${SITE_PACKAGES}/blazar_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.861924254Z  ++ config_dashboard no '/usr/lib/python3/dist-packages/blazar_dashboard/enabled/_*[^__].py' '/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.861933336Z  ++ ENABLE=no
+2021-05-25T22:47:03.861940579Z  ++ SRC='/usr/lib/python3/dist-packages/blazar_dashboard/enabled/_*[^__].py'
+2021-05-25T22:47:03.861945019Z  ++ DEST='/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.861971665Z  ++ [[ ! -f /usr/lib/python3/dist-packages/blazar_dashboard/enabled/_*[^__].py ]]
+2021-05-25T22:47:03.861981215Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/blazar_dashboard/enabled/_*[^__].py is required'
+2021-05-25T22:47:03.862037888Z  ++ config_cloudkitty_dashboard
+2021-05-25T22:47:03.862056875Z  ++ for file in ${SITE_PACKAGES}/cloudkittydashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.862102542Z  ++ config_dashboard no '/usr/lib/python3/dist-packages/cloudkittydashboard/enabled/_*[^__].py' '/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.862111273Z  ++ ENABLE=no
+2021-05-25T22:47:03.862118098Z  ++ SRC='/usr/lib/python3/dist-packages/cloudkittydashboard/enabled/_*[^__].py'
+2021-05-25T22:47:03.862124633Z  ++ DEST='/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.862129137Z  ++ [[ ! -f /usr/lib/python3/dist-packages/cloudkittydashboard/enabled/_*[^__].py ]]
+2021-05-25T22:47:03.862145272Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/cloudkittydashboard/enabled/_*[^__].py is required'
+2021-05-25T22:47:03.862166953Z  ++ config_designate_dashboard
+2021-05-25T22:47:03.862259138Z  ++ for file in ${SITE_PACKAGES}/designatedashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.862320296Z  ++ config_dashboard no /usr/lib/python3/dist-packages/designatedashboard/enabled/_1710_project_dns_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1710_project_dns_panel_group.py
+2021-05-25T22:47:03.862339007Z  ++ ENABLE=no
+2021-05-25T22:47:03.862346779Z  ++ SRC=/usr/lib/python3/dist-packages/designatedashboard/enabled/_1710_project_dns_panel_group.py
+2021-05-25T22:47:03.862353121Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1710_project_dns_panel_group.py
+2021-05-25T22:47:03.862367432Z  ++ [[ ! -f /usr/lib/python3/dist-packages/designatedashboard/enabled/_1710_project_dns_panel_group.py ]]
+2021-05-25T22:47:03.862375243Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.862381396Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.862388168Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1710_project_dns_panel_group.py ]]
+2021-05-25T22:47:03.862418613Z  ++ for file in ${SITE_PACKAGES}/designatedashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.862475202Z  ++ config_dashboard no /usr/lib/python3/dist-packages/designatedashboard/enabled/_1721_dns_zones_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1721_dns_zones_panel.py
+2021-05-25T22:47:03.862483600Z  ++ ENABLE=no
+2021-05-25T22:47:03.862490202Z  ++ SRC=/usr/lib/python3/dist-packages/designatedashboard/enabled/_1721_dns_zones_panel.py
+2021-05-25T22:47:03.862494824Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1721_dns_zones_panel.py
+2021-05-25T22:47:03.862498576Z  ++ [[ ! -f /usr/lib/python3/dist-packages/designatedashboard/enabled/_1721_dns_zones_panel.py ]]
+2021-05-25T22:47:03.862521399Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.862528402Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.862532793Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1721_dns_zones_panel.py ]]
+2021-05-25T22:47:03.862549027Z  ++ for file in ${SITE_PACKAGES}/designatedashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.862611166Z  ++ config_dashboard no /usr/lib/python3/dist-packages/designatedashboard/enabled/_1722_dns_reversedns_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1722_dns_reversedns_panel.py
+2021-05-25T22:47:03.862616723Z  ++ ENABLE=no
+2021-05-25T22:47:03.862625150Z  ++ SRC=/usr/lib/python3/dist-packages/designatedashboard/enabled/_1722_dns_reversedns_panel.py
+2021-05-25T22:47:03.862629362Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1722_dns_reversedns_panel.py
+2021-05-25T22:47:03.862639325Z  ++ [[ ! -f /usr/lib/python3/dist-packages/designatedashboard/enabled/_1722_dns_reversedns_panel.py ]]
+2021-05-25T22:47:03.862657610Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.862662156Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.862675432Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1722_dns_reversedns_panel.py ]]
+2021-05-25T22:47:03.862699853Z  ++ config_freezer_ui
+2021-05-25T22:47:03.862726122Z  ++ for file in ${SITE_PACKAGES}/disaster_recovery/enabled/_*[^__].py
+2021-05-25T22:47:03.862769918Z  ++ config_dashboard no '/usr/lib/python3/dist-packages/disaster_recovery/enabled/_*[^__].py' '/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.862775655Z  ++ ENABLE=no
+2021-05-25T22:47:03.862779271Z  ++ SRC='/usr/lib/python3/dist-packages/disaster_recovery/enabled/_*[^__].py'
+2021-05-25T22:47:03.862789267Z  ++ DEST='/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.862799227Z  ++ [[ ! -f /usr/lib/python3/dist-packages/disaster_recovery/enabled/_*[^__].py ]]
+2021-05-25T22:47:03.862808237Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/disaster_recovery/enabled/_*[^__].py is required'
+2021-05-25T22:47:03.862829589Z  ++ config_heat_dashboard
+2021-05-25T22:47:03.862915699Z  ++ for file in ${SITE_PACKAGES}/heat_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.862969029Z  ++ config_dashboard yes /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1610_project_orchestration_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1610_project_orchestration_panel.py
+2021-05-25T22:47:03.862990264Z  ++ ENABLE=yes
+2021-05-25T22:47:03.862995470Z  ++ SRC=/usr/lib/python3/dist-packages/heat_dashboard/enabled/_1610_project_orchestration_panel.py
+2021-05-25T22:47:03.862999356Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1610_project_orchestration_panel.py
+2021-05-25T22:47:03.863009705Z  ++ [[ ! -f /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1610_project_orchestration_panel.py ]]
+2021-05-25T22:47:03.863036519Z  ++ [[ yes == \y\e\s ]]
+2021-05-25T22:47:03.863043100Z  ++ [[ ! -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1610_project_orchestration_panel.py ]]
+2021-05-25T22:47:03.863068088Z  ++ cp -a /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1610_project_orchestration_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1610_project_orchestration_panel.py
+2021-05-25T22:47:03.864237844Z  ++ FORCE_GENERATE=yes
+2021-05-25T22:47:03.864287749Z  ++ for file in ${SITE_PACKAGES}/heat_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.864340142Z  ++ config_dashboard yes /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1620_project_stacks_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1620_project_stacks_panel.py
+2021-05-25T22:47:03.864350622Z  ++ ENABLE=yes
+2021-05-25T22:47:03.864366938Z  ++ SRC=/usr/lib/python3/dist-packages/heat_dashboard/enabled/_1620_project_stacks_panel.py
+2021-05-25T22:47:03.864379005Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1620_project_stacks_panel.py
+2021-05-25T22:47:03.864385438Z  ++ [[ ! -f /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1620_project_stacks_panel.py ]]
+2021-05-25T22:47:03.864406220Z  ++ [[ yes == \y\e\s ]]
+2021-05-25T22:47:03.864414385Z  ++ [[ ! -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1620_project_stacks_panel.py ]]
+2021-05-25T22:47:03.864438760Z  ++ cp -a /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1620_project_stacks_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1620_project_stacks_panel.py
+2021-05-25T22:47:03.866125564Z  ++ FORCE_GENERATE=yes
+2021-05-25T22:47:03.866140379Z  ++ for file in ${SITE_PACKAGES}/heat_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.866237636Z  ++ config_dashboard yes /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1630_project_resource_types_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1630_project_resource_types_panel.py
+2021-05-25T22:47:03.866256256Z  ++ ENABLE=yes
+2021-05-25T22:47:03.866263256Z  ++ SRC=/usr/lib/python3/dist-packages/heat_dashboard/enabled/_1630_project_resource_types_panel.py
+2021-05-25T22:47:03.866270977Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1630_project_resource_types_panel.py
+2021-05-25T22:47:03.866277381Z  ++ [[ ! -f /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1630_project_resource_types_panel.py ]]
+2021-05-25T22:47:03.866300901Z  ++ [[ yes == \y\e\s ]]
+2021-05-25T22:47:03.866315953Z  ++ [[ ! -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1630_project_resource_types_panel.py ]]
+2021-05-25T22:47:03.866345612Z  ++ cp -a /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1630_project_resource_types_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1630_project_resource_types_panel.py
+2021-05-25T22:47:03.867394132Z  ++ FORCE_GENERATE=yes
+2021-05-25T22:47:03.867405751Z  ++ for file in ${SITE_PACKAGES}/heat_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.867483522Z  ++ config_dashboard yes /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1640_project_template_versions_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1640_project_template_versions_panel.py
+2021-05-25T22:47:03.867495625Z  ++ ENABLE=yes
+2021-05-25T22:47:03.867507148Z  ++ SRC=/usr/lib/python3/dist-packages/heat_dashboard/enabled/_1640_project_template_versions_panel.py
+2021-05-25T22:47:03.867511653Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1640_project_template_versions_panel.py
+2021-05-25T22:47:03.867515621Z  ++ [[ ! -f /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1640_project_template_versions_panel.py ]]
+2021-05-25T22:47:03.867523541Z  ++ [[ yes == \y\e\s ]]
+2021-05-25T22:47:03.867533194Z  ++ [[ ! -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1640_project_template_versions_panel.py ]]
+2021-05-25T22:47:03.867568961Z  ++ cp -a /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1640_project_template_versions_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1640_project_template_versions_panel.py
+2021-05-25T22:47:03.869315287Z  ++ FORCE_GENERATE=yes
+2021-05-25T22:47:03.869324438Z  ++ for file in ${SITE_PACKAGES}/heat_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.869400718Z  ++ config_dashboard yes /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1650_project_template_generator_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1650_project_template_generator_panel.py
+2021-05-25T22:47:03.869414635Z  ++ ENABLE=yes
+2021-05-25T22:47:03.869421849Z  ++ SRC=/usr/lib/python3/dist-packages/heat_dashboard/enabled/_1650_project_template_generator_panel.py
+2021-05-25T22:47:03.869429691Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1650_project_template_generator_panel.py
+2021-05-25T22:47:03.869441192Z  ++ [[ ! -f /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1650_project_template_generator_panel.py ]]
+2021-05-25T22:47:03.869454602Z  ++ [[ yes == \y\e\s ]]
+2021-05-25T22:47:03.869460073Z  ++ [[ ! -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1650_project_template_generator_panel.py ]]
+2021-05-25T22:47:03.869495634Z  ++ cp -a /usr/lib/python3/dist-packages/heat_dashboard/enabled/_1650_project_template_generator_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1650_project_template_generator_panel.py
+2021-05-25T22:47:03.870519678Z  ++ FORCE_GENERATE=yes
+2021-05-25T22:47:03.870579542Z  ++ config_dashboard yes /usr/lib/python3/dist-packages/heat_dashboard/conf/heat_policy.json /etc/openstack-dashboard/heat_policy.json
+2021-05-25T22:47:03.870604860Z  ++ ENABLE=yes
+2021-05-25T22:47:03.870614361Z  ++ SRC=/usr/lib/python3/dist-packages/heat_dashboard/conf/heat_policy.json
+2021-05-25T22:47:03.870619472Z  ++ DEST=/etc/openstack-dashboard/heat_policy.json
+2021-05-25T22:47:03.870623240Z  ++ [[ ! -f /usr/lib/python3/dist-packages/heat_dashboard/conf/heat_policy.json ]]
+2021-05-25T22:47:03.870666705Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/heat_dashboard/conf/heat_policy.json is required'
+2021-05-25T22:47:03.870710552Z  ++ config_ironic_dashboard
+2021-05-25T22:47:03.870760275Z  ++ for file in ${SITE_PACKAGES}/ironic_ui/enabled/_*[^__].py
+2021-05-25T22:47:03.870824490Z  ++ config_dashboard no '/usr/lib/python3/dist-packages/ironic_ui/enabled/_*[^__].py' '/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.870835640Z  ++ ENABLE=no
+2021-05-25T22:47:03.870851896Z  ++ SRC='/usr/lib/python3/dist-packages/ironic_ui/enabled/_*[^__].py'
+2021-05-25T22:47:03.870861351Z  ++ DEST='/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.870867997Z  ++ [[ ! -f /usr/lib/python3/dist-packages/ironic_ui/enabled/_*[^__].py ]]
+2021-05-25T22:47:03.870897588Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/ironic_ui/enabled/_*[^__].py is required'
+2021-05-25T22:47:03.870929579Z  ++ config_magnum_dashboard
+2021-05-25T22:47:03.870973043Z  ++ for file in ${SITE_PACKAGES}/magnum_ui/enabled/_*[^__].py
+2021-05-25T22:47:03.871053641Z  ++ config_dashboard no '/usr/lib/python3/dist-packages/magnum_ui/enabled/_*[^__].py' '/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.871073410Z  ++ ENABLE=no
+2021-05-25T22:47:03.871091458Z  ++ SRC='/usr/lib/python3/dist-packages/magnum_ui/enabled/_*[^__].py'
+2021-05-25T22:47:03.871099397Z  ++ DEST='/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.871105255Z  ++ [[ ! -f /usr/lib/python3/dist-packages/magnum_ui/enabled/_*[^__].py ]]
+2021-05-25T22:47:03.871142159Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/magnum_ui/enabled/_*[^__].py is required'
+2021-05-25T22:47:03.871153484Z  ++ config_manila_ui
+2021-05-25T22:47:03.871456422Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.871538141Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_80_manila_admin_add_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_80_manila_admin_add_share_panel_group.py
+2021-05-25T22:47:03.871548375Z  ++ ENABLE=no
+2021-05-25T22:47:03.871554406Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_80_manila_admin_add_share_panel_group.py
+2021-05-25T22:47:03.871561467Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_80_manila_admin_add_share_panel_group.py
+2021-05-25T22:47:03.871565749Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_80_manila_admin_add_share_panel_group.py ]]
+2021-05-25T22:47:03.871591358Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.871600330Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.871607342Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_80_manila_admin_add_share_panel_group.py ]]
+2021-05-25T22:47:03.871623897Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.871692953Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_80_manila_project_add_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_80_manila_project_add_share_panel_group.py
+2021-05-25T22:47:03.871714476Z  ++ ENABLE=no
+2021-05-25T22:47:03.871722290Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_80_manila_project_add_share_panel_group.py
+2021-05-25T22:47:03.871730384Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_80_manila_project_add_share_panel_group.py
+2021-05-25T22:47:03.871734632Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_80_manila_project_add_share_panel_group.py ]]
+2021-05-25T22:47:03.871756659Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.871764637Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.871771582Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_80_manila_project_add_share_panel_group.py ]]
+2021-05-25T22:47:03.871793400Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.871884259Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9010_manila_admin_add_shares_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9010_manila_admin_add_shares_panel_to_share_panel_group.py
+2021-05-25T22:47:03.871893908Z  ++ ENABLE=no
+2021-05-25T22:47:03.871901617Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9010_manila_admin_add_shares_panel_to_share_panel_group.py
+2021-05-25T22:47:03.871906075Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9010_manila_admin_add_shares_panel_to_share_panel_group.py
+2021-05-25T22:47:03.871916782Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9010_manila_admin_add_shares_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.872001145Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.872014863Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.872022934Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9010_manila_admin_add_shares_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.872037165Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.872165748Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9010_manila_project_add_shares_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9010_manila_project_add_shares_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872173959Z  ++ ENABLE=no
+2021-05-25T22:47:03.872177850Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9010_manila_project_add_shares_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872181997Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9010_manila_project_add_shares_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872185960Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9010_manila_project_add_shares_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.872209416Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.872219830Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.872227309Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9010_manila_project_add_shares_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.872253760Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.872357564Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9020_manila_admin_add_share_snapshots_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9020_manila_admin_add_share_snapshots_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872366761Z  ++ ENABLE=no
+2021-05-25T22:47:03.872374164Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9020_manila_admin_add_share_snapshots_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872379242Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9020_manila_admin_add_share_snapshots_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872393789Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9020_manila_admin_add_share_snapshots_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.872408288Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.872419401Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.872445680Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9020_manila_admin_add_share_snapshots_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.872468434Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.872567560Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9020_manila_project_add_share_snapshots_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9020_manila_project_add_share_snapshots_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872587001Z  ++ ENABLE=no
+2021-05-25T22:47:03.872592623Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9020_manila_project_add_share_snapshots_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872596546Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9020_manila_project_add_share_snapshots_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872600850Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9020_manila_project_add_share_snapshots_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.872633913Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.872644100Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.872667569Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9020_manila_project_add_share_snapshots_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.872691561Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.872772110Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9030_manila_admin_add_share_types_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9030_manila_admin_add_share_types_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872778481Z  ++ ENABLE=no
+2021-05-25T22:47:03.872782946Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9030_manila_admin_add_share_types_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872787527Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9030_manila_admin_add_share_types_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872791342Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9030_manila_admin_add_share_types_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.872818721Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.872824551Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.872828312Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9030_manila_admin_add_share_types_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.872850498Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.872953247Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9040_manila_admin_add_share_networks_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9040_manila_admin_add_share_networks_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872960846Z  ++ ENABLE=no
+2021-05-25T22:47:03.872964507Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9040_manila_admin_add_share_networks_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872974754Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9040_manila_admin_add_share_networks_panel_to_share_panel_group.py
+2021-05-25T22:47:03.872979024Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9040_manila_admin_add_share_networks_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.872992369Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.872996546Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.873000192Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9040_manila_admin_add_share_networks_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.873019290Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.873133517Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9040_manila_project_add_share_networks_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9040_manila_project_add_share_networks_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873139596Z  ++ ENABLE=no
+2021-05-25T22:47:03.873149320Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9040_manila_project_add_share_networks_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873153546Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9040_manila_project_add_share_networks_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873157496Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9040_manila_project_add_share_networks_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.873175278Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.873179832Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.873192106Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9040_manila_project_add_share_networks_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.873213117Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.873312958Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9050_manila_admin_add_security_services_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9050_manila_admin_add_security_services_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873319062Z  ++ ENABLE=no
+2021-05-25T22:47:03.873324119Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9050_manila_admin_add_security_services_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873328424Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9050_manila_admin_add_security_services_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873332632Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9050_manila_admin_add_security_services_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.873356826Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.873361833Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.873366152Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9050_manila_admin_add_security_services_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.873393221Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.873487273Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9050_manila_project_add_security_services_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9050_manila_project_add_security_services_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873498142Z  ++ ENABLE=no
+2021-05-25T22:47:03.873502782Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9050_manila_project_add_security_services_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873506724Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9050_manila_project_add_security_services_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873510876Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9050_manila_project_add_security_services_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.873535567Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.873540880Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.873544943Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9050_manila_project_add_security_services_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.873574045Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.873663374Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9060_manila_admin_add_share_servers_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9060_manila_admin_add_share_servers_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873669354Z  ++ ENABLE=no
+2021-05-25T22:47:03.873679042Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9060_manila_admin_add_share_servers_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873686588Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9060_manila_admin_add_share_servers_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873693567Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9060_manila_admin_add_share_servers_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.873778724Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.873785930Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.873789766Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9060_manila_admin_add_share_servers_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.873793761Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.873840093Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9070_manila_admin_add_share_instances_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9070_manila_admin_add_share_instances_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873849608Z  ++ ENABLE=no
+2021-05-25T22:47:03.873864877Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9070_manila_admin_add_share_instances_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873871834Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9070_manila_admin_add_share_instances_panel_to_share_panel_group.py
+2021-05-25T22:47:03.873877800Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9070_manila_admin_add_share_instances_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.873890410Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.873903335Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.873908793Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9070_manila_admin_add_share_instances_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.873934659Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.874024198Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9080_manila_admin_add_share_groups_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9080_manila_admin_add_share_groups_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874033767Z  ++ ENABLE=no
+2021-05-25T22:47:03.874039698Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9080_manila_admin_add_share_groups_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874047128Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9080_manila_admin_add_share_groups_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874053300Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9080_manila_admin_add_share_groups_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.874070812Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.874080383Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.874087540Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9080_manila_admin_add_share_groups_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.874109939Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.874222660Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9080_manila_project_add_share_groups_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9080_manila_project_add_share_groups_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874232721Z  ++ ENABLE=no
+2021-05-25T22:47:03.874238218Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9080_manila_project_add_share_groups_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874246727Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9080_manila_project_add_share_groups_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874253170Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9080_manila_project_add_share_groups_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.874259816Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.874265574Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.874272364Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9080_manila_project_add_share_groups_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.874291913Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.874433626Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9085_manila_admin_add_share_group_snapshots_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9085_manila_admin_add_share_group_snapshots_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874443823Z  ++ ENABLE=no
+2021-05-25T22:47:03.874448491Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9085_manila_admin_add_share_group_snapshots_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874457253Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9085_manila_admin_add_share_group_snapshots_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874473314Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9085_manila_admin_add_share_group_snapshots_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.874507182Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.874514228Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.874524309Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9085_manila_admin_add_share_group_snapshots_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.874544051Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.874689158Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9085_manila_project_add_share_group_snapshots_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9085_manila_project_add_share_group_snapshots_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874699477Z  ++ ENABLE=no
+2021-05-25T22:47:03.874719599Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9085_manila_project_add_share_group_snapshots_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874729139Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9085_manila_project_add_share_group_snapshots_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874737161Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9085_manila_project_add_share_group_snapshots_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.874762318Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.874769539Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.874778705Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9085_manila_project_add_share_group_snapshots_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.874809245Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.874945640Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9090_manila_admin_add_share_group_types_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9090_manila_admin_add_share_group_types_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874958226Z  ++ ENABLE=no
+2021-05-25T22:47:03.874981063Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9090_manila_admin_add_share_group_types_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874986570Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9090_manila_admin_add_share_group_types_panel_to_share_panel_group.py
+2021-05-25T22:47:03.874990552Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9090_manila_admin_add_share_group_types_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.875017593Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.875023079Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.875032952Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9090_manila_admin_add_share_group_types_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.875075959Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.875179648Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9095_manila_admin_add_user_messages_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9095_manila_admin_add_user_messages_panel_to_share_panel_group.py
+2021-05-25T22:47:03.875188272Z  ++ ENABLE=no
+2021-05-25T22:47:03.875193445Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9095_manila_admin_add_user_messages_panel_to_share_panel_group.py
+2021-05-25T22:47:03.875199676Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9095_manila_admin_add_user_messages_panel_to_share_panel_group.py
+2021-05-25T22:47:03.875205148Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9095_manila_admin_add_user_messages_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.875241496Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.875253501Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.875261700Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9095_manila_admin_add_user_messages_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.875280443Z  ++ for file in ${SITE_PACKAGES}/manila_ui/local/enabled/_*[^__].py
+2021-05-25T22:47:03.875385184Z  ++ config_dashboard no /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9095_manila_project_add_user_messages_panel_to_share_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9095_manila_project_add_user_messages_panel_to_share_panel_group.py
+2021-05-25T22:47:03.875395563Z  ++ ENABLE=no
+2021-05-25T22:47:03.875403175Z  ++ SRC=/usr/lib/python3/dist-packages/manila_ui/local/enabled/_9095_manila_project_add_user_messages_panel_to_share_panel_group.py
+2021-05-25T22:47:03.875410161Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9095_manila_project_add_user_messages_panel_to_share_panel_group.py
+2021-05-25T22:47:03.875418592Z  ++ [[ ! -f /usr/lib/python3/dist-packages/manila_ui/local/enabled/_9095_manila_project_add_user_messages_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.875448487Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.875454155Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.875475795Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_9095_manila_project_add_user_messages_panel_to_share_panel_group.py ]]
+2021-05-25T22:47:03.875532225Z  ++ config_masakari_dashboard
+2021-05-25T22:47:03.875571921Z  ++ for file in ${SITE_PACKAGES}/masakaridashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.875685811Z  ++ config_dashboard no '/usr/lib/python3/dist-packages/masakaridashboard/local/enabled/_*[^__].py' '/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.875696334Z  ++ ENABLE=no
+2021-05-25T22:47:03.875702407Z  ++ SRC='/usr/lib/python3/dist-packages/masakaridashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.875714453Z  ++ DEST='/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.875722027Z  ++ [[ ! -f /usr/lib/python3/dist-packages/masakaridashboard/local/enabled/_*[^__].py ]]
+2021-05-25T22:47:03.875727987Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/masakaridashboard/local/enabled/_*[^__].py is required'
+2021-05-25T22:47:03.875761696Z  ++ config_dashboard no /usr/lib/python3/dist-packages/masakaridashboard/conf/masakari_policy.json /etc/openstack-dashboard/masakari_policy.json
+2021-05-25T22:47:03.875773111Z  ++ ENABLE=no
+2021-05-25T22:47:03.875779947Z  ++ SRC=/usr/lib/python3/dist-packages/masakaridashboard/conf/masakari_policy.json
+2021-05-25T22:47:03.875791472Z  ++ DEST=/etc/openstack-dashboard/masakari_policy.json
+2021-05-25T22:47:03.875804046Z  ++ [[ ! -f /usr/lib/python3/dist-packages/masakaridashboard/conf/masakari_policy.json ]]
+2021-05-25T22:47:03.875823603Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/masakaridashboard/conf/masakari_policy.json is required'
+2021-05-25T22:47:03.875865154Z  ++ config_dashboard no /usr/lib/python3/dist-packages/masakaridashboard/local/local_settings.d/_50_masakari.py /usr/lib/python3/dist-packages/openstack_dashboard/local/local_settings.d/_50_masakari.py
+2021-05-25T22:47:03.875876539Z  ++ ENABLE=no
+2021-05-25T22:47:03.875884628Z  ++ SRC=/usr/lib/python3/dist-packages/masakaridashboard/local/local_settings.d/_50_masakari.py
+2021-05-25T22:47:03.875891498Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/local_settings.d/_50_masakari.py
+2021-05-25T22:47:03.875904728Z  ++ [[ ! -f /usr/lib/python3/dist-packages/masakaridashboard/local/local_settings.d/_50_masakari.py ]]
+2021-05-25T22:47:03.875929156Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/masakaridashboard/local/local_settings.d/_50_masakari.py is required'
+2021-05-25T22:47:03.875963161Z  ++ config_mistral_dashboard
+2021-05-25T22:47:03.876014116Z  ++ config_dashboard no /usr/lib/python3/dist-packages/mistraldashboard/enabled/_50_mistral.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_50_mistral.py
+2021-05-25T22:47:03.876026532Z  ++ ENABLE=no
+2021-05-25T22:47:03.876032502Z  ++ SRC=/usr/lib/python3/dist-packages/mistraldashboard/enabled/_50_mistral.py
+2021-05-25T22:47:03.876048936Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_50_mistral.py
+2021-05-25T22:47:03.876091876Z  ++ [[ ! -f /usr/lib/python3/dist-packages/mistraldashboard/enabled/_50_mistral.py ]]
+2021-05-25T22:47:03.876101936Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/mistraldashboard/enabled/_50_mistral.py is required'
+2021-05-25T22:47:03.876113299Z  ++ config_monasca_ui
+2021-05-25T22:47:03.876158674Z  ++ config_dashboard no /usr/lib/python3/dist-packages/monitoring/enabled/_50_admin_add_monitoring_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_50_admin_add_monitoring_panel.py
+2021-05-25T22:47:03.876168118Z  ++ ENABLE=no
+2021-05-25T22:47:03.876189204Z  ++ SRC=/usr/lib/python3/dist-packages/monitoring/enabled/_50_admin_add_monitoring_panel.py
+2021-05-25T22:47:03.876201186Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_50_admin_add_monitoring_panel.py
+2021-05-25T22:47:03.876208346Z  ++ [[ ! -f /usr/lib/python3/dist-packages/monitoring/enabled/_50_admin_add_monitoring_panel.py ]]
+2021-05-25T22:47:03.876233283Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/monitoring/enabled/_50_admin_add_monitoring_panel.py is required'
+2021-05-25T22:47:03.876293924Z  ++ config_dashboard no /usr/lib/python3/dist-packages/monitoring/conf/monitoring_policy.json /usr/lib/python3/dist-packages/openstack_dashboard/conf/monitoring_policy.json
+2021-05-25T22:47:03.876308237Z  ++ ENABLE=no
+2021-05-25T22:47:03.876315388Z  ++ SRC=/usr/lib/python3/dist-packages/monitoring/conf/monitoring_policy.json
+2021-05-25T22:47:03.876321518Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/conf/monitoring_policy.json
+2021-05-25T22:47:03.876330350Z  ++ [[ ! -f /usr/lib/python3/dist-packages/monitoring/conf/monitoring_policy.json ]]
+2021-05-25T22:47:03.876381686Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/monitoring/conf/monitoring_policy.json is required'
+2021-05-25T22:47:03.876397185Z  ++ config_murano_dashboard
+2021-05-25T22:47:03.876591299Z  ++ for file in ${SITE_PACKAGES}/muranodashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.876661391Z  ++ config_dashboard no /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_50_dashboard_catalog.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_50_dashboard_catalog.py
+2021-05-25T22:47:03.876669089Z  ++ ENABLE=no
+2021-05-25T22:47:03.876691350Z  ++ SRC=/usr/lib/python3/dist-packages/muranodashboard/local/enabled/_50_dashboard_catalog.py
+2021-05-25T22:47:03.876703695Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_50_dashboard_catalog.py
+2021-05-25T22:47:03.876711011Z  ++ [[ ! -f /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_50_dashboard_catalog.py ]]
+2021-05-25T22:47:03.876730872Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.876742167Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.876769379Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_50_dashboard_catalog.py ]]
+2021-05-25T22:47:03.876799417Z  ++ for file in ${SITE_PACKAGES}/muranodashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.876879810Z  ++ config_dashboard no /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_51_muranodashboard.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_51_muranodashboard.py
+2021-05-25T22:47:03.876887396Z  ++ ENABLE=no
+2021-05-25T22:47:03.876913849Z  ++ SRC=/usr/lib/python3/dist-packages/muranodashboard/local/enabled/_51_muranodashboard.py
+2021-05-25T22:47:03.876923241Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_51_muranodashboard.py
+2021-05-25T22:47:03.876933340Z  ++ [[ ! -f /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_51_muranodashboard.py ]]
+2021-05-25T22:47:03.876944731Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.876970888Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.876978772Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_51_muranodashboard.py ]]
+2021-05-25T22:47:03.876997529Z  ++ for file in ${SITE_PACKAGES}/muranodashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.877088331Z  ++ config_dashboard no /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_60_panel_group_browse.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_60_panel_group_browse.py
+2021-05-25T22:47:03.877199329Z  ++ ENABLE=no
+2021-05-25T22:47:03.877208145Z  ++ SRC=/usr/lib/python3/dist-packages/muranodashboard/local/enabled/_60_panel_group_browse.py
+2021-05-25T22:47:03.877212410Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_60_panel_group_browse.py
+2021-05-25T22:47:03.877216146Z  ++ [[ ! -f /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_60_panel_group_browse.py ]]
+2021-05-25T22:47:03.877219836Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.877223294Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.877226911Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_60_panel_group_browse.py ]]
+2021-05-25T22:47:03.877230625Z  ++ for file in ${SITE_PACKAGES}/muranodashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.877290733Z  ++ config_dashboard no /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_63_panel_murano_catalog.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_63_panel_murano_catalog.py
+2021-05-25T22:47:03.877301670Z  ++ ENABLE=no
+2021-05-25T22:47:03.877308890Z  ++ SRC=/usr/lib/python3/dist-packages/muranodashboard/local/enabled/_63_panel_murano_catalog.py
+2021-05-25T22:47:03.877315781Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_63_panel_murano_catalog.py
+2021-05-25T22:47:03.877350637Z  ++ [[ ! -f /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_63_panel_murano_catalog.py ]]
+2021-05-25T22:47:03.877360230Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.877367040Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.877373906Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_63_panel_murano_catalog.py ]]
+2021-05-25T22:47:03.877427714Z  ++ for file in ${SITE_PACKAGES}/muranodashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.877507786Z  ++ config_dashboard no /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_70_panel_group_manage.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_70_panel_group_manage.py
+2021-05-25T22:47:03.877518867Z  ++ ENABLE=no
+2021-05-25T22:47:03.877524790Z  ++ SRC=/usr/lib/python3/dist-packages/muranodashboard/local/enabled/_70_panel_group_manage.py
+2021-05-25T22:47:03.877531597Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_70_panel_group_manage.py
+2021-05-25T22:47:03.877538703Z  ++ [[ ! -f /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_70_panel_group_manage.py ]]
+2021-05-25T22:47:03.877585761Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.877594216Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.877615839Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_70_panel_group_manage.py ]]
+2021-05-25T22:47:03.877656440Z  ++ for file in ${SITE_PACKAGES}/muranodashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.877725435Z  ++ config_dashboard no /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_71_panel_murano_packages.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_71_panel_murano_packages.py
+2021-05-25T22:47:03.877736433Z  ++ ENABLE=no
+2021-05-25T22:47:03.877742568Z  ++ SRC=/usr/lib/python3/dist-packages/muranodashboard/local/enabled/_71_panel_murano_packages.py
+2021-05-25T22:47:03.877749843Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_71_panel_murano_packages.py
+2021-05-25T22:47:03.877755907Z  ++ [[ ! -f /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_71_panel_murano_packages.py ]]
+2021-05-25T22:47:03.877772163Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.877780550Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.877799159Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_71_panel_murano_packages.py ]]
+2021-05-25T22:47:03.877806667Z  ++ for file in ${SITE_PACKAGES}/muranodashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.877859271Z  ++ config_dashboard no /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_72_panel_murano_images.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_72_panel_murano_images.py
+2021-05-25T22:47:03.877865707Z  ++ ENABLE=no
+2021-05-25T22:47:03.877869356Z  ++ SRC=/usr/lib/python3/dist-packages/muranodashboard/local/enabled/_72_panel_murano_images.py
+2021-05-25T22:47:03.877887904Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_72_panel_murano_images.py
+2021-05-25T22:47:03.877901148Z  ++ [[ ! -f /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_72_panel_murano_images.py ]]
+2021-05-25T22:47:03.877909611Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.877920645Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.877951892Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_72_panel_murano_images.py ]]
+2021-05-25T22:47:03.877968722Z  ++ for file in ${SITE_PACKAGES}/muranodashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.878038208Z  ++ config_dashboard no /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_73_panel_murano_categories.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_73_panel_murano_categories.py
+2021-05-25T22:47:03.878046274Z  ++ ENABLE=no
+2021-05-25T22:47:03.878050812Z  ++ SRC=/usr/lib/python3/dist-packages/muranodashboard/local/enabled/_73_panel_murano_categories.py
+2021-05-25T22:47:03.878071839Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_73_panel_murano_categories.py
+2021-05-25T22:47:03.878081444Z  ++ [[ ! -f /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_73_panel_murano_categories.py ]]
+2021-05-25T22:47:03.878105414Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.878111178Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.878121355Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_73_panel_murano_categories.py ]]
+2021-05-25T22:47:03.878131247Z  ++ for file in ${SITE_PACKAGES}/muranodashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.878204449Z  ++ config_dashboard no /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_80_panel_group_applications.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_80_panel_group_applications.py
+2021-05-25T22:47:03.878211285Z  ++ ENABLE=no
+2021-05-25T22:47:03.878214850Z  ++ SRC=/usr/lib/python3/dist-packages/muranodashboard/local/enabled/_80_panel_group_applications.py
+2021-05-25T22:47:03.878218661Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_80_panel_group_applications.py
+2021-05-25T22:47:03.878222360Z  ++ [[ ! -f /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_80_panel_group_applications.py ]]
+2021-05-25T22:47:03.878230960Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.878234900Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.878244615Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_80_panel_group_applications.py ]]
+2021-05-25T22:47:03.878254824Z  ++ for file in ${SITE_PACKAGES}/muranodashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.878332883Z  ++ config_dashboard no /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_81_panel_applications_environments.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_81_panel_applications_environments.py
+2021-05-25T22:47:03.878341900Z  ++ ENABLE=no
+2021-05-25T22:47:03.878348084Z  ++ SRC=/usr/lib/python3/dist-packages/muranodashboard/local/enabled/_81_panel_applications_environments.py
+2021-05-25T22:47:03.878354939Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_81_panel_applications_environments.py
+2021-05-25T22:47:03.878359223Z  ++ [[ ! -f /usr/lib/python3/dist-packages/muranodashboard/local/enabled/_81_panel_applications_environments.py ]]
+2021-05-25T22:47:03.878373764Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.878386589Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.878394467Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_81_panel_applications_environments.py ]]
+2021-05-25T22:47:03.878434883Z  ++ config_dashboard no /usr/lib/python3/dist-packages/muranodashboard/conf/murano_policy.json /etc/openstack-dashboard/murano_policy.json
+2021-05-25T22:47:03.878443601Z  ++ ENABLE=no
+2021-05-25T22:47:03.878448311Z  ++ SRC=/usr/lib/python3/dist-packages/muranodashboard/conf/murano_policy.json
+2021-05-25T22:47:03.878452405Z  ++ DEST=/etc/openstack-dashboard/murano_policy.json
+2021-05-25T22:47:03.878456842Z  ++ [[ ! -f /usr/lib/python3/dist-packages/muranodashboard/conf/murano_policy.json ]]
+2021-05-25T22:47:03.878487383Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.878494768Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.878509693Z  ++ [[ -f /etc/openstack-dashboard/murano_policy.json ]]
+2021-05-25T22:47:03.878554818Z  ++ config_dashboard no /usr/lib/python3/dist-packages/muranodashboard/local/local_settings.d/_50_murano.py /usr/lib/python3/dist-packages/openstack_dashboard/local/local_settings.d/_50_murano.py
+2021-05-25T22:47:03.878563895Z  ++ ENABLE=no
+2021-05-25T22:47:03.878569867Z  ++ SRC=/usr/lib/python3/dist-packages/muranodashboard/local/local_settings.d/_50_murano.py
+2021-05-25T22:47:03.878576343Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/local_settings.d/_50_murano.py
+2021-05-25T22:47:03.878580544Z  ++ [[ ! -f /usr/lib/python3/dist-packages/muranodashboard/local/local_settings.d/_50_murano.py ]]
+2021-05-25T22:47:03.878606216Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.878617132Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.878624573Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/local_settings.d/_50_murano.py ]]
+2021-05-25T22:47:03.878672380Z  ++ rm -f /usr/lib/python3/dist-packages/openstack_dashboard/local/local_settings.d/_50_murano.py /usr/lib/python3/dist-packages/openstack_dashboard/local/local_settings.d/_50_murano.pyc /usr/lib/python3/dist-packages/openstack_dashboard/local/local_settings.d/_50_murano.pyo
+2021-05-25T22:47:03.884155383Z  ++ FORCE_GENERATE=yes
+2021-05-25T22:47:03.884179709Z  ++ config_neutron_vpnaas_dashboard
+2021-05-25T22:47:03.884233285Z  ++ config_dashboard no /usr/lib/python3/dist-packages/neutron_vpnaas_dashboard/enabled/_7100_project_vpn_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_7100_project_vpn_panel.py
+2021-05-25T22:47:03.884242432Z  ++ ENABLE=no
+2021-05-25T22:47:03.884246122Z  ++ SRC=/usr/lib/python3/dist-packages/neutron_vpnaas_dashboard/enabled/_7100_project_vpn_panel.py
+2021-05-25T22:47:03.884262511Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_7100_project_vpn_panel.py
+2021-05-25T22:47:03.884272160Z  ++ [[ ! -f /usr/lib/python3/dist-packages/neutron_vpnaas_dashboard/enabled/_7100_project_vpn_panel.py ]]
+2021-05-25T22:47:03.884307915Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/neutron_vpnaas_dashboard/enabled/_7100_project_vpn_panel.py is required'
+2021-05-25T22:47:03.884333560Z  ++ config_octavia_dashboard
+2021-05-25T22:47:03.884385200Z  ++ config_dashboard no /usr/lib/python3/dist-packages/octavia_dashboard/enabled/_1482_project_load_balancer_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1482_project_load_balancer_panel.py
+2021-05-25T22:47:03.884396447Z  ++ ENABLE=no
+2021-05-25T22:47:03.884403484Z  ++ SRC=/usr/lib/python3/dist-packages/octavia_dashboard/enabled/_1482_project_load_balancer_panel.py
+2021-05-25T22:47:03.884410576Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1482_project_load_balancer_panel.py
+2021-05-25T22:47:03.884417217Z  ++ [[ ! -f /usr/lib/python3/dist-packages/octavia_dashboard/enabled/_1482_project_load_balancer_panel.py ]]
+2021-05-25T22:47:03.884457714Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.884465610Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.884472358Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1482_project_load_balancer_panel.py ]]
+2021-05-25T22:47:03.884500722Z  ++ config_sahara_dashboard
+2021-05-25T22:47:03.884602409Z  ++ for file in ${SITE_PACKAGES}/sahara_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.884669762Z  ++ config_dashboard no /usr/lib/python3/dist-packages/sahara_dashboard/enabled/_1810_data_processing_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1810_data_processing_panel_group.py
+2021-05-25T22:47:03.884676458Z  ++ ENABLE=no
+2021-05-25T22:47:03.884800541Z  ++ SRC=/usr/lib/python3/dist-packages/sahara_dashboard/enabled/_1810_data_processing_panel_group.py
+2021-05-25T22:47:03.884808245Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1810_data_processing_panel_group.py
+2021-05-25T22:47:03.884814285Z  ++ [[ ! -f /usr/lib/python3/dist-packages/sahara_dashboard/enabled/_1810_data_processing_panel_group.py ]]
+2021-05-25T22:47:03.884820728Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.884826576Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.884832416Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1810_data_processing_panel_group.py ]]
+2021-05-25T22:47:03.884837445Z  ++ for file in ${SITE_PACKAGES}/sahara_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.884841176Z  ++ config_dashboard no /usr/lib/python3/dist-packages/sahara_dashboard/enabled/_1820_data_processing_clusters_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1820_data_processing_clusters_panel.py
+2021-05-25T22:47:03.884846179Z  ++ ENABLE=no
+2021-05-25T22:47:03.884851950Z  ++ SRC=/usr/lib/python3/dist-packages/sahara_dashboard/enabled/_1820_data_processing_clusters_panel.py
+2021-05-25T22:47:03.884858129Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1820_data_processing_clusters_panel.py
+2021-05-25T22:47:03.884864007Z  ++ [[ ! -f /usr/lib/python3/dist-packages/sahara_dashboard/enabled/_1820_data_processing_clusters_panel.py ]]
+2021-05-25T22:47:03.884869667Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.884873341Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.884876842Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1820_data_processing_clusters_panel.py ]]
+2021-05-25T22:47:03.884891101Z  ++ for file in ${SITE_PACKAGES}/sahara_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.884952110Z  ++ config_dashboard no /usr/lib/python3/dist-packages/sahara_dashboard/enabled/_1830_data_processing_plugins_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1830_data_processing_plugins_panel.py
+2021-05-25T22:47:03.884961305Z  ++ ENABLE=no
+2021-05-25T22:47:03.884968005Z  ++ SRC=/usr/lib/python3/dist-packages/sahara_dashboard/enabled/_1830_data_processing_plugins_panel.py
+2021-05-25T22:47:03.884974550Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1830_data_processing_plugins_panel.py
+2021-05-25T22:47:03.884980743Z  ++ [[ ! -f /usr/lib/python3/dist-packages/sahara_dashboard/enabled/_1830_data_processing_plugins_panel.py ]]
+2021-05-25T22:47:03.884997751Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.885005461Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.885012111Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1830_data_processing_plugins_panel.py ]]
+2021-05-25T22:47:03.885038395Z  ++ for file in ${SITE_PACKAGES}/sahara_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.885099380Z  ++ config_dashboard no /usr/lib/python3/dist-packages/sahara_dashboard/enabled/_1840_data_processing_jobs_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1840_data_processing_jobs_panel.py
+2021-05-25T22:47:03.885108495Z  ++ ENABLE=no
+2021-05-25T22:47:03.885114531Z  ++ SRC=/usr/lib/python3/dist-packages/sahara_dashboard/enabled/_1840_data_processing_jobs_panel.py
+2021-05-25T22:47:03.885120869Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1840_data_processing_jobs_panel.py
+2021-05-25T22:47:03.885124818Z  ++ [[ ! -f /usr/lib/python3/dist-packages/sahara_dashboard/enabled/_1840_data_processing_jobs_panel.py ]]
+2021-05-25T22:47:03.885137092Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.885143982Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.885154770Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1840_data_processing_jobs_panel.py ]]
+2021-05-25T22:47:03.885174853Z  ++ config_senlin_dashboard
+2021-05-25T22:47:03.885210411Z  ++ for file in ${SITE_PACKAGES}/senlin_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.885251740Z  ++ config_dashboard no '/usr/lib/python3/dist-packages/senlin_dashboard/enabled/_*[^__].py' '/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.885260694Z  ++ ENABLE=no
+2021-05-25T22:47:03.885265737Z  ++ SRC='/usr/lib/python3/dist-packages/senlin_dashboard/enabled/_*[^__].py'
+2021-05-25T22:47:03.885271942Z  ++ DEST='/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.885278506Z  ++ [[ ! -f /usr/lib/python3/dist-packages/senlin_dashboard/enabled/_*[^__].py ]]
+2021-05-25T22:47:03.885295133Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/senlin_dashboard/enabled/_*[^__].py is required'
+2021-05-25T22:47:03.885339697Z  ++ config_dashboard no /usr/lib/python3/dist-packages/senlin_dashboard/conf/senlin_policy.json /etc/openstack-dashboard/senlin_policy.json
+2021-05-25T22:47:03.885347863Z  ++ ENABLE=no
+2021-05-25T22:47:03.885352217Z  ++ SRC=/usr/lib/python3/dist-packages/senlin_dashboard/conf/senlin_policy.json
+2021-05-25T22:47:03.885359602Z  ++ DEST=/etc/openstack-dashboard/senlin_policy.json
+2021-05-25T22:47:03.885366231Z  ++ [[ ! -f /usr/lib/python3/dist-packages/senlin_dashboard/conf/senlin_policy.json ]]
+2021-05-25T22:47:03.885385207Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/senlin_dashboard/conf/senlin_policy.json is required'
+2021-05-25T22:47:03.885411289Z  ++ config_solum_dashboard
+2021-05-25T22:47:03.885446278Z  ++ for file in ${SITE_PACKAGES}/solumdashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.885494690Z  ++ config_dashboard no '/usr/lib/python3/dist-packages/solumdashboard/local/enabled/_*[^__].py' '/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.885500789Z  ++ ENABLE=no
+2021-05-25T22:47:03.885504322Z  ++ SRC='/usr/lib/python3/dist-packages/solumdashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.885508000Z  ++ DEST='/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.885517925Z  ++ [[ ! -f /usr/lib/python3/dist-packages/solumdashboard/local/enabled/_*[^__].py ]]
+2021-05-25T22:47:03.885522006Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/solumdashboard/local/enabled/_*[^__].py is required'
+2021-05-25T22:47:03.885549367Z  ++ config_tacker_dashboard
+2021-05-25T22:47:03.885576184Z  ++ for file in ${SITE_PACKAGES}/tacker_horizon/enabled/_*[^__].py
+2021-05-25T22:47:03.885610429Z  ++ config_dashboard no '/usr/lib/python3/dist-packages/tacker_horizon/enabled/_*[^__].py' '/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.885618886Z  ++ ENABLE=no
+2021-05-25T22:47:03.885624200Z  ++ SRC='/usr/lib/python3/dist-packages/tacker_horizon/enabled/_*[^__].py'
+2021-05-25T22:47:03.885628648Z  ++ DEST='/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.885652484Z  ++ [[ ! -f /usr/lib/python3/dist-packages/tacker_horizon/enabled/_*[^__].py ]]
+2021-05-25T22:47:03.885660359Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/tacker_horizon/enabled/_*[^__].py is required'
+2021-05-25T22:47:03.885797230Z  ++ config_trove_dashboard
+2021-05-25T22:47:03.885818323Z  ++ for file in ${SITE_PACKAGES}/trove_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.885890096Z  ++ config_dashboard no /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1710_database_panel_group.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1710_database_panel_group.py
+2021-05-25T22:47:03.885898356Z  ++ ENABLE=no
+2021-05-25T22:47:03.885910331Z  ++ SRC=/usr/lib/python3/dist-packages/trove_dashboard/enabled/_1710_database_panel_group.py
+2021-05-25T22:47:03.885920995Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1710_database_panel_group.py
+2021-05-25T22:47:03.885938907Z  ++ [[ ! -f /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1710_database_panel_group.py ]]
+2021-05-25T22:47:03.885956051Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.885971234Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.885990852Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1710_database_panel_group.py ]]
+2021-05-25T22:47:03.886021956Z  ++ for file in ${SITE_PACKAGES}/trove_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.886089353Z  ++ config_dashboard no /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1720_project_databases_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1720_project_databases_panel.py
+2021-05-25T22:47:03.886100041Z  ++ ENABLE=no
+2021-05-25T22:47:03.886106404Z  ++ SRC=/usr/lib/python3/dist-packages/trove_dashboard/enabled/_1720_project_databases_panel.py
+2021-05-25T22:47:03.886124005Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1720_project_databases_panel.py
+2021-05-25T22:47:03.886132235Z  ++ [[ ! -f /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1720_project_databases_panel.py ]]
+2021-05-25T22:47:03.886145133Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.886162112Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.886169491Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1720_project_databases_panel.py ]]
+2021-05-25T22:47:03.886202469Z  ++ for file in ${SITE_PACKAGES}/trove_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.886287132Z  ++ config_dashboard no /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1730_project_database_backups_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1730_project_database_backups_panel.py
+2021-05-25T22:47:03.886297611Z  ++ ENABLE=no
+2021-05-25T22:47:03.886304843Z  ++ SRC=/usr/lib/python3/dist-packages/trove_dashboard/enabled/_1730_project_database_backups_panel.py
+2021-05-25T22:47:03.886311818Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1730_project_database_backups_panel.py
+2021-05-25T22:47:03.886321031Z  ++ [[ ! -f /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1730_project_database_backups_panel.py ]]
+2021-05-25T22:47:03.886345926Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.886355482Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.886370651Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1730_project_database_backups_panel.py ]]
+2021-05-25T22:47:03.886396593Z  ++ for file in ${SITE_PACKAGES}/trove_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.886475575Z  ++ config_dashboard no /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1731_project_database_backups_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1731_project_database_backups_panel.py
+2021-05-25T22:47:03.886485530Z  ++ ENABLE=no
+2021-05-25T22:47:03.886492095Z  ++ SRC=/usr/lib/python3/dist-packages/trove_dashboard/enabled/_1731_project_database_backups_panel.py
+2021-05-25T22:47:03.886509557Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1731_project_database_backups_panel.py
+2021-05-25T22:47:03.886517288Z  ++ [[ ! -f /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1731_project_database_backups_panel.py ]]
+2021-05-25T22:47:03.886542531Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.886552227Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.886559153Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1731_project_database_backups_panel.py ]]
+2021-05-25T22:47:03.886585058Z  ++ for file in ${SITE_PACKAGES}/trove_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.886665579Z  ++ config_dashboard no /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1732_project_backup_strategies_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1732_project_backup_strategies_panel.py
+2021-05-25T22:47:03.886675401Z  ++ ENABLE=no
+2021-05-25T22:47:03.886681541Z  ++ SRC=/usr/lib/python3/dist-packages/trove_dashboard/enabled/_1732_project_backup_strategies_panel.py
+2021-05-25T22:47:03.886685870Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1732_project_backup_strategies_panel.py
+2021-05-25T22:47:03.886699895Z  ++ [[ ! -f /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1732_project_backup_strategies_panel.py ]]
+2021-05-25T22:47:03.886707579Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.886717577Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.886745889Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1732_project_backup_strategies_panel.py ]]
+2021-05-25T22:47:03.886764484Z  ++ for file in ${SITE_PACKAGES}/trove_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.886825945Z  ++ config_dashboard no /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1740_project_database_clusters_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1740_project_database_clusters_panel.py
+2021-05-25T22:47:03.886835919Z  ++ ENABLE=no
+2021-05-25T22:47:03.886843230Z  ++ SRC=/usr/lib/python3/dist-packages/trove_dashboard/enabled/_1740_project_database_clusters_panel.py
+2021-05-25T22:47:03.886849621Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1740_project_database_clusters_panel.py
+2021-05-25T22:47:03.886875431Z  ++ [[ ! -f /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1740_project_database_clusters_panel.py ]]
+2021-05-25T22:47:03.886910862Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.886917230Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.886925786Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1740_project_database_clusters_panel.py ]]
+2021-05-25T22:47:03.886930542Z  ++ for file in ${SITE_PACKAGES}/trove_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.887008976Z  ++ config_dashboard no /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1760_project_database_configurations_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1760_project_database_configurations_panel.py
+2021-05-25T22:47:03.887019767Z  ++ ENABLE=no
+2021-05-25T22:47:03.887027033Z  ++ SRC=/usr/lib/python3/dist-packages/trove_dashboard/enabled/_1760_project_database_configurations_panel.py
+2021-05-25T22:47:03.887036261Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1760_project_database_configurations_panel.py
+2021-05-25T22:47:03.887043279Z  ++ [[ ! -f /usr/lib/python3/dist-packages/trove_dashboard/enabled/_1760_project_database_configurations_panel.py ]]
+2021-05-25T22:47:03.887051366Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.887058276Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.887065114Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_1760_project_database_configurations_panel.py ]]
+2021-05-25T22:47:03.887109484Z  ++ config_vitrage_dashboard
+2021-05-25T22:47:03.887145477Z  ++ for file in ${SITE_PACKAGES}/vitrage_dashboard/enabled/_*[^__].py
+2021-05-25T22:47:03.887176133Z  ++ config_dashboard no '/usr/lib/python3/dist-packages/vitrage_dashboard/enabled/_*[^__].py' '/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.887182089Z  ++ ENABLE=no
+2021-05-25T22:47:03.887186035Z  ++ SRC='/usr/lib/python3/dist-packages/vitrage_dashboard/enabled/_*[^__].py'
+2021-05-25T22:47:03.887190327Z  ++ DEST='/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.887194494Z  ++ [[ ! -f /usr/lib/python3/dist-packages/vitrage_dashboard/enabled/_*[^__].py ]]
+2021-05-25T22:47:03.887219579Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/vitrage_dashboard/enabled/_*[^__].py is required'
+2021-05-25T22:47:03.887234920Z  ++ config_watcher_dashboard
+2021-05-25T22:47:03.887362665Z  ++ for file in ${SITE_PACKAGES}/watcher_dashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.887416907Z  ++ config_dashboard no /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31000_goals_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31000_goals_panel.py
+2021-05-25T22:47:03.887426166Z  ++ ENABLE=no
+2021-05-25T22:47:03.887434153Z  ++ SRC=/usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31000_goals_panel.py
+2021-05-25T22:47:03.887441342Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31000_goals_panel.py
+2021-05-25T22:47:03.887448252Z  ++ [[ ! -f /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31000_goals_panel.py ]]
+2021-05-25T22:47:03.887466623Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.887473855Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.887481555Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31000_goals_panel.py ]]
+2021-05-25T22:47:03.887493976Z  ++ for file in ${SITE_PACKAGES}/watcher_dashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.887559946Z  ++ config_dashboard no /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31010_strategies_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31010_strategies_panel.py
+2021-05-25T22:47:03.887569825Z  ++ ENABLE=no
+2021-05-25T22:47:03.887576452Z  ++ SRC=/usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31010_strategies_panel.py
+2021-05-25T22:47:03.887596707Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31010_strategies_panel.py
+2021-05-25T22:47:03.887604907Z  ++ [[ ! -f /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31010_strategies_panel.py ]]
+2021-05-25T22:47:03.887611987Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.887618837Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.887626184Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31010_strategies_panel.py ]]
+2021-05-25T22:47:03.887634024Z  ++ for file in ${SITE_PACKAGES}/watcher_dashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.887687852Z  ++ config_dashboard no /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31020_watcher_panelgroup.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31020_watcher_panelgroup.py
+2021-05-25T22:47:03.887694408Z  ++ ENABLE=no
+2021-05-25T22:47:03.887700416Z  ++ SRC=/usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31020_watcher_panelgroup.py
+2021-05-25T22:47:03.887707822Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31020_watcher_panelgroup.py
+2021-05-25T22:47:03.887735125Z  ++ [[ ! -f /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31020_watcher_panelgroup.py ]]
+2021-05-25T22:47:03.887746457Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.887753882Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.887760413Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31020_watcher_panelgroup.py ]]
+2021-05-25T22:47:03.887789564Z  ++ for file in ${SITE_PACKAGES}/watcher_dashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.887852333Z  ++ config_dashboard no /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31030_audit_templates_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31030_audit_templates_panel.py
+2021-05-25T22:47:03.887862174Z  ++ ENABLE=no
+2021-05-25T22:47:03.887869522Z  ++ SRC=/usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31030_audit_templates_panel.py
+2021-05-25T22:47:03.887875704Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31030_audit_templates_panel.py
+2021-05-25T22:47:03.887882999Z  ++ [[ ! -f /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31030_audit_templates_panel.py ]]
+2021-05-25T22:47:03.887919627Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.887928935Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.888047818Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31030_audit_templates_panel.py ]]
+2021-05-25T22:47:03.888053780Z  ++ for file in ${SITE_PACKAGES}/watcher_dashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.888057705Z  ++ config_dashboard no /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31040_audits_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31040_audits_panel.py
+2021-05-25T22:47:03.888062176Z  ++ ENABLE=no
+2021-05-25T22:47:03.888065669Z  ++ SRC=/usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31040_audits_panel.py
+2021-05-25T22:47:03.888069659Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31040_audits_panel.py
+2021-05-25T22:47:03.888073740Z  ++ [[ ! -f /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31040_audits_panel.py ]]
+2021-05-25T22:47:03.888113434Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.888124177Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.888130501Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31040_audits_panel.py ]]
+2021-05-25T22:47:03.888137343Z  ++ for file in ${SITE_PACKAGES}/watcher_dashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.888214328Z  ++ config_dashboard no /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31050_action_plans_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31050_action_plans_panel.py
+2021-05-25T22:47:03.888224577Z  ++ ENABLE=no
+2021-05-25T22:47:03.888231307Z  ++ SRC=/usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31050_action_plans_panel.py
+2021-05-25T22:47:03.888238325Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31050_action_plans_panel.py
+2021-05-25T22:47:03.888246056Z  ++ [[ ! -f /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31050_action_plans_panel.py ]]
+2021-05-25T22:47:03.888253839Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.888260369Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.888282659Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31050_action_plans_panel.py ]]
+2021-05-25T22:47:03.888303953Z  ++ for file in ${SITE_PACKAGES}/watcher_dashboard/local/enabled/_*[^__].py
+2021-05-25T22:47:03.888376187Z  ++ config_dashboard no /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31060_actions_panel.py /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31060_actions_panel.py
+2021-05-25T22:47:03.888386543Z  ++ ENABLE=no
+2021-05-25T22:47:03.888392440Z  ++ SRC=/usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31060_actions_panel.py
+2021-05-25T22:47:03.888399512Z  ++ DEST=/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31060_actions_panel.py
+2021-05-25T22:47:03.888405101Z  ++ [[ ! -f /usr/lib/python3/dist-packages/watcher_dashboard/local/enabled/_31060_actions_panel.py ]]
+2021-05-25T22:47:03.888416945Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.888423062Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.888429556Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_31060_actions_panel.py ]]
+2021-05-25T22:47:03.888477828Z  ++ config_dashboard no /usr/lib/python3/dist-packages/watcher_dashboard/conf/watcher_policy.json /etc/openstack-dashboard/watcher_policy.json
+2021-05-25T22:47:03.888486478Z  ++ ENABLE=no
+2021-05-25T22:47:03.888492879Z  ++ SRC=/usr/lib/python3/dist-packages/watcher_dashboard/conf/watcher_policy.json
+2021-05-25T22:47:03.888498673Z  ++ DEST=/etc/openstack-dashboard/watcher_policy.json
+2021-05-25T22:47:03.888505312Z  ++ [[ ! -f /usr/lib/python3/dist-packages/watcher_dashboard/conf/watcher_policy.json ]]
+2021-05-25T22:47:03.888530185Z  ++ [[ no == \y\e\s ]]
+2021-05-25T22:47:03.888537827Z  ++ [[ no != \y\e\s ]]
+2021-05-25T22:47:03.888541966Z  ++ [[ -f /etc/openstack-dashboard/watcher_policy.json ]]
+2021-05-25T22:47:03.888572006Z  ++ rm -f /etc/openstack-dashboard/watcher_policy.json /etc/openstack-dashboard/watcher_policy.jsonc /etc/openstack-dashboard/watcher_policy.jsono
+2021-05-25T22:47:03.889492380Z  ++ FORCE_GENERATE=yes
+2021-05-25T22:47:03.889522670Z  ++ config_zun_dashboard
+2021-05-25T22:47:03.889551444Z  ++ for file in ${SITE_PACKAGES}/zun_ui/enabled/_*[^__].py
+2021-05-25T22:47:03.889594141Z  ++ config_dashboard no '/usr/lib/python3/dist-packages/zun_ui/enabled/_*[^__].py' '/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.889617642Z  ++ ENABLE=no
+2021-05-25T22:47:03.889623615Z  ++ SRC='/usr/lib/python3/dist-packages/zun_ui/enabled/_*[^__].py'
+2021-05-25T22:47:03.889627585Z  ++ DEST='/usr/lib/python3/dist-packages/openstack_dashboard/local/enabled/_*[^__].py'
+2021-05-25T22:47:03.889631360Z  ++ [[ ! -f /usr/lib/python3/dist-packages/zun_ui/enabled/_*[^__].py ]]
+2021-05-25T22:47:03.889643057Z  ++ echo 'WARNING: /usr/lib/python3/dist-packages/zun_ui/enabled/_*[^__].py is required'
+2021-05-25T22:47:03.889698117Z  ++ settings_changed
+2021-05-25T22:47:03.889705468Z  ++ changed=1
+2021-05-25T22:47:03.889726348Z  ++ [[ ! -f /var/lib/kolla/.settings.md5sum.txt ]]
+2021-05-25T22:47:03.889738098Z  ++ changed=0
+2021-05-25T22:47:03.889745225Z  ++ return 0
+2021-05-25T22:47:03.889773568Z  ++ /usr/bin/python3.8 /usr/bin/manage.py collectstatic --noinput --clear
+2021-05-25T22:47:05.944717841Z  /usr/lib/python3/dist-packages/scss/types.py:6: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+2021-05-25T22:47:05.944741564Z    from collections import Iterable
+2021-05-25T22:47:05.944748420Z  /usr/lib/python3/dist-packages/scss/namespace.py:172: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
+2021-05-25T22:47:05.944754556Z    argspec = inspect.getargspec(function)
+2021-05-25T22:47:05.944760124Z  /usr/lib/python3/dist-packages/scss/selector.py:26: FutureWarning: Possible nested set at position 329
+2021-05-25T22:47:05.944766401Z    SELECTOR_TOKENIZER = re.compile(r'''
+2021-05-25T22:47:06.036519123Z  ++ /usr/bin/python3.8 /usr/bin/manage.py compress --force
+2021-05-25T22:47:33.249726592Z  /usr/lib/python3/dist-packages/scss/types.py:6: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+2021-05-25T22:47:33.249750785Z    from collections import Iterable
+2021-05-25T22:47:33.249756652Z  /usr/lib/python3/dist-packages/scss/namespace.py:172: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
+2021-05-25T22:47:33.249760922Z    argspec = inspect.getargspec(function)
+2021-05-25T22:47:33.249764513Z  /usr/lib/python3/dist-packages/scss/selector.py:26: FutureWarning: Possible nested set at position 329
+2021-05-25T22:47:33.249768348Z    SELECTOR_TOKENIZER = re.compile(r'''
+2021-05-25T22:47:33.249771890Z  /usr/lib/python3/dist-packages/scss/compiler.py:359: DeprecationWarning: PY_SSIZE_T_CLEAN will be required for '#' formats
+2021-05-25T22:47:33.249775726Z    for c_lineno, c_property, c_codestr in locate_blocks(rule.unparsed_contents):
+2021-05-25T22:47:33.613973178Z  ++ settings_bundle
+2021-05-25T22:47:33.614008807Z  ++ md5sum
+2021-05-25T22:47:33.614017054Z  ++ tar -cf- --mtime=1970-01-01 /etc/openstack-dashboard/local_settings /etc/openstack-dashboard/custom_local_settings /etc/openstack-dashboard/local_settings.d
+2021-05-25T22:47:33.616232220Z  ++ true
+2021-05-25T22:47:33.616660406Z  ++ [[ ! -d /var/log/kolla/horizon ]]
+2021-05-25T22:47:33.616673442Z  ++ mkdir -p /var/log/kolla/horizon
+2021-05-25T22:47:33.617956189Z  +++ stat -c %a /var/log/kolla/horizon
+2021-05-25T22:47:33.618760431Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:47:33.618773649Z  ++ chmod 755 /var/log/kolla/horizon
+2021-05-25T22:47:33.619560472Z  ++ [[ -f /usr/lib/python3/dist-packages/openstack_dashboard/local/.secret_key_store ]]
+2021-05-25T22:47:33.619575741Z  ++ . /usr/local/bin/kolla_httpd_setup
+2021-05-25T22:47:33.620037906Z  ++++ whoami
+2021-05-25T22:47:33.620813931Z  +++ [[ root == \r\o\o\t ]]
+2021-05-25T22:47:33.620826848Z  +++ [[ ubuntu =~ debian|ubuntu ]]
+2021-05-25T22:47:33.620853547Z  +++ APACHE_CONFDIR=
+2021-05-25T22:47:33.620875299Z  +++ . /etc/apache2/envvars
+2021-05-25T22:47:33.620956768Z  ++++ unset HOME
+2021-05-25T22:47:33.620997452Z  ++++ '[' '' '!=' '' ']'
+2021-05-25T22:47:33.621013126Z  ++++ SUFFIX=
+2021-05-25T22:47:33.621048250Z  ++++ export APACHE_RUN_USER=www-data
+2021-05-25T22:47:33.621063364Z  ++++ APACHE_RUN_USER=www-data
+2021-05-25T22:47:33.621092557Z  ++++ export APACHE_RUN_GROUP=www-data
+2021-05-25T22:47:33.621105706Z  ++++ APACHE_RUN_GROUP=www-data
+2021-05-25T22:47:33.621114630Z  ++++ export APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-25T22:47:33.621121306Z  ++++ APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-25T22:47:33.621134434Z  ++++ export APACHE_RUN_DIR=/var/run/apache2
+2021-05-25T22:47:33.621141988Z  ++++ APACHE_RUN_DIR=/var/run/apache2
+2021-05-25T22:47:33.621154729Z  ++++ export APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-25T22:47:33.621158757Z  ++++ APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-25T22:47:33.621172135Z  ++++ export APACHE_LOG_DIR=/var/log/apache2
+2021-05-25T22:47:33.621179291Z  ++++ APACHE_LOG_DIR=/var/log/apache2
+2021-05-25T22:47:33.621193691Z  ++++ export LANG=C
+2021-05-25T22:47:33.621202295Z  ++++ LANG=C
+2021-05-25T22:47:33.621233325Z  ++++ export LANG
+2021-05-25T22:47:33.621309259Z  +++ install -d /var/run/apache2/
+2021-05-25T22:47:33.622323505Z  +++ rm -rf '/var/run/apache2/*'
+2021-05-25T22:47:33.622876457Z  +++ [[ ubuntu = centos ]]
+2021-05-25T22:47:33.622920741Z  ++ [[ ubuntu == \d\e\b\i\a\n ]]
+2021-05-25T22:47:33.622945167Z  + echo 'Running command: '\''/usr/sbin/apache2 -DFOREGROUND'\'''
+2021-05-25T22:47:33.622975725Z  + exec /usr/sbin/apache2 -DFOREGROUND
+2021-05-25T22:47:33.644306973Z  AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 130.149.249.200. Set the 'ServerName' directive globally to suppress this message

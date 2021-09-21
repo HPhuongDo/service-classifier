@@ -1,0 +1,25 @@
+2021-05-25T23:02:56.887975226Z  + sudo -E kolla_set_configs
+2021-05-25T23:02:56.930696624Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T23:02:56.930964067Z  INFO:__main__:Validating config file
+2021-05-25T23:02:56.931009558Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T23:02:56.931052599Z  INFO:__main__:Copying service configuration files
+2021-05-25T23:02:56.931231524Z  INFO:__main__:Deleting /etc/elasticsearch/elasticsearch.yml
+2021-05-25T23:02:56.931413499Z  INFO:__main__:Copying /var/lib/kolla/config_files/elasticsearch.yml to /etc/elasticsearch/elasticsearch.yml
+2021-05-25T23:02:56.931991312Z  INFO:__main__:Setting permission for /etc/elasticsearch/elasticsearch.yml
+2021-05-25T23:02:56.932050703Z  INFO:__main__:Writing out command to execute
+2021-05-25T23:02:56.932291879Z  INFO:__main__:Setting permission for /var/lib/elasticsearch
+2021-05-25T23:02:56.932414613Z  INFO:__main__:Setting permission for /var/lib/elasticsearch/data
+2021-05-25T23:02:56.937586941Z  ++ cat /run_command
+2021-05-25T23:02:56.938497532Z  + CMD=/usr/share/elasticsearch/bin/elasticsearch
+2021-05-25T23:02:56.938511759Z  + ARGS=
+2021-05-25T23:02:56.938517663Z  + sudo kolla_copy_cacerts
+2021-05-25T23:02:56.947753500Z  + [[ ! -n '' ]]
+2021-05-25T23:02:56.947787997Z  + . kolla_extend_start
+2021-05-25T23:02:56.947859393Z  ++ [[ ! -d /var/log/kolla/elasticsearch ]]
+2021-05-25T23:02:56.947917843Z  ++ mkdir -p /var/log/kolla/elasticsearch
+2021-05-25T23:02:56.949795192Z  +++ stat -c %a /var/log/kolla/elasticsearch
+2021-05-25T23:02:56.950933955Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T23:02:56.950954088Z  ++ chmod 755 /var/log/kolla/elasticsearch
+2021-05-25T23:02:56.952046398Z  + echo 'Running command: '\''/usr/share/elasticsearch/bin/elasticsearch'\'''
+2021-05-25T23:02:56.952068719Z  + exec /usr/share/elasticsearch/bin/elasticsearch
+2021-05-25T23:02:58.437464737Z  OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.

@@ -1,0 +1,367 @@
+2021-05-26T01:42:32.665109390Z  + sudo -E kolla_set_configs
+2021-05-26T01:42:32.708257982Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T01:42:32.708303385Z  INFO:__main__:Validating config file
+2021-05-26T01:42:32.708345981Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T01:42:32.708359181Z  INFO:__main__:Copying service configuration files
+2021-05-26T01:42:32.708438231Z  INFO:__main__:Deleting /etc/nova/nova.conf
+2021-05-26T01:42:32.708670605Z  INFO:__main__:Copying /var/lib/kolla/config_files/nova.conf to /etc/nova/nova.conf
+2021-05-26T01:42:32.709069132Z  INFO:__main__:Setting permission for /etc/nova/nova.conf
+2021-05-26T01:42:32.709140027Z  INFO:__main__:Writing out command to execute
+2021-05-26T01:42:32.709372409Z  INFO:__main__:Setting permission for /var/lib/nova
+2021-05-26T01:42:32.709410235Z  INFO:__main__:Setting permission for /var/lib/nova/tmp
+2021-05-26T01:42:32.709492950Z  INFO:__main__:Setting permission for /var/lib/nova/CA
+2021-05-26T01:42:32.709506330Z  INFO:__main__:Setting permission for /var/lib/nova/networks
+2021-05-26T01:42:32.709529570Z  INFO:__main__:Setting permission for /var/lib/nova/keys
+2021-05-26T01:42:32.709609563Z  INFO:__main__:Setting permission for /var/lib/nova/.ssh
+2021-05-26T01:42:32.709622845Z  INFO:__main__:Setting permission for /var/lib/nova/images
+2021-05-26T01:42:32.709637661Z  INFO:__main__:Setting permission for /var/lib/nova/instances
+2021-05-26T01:42:32.709686657Z  INFO:__main__:Setting permission for /var/lib/nova/buckets
+2021-05-26T01:42:32.709773209Z  INFO:__main__:Setting permission for /var/lib/nova/CA/newcerts
+2021-05-26T01:42:32.709808555Z  INFO:__main__:Setting permission for /var/lib/nova/CA/reqs
+2021-05-26T01:42:32.709845981Z  INFO:__main__:Setting permission for /var/lib/nova/CA/private
+2021-05-26T01:42:32.709886688Z  INFO:__main__:Setting permission for /var/lib/nova/CA/INTER
+2021-05-26T01:42:32.710056641Z  INFO:__main__:Setting permission for /var/lib/nova/.ssh/authorized_keys
+2021-05-26T01:42:32.710094085Z  INFO:__main__:Setting permission for /var/lib/nova/.ssh/id_rsa
+2021-05-26T01:42:32.710131798Z  INFO:__main__:Setting permission for /var/lib/nova/.ssh/config
+2021-05-26T01:42:32.714912255Z  ++ cat /run_command
+2021-05-26T01:42:32.716001559Z  + CMD=nova-compute
+2021-05-26T01:42:32.716021914Z  + ARGS=
+2021-05-26T01:42:32.716028799Z  + sudo kolla_copy_cacerts
+2021-05-26T01:42:32.724168621Z  + [[ ! -n '' ]]
+2021-05-26T01:42:32.724198910Z  + . kolla_extend_start
+2021-05-26T01:42:32.724252744Z  ++ [[ ! -d /var/log/kolla/nova ]]
+2021-05-26T01:42:32.724286488Z  ++ mkdir -p /var/log/kolla/nova
+2021-05-26T01:42:32.726157809Z  +++ stat -c %a /var/log/kolla/nova
+2021-05-26T01:42:32.727207301Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T01:42:32.727233992Z  ++ chmod 755 /var/log/kolla/nova
+2021-05-26T01:42:32.728390803Z  ++ . /usr/local/bin/kolla_nova_extend_start
+2021-05-26T01:42:32.728446059Z  +++ [[ ! -d /var/lib/nova/instances ]]
+2021-05-26T01:42:32.728455638Z  + echo 'Running command: '\''nova-compute'\'''
+2021-05-26T01:42:32.728526102Z  + exec nova-compute
+2021-05-26T01:54:05.996184871Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996210109Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+2021-05-26T01:54:05.996219786Z      httplib_response = self._make_request(
+2021-05-26T01:54:05.996227173Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 445, in _make_request
+2021-05-26T01:54:05.996234989Z      six.raise_from(e, None)
+2021-05-26T01:54:05.996243111Z    File "<string>", line 3, in raise_from
+2021-05-26T01:54:05.996247928Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 440, in _make_request
+2021-05-26T01:54:05.996253261Z      httplib_response = conn.getresponse()
+2021-05-26T01:54:05.996259931Z    File "/usr/lib/python3.8/http/client.py", line 1347, in getresponse
+2021-05-26T01:54:05.996264431Z      response.begin()
+2021-05-26T01:54:05.996268291Z    File "/usr/lib/python3.8/http/client.py", line 307, in begin
+2021-05-26T01:54:05.996272291Z      version, status, reason = self._read_status()
+2021-05-26T01:54:05.996276105Z    File "/usr/lib/python3.8/http/client.py", line 276, in _read_status
+2021-05-26T01:54:05.996279972Z      raise RemoteDisconnected("Remote end closed connection without"
+2021-05-26T01:54:05.996283859Z  http.client.RemoteDisconnected: Remote end closed connection without response
+2021-05-26T01:54:05.996287727Z  
+2021-05-26T01:54:05.996291580Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996298204Z  
+2021-05-26T01:54:05.996304899Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996312031Z    File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+2021-05-26T01:54:05.996319393Z      resp = conn.urlopen(
+2021-05-26T01:54:05.996323609Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+2021-05-26T01:54:05.996327583Z      retries = retries.increment(
+2021-05-26T01:54:05.996331427Z    File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 531, in increment
+2021-05-26T01:54:05.996335330Z      raise six.reraise(type(error), error, _stacktrace)
+2021-05-26T01:54:05.996339168Z    File "/usr/lib/python3/dist-packages/six.py", line 702, in reraise
+2021-05-26T01:54:05.996342994Z      raise value.with_traceback(tb)
+2021-05-26T01:54:05.996346656Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+2021-05-26T01:54:05.996356954Z      httplib_response = self._make_request(
+2021-05-26T01:54:05.996360779Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 445, in _make_request
+2021-05-26T01:54:05.996364421Z      six.raise_from(e, None)
+2021-05-26T01:54:05.996367734Z    File "<string>", line 3, in raise_from
+2021-05-26T01:54:05.996371229Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 440, in _make_request
+2021-05-26T01:54:05.996374748Z      httplib_response = conn.getresponse()
+2021-05-26T01:54:05.996378087Z    File "/usr/lib/python3.8/http/client.py", line 1347, in getresponse
+2021-05-26T01:54:05.996381550Z      response.begin()
+2021-05-26T01:54:05.996384813Z    File "/usr/lib/python3.8/http/client.py", line 307, in begin
+2021-05-26T01:54:05.996398364Z      version, status, reason = self._read_status()
+2021-05-26T01:54:05.996402313Z    File "/usr/lib/python3.8/http/client.py", line 276, in _read_status
+2021-05-26T01:54:05.996405760Z      raise RemoteDisconnected("Remote end closed connection without"
+2021-05-26T01:54:05.996409170Z  urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2021-05-26T01:54:05.996412691Z  
+2021-05-26T01:54:05.996415838Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996419171Z  
+2021-05-26T01:54:05.996422242Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996425422Z    File "/usr/lib/python3/dist-packages/keystoneauth1/session.py", line 1022, in _send_request
+2021-05-26T01:54:05.996428880Z      resp = self.session.request(method, url, **kwargs)
+2021-05-26T01:54:05.996432143Z    File "/usr/lib/python3/dist-packages/requests/sessions.py", line 542, in request
+2021-05-26T01:54:05.996435519Z      resp = self.send(prep, **send_kwargs)
+2021-05-26T01:54:05.996438714Z    File "/usr/lib/python3/dist-packages/requests/sessions.py", line 655, in send
+2021-05-26T01:54:05.996442085Z      r = adapter.send(request, **kwargs)
+2021-05-26T01:54:05.996445279Z    File "/usr/lib/python3/dist-packages/requests/adapters.py", line 498, in send
+2021-05-26T01:54:05.996448639Z      raise ConnectionError(err, request=request)
+2021-05-26T01:54:05.996451899Z  requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2021-05-26T01:54:05.996455740Z  
+2021-05-26T01:54:05.996458834Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996462155Z  
+2021-05-26T01:54:05.996465221Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996468405Z    File "/usr/lib/python3/dist-packages/keystoneauth1/session.py", line 1038, in _send_request
+2021-05-26T01:54:05.996471795Z      raise exceptions.ConnectFailure(msg)
+2021-05-26T01:54:05.996478022Z  keystoneauth1.exceptions.connection.ConnectFailure: Unable to establish connection to http://130.149.249.200:9696/v2.0/networks?id=65caad2b-245d-4b82-ace1-7d16ec2b009a: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2021-05-26T01:54:05.996483504Z  
+2021-05-26T01:54:05.996486819Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996490174Z  
+2021-05-26T01:54:05.996493261Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996496453Z    File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 169, in _new_conn
+2021-05-26T01:54:05.996499829Z      conn = connection.create_connection(
+2021-05-26T01:54:05.996503044Z    File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 96, in create_connection
+2021-05-26T01:54:05.996506501Z      raise err
+2021-05-26T01:54:05.996509664Z    File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 86, in create_connection
+2021-05-26T01:54:05.996513090Z      sock.connect(sa)
+2021-05-26T01:54:05.996516682Z    File "/usr/lib/python3/dist-packages/eventlet/greenio/base.py", line 253, in connect
+2021-05-26T01:54:05.996520200Z      socket_checkerr(fd)
+2021-05-26T01:54:05.996523462Z    File "/usr/lib/python3/dist-packages/eventlet/greenio/base.py", line 51, in socket_checkerr
+2021-05-26T01:54:05.996526901Z      raise socket.error(err, errno.errorcode[err])
+2021-05-26T01:54:05.996530123Z  ConnectionRefusedError: [Errno 111] ECONNREFUSED
+2021-05-26T01:54:05.996533345Z  
+2021-05-26T01:54:05.996536391Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996539643Z  
+2021-05-26T01:54:05.996542679Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996545825Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+2021-05-26T01:54:05.996549164Z      httplib_response = self._make_request(
+2021-05-26T01:54:05.996552339Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 394, in _make_request
+2021-05-26T01:54:05.996555693Z      conn.request(method, url, **httplib_request_kw)
+2021-05-26T01:54:05.996558890Z    File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 234, in request
+2021-05-26T01:54:05.996562250Z      super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+2021-05-26T01:54:05.996565559Z    File "/usr/lib/python3.8/http/client.py", line 1255, in request
+2021-05-26T01:54:05.996568965Z      self._send_request(method, url, body, headers, encode_chunked)
+2021-05-26T01:54:05.996572266Z    File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+2021-05-26T01:54:05.996575605Z      self.endheaders(body, encode_chunked=encode_chunked)
+2021-05-26T01:54:05.996578784Z    File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+2021-05-26T01:54:05.996584429Z      self._send_output(message_body, encode_chunked=encode_chunked)
+2021-05-26T01:54:05.996587949Z    File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+2021-05-26T01:54:05.996591272Z      self.send(msg)
+2021-05-26T01:54:05.996594461Z    File "/usr/lib/python3.8/http/client.py", line 950, in send
+2021-05-26T01:54:05.996597780Z      self.connect()
+2021-05-26T01:54:05.996600963Z    File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 200, in connect
+2021-05-26T01:54:05.996604297Z      conn = self._new_conn()
+2021-05-26T01:54:05.996607425Z    File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 181, in _new_conn
+2021-05-26T01:54:05.996610756Z      raise NewConnectionError(
+2021-05-26T01:54:05.996613944Z  urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f00240d5820>: Failed to establish a new connection: [Errno 111] ECONNREFUSED
+2021-05-26T01:54:05.996617667Z  
+2021-05-26T01:54:05.996620752Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996624040Z  
+2021-05-26T01:54:05.996627104Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996630301Z    File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+2021-05-26T01:54:05.996633662Z      resp = conn.urlopen(
+2021-05-26T01:54:05.996637224Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+2021-05-26T01:54:05.996640767Z      retries = retries.increment(
+2021-05-26T01:54:05.996643993Z    File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 573, in increment
+2021-05-26T01:54:05.996647393Z      raise MaxRetryError(_pool, url, error or ResponseError(cause))
+2021-05-26T01:54:05.996650771Z  urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='130.149.249.200', port=9696): Max retries exceeded with url: /v2.0/networks?id=65caad2b-245d-4b82-ace1-7d16ec2b009a (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f00240d5820>: Failed to establish a new connection: [Errno 111] ECONNREFUSED'))
+2021-05-26T01:54:05.996654956Z  
+2021-05-26T01:54:05.996658062Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996661337Z  
+2021-05-26T01:54:05.996664392Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996667532Z    File "/usr/lib/python3/dist-packages/keystoneauth1/session.py", line 1022, in _send_request
+2021-05-26T01:54:05.996670967Z      resp = self.session.request(method, url, **kwargs)
+2021-05-26T01:54:05.996674322Z    File "/usr/lib/python3/dist-packages/requests/sessions.py", line 542, in request
+2021-05-26T01:54:05.996677703Z      resp = self.send(prep, **send_kwargs)
+2021-05-26T01:54:05.996680906Z    File "/usr/lib/python3/dist-packages/requests/sessions.py", line 655, in send
+2021-05-26T01:54:05.996686546Z      r = adapter.send(request, **kwargs)
+2021-05-26T01:54:05.996689975Z    File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+2021-05-26T01:54:05.996693404Z      raise ConnectionError(e, request=request)
+2021-05-26T01:54:05.996696727Z  requests.exceptions.ConnectionError: HTTPConnectionPool(host='130.149.249.200', port=9696): Max retries exceeded with url: /v2.0/networks?id=65caad2b-245d-4b82-ace1-7d16ec2b009a (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f00240d5820>: Failed to establish a new connection: [Errno 111] ECONNREFUSED'))
+2021-05-26T01:54:05.996700953Z  
+2021-05-26T01:54:05.996704073Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996707410Z  
+2021-05-26T01:54:05.996710526Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996713723Z    File "/usr/lib/python3/dist-packages/keystoneauth1/session.py", line 1038, in _send_request
+2021-05-26T01:54:05.996717154Z      raise exceptions.ConnectFailure(msg)
+2021-05-26T01:54:05.996720812Z  keystoneauth1.exceptions.connection.ConnectFailure: Unable to establish connection to http://130.149.249.200:9696/v2.0/networks?id=65caad2b-245d-4b82-ace1-7d16ec2b009a: HTTPConnectionPool(host='130.149.249.200', port=9696): Max retries exceeded with url: /v2.0/networks?id=65caad2b-245d-4b82-ace1-7d16ec2b009a (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f00240d5820>: Failed to establish a new connection: [Errno 111] ECONNREFUSED'))
+2021-05-26T01:54:05.996725501Z  
+2021-05-26T01:54:05.996728595Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996731870Z  
+2021-05-26T01:54:05.996734921Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996738106Z    File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 169, in _new_conn
+2021-05-26T01:54:05.996741471Z      conn = connection.create_connection(
+2021-05-26T01:54:05.996744652Z    File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 96, in create_connection
+2021-05-26T01:54:05.996748051Z      raise err
+2021-05-26T01:54:05.996751154Z    File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 86, in create_connection
+2021-05-26T01:54:05.996754651Z      sock.connect(sa)
+2021-05-26T01:54:05.996757795Z    File "/usr/lib/python3/dist-packages/eventlet/greenio/base.py", line 253, in connect
+2021-05-26T01:54:05.996761196Z      socket_checkerr(fd)
+2021-05-26T01:54:05.996764404Z    File "/usr/lib/python3/dist-packages/eventlet/greenio/base.py", line 51, in socket_checkerr
+2021-05-26T01:54:05.996767808Z      raise socket.error(err, errno.errorcode[err])
+2021-05-26T01:54:05.996771077Z  ConnectionRefusedError: [Errno 111] ECONNREFUSED
+2021-05-26T01:54:05.996774315Z  
+2021-05-26T01:54:05.996777414Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996780715Z  
+2021-05-26T01:54:05.996786038Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996789471Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+2021-05-26T01:54:05.996792916Z      httplib_response = self._make_request(
+2021-05-26T01:54:05.996796171Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 394, in _make_request
+2021-05-26T01:54:05.996799627Z      conn.request(method, url, **httplib_request_kw)
+2021-05-26T01:54:05.996802898Z    File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 234, in request
+2021-05-26T01:54:05.996806297Z      super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+2021-05-26T01:54:05.996809654Z    File "/usr/lib/python3.8/http/client.py", line 1255, in request
+2021-05-26T01:54:05.996813011Z      self._send_request(method, url, body, headers, encode_chunked)
+2021-05-26T01:54:05.996816326Z    File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+2021-05-26T01:54:05.996819699Z      self.endheaders(body, encode_chunked=encode_chunked)
+2021-05-26T01:54:05.996822971Z    File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+2021-05-26T01:54:05.996826347Z      self._send_output(message_body, encode_chunked=encode_chunked)
+2021-05-26T01:54:05.996829647Z    File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+2021-05-26T01:54:05.996833024Z      self.send(msg)
+2021-05-26T01:54:05.996836448Z    File "/usr/lib/python3.8/http/client.py", line 950, in send
+2021-05-26T01:54:05.996839954Z      self.connect()
+2021-05-26T01:54:05.996843179Z    File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 200, in connect
+2021-05-26T01:54:05.996846571Z      conn = self._new_conn()
+2021-05-26T01:54:05.996849738Z    File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 181, in _new_conn
+2021-05-26T01:54:05.996853084Z      raise NewConnectionError(
+2021-05-26T01:54:05.996856269Z  urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f00240d5040>: Failed to establish a new connection: [Errno 111] ECONNREFUSED
+2021-05-26T01:54:05.996859969Z  
+2021-05-26T01:54:05.996863045Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996866318Z  
+2021-05-26T01:54:05.996869363Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996872519Z    File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+2021-05-26T01:54:05.996875904Z      resp = conn.urlopen(
+2021-05-26T01:54:05.996879537Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+2021-05-26T01:54:05.996883034Z      retries = retries.increment(
+2021-05-26T01:54:05.996886232Z    File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 573, in increment
+2021-05-26T01:54:05.996892214Z      raise MaxRetryError(_pool, url, error or ResponseError(cause))
+2021-05-26T01:54:05.996895876Z  urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='130.149.249.200', port=9696): Max retries exceeded with url: /v2.0/networks?id=65caad2b-245d-4b82-ace1-7d16ec2b009a (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f00240d5040>: Failed to establish a new connection: [Errno 111] ECONNREFUSED'))
+2021-05-26T01:54:05.996900162Z  
+2021-05-26T01:54:05.996903345Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996906738Z  
+2021-05-26T01:54:05.996909858Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996913095Z    File "/usr/lib/python3/dist-packages/keystoneauth1/session.py", line 1022, in _send_request
+2021-05-26T01:54:05.996916548Z      resp = self.session.request(method, url, **kwargs)
+2021-05-26T01:54:05.996919798Z    File "/usr/lib/python3/dist-packages/requests/sessions.py", line 542, in request
+2021-05-26T01:54:05.996923184Z      resp = self.send(prep, **send_kwargs)
+2021-05-26T01:54:05.996926403Z    File "/usr/lib/python3/dist-packages/requests/sessions.py", line 655, in send
+2021-05-26T01:54:05.996929787Z      r = adapter.send(request, **kwargs)
+2021-05-26T01:54:05.996932996Z    File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+2021-05-26T01:54:05.996936379Z      raise ConnectionError(e, request=request)
+2021-05-26T01:54:05.996939919Z  requests.exceptions.ConnectionError: HTTPConnectionPool(host='130.149.249.200', port=9696): Max retries exceeded with url: /v2.0/networks?id=65caad2b-245d-4b82-ace1-7d16ec2b009a (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f00240d5040>: Failed to establish a new connection: [Errno 111] ECONNREFUSED'))
+2021-05-26T01:54:05.996944229Z  
+2021-05-26T01:54:05.996947357Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996950666Z  
+2021-05-26T01:54:05.996953754Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996956935Z    File "/usr/lib/python3/dist-packages/keystoneauth1/session.py", line 1038, in _send_request
+2021-05-26T01:54:05.996960389Z      raise exceptions.ConnectFailure(msg)
+2021-05-26T01:54:05.996963693Z  keystoneauth1.exceptions.connection.ConnectFailure: Unable to establish connection to http://130.149.249.200:9696/v2.0/networks?id=65caad2b-245d-4b82-ace1-7d16ec2b009a: HTTPConnectionPool(host='130.149.249.200', port=9696): Max retries exceeded with url: /v2.0/networks?id=65caad2b-245d-4b82-ace1-7d16ec2b009a (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f00240d5040>: Failed to establish a new connection: [Errno 111] ECONNREFUSED'))
+2021-05-26T01:54:05.996968243Z  
+2021-05-26T01:54:05.996971335Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.996974614Z  
+2021-05-26T01:54:05.996977683Z  Traceback (most recent call last):
+2021-05-26T01:54:05.996980869Z    File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 169, in _new_conn
+2021-05-26T01:54:05.996986586Z      conn = connection.create_connection(
+2021-05-26T01:54:05.996990073Z    File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 96, in create_connection
+2021-05-26T01:54:05.996993555Z      raise err
+2021-05-26T01:54:05.996996735Z    File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 86, in create_connection
+2021-05-26T01:54:05.997000190Z      sock.connect(sa)
+2021-05-26T01:54:05.997003416Z    File "/usr/lib/python3/dist-packages/eventlet/greenio/base.py", line 253, in connect
+2021-05-26T01:54:05.997006838Z      socket_checkerr(fd)
+2021-05-26T01:54:05.997010076Z    File "/usr/lib/python3/dist-packages/eventlet/greenio/base.py", line 51, in socket_checkerr
+2021-05-26T01:54:05.997013499Z      raise socket.error(err, errno.errorcode[err])
+2021-05-26T01:54:05.997016755Z  ConnectionRefusedError: [Errno 111] ECONNREFUSED
+2021-05-26T01:54:05.997020005Z  
+2021-05-26T01:54:05.997023114Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.997026430Z  
+2021-05-26T01:54:05.997029540Z  Traceback (most recent call last):
+2021-05-26T01:54:05.997032735Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+2021-05-26T01:54:05.997036258Z      httplib_response = self._make_request(
+2021-05-26T01:54:05.997039526Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 394, in _make_request
+2021-05-26T01:54:05.997042958Z      conn.request(method, url, **httplib_request_kw)
+2021-05-26T01:54:05.997046568Z    File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 234, in request
+2021-05-26T01:54:05.997050159Z      super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+2021-05-26T01:54:05.997053546Z    File "/usr/lib/python3.8/http/client.py", line 1255, in request
+2021-05-26T01:54:05.997056896Z      self._send_request(method, url, body, headers, encode_chunked)
+2021-05-26T01:54:05.997060195Z    File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+2021-05-26T01:54:05.997063569Z      self.endheaders(body, encode_chunked=encode_chunked)
+2021-05-26T01:54:05.997066820Z    File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+2021-05-26T01:54:05.997070170Z      self._send_output(message_body, encode_chunked=encode_chunked)
+2021-05-26T01:54:05.997073440Z    File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+2021-05-26T01:54:05.997076773Z      self.send(msg)
+2021-05-26T01:54:05.997079908Z    File "/usr/lib/python3.8/http/client.py", line 950, in send
+2021-05-26T01:54:05.997083223Z      self.connect()
+2021-05-26T01:54:05.997086357Z    File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 200, in connect
+2021-05-26T01:54:05.997089715Z      conn = self._new_conn()
+2021-05-26T01:54:05.997095151Z    File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 181, in _new_conn
+2021-05-26T01:54:05.997098786Z      raise NewConnectionError(
+2021-05-26T01:54:05.997102049Z  urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f00241cedf0>: Failed to establish a new connection: [Errno 111] ECONNREFUSED
+2021-05-26T01:54:05.997105764Z  
+2021-05-26T01:54:05.997108870Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.997112180Z  
+2021-05-26T01:54:05.997115279Z  Traceback (most recent call last):
+2021-05-26T01:54:05.997118491Z    File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+2021-05-26T01:54:05.997121874Z      resp = conn.urlopen(
+2021-05-26T01:54:05.997125037Z    File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+2021-05-26T01:54:05.997128428Z      retries = retries.increment(
+2021-05-26T01:54:05.997131604Z    File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 573, in increment
+2021-05-26T01:54:05.997134989Z      raise MaxRetryError(_pool, url, error or ResponseError(cause))
+2021-05-26T01:54:05.997138337Z  urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='130.149.249.200', port=9696): Max retries exceeded with url: /v2.0/networks?id=65caad2b-245d-4b82-ace1-7d16ec2b009a (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f00241cedf0>: Failed to establish a new connection: [Errno 111] ECONNREFUSED'))
+2021-05-26T01:54:05.997142516Z  
+2021-05-26T01:54:05.997145626Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.997148994Z  
+2021-05-26T01:54:05.997152160Z  Traceback (most recent call last):
+2021-05-26T01:54:05.997155696Z    File "/usr/lib/python3/dist-packages/keystoneauth1/session.py", line 1022, in _send_request
+2021-05-26T01:54:05.997159260Z      resp = self.session.request(method, url, **kwargs)
+2021-05-26T01:54:05.997162605Z    File "/usr/lib/python3/dist-packages/requests/sessions.py", line 542, in request
+2021-05-26T01:54:05.997166018Z      resp = self.send(prep, **send_kwargs)
+2021-05-26T01:54:05.997169269Z    File "/usr/lib/python3/dist-packages/requests/sessions.py", line 655, in send
+2021-05-26T01:54:05.997172681Z      r = adapter.send(request, **kwargs)
+2021-05-26T01:54:05.997175914Z    File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+2021-05-26T01:54:05.997179321Z      raise ConnectionError(e, request=request)
+2021-05-26T01:54:05.997182627Z  requests.exceptions.ConnectionError: HTTPConnectionPool(host='130.149.249.200', port=9696): Max retries exceeded with url: /v2.0/networks?id=65caad2b-245d-4b82-ace1-7d16ec2b009a (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f00241cedf0>: Failed to establish a new connection: [Errno 111] ECONNREFUSED'))
+2021-05-26T01:54:05.997186808Z  
+2021-05-26T01:54:05.997192139Z  During handling of the above exception, another exception occurred:
+2021-05-26T01:54:05.997195705Z  
+2021-05-26T01:54:05.997198850Z  Traceback (most recent call last):
+2021-05-26T01:54:05.997202108Z    File "/usr/lib/python3/dist-packages/eventlet/hubs/poll.py", line 111, in wait
+2021-05-26T01:54:05.997205519Z      listener.cb(fileno)
+2021-05-26T01:54:05.997208707Z    File "/usr/lib/python3/dist-packages/eventlet/greenthread.py", line 221, in main
+2021-05-26T01:54:05.997212101Z      result = function(*args, **kwargs)
+2021-05-26T01:54:05.997215320Z    File "/usr/lib/python3/dist-packages/nova/utils.py", line 660, in context_wrapper
+2021-05-26T01:54:05.997218760Z      return func(*args, **kwargs)
+2021-05-26T01:54:05.997221956Z    File "/usr/lib/python3/dist-packages/nova/compute/manager.py", line 1737, in _allocate_network_async
+2021-05-26T01:54:05.997225445Z      raise e
+2021-05-26T01:54:05.997228766Z    File "/usr/lib/python3/dist-packages/nova/compute/manager.py", line 1716, in _allocate_network_async
+2021-05-26T01:54:05.997232259Z      nwinfo = self.network_api.allocate_for_instance(
+2021-05-26T01:54:05.997235530Z    File "/usr/lib/python3/dist-packages/nova/network/neutron.py", line 1038, in allocate_for_instance
+2021-05-26T01:54:05.997239008Z      nets = self._validate_requested_network_ids(
+2021-05-26T01:54:05.997242282Z    File "/usr/lib/python3/dist-packages/nova/network/neutron.py", line 875, in _validate_requested_network_ids
+2021-05-26T01:54:05.997245767Z      nets = self._get_available_networks(context, instance.project_id,
+2021-05-26T01:54:05.997249091Z    File "/usr/lib/python3/dist-packages/nova/network/neutron.py", line 455, in _get_available_networks
+2021-05-26T01:54:05.997252566Z      nets = neutron.list_networks(**search_opts).get('networks', [])
+2021-05-26T01:54:05.997256136Z    File "/usr/lib/python3/dist-packages/nova/network/neutron.py", line 182, in wrapper
+2021-05-26T01:54:05.997259691Z      ret = obj(*args, **kwargs)
+2021-05-26T01:54:05.997262901Z    File "/usr/lib/python3/dist-packages/neutronclient/v2_0/client.py", line 844, in list_networks
+2021-05-26T01:54:05.997266320Z      return self.list('networks', self.networks_path, retrieve_all,
+2021-05-26T01:54:05.997269696Z    File "/usr/lib/python3/dist-packages/nova/network/neutron.py", line 182, in wrapper
+2021-05-26T01:54:05.997273115Z      ret = obj(*args, **kwargs)
+2021-05-26T01:54:05.997276361Z    File "/usr/lib/python3/dist-packages/neutronclient/v2_0/client.py", line 368, in list
+2021-05-26T01:54:05.997279747Z      for r in self._pagination(collection, path, **params):
+2021-05-26T01:54:05.997282998Z    File "/usr/lib/python3/dist-packages/neutronclient/v2_0/client.py", line 383, in _pagination
+2021-05-26T01:54:05.997286428Z      res = self.get(path, params=params)
+2021-05-26T01:54:05.997289618Z    File "/usr/lib/python3/dist-packages/nova/network/neutron.py", line 182, in wrapper
+2021-05-26T01:54:05.997295197Z      ret = obj(*args, **kwargs)
+2021-05-26T01:54:05.997298610Z    File "/usr/lib/python3/dist-packages/neutronclient/v2_0/client.py", line 352, in get
+2021-05-26T01:54:05.997302093Z      return self.retry_request("GET", action, body=body,
+2021-05-26T01:54:05.997305461Z    File "/usr/lib/python3/dist-packages/nova/network/neutron.py", line 182, in wrapper
+2021-05-26T01:54:05.997308878Z      ret = obj(*args, **kwargs)
+2021-05-26T01:54:05.997312067Z    File "/usr/lib/python3/dist-packages/neutronclient/v2_0/client.py", line 329, in retry_request
+2021-05-26T01:54:05.997315520Z      return self.do_request(method, action, body=body,
+2021-05-26T01:54:05.997318789Z    File "/usr/lib/python3/dist-packages/nova/network/neutron.py", line 182, in wrapper
+2021-05-26T01:54:05.997322196Z      ret = obj(*args, **kwargs)
+2021-05-26T01:54:05.997325383Z    File "/usr/lib/python3/dist-packages/neutronclient/v2_0/client.py", line 280, in do_request
+2021-05-26T01:54:05.997328840Z      resp, replybody = self.httpclient.do_request(action, method, body=body,
+2021-05-26T01:54:05.997332178Z    File "/usr/lib/python3/dist-packages/neutronclient/client.py", line 340, in do_request
+2021-05-26T01:54:05.997335642Z      return self.request(url, method, **kwargs)
+2021-05-26T01:54:05.997338887Z    File "/usr/lib/python3/dist-packages/neutronclient/client.py", line 328, in request
+2021-05-26T01:54:05.997342286Z      resp = super(SessionClient, self).request(*args, **kwargs)
+2021-05-26T01:54:05.997345592Z    File "/usr/lib/python3/dist-packages/keystoneauth1/adapter.py", line 257, in request
+2021-05-26T01:54:05.997348997Z      return self.session.request(url, method, **kwargs)
+2021-05-26T01:54:05.997352260Z    File "/usr/lib/python3/dist-packages/keystoneauth1/session.py", line 931, in request
+2021-05-26T01:54:05.997355729Z      resp = send(**kwargs)
+2021-05-26T01:54:05.997359357Z    File "/usr/lib/python3/dist-packages/keystoneauth1/session.py", line 1053, in _send_request
+2021-05-26T01:54:05.997363029Z      return self._send_request(
+2021-05-26T01:54:05.997366288Z    File "/usr/lib/python3/dist-packages/keystoneauth1/session.py", line 1053, in _send_request
+2021-05-26T01:54:05.997369727Z      return self._send_request(
+2021-05-26T01:54:05.997372891Z    File "/usr/lib/python3/dist-packages/keystoneauth1/session.py", line 1053, in _send_request
+2021-05-26T01:54:05.997376297Z      return self._send_request(
+2021-05-26T01:54:05.997379461Z    File "/usr/lib/python3/dist-packages/keystoneauth1/session.py", line 1038, in _send_request
+2021-05-26T01:54:05.997382851Z      raise exceptions.ConnectFailure(msg)
+2021-05-26T01:54:05.997386121Z  keystoneauth1.exceptions.connection.ConnectFailure: Unable to establish connection to http://130.149.249.200:9696/v2.0/networks?id=65caad2b-245d-4b82-ace1-7d16ec2b009a: HTTPConnectionPool(host='130.149.249.200', port=9696): Max retries exceeded with url: /v2.0/networks?id=65caad2b-245d-4b82-ace1-7d16ec2b009a (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f00241cedf0>: Failed to establish a new connection: [Errno 111] ECONNREFUSED'))
+2021-05-26T01:54:05.997392941Z  Removing descriptor: 20

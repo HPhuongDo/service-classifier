@@ -1,9 +1,0 @@
-Locust file: /config/locustfile.py
-Will run /config/locustfile.py against edge-router. Spawning 2 clients and 200 total requests.
-done
-Locust file: /config/locustfile.py
-Will run /config/locustfile.py against edge-router. Spawning 2 clients and 200 total requests.
-done
-Locust file: /config/locustfile.py
-Will run /config/locustfile.py against edge-router. Spawning 2 clients and 200 total requests.
-done

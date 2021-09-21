@@ -1,0 +1,31 @@
+2021-06-09T12:26:56.595Z|00001|vlog|INFO|opened log file /var/log/kolla/openvswitch/ovsdb-server.log
+2021-06-09T12:26:56.601Z|00002|ovsdb_server|INFO|ovsdb-server (Open vSwitch) 2.13.3
+2021-06-09T12:27:06.605Z|00003|memory|INFO|6312 kB peak resident set size after 10.0 seconds
+2021-06-09T12:27:06.605Z|00004|memory|INFO|cells:39 monitors:1 sessions:1
+2021-06-09T12:27:18.953Z|00005|jsonrpc|WARN|unix#3: receive error: Connection reset by peer
+2021-06-09T12:27:18.953Z|00006|reconnect|WARN|unix#3: connection dropped (Connection reset by peer)
+2021-06-13T12:27:01.919Z|00007|timeval|WARN|Unreasonably long 1086ms poll interval (3ms user, 0ms system)
+2021-06-13T12:27:01.919Z|00008|timeval|WARN|disk: 0 reads, 96 writes
+2021-06-13T12:27:01.919Z|00009|timeval|WARN|context switches: 9 voluntary, 1 involuntary
+2021-06-13T12:27:01.919Z|00010|coverage|INFO|Event coverage, avg rate over last: 5 seconds, last minute, last hour,  hash=fbd43b05:
+2021-06-13T12:27:01.919Z|00011|coverage|INFO|hmap_pathological          0.2/sec     0.017/sec        0.0003/sec   total: 18
+2021-06-13T12:27:01.919Z|00012|coverage|INFO|hmap_expand               93.6/sec    13.400/sec        6.2789/sec   total: 2225812
+2021-06-13T12:27:01.919Z|00013|coverage|INFO|lockfile_lock              0.0/sec     0.000/sec        0.0000/sec   total: 1
+2021-06-13T12:27:01.919Z|00014|coverage|INFO|poll_create_node          11.2/sec     8.133/sec        8.0222/sec   total: 2940416
+2021-06-13T12:27:01.919Z|00015|coverage|INFO|poll_zero_timeout          0.2/sec     0.200/sec        0.1978/sec   total: 75031
+2021-06-13T12:27:01.919Z|00016|coverage|INFO|seq_change                 0.0/sec     0.000/sec        0.0000/sec   total: 3
+2021-06-13T12:27:01.919Z|00017|coverage|INFO|pstream_open               0.0/sec     0.000/sec        0.0000/sec   total: 4
+2021-06-13T12:27:01.919Z|00018|coverage|INFO|util_xalloc              2325.4/sec   420.750/sec      250.2611/sec   total: 88621399
+2021-06-13T12:27:01.919Z|00019|coverage|INFO|8 events never hit
+2021-06-14T13:35:12.464Z|00020|jsonrpc|WARN|unix#8: receive error: Connection reset by peer
+2021-06-14T13:35:12.464Z|00021|reconnect|WARN|unix#8: connection dropped (Connection reset by peer)
+2021-06-14T14:18:50.266Z|00022|jsonrpc|WARN|tcp:127.0.0.1:35070: receive error: Connection reset by peer
+2021-06-14T14:18:50.266Z|00023|reconnect|WARN|tcp:127.0.0.1:35070: connection dropped (Connection reset by peer)
+2021-06-16T11:27:12.377Z|00024|jsonrpc|WARN|tcp:127.0.0.1:32948: receive error: Connection reset by peer
+2021-06-16T11:27:12.377Z|00025|reconnect|WARN|tcp:127.0.0.1:32948: connection dropped (Connection reset by peer)
+2021-06-16T12:26:23.543Z|00026|jsonrpc|WARN|tcp:127.0.0.1:33924: receive error: Connection reset by peer
+2021-06-16T12:26:23.543Z|00027|reconnect|WARN|tcp:127.0.0.1:33924: connection dropped (Connection reset by peer)
+2021-06-16T12:53:45.838Z|00028|jsonrpc|WARN|tcp:127.0.0.1:49344: receive error: Connection reset by peer
+2021-06-16T12:53:45.838Z|00029|reconnect|WARN|tcp:127.0.0.1:49344: connection dropped (Connection reset by peer)
+2021-06-22T23:32:20.236Z|00030|jsonrpc|WARN|tcp:127.0.0.1:53084: receive error: Connection reset by peer
+2021-06-22T23:32:20.246Z|00031|reconnect|WARN|tcp:127.0.0.1:53084: connection dropped (Connection reset by peer)

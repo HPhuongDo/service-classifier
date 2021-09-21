@@ -1,0 +1,18 @@
+2021-05-25T23:28:37.427111319Z  + sudo -E kolla_set_configs
+2021-05-25T23:28:37.472882960Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T23:28:37.473152756Z  INFO:__main__:Validating config file
+2021-05-25T23:28:37.473220714Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T23:28:37.473287555Z  INFO:__main__:Copying service configuration files
+2021-05-25T23:28:37.473480156Z  INFO:__main__:Copying /var/lib/kolla/config_files/clustercheck to /etc/xinetd.d/clustercheck
+2021-05-25T23:28:37.474016791Z  INFO:__main__:Setting permission for /etc/xinetd.d/clustercheck
+2021-05-25T23:28:37.474084133Z  INFO:__main__:Writing out command to execute
+2021-05-25T23:28:37.474304583Z  INFO:__main__:Setting permission for /var/log/kolla/mariadb
+2021-05-25T23:28:37.474399143Z  INFO:__main__:Setting permission for /var/log/kolla/mariadb/mariadb.log
+2021-05-25T23:28:37.479446345Z  ++ cat /run_command
+2021-05-25T23:28:37.480145411Z  + CMD='/usr/sbin/xinetd -dontfork -filelog /var/log/kolla/mariadb/xinetd.log'
+2021-05-25T23:28:37.480164089Z  + ARGS=
+2021-05-25T23:28:37.480172431Z  + sudo kolla_copy_cacerts
+2021-05-25T23:28:37.486655405Z  + [[ ! -n '' ]]
+2021-05-25T23:28:37.486683812Z  + . kolla_extend_start
+2021-05-25T23:28:37.486695690Z  + echo 'Running command: '\''/usr/sbin/xinetd -dontfork -filelog /var/log/kolla/mariadb/xinetd.log'\'''
+2021-05-25T23:28:37.486759064Z  + exec /usr/sbin/xinetd -dontfork -filelog /var/log/kolla/mariadb/xinetd.log

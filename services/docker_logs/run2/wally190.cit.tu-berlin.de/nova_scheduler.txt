@@ -1,0 +1,94 @@
+2021-05-25T22:11:11.515690421Z  + sudo -E kolla_set_configs
+2021-05-25T22:11:11.565420527Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:11:11.565464028Z  INFO:__main__:Validating config file
+2021-05-25T22:11:11.565509911Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:11:11.565538169Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:11:11.565690439Z  INFO:__main__:Deleting /etc/nova/nova.conf
+2021-05-25T22:11:11.565879164Z  INFO:__main__:Copying /var/lib/kolla/config_files/nova.conf to /etc/nova/nova.conf
+2021-05-25T22:11:11.566437306Z  INFO:__main__:Setting permission for /etc/nova/nova.conf
+2021-05-25T22:11:11.566493827Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:11:11.566773816Z  INFO:__main__:Setting permission for /var/log/kolla/nova
+2021-05-25T22:11:11.566804527Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-manage.log
+2021-05-25T22:11:11.572414172Z  ++ cat /run_command
+2021-05-25T22:11:11.573473106Z  + CMD=nova-scheduler
+2021-05-25T22:11:11.573491025Z  + ARGS=
+2021-05-25T22:11:11.573498865Z  + sudo kolla_copy_cacerts
+2021-05-25T22:11:11.581016613Z  + [[ ! -n '' ]]
+2021-05-25T22:11:11.581035876Z  + . kolla_extend_start
+2021-05-25T22:11:11.581211008Z  ++ [[ ! -d /var/log/kolla/nova ]]
+2021-05-25T22:11:11.581593335Z  +++ stat -c %a /var/log/kolla/nova
+2021-05-25T22:11:11.582978501Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:11:11.582991981Z  ++ chmod 755 /var/log/kolla/nova
+2021-05-25T22:11:11.584103370Z  ++ . /usr/local/bin/kolla_nova_extend_start
+2021-05-25T22:11:11.584186859Z  + echo 'Running command: '\''nova-scheduler'\'''
+2021-05-25T22:11:11.584240373Z  + exec nova-scheduler
+2021-05-25T22:19:47.420354370Z  + sudo -E kolla_set_configs
+2021-05-25T22:19:47.467036776Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:19:47.467130318Z  INFO:__main__:Validating config file
+2021-05-25T22:19:47.467184906Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:19:47.467243520Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:19:47.467326218Z  INFO:__main__:Deleting /etc/nova/nova.conf
+2021-05-25T22:19:47.468055613Z  INFO:__main__:Copying /var/lib/kolla/config_files/nova.conf to /etc/nova/nova.conf
+2021-05-25T22:19:47.468147282Z  INFO:__main__:Setting permission for /etc/nova/nova.conf
+2021-05-25T22:19:47.468232127Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:19:47.468499383Z  INFO:__main__:Setting permission for /var/log/kolla/nova
+2021-05-25T22:19:47.468616076Z  INFO:__main__:Setting permission for /var/log/kolla/nova/apache-error.log
+2021-05-25T22:19:47.468680401Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-metadata-access.log
+2021-05-25T22:19:47.468726989Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-metadata-error.log
+2021-05-25T22:19:47.468785840Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-scheduler.log
+2021-05-25T22:19:47.468844382Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-api-error.log
+2021-05-25T22:19:47.468895586Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-api-wsgi.log
+2021-05-25T22:19:47.468945348Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-metadata-wsgi.log
+2021-05-25T22:19:47.469002727Z  INFO:__main__:Setting permission for /var/log/kolla/nova/apache-access.log
+2021-05-25T22:19:47.469053029Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-api-access.log
+2021-05-25T22:19:47.469108010Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-conductor.log
+2021-05-25T22:19:47.469153368Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-novncproxy.log
+2021-05-25T22:19:47.469212412Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-manage.log
+2021-05-25T22:19:47.475013999Z  ++ cat /run_command
+2021-05-25T22:19:47.475717333Z  + CMD=nova-scheduler
+2021-05-25T22:19:47.475729415Z  + ARGS=
+2021-05-25T22:19:47.475733746Z  + sudo kolla_copy_cacerts
+2021-05-25T22:19:47.482241844Z  + [[ ! -n '' ]]
+2021-05-25T22:19:47.482270644Z  + . kolla_extend_start
+2021-05-25T22:19:47.482331902Z  ++ [[ ! -d /var/log/kolla/nova ]]
+2021-05-25T22:19:47.483376091Z  +++ stat -c %a /var/log/kolla/nova
+2021-05-25T22:19:47.484672097Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:19:47.484687040Z  ++ chmod 755 /var/log/kolla/nova
+2021-05-25T22:19:47.485341213Z  ++ . /usr/local/bin/kolla_nova_extend_start
+2021-05-25T22:19:47.485426946Z  + echo 'Running command: '\''nova-scheduler'\'''
+2021-05-25T22:19:47.485452816Z  + exec nova-scheduler
+2021-05-25T22:21:44.100917684Z  + sudo -E kolla_set_configs
+2021-05-25T22:21:44.148400098Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:21:44.148428194Z  INFO:__main__:Validating config file
+2021-05-25T22:21:44.148463584Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:21:44.148552712Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:21:44.148657282Z  INFO:__main__:Deleting /etc/nova/nova.conf
+2021-05-25T22:21:44.148918410Z  INFO:__main__:Copying /var/lib/kolla/config_files/nova.conf to /etc/nova/nova.conf
+2021-05-25T22:21:44.149610388Z  INFO:__main__:Setting permission for /etc/nova/nova.conf
+2021-05-25T22:21:44.149686057Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:21:44.149978781Z  INFO:__main__:Setting permission for /var/log/kolla/nova
+2021-05-25T22:21:44.150096526Z  INFO:__main__:Setting permission for /var/log/kolla/nova/apache-error.log
+2021-05-25T22:21:44.150154367Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-metadata-access.log
+2021-05-25T22:21:44.150227429Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-metadata-error.log
+2021-05-25T22:21:44.150288877Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-scheduler.log
+2021-05-25T22:21:44.150352115Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-api-error.log
+2021-05-25T22:21:44.150410002Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-api-wsgi.log
+2021-05-25T22:21:44.150462739Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-metadata-wsgi.log
+2021-05-25T22:21:44.150516943Z  INFO:__main__:Setting permission for /var/log/kolla/nova/apache-access.log
+2021-05-25T22:21:44.150574038Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-api-access.log
+2021-05-25T22:21:44.150627405Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-conductor.log
+2021-05-25T22:21:44.150691397Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-novncproxy.log
+2021-05-25T22:21:44.150749944Z  INFO:__main__:Setting permission for /var/log/kolla/nova/nova-manage.log
+2021-05-25T22:21:44.156415303Z  ++ cat /run_command
+2021-05-25T22:21:44.157244463Z  + CMD=nova-scheduler
+2021-05-25T22:21:44.157257558Z  + ARGS=
+2021-05-25T22:21:44.157266197Z  + sudo kolla_copy_cacerts
+2021-05-25T22:21:44.163812402Z  + [[ ! -n '' ]]
+2021-05-25T22:21:44.163838928Z  + . kolla_extend_start
+2021-05-25T22:21:44.163898546Z  ++ [[ ! -d /var/log/kolla/nova ]]
+2021-05-25T22:21:44.164185884Z  +++ stat -c %a /var/log/kolla/nova
+2021-05-25T22:21:44.165051017Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:21:44.165064770Z  ++ chmod 755 /var/log/kolla/nova
+2021-05-25T22:21:44.165934487Z  ++ . /usr/local/bin/kolla_nova_extend_start
+2021-05-25T22:21:44.165973620Z  + echo 'Running command: '\''nova-scheduler'\'''
+2021-05-25T22:21:44.166011263Z  + exec nova-scheduler

@@ -1,0 +1,41 @@
+2021-05-26T00:56:45.917731565Z  + sudo -E kolla_set_configs
+2021-05-26T00:56:45.964734670Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T00:56:45.965416544Z  INFO:__main__:Validating config file
+2021-05-26T00:56:45.965427523Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T00:56:45.965433655Z  INFO:__main__:Copying service configuration files
+2021-05-26T00:56:45.965439137Z  INFO:__main__:Deleting /etc/td-agent/td-agent.conf
+2021-05-26T00:56:45.965450345Z  INFO:__main__:Copying /var/lib/kolla/config_files/td-agent.conf to /etc/td-agent/td-agent.conf
+2021-05-26T00:56:45.965964502Z  INFO:__main__:Setting permission for /etc/td-agent/td-agent.conf
+2021-05-26T00:56:45.966018927Z  INFO:__main__:Writing out command to execute
+2021-05-26T00:56:45.966432812Z  INFO:__main__:Setting permission for /var/lib/fluentd/data
+2021-05-26T00:56:45.971405370Z  ++ cat /run_command
+2021-05-26T00:56:45.972235694Z  + CMD='/usr/sbin/td-agent -o /var/log/kolla/fluentd/fluentd.log'
+2021-05-26T00:56:45.972248397Z  + ARGS=
+2021-05-26T00:56:45.972256759Z  + sudo kolla_copy_cacerts
+2021-05-26T00:56:45.979407118Z  + [[ ! -n '' ]]
+2021-05-26T00:56:45.979439083Z  + . kolla_extend_start
+2021-05-26T00:56:45.979613306Z  ++ [[ x86_64 == \x\8\6\_\6\4 ]]
+2021-05-26T00:56:45.979632120Z  ++ [[ ubuntu != \d\e\b\i\a\n ]]
+2021-05-26T00:56:45.979641712Z  ++ USERGROUP=td-agent:kolla
+2021-05-26T00:56:45.979649672Z  ++ FLUENTD=td-agent
+2021-05-26T00:56:45.979661124Z  ++ '[' '!' -d /var/log/kolla ']'
+2021-05-26T00:56:45.980145643Z  +++ stat -c %U:%G /var/log/kolla
+2021-05-26T00:56:45.981741637Z  ++ [[ root:kolla != \t\d\-\a\g\e\n\t\:\k\o\l\l\a ]]
+2021-05-26T00:56:45.981756997Z  ++ sudo chown td-agent:kolla /var/log/kolla
+2021-05-26T00:56:45.989418630Z  +++ stat -c %a /var/log/kolla
+2021-05-26T00:56:45.990590104Z  ++ [[ 2775 != \2\7\7\5 ]]
+2021-05-26T00:56:45.990608487Z  ++ [[ -d /var/lib/td-agent ]]
+2021-05-26T00:56:45.991026934Z  +++ stat -c %U:%G /var/lib/td-agent
+2021-05-26T00:56:45.992596296Z  ++ [[ td-agent:td-agent != \t\d\-\a\g\e\n\t\:\k\o\l\l\a ]]
+2021-05-26T00:56:45.992620339Z  ++ sudo chown td-agent:kolla /var/lib/td-agent
+2021-05-26T00:56:46.001362285Z  + echo 'Running command: '\''/usr/sbin/td-agent -o /var/log/kolla/fluentd/fluentd.log'\'''
+2021-05-26T00:56:46.001409291Z  + exec /usr/sbin/td-agent -o /var/log/kolla/fluentd/fluentd.log
+2021-05-26T01:05:36.231916520Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-26T01:05:37.458026088Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-26T01:10:33.914059394Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-26T01:10:39.212982666Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-26T01:11:33.281489636Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-26T01:15:33.372399765Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-26T01:17:46.483819668Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-26T01:18:14.572274789Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."
+2021-05-26T01:18:33.615841947Z  warning: 299 Elasticsearch-7.10.2-747e1cc71def077253878a59143c1f785afa92b9 "[types removal] Specifying types in bulk requests is deprecated."

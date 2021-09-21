@@ -1,0 +1,22 @@
+2021-05-25T23:32:54.641495492Z  + sudo -E kolla_set_configs
+2021-05-25T23:32:54.709858536Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T23:32:54.710321414Z  INFO:__main__:Validating config file
+2021-05-25T23:32:54.710539522Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T23:32:54.710550888Z  INFO:__main__:Copying service configuration files
+2021-05-25T23:32:54.710583900Z  INFO:__main__:Deleting /etc/kibana/kibana.yml
+2021-05-25T23:32:54.710842253Z  INFO:__main__:Copying /var/lib/kolla/config_files/kibana.yml to /etc/kibana/kibana.yml
+2021-05-25T23:32:54.711702602Z  INFO:__main__:Setting permission for /etc/kibana/kibana.yml
+2021-05-25T23:32:54.711760075Z  INFO:__main__:Writing out command to execute
+2021-05-25T23:32:54.720458907Z  ++ cat /run_command
+2021-05-25T23:32:54.721324460Z  + CMD='/usr/share/kibana/bin/kibana --config /etc/kibana/kibana.yml'
+2021-05-25T23:32:54.721377446Z  + ARGS=
+2021-05-25T23:32:54.721386111Z  + sudo kolla_copy_cacerts
+2021-05-25T23:32:54.735989431Z  + [[ ! -n '' ]]
+2021-05-25T23:32:54.736109435Z  + . kolla_extend_start
+2021-05-25T23:32:54.736331311Z  ++ KIBANA_LOG_DIR=/var/log/kolla/kibana
+2021-05-25T23:32:54.736341409Z  ++ [[ ! -d /var/log/kolla/kibana ]]
+2021-05-25T23:32:54.736539912Z  ++ mkdir -p /var/log/kolla/kibana
+2021-05-25T23:32:54.739442055Z  +++ stat -c %U:%G /var/log/kolla/kibana
+2021-05-25T23:32:54.741963415Z  ++ [[ kibana:kolla != \k\i\b\a\n\a\:\k\o\l\l\a ]]
+2021-05-25T23:32:54.742002596Z  + echo 'Running command: '\''/usr/share/kibana/bin/kibana --config /etc/kibana/kibana.yml'\'''
+2021-05-25T23:32:54.742022085Z  + exec /usr/share/kibana/bin/kibana --config /etc/kibana/kibana.yml

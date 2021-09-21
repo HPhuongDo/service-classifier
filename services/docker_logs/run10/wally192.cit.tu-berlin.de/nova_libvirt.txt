@@ -1,0 +1,31 @@
+2021-05-26T02:26:25.810065044Z  + sudo -E kolla_set_configs
+2021-05-26T02:26:25.851437552Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T02:26:25.851647721Z  INFO:__main__:Validating config file
+2021-05-26T02:26:25.851669218Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T02:26:25.851731557Z  INFO:__main__:Copying service configuration files
+2021-05-26T02:26:25.851845403Z  INFO:__main__:Deleting /etc/libvirt/libvirtd.conf
+2021-05-26T02:26:25.852026213Z  INFO:__main__:Copying /var/lib/kolla/config_files/libvirtd.conf to /etc/libvirt/libvirtd.conf
+2021-05-26T02:26:25.852409505Z  INFO:__main__:Setting permission for /etc/libvirt/libvirtd.conf
+2021-05-26T02:26:25.852543571Z  INFO:__main__:Deleting /etc/libvirt/qemu.conf
+2021-05-26T02:26:25.852638266Z  INFO:__main__:Copying /var/lib/kolla/config_files/qemu.conf to /etc/libvirt/qemu.conf
+2021-05-26T02:26:25.852848721Z  INFO:__main__:Setting permission for /etc/libvirt/qemu.conf
+2021-05-26T02:26:25.852863647Z  INFO:__main__:Writing out command to execute
+2021-05-26T02:26:25.857541594Z  ++ cat /run_command
+2021-05-26T02:26:25.858394275Z  + CMD='/usr/sbin/libvirtd --listen'
+2021-05-26T02:26:25.858420272Z  + ARGS=
+2021-05-26T02:26:25.858427255Z  + sudo kolla_copy_cacerts
+2021-05-26T02:26:25.865384478Z  + [[ ! -n '' ]]
+2021-05-26T02:26:25.865405511Z  + . kolla_extend_start
+2021-05-26T02:26:25.866078018Z  +++ lsmod
+2021-05-26T02:26:25.866171991Z  +++ grep xenfs
+2021-05-26T02:26:25.872409405Z  ++ [[ -n '' ]]
+2021-05-26T02:26:25.872440855Z  ++ [[ ! -e /var/log/kolla/libvirt/libvirtd.log ]]
+2021-05-26T02:26:25.872447160Z  ++ mkdir -p /var/log/kolla/libvirt
+2021-05-26T02:26:25.873846686Z  ++ touch /var/log/kolla/libvirt/libvirtd.log
+2021-05-26T02:26:25.874784123Z  ++ chmod 644 /var/log/kolla/libvirt/libvirtd.log
+2021-05-26T02:26:25.876094534Z  +++ stat -c %a /var/log/kolla/libvirt
+2021-05-26T02:26:25.877216261Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T02:26:25.877236276Z  ++ chmod 755 /var/log/kolla/libvirt
+2021-05-26T02:26:25.878175748Z  ++ chmod 644 /var/log/kolla/libvirt/libvirtd.log
+2021-05-26T02:26:25.879294655Z  + echo 'Running command: '\''/usr/sbin/libvirtd --listen'\'''
+2021-05-26T02:26:25.879322115Z  + exec /usr/sbin/libvirtd --listen

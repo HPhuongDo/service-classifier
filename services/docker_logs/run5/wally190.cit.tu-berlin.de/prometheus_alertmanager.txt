@@ -1,0 +1,34 @@
+2021-05-25T23:29:18.887491280Z  + sudo -E kolla_set_configs
+2021-05-25T23:29:18.933019711Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T23:29:18.933292378Z  INFO:__main__:Validating config file
+2021-05-25T23:29:18.933306839Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T23:29:18.933375237Z  INFO:__main__:Copying service configuration files
+2021-05-25T23:29:18.933563318Z  INFO:__main__:Copying /var/lib/kolla/config_files/prometheus-alertmanager.yml to /etc/prometheus/alertmanager.yml
+2021-05-25T23:29:18.934186966Z  INFO:__main__:Setting permission for /etc/prometheus/alertmanager.yml
+2021-05-25T23:29:18.934295574Z  INFO:__main__:Writing out command to execute
+2021-05-25T23:29:18.934648525Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus
+2021-05-25T23:29:18.934752829Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus/cadvisor.WARNING
+2021-05-25T23:29:18.934801069Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus/cadvisor.INFO
+2021-05-25T23:29:18.934852155Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus/cadvisor.wally190.root.log.INFO.20210526-012917.7
+2021-05-25T23:29:18.934898453Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus/cadvisor.wally190.root.log.WARNING.20210526-012917.7
+2021-05-25T23:29:18.939983909Z  ++ cat /run_command
+2021-05-25T23:29:18.940674454Z  + CMD='/opt/prometheus_alertmanager/alertmanager --config.file=/etc/prometheus/alertmanager.yml --web.listen-address=130.149.249.200:9093 --web.external-url=http://130.149.249.200:9093  --storage.path /var/lib/prometheus'
+2021-05-25T23:29:18.940690122Z  + ARGS=
+2021-05-25T23:29:18.940699568Z  + sudo kolla_copy_cacerts
+2021-05-25T23:29:18.948480875Z  + [[ ! -n '' ]]
+2021-05-25T23:29:18.948507911Z  + . kolla_extend_start
+2021-05-25T23:29:18.948636443Z  ++ [[ ! -d /var/log/kolla/prometheus ]]
+2021-05-25T23:29:18.949008187Z  +++ stat -c %a /var/log/kolla/prometheus
+2021-05-25T23:29:18.950143986Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T23:29:18.950161636Z  ++ chmod 755 /var/log/kolla/prometheus
+2021-05-25T23:29:18.951417822Z  + echo 'Running command: '\''/opt/prometheus_alertmanager/alertmanager --config.file=/etc/prometheus/alertmanager.yml --web.listen-address=130.149.249.200:9093 --web.external-url=http://130.149.249.200:9093  --storage.path /var/lib/prometheus'\'''
+2021-05-25T23:29:18.951438677Z  + exec /opt/prometheus_alertmanager/alertmanager --config.file=/etc/prometheus/alertmanager.yml --web.listen-address=130.149.249.200:9093 --web.external-url=http://130.149.249.200:9093 --storage.path /var/lib/prometheus
+2021-05-25T23:29:18.986135358Z  level=info ts=2021-05-25T23:29:18.986Z caller=main.go:231 msg="Starting Alertmanager" version="(version=0.20.0, branch=HEAD, revision=f74be0400a6243d10bb53812d6fa408ad71ff32d)"
+2021-05-25T23:29:18.986181345Z  level=info ts=2021-05-25T23:29:18.986Z caller=main.go:232 build_context="(go=go1.13.5, user=root@00c3106655f8, date=20191211-14:13:14)"
+2021-05-25T23:29:18.989561303Z  level=info ts=2021-05-25T23:29:18.989Z caller=cluster.go:161 component=cluster msg="setting advertise address explicitly" addr=10.0.42.190 port=9094
+2021-05-25T23:29:18.990621972Z  level=info ts=2021-05-25T23:29:18.990Z caller=cluster.go:623 component=cluster msg="Waiting for gossip to settle..." interval=2s
+2021-05-25T23:29:19.025648235Z  level=info ts=2021-05-25T23:29:19.025Z caller=coordinator.go:119 component=configuration msg="Loading configuration file" file=/etc/prometheus/alertmanager.yml
+2021-05-25T23:29:19.025853425Z  level=info ts=2021-05-25T23:29:19.025Z caller=coordinator.go:131 component=configuration msg="Completed loading of configuration file" file=/etc/prometheus/alertmanager.yml
+2021-05-25T23:29:19.029445999Z  level=info ts=2021-05-25T23:29:19.029Z caller=main.go:497 msg=Listening address=130.149.249.200:9093
+2021-05-25T23:29:20.990799877Z  level=info ts=2021-05-25T23:29:20.990Z caller=cluster.go:648 component=cluster msg="gossip not settled" polls=0 before=0 now=1 elapsed=2.000082518s
+2021-05-25T23:29:28.991366956Z  level=info ts=2021-05-25T23:29:28.991Z caller=cluster.go:640 component=cluster msg="gossip settled; proceeding" elapsed=10.00062677s

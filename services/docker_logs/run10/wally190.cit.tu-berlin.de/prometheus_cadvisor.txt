@@ -1,0 +1,22 @@
+2021-05-26T02:05:58.691605158Z  + sudo -E kolla_set_configs
+2021-05-26T02:05:58.734792315Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T02:05:58.735039091Z  INFO:__main__:Validating config file
+2021-05-26T02:05:58.735049122Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T02:05:58.735064429Z  INFO:__main__:Copying service configuration files
+2021-05-26T02:05:58.735115089Z  INFO:__main__:Writing out command to execute
+2021-05-26T02:05:58.735583909Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus
+2021-05-26T02:05:58.740672508Z  ++ cat /run_command
+2021-05-26T02:05:58.741559073Z  + CMD='/opt/cadvisor --port=18080 --log_dir=/var/log/kolla/prometheus'
+2021-05-26T02:05:58.741578097Z  + ARGS=
+2021-05-26T02:05:58.741688642Z  + sudo kolla_copy_cacerts
+2021-05-26T02:05:58.750100079Z  + [[ ! -n '' ]]
+2021-05-26T02:05:58.750121274Z  + . kolla_extend_start
+2021-05-26T02:05:58.750250991Z  ++ [[ ! -d /var/log/kolla/prometheus ]]
+2021-05-26T02:05:58.750639749Z  +++ stat -c %a /var/log/kolla/prometheus
+2021-05-26T02:05:58.751881821Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T02:05:58.751894941Z  ++ chmod 755 /var/log/kolla/prometheus
+2021-05-26T02:05:58.753077127Z  + echo 'Running command: '\''/opt/cadvisor --port=18080 --log_dir=/var/log/kolla/prometheus'\'''
+2021-05-26T02:05:58.753103566Z  + exec /opt/cadvisor --port=18080 --log_dir=/var/log/kolla/prometheus
+2021-05-26T02:07:59.587973144Z  2021/05/26 04:07:59 http: superfluous response.WriteHeader call from github.com/google/cadvisor/vendor/github.com/prometheus/client_golang/prometheus/promhttp.httpError (http.go:306)
+2021-05-26T02:26:02.148880146Z  2021/05/26 04:26:02 http: superfluous response.WriteHeader call from github.com/google/cadvisor/vendor/github.com/prometheus/client_golang/prometheus/promhttp.httpError (http.go:306)
+2021-05-26T02:42:03.092332386Z  2021/05/26 04:42:03 http: superfluous response.WriteHeader call from github.com/google/cadvisor/vendor/github.com/prometheus/client_golang/prometheus/promhttp.httpError (http.go:306)

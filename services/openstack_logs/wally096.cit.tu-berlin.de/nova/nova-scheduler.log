@@ -1,0 +1,902 @@
+2021-06-09 14:22:34.255 7 INFO oslo_service.periodic_task [-] Skipping periodic task _discover_hosts_in_cells because its interval is negative
+2021-06-09 14:22:35.247 7 INFO oslo_service.service [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Starting 5 workers
+2021-06-09 14:22:35.272 17 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-09 14:22:35.275 18 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-09 14:22:35.278 19 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-09 14:22:35.282 20 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-09 14:22:35.284 21 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-09 14:22:35.295 7 WARNING oslo_config.cfg [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2021-06-09 14:26:18.737 7 INFO oslo_service.service [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Caught SIG_UNBLOCK, stopping children
+2021-06-09 14:26:18.762 17 INFO oslo_service.service [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Child caught SIG_UNBLOCK, handling
+2021-06-09 14:26:18.762 19 INFO oslo_service.service [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Child caught SIG_UNBLOCK, handling
+2021-06-09 14:26:18.762 20 INFO oslo_service.service [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Child caught SIG_UNBLOCK, handling
+2021-06-09 14:26:18.762 21 INFO oslo_service.service [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Child caught SIG_UNBLOCK, handling
+2021-06-09 14:26:18.762 18 INFO oslo_service.service [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Child caught SIG_UNBLOCK, handling
+2021-06-09 14:26:18.772 19 WARNING oslo_config.cfg [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2021-06-09 14:26:18.772 20 WARNING oslo_config.cfg [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2021-06-09 14:26:18.773 17 WARNING oslo_config.cfg [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2021-06-09 14:26:18.775 18 WARNING oslo_config.cfg [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2021-06-09 14:26:18.775 21 WARNING oslo_config.cfg [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2021-06-09 14:27:42.840 20 INFO nova.scheduler.host_manager [req-91b09cfd-cf6a-49fe-bed7-f73e252f8e4e - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-09 14:27:42.842 17 INFO nova.scheduler.host_manager [req-91b09cfd-cf6a-49fe-bed7-f73e252f8e4e - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-09 14:27:42.843 21 INFO nova.scheduler.host_manager [req-91b09cfd-cf6a-49fe-bed7-f73e252f8e4e - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-09 14:27:42.843 18 INFO nova.scheduler.host_manager [req-91b09cfd-cf6a-49fe-bed7-f73e252f8e4e - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-09 14:27:42.844 19 INFO nova.scheduler.host_manager [req-91b09cfd-cf6a-49fe-bed7-f73e252f8e4e - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-09 14:27:56.546 19 INFO nova.scheduler.host_manager [req-fece7a3f-637d-49b0-919d-fbe5dfeb6203 - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-09 14:27:56.546 17 INFO nova.scheduler.host_manager [req-fece7a3f-637d-49b0-919d-fbe5dfeb6203 - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-09 14:27:56.547 20 INFO nova.scheduler.host_manager [req-fece7a3f-637d-49b0-919d-fbe5dfeb6203 - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-09 14:27:56.547 21 INFO nova.scheduler.host_manager [req-fece7a3f-637d-49b0-919d-fbe5dfeb6203 - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-09 14:27:56.547 18 INFO nova.scheduler.host_manager [req-fece7a3f-637d-49b0-919d-fbe5dfeb6203 - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-09 14:27:57.835 21 INFO nova.scheduler.host_manager [req-37b01009-5e94-48e6-9b1f-55dbdbd244db - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-09 14:27:57.835 17 INFO nova.scheduler.host_manager [req-37b01009-5e94-48e6-9b1f-55dbdbd244db - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-09 14:27:57.837 19 INFO nova.scheduler.host_manager [req-37b01009-5e94-48e6-9b1f-55dbdbd244db - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-09 14:27:57.837 18 INFO nova.scheduler.host_manager [req-37b01009-5e94-48e6-9b1f-55dbdbd244db - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-09 14:27:57.840 20 INFO nova.scheduler.host_manager [req-37b01009-5e94-48e6-9b1f-55dbdbd244db - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-14 14:02:13.707 7 INFO oslo_service.service [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Caught SIGTERM, stopping children
+2021-06-14 14:02:14.192 7 INFO oslo_service.service [req-50be9fc5-29f4-4872-9e95-e90ba2fda37b - - - - -] Waiting on 5 children to exit
+2021-06-14 14:02:28.010 6 INFO oslo_service.periodic_task [-] Skipping periodic task _discover_hosts_in_cells because its interval is negative
+2021-06-14 14:02:28.902 6 INFO oslo_service.service [req-12d60f38-d823-4451-8206-941c6a591d60 - - - - -] Starting 5 workers
+2021-06-14 14:02:28.909 16 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-14 14:02:28.912 17 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-14 14:02:28.915 18 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-14 14:02:28.919 19 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-14 14:02:28.921 20 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-14 14:02:28.929 6 WARNING oslo_config.cfg [req-12d60f38-d823-4451-8206-941c6a591d60 - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2021-06-14 14:02:37.350 19 INFO nova.scheduler.host_manager [req-2f6cd230-b4f5-43ab-8872-cb1b73c3cb49 - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-14 14:02:37.354 18 INFO nova.scheduler.host_manager [req-2f6cd230-b4f5-43ab-8872-cb1b73c3cb49 - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-14 14:02:37.354 16 INFO nova.scheduler.host_manager [req-2f6cd230-b4f5-43ab-8872-cb1b73c3cb49 - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-14 14:02:37.354 17 INFO nova.scheduler.host_manager [req-2f6cd230-b4f5-43ab-8872-cb1b73c3cb49 - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-14 14:02:37.354 20 INFO nova.scheduler.host_manager [req-2f6cd230-b4f5-43ab-8872-cb1b73c3cb49 - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-14 14:03:36.562 17 INFO nova.scheduler.host_manager [req-a9fe5413-aed7-4ab9-a508-8dfd052f7bcc - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-14 14:03:36.562 19 INFO nova.scheduler.host_manager [req-a9fe5413-aed7-4ab9-a508-8dfd052f7bcc - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-14 14:03:36.562 18 INFO nova.scheduler.host_manager [req-a9fe5413-aed7-4ab9-a508-8dfd052f7bcc - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-14 14:03:36.562 20 INFO nova.scheduler.host_manager [req-a9fe5413-aed7-4ab9-a508-8dfd052f7bcc - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-14 14:03:36.563 16 INFO nova.scheduler.host_manager [req-a9fe5413-aed7-4ab9-a508-8dfd052f7bcc - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-14 14:03:41.898 18 INFO nova.scheduler.host_manager [req-05e059ab-2b5d-4b5d-a02c-195df369268e - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-14 14:03:41.898 16 INFO nova.scheduler.host_manager [req-05e059ab-2b5d-4b5d-a02c-195df369268e - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-14 14:03:41.898 19 INFO nova.scheduler.host_manager [req-05e059ab-2b5d-4b5d-a02c-195df369268e - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-14 14:03:41.901 20 INFO nova.scheduler.host_manager [req-05e059ab-2b5d-4b5d-a02c-195df369268e - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-14 14:03:41.901 17 INFO nova.scheduler.host_manager [req-05e059ab-2b5d-4b5d-a02c-195df369268e - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-14 14:55:00.836 6 INFO oslo_service.service [req-12d60f38-d823-4451-8206-941c6a591d60 - - - - -] Caught SIGTERM, stopping children
+2021-06-14 14:55:00.837 6 INFO oslo_service.service [req-12d60f38-d823-4451-8206-941c6a591d60 - - - - -] Waiting on 5 children to exit
+2021-06-14 14:55:14.727 6 INFO oslo_service.periodic_task [-] Skipping periodic task _discover_hosts_in_cells because its interval is negative
+2021-06-14 14:55:15.519 6 INFO oslo_service.service [req-6bed64ec-829c-4a29-9d73-ad9247a279a9 - - - - -] Starting 5 workers
+2021-06-14 14:55:15.528 16 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-14 14:55:15.531 17 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-14 14:55:15.536 18 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-14 14:55:15.541 19 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-14 14:55:15.547 20 INFO nova.service [-] Starting scheduler node (version 23.0.0)
+2021-06-14 14:55:15.557 6 WARNING oslo_config.cfg [req-6bed64ec-829c-4a29-9d73-ad9247a279a9 - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2021-06-14 14:55:53.920 16 INFO nova.scheduler.host_manager [req-9b8ef7ad-e8b2-473a-804b-c10e5e6b45ce - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-14 14:55:53.921 19 INFO nova.scheduler.host_manager [req-9b8ef7ad-e8b2-473a-804b-c10e5e6b45ce - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-14 14:55:53.922 17 INFO nova.scheduler.host_manager [req-9b8ef7ad-e8b2-473a-804b-c10e5e6b45ce - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-14 14:55:53.923 20 INFO nova.scheduler.host_manager [req-9b8ef7ad-e8b2-473a-804b-c10e5e6b45ce - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-14 14:55:53.924 18 INFO nova.scheduler.host_manager [req-9b8ef7ad-e8b2-473a-804b-c10e5e6b45ce - - - - -] Received a sync request from an unknown host 'wally098'. Re-created its InstanceList.
+2021-06-14 14:56:16.854 16 INFO nova.scheduler.host_manager [req-25793777-9444-4d26-8878-bdd9d8545922 - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-14 14:56:16.855 19 INFO nova.scheduler.host_manager [req-25793777-9444-4d26-8878-bdd9d8545922 - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-14 14:56:16.855 20 INFO nova.scheduler.host_manager [req-25793777-9444-4d26-8878-bdd9d8545922 - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-14 14:56:16.855 17 INFO nova.scheduler.host_manager [req-25793777-9444-4d26-8878-bdd9d8545922 - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-14 14:56:16.855 18 INFO nova.scheduler.host_manager [req-25793777-9444-4d26-8878-bdd9d8545922 - - - - -] Received a sync request from an unknown host 'wally096'. Re-created its InstanceList.
+2021-06-14 14:56:18.808 19 INFO nova.scheduler.host_manager [req-5edded7d-e493-48a8-bd02-551098d09330 - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-14 14:56:18.808 17 INFO nova.scheduler.host_manager [req-5edded7d-e493-48a8-bd02-551098d09330 - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-14 14:56:18.809 18 INFO nova.scheduler.host_manager [req-5edded7d-e493-48a8-bd02-551098d09330 - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-14 14:56:18.809 20 INFO nova.scheduler.host_manager [req-5edded7d-e493-48a8-bd02-551098d09330 - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-14 14:56:18.810 16 INFO nova.scheduler.host_manager [req-5edded7d-e493-48a8-bd02-551098d09330 - - - - -] Received a sync request from an unknown host 'wally099'. Re-created its InstanceList.
+2021-06-14 15:34:42.027 6 INFO oslo_service.service [req-6bed64ec-829c-4a29-9d73-ad9247a279a9 - - - - -] Caught SIG_UNBLOCK, stopping children
+2021-06-14 15:34:42.050 19 INFO oslo_service.service [req-6bed64ec-829c-4a29-9d73-ad9247a279a9 - - - - -] Child caught SIG_UNBLOCK, handling
+2021-06-14 15:34:42.050 20 INFO oslo_service.service [req-6bed64ec-829c-4a29-9d73-ad9247a279a9 - - - - -] Child caught SIG_UNBLOCK, handling
+2021-06-14 15:34:42.050 16 INFO oslo_service.service [req-6bed64ec-829c-4a29-9d73-ad9247a279a9 - - - - -] Child caught SIG_UNBLOCK, handling
+2021-06-14 15:34:42.050 17 INFO oslo_service.service [req-6bed64ec-829c-4a29-9d73-ad9247a279a9 - - - - -] Child caught SIG_UNBLOCK, handling
+2021-06-14 15:34:42.050 18 INFO oslo_service.service [req-6bed64ec-829c-4a29-9d73-ad9247a279a9 - - - - -] Child caught SIG_UNBLOCK, handling
+2021-06-14 15:34:42.058 19 WARNING oslo_config.cfg [req-6bed64ec-829c-4a29-9d73-ad9247a279a9 - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2021-06-14 15:34:42.058 20 WARNING oslo_config.cfg [req-6bed64ec-829c-4a29-9d73-ad9247a279a9 - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2021-06-14 15:34:42.060 18 WARNING oslo_config.cfg [req-6bed64ec-829c-4a29-9d73-ad9247a279a9 - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2021-06-14 15:34:42.060 17 WARNING oslo_config.cfg [req-6bed64ec-829c-4a29-9d73-ad9247a279a9 - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2021-06-14 15:34:42.060 16 WARNING oslo_config.cfg [req-6bed64ec-829c-4a29-9d73-ad9247a279a9 - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2021-06-14 16:08:48.736 16 INFO nova.scheduler.host_manager [req-180f8761-867c-4753-9fef-5b384b44bedd bec72e8f41db4a5a86edb6788965771a cfc52665ca1b4b1fb065be624e9a5858 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:08:54.546 16 INFO nova.scheduler.host_manager [req-8eccd731-9ba5-4624-82d9-d8d765c642c9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:08:54.559 18 INFO nova.scheduler.host_manager [req-8eccd731-9ba5-4624-82d9-d8d765c642c9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:08:54.561 17 INFO nova.scheduler.host_manager [req-8eccd731-9ba5-4624-82d9-d8d765c642c9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:08:54.561 19 INFO nova.scheduler.host_manager [req-8eccd731-9ba5-4624-82d9-d8d765c642c9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:08:54.565 20 INFO nova.scheduler.host_manager [req-8eccd731-9ba5-4624-82d9-d8d765c642c9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:09:26.615 20 INFO nova.scheduler.host_manager [req-86c5bd5a-0ee6-4c3b-88c4-23b6f710ea0c bec72e8f41db4a5a86edb6788965771a cfc52665ca1b4b1fb065be624e9a5858 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:13:27.584 19 INFO nova.scheduler.host_manager [req-798cf495-a4ee-4d24-b332-ddb784bfa088 f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:14:01.516 17 INFO nova.scheduler.host_manager [req-9b68bcb5-2ce3-4b11-9608-8209e25574ee f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:14:35.982 18 INFO nova.scheduler.host_manager [req-6ad34912-185f-4ded-9ea5-decf6e0c8971 f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:15:10.017 16 INFO nova.scheduler.host_manager [req-964e2395-a36c-4818-9d81-8fceccd1e03a f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:15:44.945 20 INFO nova.scheduler.host_manager [req-6980bd4d-b513-4233-a75c-c69fb9b46b52 f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:16:22.377 19 INFO nova.scheduler.host_manager [req-44fab93c-cfc6-4d12-8abc-4fa831def8cf f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:17:00.246 17 INFO nova.scheduler.host_manager [req-ebbc855a-78e7-4b31-a831-c5eac833fdca f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:17:04.541 17 INFO nova.scheduler.host_manager [req-6c2044b3-3acf-4e78-b54a-81286acb74f9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:17:04.542 16 INFO nova.scheduler.host_manager [req-6c2044b3-3acf-4e78-b54a-81286acb74f9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:17:04.542 20 INFO nova.scheduler.host_manager [req-6c2044b3-3acf-4e78-b54a-81286acb74f9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:17:04.543 18 INFO nova.scheduler.host_manager [req-6c2044b3-3acf-4e78-b54a-81286acb74f9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:17:04.544 19 INFO nova.scheduler.host_manager [req-6c2044b3-3acf-4e78-b54a-81286acb74f9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:17:35.101 18 INFO nova.scheduler.host_manager [req-e51b40e4-b1ab-40ac-a7d7-50190ec5b81d f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:18:13.135 16 INFO nova.scheduler.host_manager [req-c348da02-7faa-4c60-a793-6966cf00da94 f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:18:49.774 20 INFO nova.scheduler.host_manager [req-d7aa98e1-ef6a-498a-9d6d-021be954b621 f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:19:24.518 19 INFO nova.scheduler.host_manager [req-f97b950f-46f5-420a-9fd6-d37dd6cf8ad9 f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:19:57.576 17 INFO nova.scheduler.host_manager [req-5d9343a5-aecf-4890-a977-1cb8d980efac f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:20:33.718 18 INFO nova.scheduler.host_manager [req-78b440af-b2c1-4b9d-94b6-7c6c6bbd3939 f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:21:12.968 16 INFO nova.scheduler.host_manager [req-23963a4f-85f8-4047-882f-37312e4e81e9 f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:21:46.975 20 INFO nova.scheduler.host_manager [req-1eaa5bc6-b2bc-41e8-8c87-dc14a2345744 f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:22:21.115 19 INFO nova.scheduler.host_manager [req-6dc7d6ee-3fb3-44e6-a67c-173a78c88ab1 f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:22:55.856 17 INFO nova.scheduler.host_manager [req-7972eb85-3f18-46b3-8413-7862a71bdb71 f7aa69599c8c4f8696be530ae2694043 3c569e3d45a04f55a3d9c548ca841908 - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:34:08.214 18 INFO nova.scheduler.host_manager [req-8d15fe33-4062-408f-bd8a-a732c5379bf1 b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:34:42.302 16 INFO nova.scheduler.host_manager [req-5e7d90d0-410d-4aa5-9bf6-7746da468ef4 b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:35:16.935 20 INFO nova.scheduler.host_manager [req-a763217b-583c-4637-b85c-fec9660aeca3 b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:35:50.367 19 INFO nova.scheduler.host_manager [req-81e5b363-9caf-455d-8e4c-9a01752764c7 b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:36:29.459 17 INFO nova.scheduler.host_manager [req-a0fbeb88-f516-4715-8fd8-6a35ead99a98 b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:37:08.976 18 INFO nova.scheduler.host_manager [req-e4b3abeb-a3db-4627-9f1e-5a8588eac3ac b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:37:42.020 16 INFO nova.scheduler.host_manager [req-c3e832a7-0219-47bb-a273-57d5e7b2c816 b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:38:21.240 20 INFO nova.scheduler.host_manager [req-46250d8a-fba0-47e6-b20e-1ca25848160e b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:38:59.746 19 INFO nova.scheduler.host_manager [req-f0fd4d3c-f5e2-4c34-8279-cb52e5783ad7 b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:39:35.169 17 INFO nova.scheduler.host_manager [req-22592cf0-57de-45b8-b2c8-857a0cf88cb5 b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:39:41.546 17 INFO nova.scheduler.host_manager [req-698e90af-c391-444f-a54d-ba2dc61462a7 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:39:41.546 19 INFO nova.scheduler.host_manager [req-698e90af-c391-444f-a54d-ba2dc61462a7 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:39:41.547 20 INFO nova.scheduler.host_manager [req-698e90af-c391-444f-a54d-ba2dc61462a7 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:39:41.547 18 INFO nova.scheduler.host_manager [req-698e90af-c391-444f-a54d-ba2dc61462a7 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:39:41.547 16 INFO nova.scheduler.host_manager [req-698e90af-c391-444f-a54d-ba2dc61462a7 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 16:40:15.014 18 INFO nova.scheduler.host_manager [req-7fb610da-cbf2-4a8c-a0c7-dfd0f23dd53c b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:40:53.326 16 INFO nova.scheduler.host_manager [req-39f1070e-35dd-4335-bd02-1d0a3d215bb6 b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:41:27.034 20 INFO nova.scheduler.host_manager [req-ab968dbb-ec53-432c-a280-f0bef4851675 b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:42:03.479 19 INFO nova.scheduler.host_manager [req-f8c5d7f0-5fa7-4779-b460-2c2a249b17c0 b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:42:36.204 17 INFO nova.scheduler.host_manager [req-5eaf0eb0-3ce7-4d49-891d-89e8d8c4e5a2 b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:43:15.846 18 INFO nova.scheduler.host_manager [req-809e2c0d-524c-4187-b85b-4e82e625dc3f b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:43:51.591 16 INFO nova.scheduler.host_manager [req-0947f44c-0638-4e7d-8736-c818334452b7 b1c87964f0f74f23a74be2adb9172e2b 921c19c3d7d64358a77b2817fca15f8f - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:51:38.785 20 INFO nova.scheduler.host_manager [req-a098cd3c-3a23-47b3-ad73-77d3b89422aa 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:52:13.689 19 INFO nova.scheduler.host_manager [req-331d7159-d9f8-4f71-9d86-562809231c15 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:52:48.120 17 INFO nova.scheduler.host_manager [req-859cd0a8-185f-4546-968d-1e7dc19ee101 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:53:24.416 18 INFO nova.scheduler.host_manager [req-589f4035-211e-4afe-be00-cae8de7ac0e3 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:53:58.769 16 INFO nova.scheduler.host_manager [req-aedc4dc4-58fe-41e2-9b4d-2eaeb64df094 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:54:35.102 20 INFO nova.scheduler.host_manager [req-cb1d27b5-fb82-4650-9605-e2d1c65b761a 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:55:09.231 19 INFO nova.scheduler.host_manager [req-c208ed3c-a8c2-4784-86c6-c305c9432d17 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:55:49.140 17 INFO nova.scheduler.host_manager [req-ee7b3674-955d-4492-9cba-05f3d8af8648 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:56:24.432 18 INFO nova.scheduler.host_manager [req-159ec6d3-876d-46d5-aee9-1d158488a8bf 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:57:02.424 16 INFO nova.scheduler.host_manager [req-f9df3037-a08c-4975-b9d4-09c421aca9da 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:57:39.416 20 INFO nova.scheduler.host_manager [req-4a370eff-490b-4886-8c33-66fecfa23ff5 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:58:15.530 19 INFO nova.scheduler.host_manager [req-bea4a163-342e-4f70-b57d-32f49c1bd476 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:58:50.443 17 INFO nova.scheduler.host_manager [req-8d7c95db-3eb0-4228-b80d-a25f9cf69dfc 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 16:59:27.430 18 INFO nova.scheduler.host_manager [req-2f8c9b60-3e71-417c-bb06-7c28d1710547 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:00:03.568 16 INFO nova.scheduler.host_manager [req-fd882b39-e311-461f-b167-9917b5332d46 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:00:38.919 20 INFO nova.scheduler.host_manager [req-e76a222c-b2b3-471c-a6fd-b902d5dc95a2 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:01:17.932 19 INFO nova.scheduler.host_manager [req-1e324e1c-7460-4515-ae8c-960ceb929014 9d7fa4f84ac143be94b4a71f2ae8fba3 d717bcba9a334def9472af15e61e828e - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:05:56.108 17 INFO nova.scheduler.host_manager [req-0450dcf3-4966-4a98-85da-886b49c969e8 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:05:57.238 18 INFO nova.scheduler.host_manager [req-c239e171-4be5-49a9-8c76-e0bf5c956859 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:05:57.293 16 INFO nova.scheduler.host_manager [req-6c3dd255-b5f5-4206-b2ec-8e3c976ddc32 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:06:05.552 17 INFO nova.scheduler.host_manager [req-523849b7-045c-40b9-8596-e5afeae42e36 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:06:05.552 16 INFO nova.scheduler.host_manager [req-523849b7-045c-40b9-8596-e5afeae42e36 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:06:05.554 18 INFO nova.scheduler.host_manager [req-523849b7-045c-40b9-8596-e5afeae42e36 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:06:05.554 20 INFO nova.scheduler.host_manager [req-523849b7-045c-40b9-8596-e5afeae42e36 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:06:05.559 19 INFO nova.scheduler.host_manager [req-523849b7-045c-40b9-8596-e5afeae42e36 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:06:40.696 20 INFO nova.scheduler.host_manager [req-da1333fc-8106-4e65-98db-82fa7048c996 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:06:40.813 19 INFO nova.scheduler.host_manager [req-9b722f9f-3804-402f-9507-be7b039a5740 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:06:46.065 17 INFO nova.scheduler.host_manager [req-f022ce30-621f-42a0-a026-f42897731cfb 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:07:27.713 18 INFO nova.scheduler.host_manager [req-62e1c88c-a571-4509-ad82-7be9aa5e0709 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:07:30.978 16 INFO nova.scheduler.host_manager [req-a76e1b7a-4c39-4d7e-96c7-cbb2a972ec63 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:07:32.116 20 INFO nova.scheduler.host_manager [req-efd6218f-f51e-4e2b-a37f-db482b13ca86 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:08:04.942 19 INFO nova.scheduler.host_manager [req-deba243c-8e82-4e44-9504-1456c2d65bd7 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:08:08.540 19 INFO nova.scheduler.host_manager [req-f4e8af7a-cce8-4ade-978f-45a33343b8ef - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:08:08.541 18 INFO nova.scheduler.host_manager [req-f4e8af7a-cce8-4ade-978f-45a33343b8ef - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:08:08.541 16 INFO nova.scheduler.host_manager [req-f4e8af7a-cce8-4ade-978f-45a33343b8ef - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:08:08.546 17 INFO nova.scheduler.host_manager [req-f4e8af7a-cce8-4ade-978f-45a33343b8ef - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:08:08.548 20 INFO nova.scheduler.host_manager [req-f4e8af7a-cce8-4ade-978f-45a33343b8ef - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:08:14.547 17 INFO nova.scheduler.host_manager [req-9a243bd4-c64c-431d-8d6b-2278e5d14ea8 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:08:14.849 18 INFO nova.scheduler.host_manager [req-0d501f70-4320-4527-89b0-2b60a567e062 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:08:41.102 16 INFO nova.scheduler.host_manager [req-a4db7464-932c-40be-9e81-09499b6f7342 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:08:53.154 20 INFO nova.scheduler.host_manager [req-4ac39d2b-8331-47ff-af33-994bae1ad104 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:09:17.168 19 INFO nova.scheduler.host_manager [req-022b7d39-ed53-44ea-89ab-e464a4fe219f 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:09:28.679 17 INFO nova.scheduler.host_manager [req-fb6e1e10-fdcc-4653-b4bb-767ee0b48f1b 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:09:50.651 18 INFO nova.scheduler.host_manager [req-ea83a9dc-e71b-48e1-a5b5-bf9bb765ca42 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:10:05.157 16 INFO nova.scheduler.host_manager [req-a9510911-1ad8-496c-a590-a56c20d3bfa0 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:10:08.751 19 INFO nova.scheduler.host_manager [req-d894530c-b231-4b77-bde2-fd20d6e322dd - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:10:08.751 17 INFO nova.scheduler.host_manager [req-d894530c-b231-4b77-bde2-fd20d6e322dd - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:10:08.753 16 INFO nova.scheduler.host_manager [req-d894530c-b231-4b77-bde2-fd20d6e322dd - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:10:08.754 18 INFO nova.scheduler.host_manager [req-d894530c-b231-4b77-bde2-fd20d6e322dd - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:10:08.755 20 INFO nova.scheduler.host_manager [req-d894530c-b231-4b77-bde2-fd20d6e322dd - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:10:26.504 20 INFO nova.scheduler.host_manager [req-27a15cc1-d5c4-4792-845d-de2df08386a7 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:10:40.412 19 INFO nova.scheduler.host_manager [req-34f1b44e-af18-4438-9da0-22014d757be7 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:11:01.394 17 INFO nova.scheduler.host_manager [req-4226acc5-8f1c-44b7-94b0-75a2496985ad 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:11:13.807 18 INFO nova.scheduler.host_manager [req-6fbaa416-688e-40a2-8f18-4c57d3401725 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:11:37.221 16 INFO nova.scheduler.host_manager [req-223974d3-41f7-44a3-9769-337446054ff0 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:11:48.801 20 INFO nova.scheduler.host_manager [req-aee10761-3127-4290-8444-f5f7146efc6b 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:12:15.010 19 INFO nova.scheduler.host_manager [req-d6aab906-09dc-4a04-8033-9d004226ba44 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:12:28.904 17 INFO nova.scheduler.host_manager [req-7b93b9c1-f91a-4bff-b75e-a97d169bad8d 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:12:52.290 18 INFO nova.scheduler.host_manager [req-a6e2a240-2528-4dbd-b251-e670913d7712 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:13:05.216 16 INFO nova.scheduler.host_manager [req-301c7baa-bddc-4499-94fd-cbdf36684dbd 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:13:27.938 20 INFO nova.scheduler.host_manager [req-106951bc-c75e-4584-96b6-cb930d40e44a 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:13:43.194 19 INFO nova.scheduler.host_manager [req-1ccc5120-7148-489f-8197-7030895dddfc 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:13:47.300 17 INFO nova.scheduler.host_manager [req-535877c0-a736-495a-b4bb-36be5b3cb5c0 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:14:05.073 18 INFO nova.scheduler.host_manager [req-376f459f-311b-43df-819b-adb357662850 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:14:12.538 18 INFO nova.scheduler.host_manager [req-98181cb5-2db7-4cc5-abb4-24259b312097 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:14:12.539 20 INFO nova.scheduler.host_manager [req-98181cb5-2db7-4cc5-abb4-24259b312097 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:14:12.539 19 INFO nova.scheduler.host_manager [req-98181cb5-2db7-4cc5-abb4-24259b312097 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:14:12.539 17 INFO nova.scheduler.host_manager [req-98181cb5-2db7-4cc5-abb4-24259b312097 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:14:12.540 16 INFO nova.scheduler.host_manager [req-98181cb5-2db7-4cc5-abb4-24259b312097 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-14 17:14:22.336 16 INFO nova.scheduler.host_manager [req-56a8b50a-6ed9-4b69-814b-809ccf267f64 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:14:29.490 20 INFO nova.scheduler.host_manager [req-e47ecfd8-fe73-431a-a34c-9ea8bfaaf6e6 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:14:46.466 19 INFO nova.scheduler.host_manager [req-77815758-624c-49a2-b0f4-f7b5b8c44cc0 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:15:00.580 17 INFO nova.scheduler.host_manager [req-4b1723ef-6003-488d-a856-6a63162f5de4 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:15:09.269 18 INFO nova.scheduler.host_manager [req-4a878704-1529-4f17-83c8-f5660cfe6c4a 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:15:25.696 16 INFO nova.scheduler.host_manager [req-acf487da-ddb2-4966-bb80-b16f3ccc75f4 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:15:38.512 20 INFO nova.scheduler.host_manager [req-0e702b34-a705-4537-975a-683c5aa7a370 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-14 17:15:46.256 19 INFO nova.scheduler.host_manager [req-620799c3-660f-41f0-bda4-79e1a00042e3 453033699f7f4bf282e1fb5fa3d2fea2 e7b29577b8b84ea69ab3b8a0aa8bd705 - default default] Host filter forcing available hosts to wally096
+2021-06-16 10:32:39.237 17 INFO nova.scheduler.host_manager [req-6f345035-60f6-4e6f-94c2-751b90d3f5ea 8758e533fde748c08437ced7f7ecc68e acdde94a53ad4e85874e2f359e50d889 - default default] Host filter forcing available hosts to wally096
+2021-06-16 10:32:39.635 18 INFO nova.scheduler.host_manager [req-8c8a87b2-b6b0-4b68-9729-09e5749b5c21 8758e533fde748c08437ced7f7ecc68e acdde94a53ad4e85874e2f359e50d889 - default default] Host filter forcing available hosts to wally096
+2021-06-16 10:32:39.842 16 INFO nova.scheduler.host_manager [req-69bb6607-7ad9-4eff-8f66-873941f90035 8758e533fde748c08437ced7f7ecc68e acdde94a53ad4e85874e2f359e50d889 - default default] Host filter forcing available hosts to wally096
+2021-06-16 10:33:21.480 20 INFO nova.scheduler.host_manager [req-1d75b8b9-1232-40a1-8052-3c9ed451d17e 8758e533fde748c08437ced7f7ecc68e acdde94a53ad4e85874e2f359e50d889 - default default] Host filter forcing available hosts to wally096
+2021-06-16 10:33:24.949 19 INFO nova.scheduler.host_manager [req-9e75013b-aa8f-4e29-b233-066cfdca9fe8 8758e533fde748c08437ced7f7ecc68e acdde94a53ad4e85874e2f359e50d889 - default default] Host filter forcing available hosts to wally096
+2021-06-16 10:33:29.317 17 INFO nova.scheduler.host_manager [req-0c74f236-04fa-48b4-a4d5-ef366f6f2276 8758e533fde748c08437ced7f7ecc68e acdde94a53ad4e85874e2f359e50d889 - default default] Host filter forcing available hosts to wally096
+2021-06-16 10:42:22.977 18 INFO nova.scheduler.host_manager [req-b703317b-9315-48ee-af8c-6dddd98af513 1f7d0b52e4ee4eb9a3feac744c336e8d 6593e1b6646a478f87a7b17eeded91ca - default default] Host filter forcing available hosts to wally096
+2021-06-16 10:50:17.872 16 INFO nova.scheduler.host_manager [req-1a63301d-07e1-488a-87a6-78c8a458dd3e 8038e2d1f7834f549cb1f91a0373a19f c4d1f8074f964f85a0dc9f786ebdf224 - default default] Host filter forcing available hosts to wally096
+2021-06-16 10:54:12.756 20 INFO nova.scheduler.host_manager [req-02bb1434-b29b-43c9-9e89-7979157b1dc7 b81879facfba44f3bf085853a594218a da0303e4dca94169a8e4677ead008559 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:05:05.269 17 INFO nova.scheduler.host_manager [req-3628e5cf-1e5e-4fb0-9167-840d2cec3adb - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:05:05.279 16 INFO nova.scheduler.host_manager [req-3628e5cf-1e5e-4fb0-9167-840d2cec3adb - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:05:05.281 19 INFO nova.scheduler.host_manager [req-3628e5cf-1e5e-4fb0-9167-840d2cec3adb - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:05:05.282 20 INFO nova.scheduler.host_manager [req-3628e5cf-1e5e-4fb0-9167-840d2cec3adb - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:05:05.283 18 INFO nova.scheduler.host_manager [req-3628e5cf-1e5e-4fb0-9167-840d2cec3adb - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:07:05.245 17 INFO nova.scheduler.host_manager [req-86d5f408-dfdf-4de9-a82e-0a197049fe70 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:07:05.246 20 INFO nova.scheduler.host_manager [req-86d5f408-dfdf-4de9-a82e-0a197049fe70 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:07:05.246 18 INFO nova.scheduler.host_manager [req-86d5f408-dfdf-4de9-a82e-0a197049fe70 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:07:05.247 16 INFO nova.scheduler.host_manager [req-86d5f408-dfdf-4de9-a82e-0a197049fe70 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:07:05.251 19 INFO nova.scheduler.host_manager [req-86d5f408-dfdf-4de9-a82e-0a197049fe70 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:09:07.241 17 INFO nova.scheduler.host_manager [req-6e687b36-db04-45ea-96eb-3669341093af - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:09:07.242 20 INFO nova.scheduler.host_manager [req-6e687b36-db04-45ea-96eb-3669341093af - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:09:07.243 18 INFO nova.scheduler.host_manager [req-6e687b36-db04-45ea-96eb-3669341093af - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:09:07.244 19 INFO nova.scheduler.host_manager [req-6e687b36-db04-45ea-96eb-3669341093af - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:09:07.245 16 INFO nova.scheduler.host_manager [req-6e687b36-db04-45ea-96eb-3669341093af - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 11:36:20.173 17 INFO nova.scheduler.host_manager [req-a63a5594-70a3-4aeb-8a1a-40a153333151 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:36:25.451 18 INFO nova.scheduler.host_manager [req-79fc6f81-76e6-417f-bed4-f4bfeb1dda7a 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:36:25.489 16 INFO nova.scheduler.host_manager [req-2543285e-d96c-4cac-8a19-19a0c2c97da2 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:36:25.982 20 INFO nova.scheduler.host_manager [req-deaeba0d-ab4c-41fc-95cc-754b6f99f7d6 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:36:26.091 19 INFO nova.scheduler.host_manager [req-eca205df-b68e-4cc0-9c56-a0f270b14aba 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:36:33.945 18 INFO nova.scheduler.host_manager [req-7475471e-d85b-4ad4-b270-f23e58336666 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:36:33.945 20 INFO nova.scheduler.host_manager [req-7475471e-d85b-4ad4-b270-f23e58336666 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:36:33.946 17 INFO nova.scheduler.host_manager [req-7475471e-d85b-4ad4-b270-f23e58336666 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:36:33.946 16 INFO nova.scheduler.host_manager [req-7475471e-d85b-4ad4-b270-f23e58336666 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:36:33.947 19 INFO nova.scheduler.host_manager [req-7475471e-d85b-4ad4-b270-f23e58336666 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:37:07.089 17 INFO nova.scheduler.host_manager [req-ab8b9086-cdf4-4ed1-bddb-ae087a859ca0 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:37:15.499 18 INFO nova.scheduler.host_manager [req-fcfc1775-d131-4487-98ce-5a3a61535a97 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:37:23.653 16 INFO nova.scheduler.host_manager [req-b14e0078-02af-4134-a1bb-e0e27211aabb 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:37:23.834 20 INFO nova.scheduler.host_manager [req-150ade5a-c045-4e2e-abc8-f01a78ab87e8 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:37:44.422 19 INFO nova.scheduler.host_manager [req-75ffabf2-3097-47cd-80b4-79f7b5dc1dfb 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:37:51.836 17 INFO nova.scheduler.host_manager [req-d8b756b4-ec3a-452c-9e1d-457727dc117c 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:38:04.943 18 INFO nova.scheduler.host_manager [req-9ba60ee5-6008-41b9-9b29-c478182076be 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:38:28.876 16 INFO nova.scheduler.host_manager [req-fa532879-595e-47d1-9a0d-54a67c9a024a 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:38:31.058 20 INFO nova.scheduler.host_manager [req-d9eb54a7-cdf6-41da-9fd9-069abe2ed3ae 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:38:36.552 20 INFO nova.scheduler.host_manager [req-99644dfe-0169-4783-a66b-5c0fedd1db69 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:38:36.553 16 INFO nova.scheduler.host_manager [req-99644dfe-0169-4783-a66b-5c0fedd1db69 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:38:36.555 19 INFO nova.scheduler.host_manager [req-99644dfe-0169-4783-a66b-5c0fedd1db69 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:38:36.557 17 INFO nova.scheduler.host_manager [req-99644dfe-0169-4783-a66b-5c0fedd1db69 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:38:36.559 18 INFO nova.scheduler.host_manager [req-99644dfe-0169-4783-a66b-5c0fedd1db69 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:38:43.473 19 INFO nova.scheduler.host_manager [req-bfa5bb9d-eaff-4d9d-a345-2084cebd7922 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:39:09.534 17 INFO nova.scheduler.host_manager [req-6c07de81-7b8d-481f-af4c-b2803fe181e5 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:39:11.544 18 INFO nova.scheduler.host_manager [req-3ebcc241-f52e-4a5c-9d13-ca4b20b88896 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:39:20.275 16 INFO nova.scheduler.host_manager [req-80552904-8592-4fff-a573-c1fc20d40d9b 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:39:53.474 20 INFO nova.scheduler.host_manager [req-262db7ee-42ec-44d8-b14a-86c87cdfb120 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:39:53.687 19 INFO nova.scheduler.host_manager [req-ea191032-c14a-4ffd-af76-dd0257577c65 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:40:00.388 17 INFO nova.scheduler.host_manager [req-842a3f18-2c91-4d7f-a01c-b2ec23df6022 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:40:33.914 18 INFO nova.scheduler.host_manager [req-546932d7-14f4-4ee2-8f43-28af28851b77 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:40:36.671 16 INFO nova.scheduler.host_manager [req-b8b0b111-b429-4bdc-a79f-81f6f367be6c 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:40:41.546 16 INFO nova.scheduler.host_manager [req-cad77cdb-083b-44f6-a1d4-90cfcb8ee100 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:40:41.546 18 INFO nova.scheduler.host_manager [req-cad77cdb-083b-44f6-a1d4-90cfcb8ee100 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:40:41.548 19 INFO nova.scheduler.host_manager [req-cad77cdb-083b-44f6-a1d4-90cfcb8ee100 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:40:41.548 20 INFO nova.scheduler.host_manager [req-cad77cdb-083b-44f6-a1d4-90cfcb8ee100 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:40:41.548 17 INFO nova.scheduler.host_manager [req-cad77cdb-083b-44f6-a1d4-90cfcb8ee100 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:40:46.758 20 INFO nova.scheduler.host_manager [req-e65c3016-5f20-4b5b-a727-3c55c9189953 7ab0a00bfcff467ab0c94b5e722a87d5 0b163981890044cb8334113244b46bb6 - default default] Host filter forcing available hosts to wally096
+2021-06-16 11:42:44.553 17 INFO nova.scheduler.host_manager [req-6eea2a66-72e8-4ce2-9a3c-b077d36bc2f3 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:42:44.553 18 INFO nova.scheduler.host_manager [req-6eea2a66-72e8-4ce2-9a3c-b077d36bc2f3 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:42:44.553 19 INFO nova.scheduler.host_manager [req-6eea2a66-72e8-4ce2-9a3c-b077d36bc2f3 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:42:44.554 16 INFO nova.scheduler.host_manager [req-6eea2a66-72e8-4ce2-9a3c-b077d36bc2f3 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 11:42:44.554 20 INFO nova.scheduler.host_manager [req-6eea2a66-72e8-4ce2-9a3c-b077d36bc2f3 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:04:36.907 19 INFO nova.scheduler.host_manager [req-29d5ce2a-bedc-439b-b9e4-97177e03d10e 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:04:40.872 17 INFO nova.scheduler.host_manager [req-cfdca744-8fa4-4de3-a1df-14579245d3a6 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:04:41.031 18 INFO nova.scheduler.host_manager [req-ce2a856f-0c0f-4e74-b1e1-a4d02465af64 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:04:41.207 16 INFO nova.scheduler.host_manager [req-d41b21ef-c142-47a1-84dd-2da794f7508d 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:04:43.508 20 INFO nova.scheduler.host_manager [req-0c994837-9ec1-4efb-aa99-acbcb8baa646 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:05:24.683 19 INFO nova.scheduler.host_manager [req-069e32b0-6b47-4d98-825a-77d5b678e21d 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:05:35.535 17 INFO nova.scheduler.host_manager [req-571d570f-5b2f-4dc8-acda-42f94069fa20 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:05:35.687 18 INFO nova.scheduler.host_manager [req-5dd82b78-db70-44e1-8ed1-eacfebc3159f 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:05:36.720 16 INFO nova.scheduler.host_manager [req-57eefb65-8bd5-4773-bf3b-ba13d7f19716 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:05:45.808 20 INFO nova.scheduler.host_manager [req-4f7740ee-1b3d-412b-8dca-513968a116e0 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:06:07.688 19 INFO nova.scheduler.host_manager [req-06b71d83-de3c-4c72-8fc4-71553358d2a0 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:06:17.917 17 INFO nova.scheduler.host_manager [req-b7d5d3f9-7654-43a7-849c-6a2ab2a90e3e 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:06:29.413 18 INFO nova.scheduler.host_manager [req-e4d8e002-bd4a-4c49-be86-7e77572175f4 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:06:30.813 16 INFO nova.scheduler.host_manager [req-0cb6e259-1ba0-4ed3-99ba-30445ad2dace 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:06:31.778 20 INFO nova.scheduler.host_manager [req-a2017575-0381-419b-a9af-66a52e690fdd 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:06:46.793 19 INFO nova.scheduler.host_manager [req-121297ca-186d-409d-a225-3f1df16da95a 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:07:01.894 17 INFO nova.scheduler.host_manager [req-46fab8ae-0195-435f-af02-d4dabec047b0 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:07:17.246 18 INFO nova.scheduler.host_manager [req-01852d2d-610e-48e3-b43b-28ebf7dc870a 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:07:22.917 16 INFO nova.scheduler.host_manager [req-ab4a083a-2f7f-4653-8346-484997fa54da 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:07:23.668 20 INFO nova.scheduler.host_manager [req-dfa8d068-a4ad-4056-995d-cea1d14e89af 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:07:31.420 19 INFO nova.scheduler.host_manager [req-86342b6d-1173-4344-ab22-a586dc09227c 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:07:42.152 17 INFO nova.scheduler.host_manager [req-587968a3-0756-47a7-a87b-dc5efb5bd1b2 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:08:02.317 18 INFO nova.scheduler.host_manager [req-3a7e018a-83eb-42a5-82b7-6ea14da88da9 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:08:08.424 16 INFO nova.scheduler.host_manager [req-1a77cb51-43b8-48e1-ae48-9d1e1be1d10b 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:08:13.473 20 INFO nova.scheduler.host_manager [req-d185e277-655b-4bc7-a072-5c01c59db48b 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:08:16.604 19 INFO nova.scheduler.host_manager [req-85ffa04b-08c2-4024-8ebf-abd2af3d55eb 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:08:31.593 17 INFO nova.scheduler.host_manager [req-b466b4cd-f589-4801-a41c-bf1348619404 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:08:39.832 18 INFO nova.scheduler.host_manager [req-247b104b-943b-4886-9e5a-84b138546d0c 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:08:59.039 16 INFO nova.scheduler.host_manager [req-9875c0af-f0aa-47a1-b958-270b1a7d8d0c 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:08:59.057 20 INFO nova.scheduler.host_manager [req-f13e26c2-cf5b-43f2-a81d-145d3c3703a1 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:09:07.992 19 INFO nova.scheduler.host_manager [req-dcf84230-13f8-4786-b0ee-4f4941ccc30a 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:09:11.022 17 INFO nova.scheduler.host_manager [req-33340a26-0bbf-4733-a414-ec792cfb6f27 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:09:20.496 17 INFO nova.scheduler.host_manager [req-9e76d5f6-ee16-4547-ac0b-418fb49c7d1b - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:09:20.499 16 INFO nova.scheduler.host_manager [req-9e76d5f6-ee16-4547-ac0b-418fb49c7d1b - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:09:20.500 18 INFO nova.scheduler.host_manager [req-9e76d5f6-ee16-4547-ac0b-418fb49c7d1b - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:09:20.500 19 INFO nova.scheduler.host_manager [req-9e76d5f6-ee16-4547-ac0b-418fb49c7d1b - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:09:20.503 20 INFO nova.scheduler.host_manager [req-9e76d5f6-ee16-4547-ac0b-418fb49c7d1b - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:09:24.945 18 INFO nova.scheduler.host_manager [req-05fc0f47-e63e-497e-81a6-d3285f250faf 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:09:46.805 16 INFO nova.scheduler.host_manager [req-0126936b-a02e-4343-aa8f-8270ec9319fd 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:09:58.890 20 INFO nova.scheduler.host_manager [req-204d85a2-8a67-41e3-833f-ccfd8aadc131 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:09:59.197 19 INFO nova.scheduler.host_manager [req-2c55c3a0-276a-4489-97ab-f937e3951ac9 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:10:02.570 17 INFO nova.scheduler.host_manager [req-1635721c-de41-4b90-8704-db16e459903d 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:10:08.701 18 INFO nova.scheduler.host_manager [req-55914bb7-5687-42e8-a0d1-d7409c183504 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:10:29.955 16 INFO nova.scheduler.host_manager [req-88a01f8f-bbd3-4ec3-8ee2-7534166a4f39 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:10:57.320 20 INFO nova.scheduler.host_manager [req-11bd771e-2d93-42e8-bb6e-f6568e800eb1 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:10:59.101 19 INFO nova.scheduler.host_manager [req-eecd3522-c4a3-40fb-920a-7e22e511b517 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:10:59.160 17 INFO nova.scheduler.host_manager [req-902754e0-3ae6-4b28-b4bd-511feb1174dc 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:11:12.049 18 INFO nova.scheduler.host_manager [req-55487ec6-67e0-43b5-9c05-355ee4654e97 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:11:21.424 18 INFO nova.scheduler.host_manager [req-e9844bbe-f8f5-40a0-b918-8862e93f303d - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:11:21.424 20 INFO nova.scheduler.host_manager [req-e9844bbe-f8f5-40a0-b918-8862e93f303d - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:11:21.424 17 INFO nova.scheduler.host_manager [req-e9844bbe-f8f5-40a0-b918-8862e93f303d - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:11:21.426 16 INFO nova.scheduler.host_manager [req-e9844bbe-f8f5-40a0-b918-8862e93f303d - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:11:21.426 19 INFO nova.scheduler.host_manager [req-e9844bbe-f8f5-40a0-b918-8862e93f303d - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:11:39.930 16 INFO nova.scheduler.host_manager [req-e25b0608-7771-4134-be37-bb7a8ff4bafb 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:11:45.732 20 INFO nova.scheduler.host_manager [req-c820a69e-19d7-4233-9286-d174270d6186 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:11:47.937 19 INFO nova.scheduler.host_manager [req-4031b51e-5320-4f4d-93c7-b2eb90a19c78 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:11:53.823 17 INFO nova.scheduler.host_manager [req-ba9ea115-26ea-4d71-9a87-7d492e055e9f 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:12:18.326 18 INFO nova.scheduler.host_manager [req-b70c7b7e-61c4-4f70-a8f3-b327200aa730 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:12:30.965 16 INFO nova.scheduler.host_manager [req-a0418034-c0f6-4681-8a39-2a64c0230ca1 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:12:32.923 20 INFO nova.scheduler.host_manager [req-18e8d352-098b-4c91-ba5b-4eb779e0cc99 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:12:41.719 19 INFO nova.scheduler.host_manager [req-112f8698-e52b-4164-82f8-7dff27a25207 01dc8f30af4e45848326bd1c6154bcb2 dff96be71a8343d2a60c3caa99046d9f - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:15:25.844 20 INFO nova.scheduler.host_manager [req-4952e5a5-276a-467c-9a54-c257dc72fa93 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:15:25.844 19 INFO nova.scheduler.host_manager [req-4952e5a5-276a-467c-9a54-c257dc72fa93 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:15:25.844 17 INFO nova.scheduler.host_manager [req-4952e5a5-276a-467c-9a54-c257dc72fa93 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:15:25.845 16 INFO nova.scheduler.host_manager [req-4952e5a5-276a-467c-9a54-c257dc72fa93 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:15:25.845 18 INFO nova.scheduler.host_manager [req-4952e5a5-276a-467c-9a54-c257dc72fa93 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:42:25.793 17 INFO nova.scheduler.host_manager [req-2e4ab1bf-458c-4b38-bbe3-1be812cee413 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:42:27.749 18 INFO nova.scheduler.host_manager [req-df5c2dc8-ad6d-45f5-9c70-0dd00cbad4e0 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:42:27.967 16 INFO nova.scheduler.host_manager [req-4a103b59-3ac4-44cb-b1b2-b1bd6fb0092e a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:42:31.695 20 INFO nova.scheduler.host_manager [req-b3082f69-4cba-4850-838c-749764d96ebf a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:42:32.404 19 INFO nova.scheduler.host_manager [req-2541b184-f113-40cf-b74a-05dfada3bf55 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:42:32.719 17 INFO nova.scheduler.host_manager [req-26c999b6-77ed-43d8-b284-a1bd70ae1bfc a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:42:32.890 18 INFO nova.scheduler.host_manager [req-a0480ec9-eb4e-4365-8355-8f383c85eca6 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:42:32.944 16 INFO nova.scheduler.host_manager [req-7187ab0e-0c6b-4c31-9aea-589601690158 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:43:30.193 20 INFO nova.scheduler.host_manager [req-535ae0db-0267-4310-9656-8d8bd5ceda56 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:43:44.778 19 INFO nova.scheduler.host_manager [req-1ac9502e-65e1-4f63-81a7-38339ec56cc9 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:43:50.443 17 INFO nova.scheduler.host_manager [req-c679ec4f-90b5-42b4-9de9-e662c393c2db a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:44:02.962 18 INFO nova.scheduler.host_manager [req-a61965f3-32ab-42d3-89ca-af0847fde4b3 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:44:04.714 16 INFO nova.scheduler.host_manager [req-9f1d585c-cefc-47a1-aeaa-90f423086357 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:44:04.716 19 INFO nova.scheduler.host_manager [req-9f1d585c-cefc-47a1-aeaa-90f423086357 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:44:04.717 17 INFO nova.scheduler.host_manager [req-9f1d585c-cefc-47a1-aeaa-90f423086357 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:44:04.717 18 INFO nova.scheduler.host_manager [req-9f1d585c-cefc-47a1-aeaa-90f423086357 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:44:04.718 20 INFO nova.scheduler.host_manager [req-9f1d585c-cefc-47a1-aeaa-90f423086357 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:44:06.317 16 INFO nova.scheduler.host_manager [req-94e3dc20-c401-4843-a3d7-9ab87c427864 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:44:06.599 20 INFO nova.scheduler.host_manager [req-a25cb47f-bb68-4881-af5b-9a6d8e2f6d5f a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:44:06.796 19 INFO nova.scheduler.host_manager [req-b0dc02e9-dbb4-4f33-a61b-ac7bf29a4bf8 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:44:23.380 17 INFO nova.scheduler.host_manager [req-af696937-3bd6-4cd7-990d-57944e782c7e a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:44:38.793 18 INFO nova.scheduler.host_manager [req-a3859e45-d1a0-410f-bad7-096c77407fe7 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:44:48.318 16 INFO nova.scheduler.host_manager [req-2c0007ab-0ccb-4962-86d4-9936accacd01 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:44:53.049 20 INFO nova.scheduler.host_manager [req-8c02266d-a0e8-475f-84f3-cd7493c14083 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:45:02.587 19 INFO nova.scheduler.host_manager [req-5e8c1e44-ecd6-44cb-bee8-f0fb3a80a086 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:45:03.124 17 INFO nova.scheduler.host_manager [req-bc0e6dc2-1cc3-4b15-8728-a1b1adb13afc a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:45:09.287 18 INFO nova.scheduler.host_manager [req-845394f4-7468-4ef9-8339-0c1783ef28f2 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:45:25.410 16 INFO nova.scheduler.host_manager [req-e53a1d03-b44a-48d0-aa09-84bf6407a49a a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:45:36.341 20 INFO nova.scheduler.host_manager [req-6cce4690-7ff9-40e0-86b4-52022790b6df a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:45:42.647 19 INFO nova.scheduler.host_manager [req-d6831d93-f983-4cba-89fd-118e99cb4917 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:45:56.224 17 INFO nova.scheduler.host_manager [req-a68cf3fb-0a51-4297-bd84-aa3b599a8df4 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:45:57.214 18 INFO nova.scheduler.host_manager [req-66441db7-383a-40d3-9600-1c6f06d142eb a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:46:00.246 16 INFO nova.scheduler.host_manager [req-bfae662c-5fcc-4f0a-b93f-0bb35b6fcaac a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:46:07.934 16 INFO nova.scheduler.host_manager [req-51c4eb69-871e-4a68-bb32-657f0ed36802 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:46:07.936 18 INFO nova.scheduler.host_manager [req-51c4eb69-871e-4a68-bb32-657f0ed36802 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:46:07.940 17 INFO nova.scheduler.host_manager [req-51c4eb69-871e-4a68-bb32-657f0ed36802 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:46:07.940 19 INFO nova.scheduler.host_manager [req-51c4eb69-871e-4a68-bb32-657f0ed36802 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:46:07.945 20 INFO nova.scheduler.host_manager [req-51c4eb69-871e-4a68-bb32-657f0ed36802 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:46:12.526 20 INFO nova.scheduler.host_manager [req-3c98aafe-0290-410a-9362-4206648c21b8 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:46:22.743 19 INFO nova.scheduler.host_manager [req-f40c6af0-5cb2-48bf-b473-3cdca2c3d602 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:46:31.094 17 INFO nova.scheduler.host_manager [req-c2903db9-5769-4122-9736-1dfa55f875ca a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:46:43.143 18 INFO nova.scheduler.host_manager [req-fb6ffdd9-0c97-44e0-aad0-db1fc00d0791 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:46:48.988 16 INFO nova.scheduler.host_manager [req-ee44f1ad-52d8-4c23-accb-6924dafc883f a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:46:52.665 20 INFO nova.scheduler.host_manager [req-6f6a0d62-02be-49cb-9e2b-47ea99f95497 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:46:57.948 19 INFO nova.scheduler.host_manager [req-f69e4f70-89d6-479c-83c6-2770beaf350a a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:47:02.038 17 INFO nova.scheduler.host_manager [req-c5356af4-55a4-4b8f-8fa6-6bcc81e7521b a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:47:20.659 18 INFO nova.scheduler.host_manager [req-7c103667-1348-4f68-b188-13c5e0a04d31 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:47:30.597 16 INFO nova.scheduler.host_manager [req-05d6c5bb-ca4b-4b32-b7a3-6c18804d95e8 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:47:35.373 20 INFO nova.scheduler.host_manager [req-df30f7a0-584c-491a-90bc-f858cdaa4279 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:47:52.756 19 INFO nova.scheduler.host_manager [req-1b552f36-ef4c-4de7-95a1-869d936cc0e0 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:47:54.106 17 INFO nova.scheduler.host_manager [req-334a61e2-0f60-478b-ac2d-a8ef448884a0 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:47:56.350 18 INFO nova.scheduler.host_manager [req-83466182-8180-4f9e-bdce-e73816ad7f18 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:48:09.006 16 INFO nova.scheduler.host_manager [req-1bb2731c-7dcc-4634-8c9b-08d4661a2ab8 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:48:09.545 16 INFO nova.scheduler.host_manager [req-e4c09bb1-e6b8-4f65-943a-7193c04fb67b - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:48:09.546 19 INFO nova.scheduler.host_manager [req-e4c09bb1-e6b8-4f65-943a-7193c04fb67b - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:48:09.547 17 INFO nova.scheduler.host_manager [req-e4c09bb1-e6b8-4f65-943a-7193c04fb67b - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:48:09.547 20 INFO nova.scheduler.host_manager [req-e4c09bb1-e6b8-4f65-943a-7193c04fb67b - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:48:09.548 18 INFO nova.scheduler.host_manager [req-e4c09bb1-e6b8-4f65-943a-7193c04fb67b - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:48:20.489 20 INFO nova.scheduler.host_manager [req-79d9cbbb-94a4-4a00-9f1a-306b89d2e460 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:48:21.617 19 INFO nova.scheduler.host_manager [req-7ac2936d-356c-4502-b1cd-8bd6680634e5 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:48:29.839 17 INFO nova.scheduler.host_manager [req-620ddab9-9d90-4baa-bd1a-cd8c03ee6436 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:48:51.554 18 INFO nova.scheduler.host_manager [req-bc0ffa9e-970a-465e-8621-8f84572598f7 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:48:57.771 16 INFO nova.scheduler.host_manager [req-df2a470e-31aa-498b-a53c-5939a5f4afca a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:48:58.925 20 INFO nova.scheduler.host_manager [req-c17ab3e0-d9a1-4d3e-aa1c-b380ff08f192 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:49:01.000 19 INFO nova.scheduler.host_manager [req-e05382b2-29c9-4605-be67-a8f283f1a780 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:49:08.484 17 INFO nova.scheduler.host_manager [req-da53094b-325b-4409-8aba-e94fd0ab5449 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:49:19.619 18 INFO nova.scheduler.host_manager [req-cd732f88-797d-4e71-96d7-2371c6a82ed8 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:49:20.427 16 INFO nova.scheduler.host_manager [req-3918b420-75fb-4a0f-b152-3ca6254e5882 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:49:55.662 20 INFO nova.scheduler.host_manager [req-3a32ae0d-a871-43d0-a232-2ae068f6144f a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:49:55.867 19 INFO nova.scheduler.host_manager [req-184da7c4-2748-4762-81ba-c0e7899af7f6 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:50:10.013 17 INFO nova.scheduler.host_manager [req-c0fe8037-a780-4cc8-a85f-14e88cdc74d1 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:50:10.446 18 INFO nova.scheduler.host_manager [req-f08fc943-1955-4cac-ae37-ad83c683b6e6 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:50:11.616 16 INFO nova.scheduler.host_manager [req-937cfbd6-8ae0-4160-8a81-775efa675ea4 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:50:12.551 18 INFO nova.scheduler.host_manager [req-e818f9c8-d4a2-442a-a4db-262580675f67 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:50:12.552 16 INFO nova.scheduler.host_manager [req-e818f9c8-d4a2-442a-a4db-262580675f67 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:50:12.552 20 INFO nova.scheduler.host_manager [req-e818f9c8-d4a2-442a-a4db-262580675f67 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:50:12.553 17 INFO nova.scheduler.host_manager [req-e818f9c8-d4a2-442a-a4db-262580675f67 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:50:12.553 19 INFO nova.scheduler.host_manager [req-e818f9c8-d4a2-442a-a4db-262580675f67 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:50:15.676 20 INFO nova.scheduler.host_manager [req-2c7840ff-c464-424a-a254-739ce66a84a0 a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:50:31.128 19 INFO nova.scheduler.host_manager [req-f0ce23d3-d9bc-4a26-a5d0-0f4ae64a3dbf a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:50:32.565 17 INFO nova.scheduler.host_manager [req-b58727cc-c8c8-44f5-a756-3aa957b3759c a3b0e190ac5b4f7ebc8aa023a18fdfb1 fddad0b7896e46f8b4abba5fe59ef819 - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:52:15.548 17 INFO nova.scheduler.host_manager [req-72615c74-2564-44d2-b532-409e0dd8401f - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:52:15.548 16 INFO nova.scheduler.host_manager [req-72615c74-2564-44d2-b532-409e0dd8401f - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:52:15.549 19 INFO nova.scheduler.host_manager [req-72615c74-2564-44d2-b532-409e0dd8401f - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:52:15.549 20 INFO nova.scheduler.host_manager [req-72615c74-2564-44d2-b532-409e0dd8401f - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:52:15.550 18 INFO nova.scheduler.host_manager [req-72615c74-2564-44d2-b532-409e0dd8401f - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:56:18.545 17 INFO nova.scheduler.host_manager [req-c0e43cca-ac4b-4ab8-a623-ae54fe5b71aa - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:56:18.545 16 INFO nova.scheduler.host_manager [req-c0e43cca-ac4b-4ab8-a623-ae54fe5b71aa - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:56:18.545 20 INFO nova.scheduler.host_manager [req-c0e43cca-ac4b-4ab8-a623-ae54fe5b71aa - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:56:18.545 18 INFO nova.scheduler.host_manager [req-c0e43cca-ac4b-4ab8-a623-ae54fe5b71aa - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:56:18.545 19 INFO nova.scheduler.host_manager [req-c0e43cca-ac4b-4ab8-a623-ae54fe5b71aa - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 12:57:11.819 18 INFO nova.scheduler.host_manager [req-af0f6fd7-99d9-4940-9f8a-ffa91376c012 aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:57:46.218 16 INFO nova.scheduler.host_manager [req-395efd2b-3cce-4940-8385-706bb64d4a32 aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:58:19.753 20 INFO nova.scheduler.host_manager [req-194239ee-e32e-4a9c-8a08-fa8b35f5a51c aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:58:57.298 19 INFO nova.scheduler.host_manager [req-646b5ac4-8f34-4e67-a24f-a6a9737414d7 aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 12:59:32.136 17 INFO nova.scheduler.host_manager [req-10cfbd6f-da17-4850-8f2e-6c194df33aad aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:00:13.703 18 INFO nova.scheduler.host_manager [req-401f5fe1-7bef-4e8f-9b53-f0f45c22e628 aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:00:48.304 16 INFO nova.scheduler.host_manager [req-362d5641-de95-4b5d-943b-f1bea927cdf8 aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:01:22.478 20 INFO nova.scheduler.host_manager [req-9d41621e-01b8-40fd-9736-102518bd6762 aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:01:57.052 19 INFO nova.scheduler.host_manager [req-18a0eb71-7855-4ffd-97ef-c67dbeac84cd aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:02:29.173 17 INFO nova.scheduler.host_manager [req-16029a54-5d00-41bb-a869-36897547d106 aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:03:07.477 18 INFO nova.scheduler.host_manager [req-908cfb7e-de5c-46b2-9189-24d8cda1dd86 aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:03:42.974 16 INFO nova.scheduler.host_manager [req-e2071c85-7266-4366-8b36-787c3a4e94ad aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:04:17.739 20 INFO nova.scheduler.host_manager [req-1463efbf-ed7e-4e10-8955-6994b939a006 aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:04:51.418 19 INFO nova.scheduler.host_manager [req-584f3518-1bf2-40fb-8543-0ac4ec26c199 aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:05:25.952 17 INFO nova.scheduler.host_manager [req-5cace4c1-0427-43fc-9b3d-91768c508613 aeb2ed456b5347d6b14a7c88b4e0d69a fa8be08505ad42e3bac9c77d47cdedec - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:07:00.497 18 INFO nova.scheduler.host_manager [req-d3dd65bb-aa77-4349-8c99-c8157c27a477 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:07:35.474 16 INFO nova.scheduler.host_manager [req-03c85799-e726-4bbf-92ca-2a70e15abc92 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:08:09.550 20 INFO nova.scheduler.host_manager [req-7a69584e-01fd-4ea4-8d1d-54c80a63eef6 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:08:46.931 19 INFO nova.scheduler.host_manager [req-197dae9c-6ba4-4823-9bab-ef3bec31e374 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:09:23.157 17 INFO nova.scheduler.host_manager [req-ef3f2cff-ffd2-4d3c-babd-19cbb719f361 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:09:57.655 18 INFO nova.scheduler.host_manager [req-c7768276-6511-4514-80b2-8f81b442def5 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:10:32.360 16 INFO nova.scheduler.host_manager [req-e6119338-1f99-4cd1-b9b6-7be9b8a8b87d 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:10:38.538 16 INFO nova.scheduler.host_manager [req-15ed9ecd-2d93-4778-bec8-dd1d18c13924 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:10:38.539 19 INFO nova.scheduler.host_manager [req-15ed9ecd-2d93-4778-bec8-dd1d18c13924 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:10:38.539 17 INFO nova.scheduler.host_manager [req-15ed9ecd-2d93-4778-bec8-dd1d18c13924 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:10:38.540 20 INFO nova.scheduler.host_manager [req-15ed9ecd-2d93-4778-bec8-dd1d18c13924 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:10:38.541 18 INFO nova.scheduler.host_manager [req-15ed9ecd-2d93-4778-bec8-dd1d18c13924 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:11:09.854 20 INFO nova.scheduler.host_manager [req-bb86f6d6-05ee-465d-8a53-8df398febf41 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:11:46.331 19 INFO nova.scheduler.host_manager [req-97e1743d-cc13-4cf2-b9e4-31e2ca4e7175 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:12:24.477 17 INFO nova.scheduler.host_manager [req-193baf59-baca-42e4-87f3-885060aec46a 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:13:00.352 18 INFO nova.scheduler.host_manager [req-77d83851-430a-4d0b-8d6d-c5fe8760b7d7 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:13:35.348 16 INFO nova.scheduler.host_manager [req-deb674eb-2a31-48f1-a88b-c0bbd404d8da 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:14:08.335 20 INFO nova.scheduler.host_manager [req-176fb072-c011-4d35-acff-803784117959 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:14:42.608 19 INFO nova.scheduler.host_manager [req-cdfb2661-6e3a-49be-82f2-424d684f9a9f 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:15:17.840 17 INFO nova.scheduler.host_manager [req-07d1714f-03ea-4c5f-8896-aea3e3a5d638 21064c881ba84b08a17eae33383cb652 a8b36477d3f3477cb5f8e909aa61390e - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:21:47.587 18 INFO nova.scheduler.host_manager [req-70ccc4fc-5d0d-46b7-87c9-0f5793001a98 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:22:01.240 16 INFO nova.scheduler.host_manager [req-9cb5cabc-a617-4320-ba93-a88bf12a735f 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:22:04.559 20 INFO nova.scheduler.host_manager [req-8aa4b19c-f89c-4277-9191-37e11405cd81 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:22:11.616 19 INFO nova.scheduler.host_manager [req-d6c2427b-9c84-474f-97cf-e6b506550c84 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:22:12.183 17 INFO nova.scheduler.host_manager [req-2569481e-307e-4035-8b9a-97cc6353031f 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:22:13.654 18 INFO nova.scheduler.host_manager [req-c6d8f9c4-b7fb-4657-bf67-99b6c59454c0 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:22:14.137 16 INFO nova.scheduler.host_manager [req-6c2ac368-e5c8-4f9e-90df-7fef4c3e2372 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:22:16.382 20 INFO nova.scheduler.host_manager [req-754799d5-36c5-44d8-b630-1d46a384d8d2 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:22:17.750 19 INFO nova.scheduler.host_manager [req-190ac554-9b45-417f-ae86-fc6b5a99d085 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:22:18.823 17 INFO nova.scheduler.host_manager [req-aa44daea-5536-40a9-b6fc-6e0f056b4f29 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:22:48.791 18 INFO nova.scheduler.host_manager [req-873f49b3-5312-4e2f-aef0-4ae10c469698 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:22:49.571 16 INFO nova.scheduler.host_manager [req-b87a619b-22c3-4307-8223-f09a295d85e9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:22:49.572 20 INFO nova.scheduler.host_manager [req-b87a619b-22c3-4307-8223-f09a295d85e9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:22:49.574 19 INFO nova.scheduler.host_manager [req-b87a619b-22c3-4307-8223-f09a295d85e9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:22:49.575 17 INFO nova.scheduler.host_manager [req-b87a619b-22c3-4307-8223-f09a295d85e9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:22:49.577 18 INFO nova.scheduler.host_manager [req-b87a619b-22c3-4307-8223-f09a295d85e9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:23:12.043 16 INFO nova.scheduler.host_manager [req-03879177-5341-48e6-90a5-51a2a683298d 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:23:15.193 20 INFO nova.scheduler.host_manager [req-b9797b53-9dd0-493b-bac7-0bd035e33674 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:23:35.481 19 INFO nova.scheduler.host_manager [req-cd04cbac-2533-47d0-9bac-61545a449c3d 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:23:38.708 17 INFO nova.scheduler.host_manager [req-a86f9439-5045-4f79-9218-9738067b0111 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:23:39.301 18 INFO nova.scheduler.host_manager [req-5a3a3081-bf3e-447d-83a5-2254b0afc1c5 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:23:42.190 16 INFO nova.scheduler.host_manager [req-ce41a81c-08c5-4c87-969a-9dec0d73cbbb 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:23:53.518 20 INFO nova.scheduler.host_manager [req-9b1dfd6e-064f-4f9a-8061-9f16c50515f1 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:24:05.613 19 INFO nova.scheduler.host_manager [req-6be103a7-a340-4a31-9490-510065b26c37 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:24:14.327 17 INFO nova.scheduler.host_manager [req-22537154-5949-4186-926f-42f62434a2c1 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:24:30.057 18 INFO nova.scheduler.host_manager [req-7b23add2-aa68-4686-9de6-86a829443c6d 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:24:38.629 16 INFO nova.scheduler.host_manager [req-533aec32-4bf2-4071-a767-6d49f81aad6d 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:24:39.658 20 INFO nova.scheduler.host_manager [req-b4b599df-d152-4ec9-9cdf-79cca5c12d63 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:24:45.533 19 INFO nova.scheduler.host_manager [req-72b7c53c-74f9-43bd-968a-da116dd8bb7f 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:24:47.647 17 INFO nova.scheduler.host_manager [req-0dbf9b40-dd70-4d5c-9255-e88e206ac61a 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:24:50.580 20 INFO nova.scheduler.host_manager [req-01d50f7a-ba1e-4858-a062-c8666c19cbbf - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:24:50.580 18 INFO nova.scheduler.host_manager [req-01d50f7a-ba1e-4858-a062-c8666c19cbbf - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:24:50.581 16 INFO nova.scheduler.host_manager [req-01d50f7a-ba1e-4858-a062-c8666c19cbbf - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:24:50.581 17 INFO nova.scheduler.host_manager [req-01d50f7a-ba1e-4858-a062-c8666c19cbbf - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:24:50.583 19 INFO nova.scheduler.host_manager [req-01d50f7a-ba1e-4858-a062-c8666c19cbbf - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:25:05.413 18 INFO nova.scheduler.host_manager [req-cd975ce2-f10e-4786-842c-ca4c8a66968e 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:25:06.214 16 INFO nova.scheduler.host_manager [req-cf368820-6905-48c6-ac08-3b5b76238de3 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:25:19.189 20 INFO nova.scheduler.host_manager [req-28f8e5b0-ec83-4ed2-bdaf-cfc0a014b392 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:25:32.670 19 INFO nova.scheduler.host_manager [req-758a722c-3eb1-400c-95b5-e5b98d30bbce 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:25:39.971 17 INFO nova.scheduler.host_manager [req-e203afda-c62d-4ef3-b943-ddf23fdcc87e 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:25:43.313 18 INFO nova.scheduler.host_manager [req-d727e81d-b901-459b-a9ae-57436de6bf09 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:25:46.680 16 INFO nova.scheduler.host_manager [req-b63bfbf4-58a7-4ccd-ad14-d208088c0c8b 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:25:56.980 20 INFO nova.scheduler.host_manager [req-5afb517f-60a7-45bb-b749-07e72be81428 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:26:05.308 19 INFO nova.scheduler.host_manager [req-e37c7f0e-c3b9-4ac6-b73c-fad2f61ed8e4 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:26:13.718 17 INFO nova.scheduler.host_manager [req-5f58dbaf-e57f-4724-908e-ddd3a11f6b4c 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:26:23.300 18 INFO nova.scheduler.host_manager [req-4466f42f-6419-4e16-b281-91450ca16018 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:26:33.343 16 INFO nova.scheduler.host_manager [req-c2921599-33fc-4e28-b4a4-54b9d1022858 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:26:43.572 20 INFO nova.scheduler.host_manager [req-f691f38e-e92c-4ee0-b458-cf5b30bbf413 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:26:43.664 19 INFO nova.scheduler.host_manager [req-89ee7b64-6e78-41a0-90a1-644fe22b7c08 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:26:55.620 18 INFO nova.scheduler.host_manager [req-55cc0ddf-166f-400e-ab4a-4699b48adf25 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:26:55.620 20 INFO nova.scheduler.host_manager [req-55cc0ddf-166f-400e-ab4a-4699b48adf25 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:26:55.622 16 INFO nova.scheduler.host_manager [req-55cc0ddf-166f-400e-ab4a-4699b48adf25 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:26:55.622 19 INFO nova.scheduler.host_manager [req-55cc0ddf-166f-400e-ab4a-4699b48adf25 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:26:55.623 17 INFO nova.scheduler.host_manager [req-55cc0ddf-166f-400e-ab4a-4699b48adf25 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:26:55.768 17 INFO nova.scheduler.host_manager [req-c56f4861-fda6-46e3-a001-81b7fbdab6bf 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:26:58.678 18 INFO nova.scheduler.host_manager [req-e180a77a-d359-4d95-aa35-74b6d136b7f8 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:27:09.979 16 INFO nova.scheduler.host_manager [req-04a6b394-fd7d-4413-b5dd-8fa6c4aee86e 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:27:19.890 20 INFO nova.scheduler.host_manager [req-cad0bb54-49f8-487c-b2d7-be40845c98b9 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:27:32.198 19 INFO nova.scheduler.host_manager [req-77197edd-9ead-4df9-95ee-0e49f97d88a4 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:27:38.386 17 INFO nova.scheduler.host_manager [req-a4dda829-30e0-45d5-a92a-675c48181ba0 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:27:46.694 18 INFO nova.scheduler.host_manager [req-96da27a8-569b-44fb-9b70-a32bcf649fe3 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:27:58.527 16 INFO nova.scheduler.host_manager [req-f901c1d5-880c-4826-9bb9-1632a812b45d 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:28:04.971 20 INFO nova.scheduler.host_manager [req-298e6ab5-8479-40f6-8a9a-64d56180aea4 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:28:18.936 19 INFO nova.scheduler.host_manager [req-c2fcf8d3-81bb-4cb5-9237-80e34b6d8ca2 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:28:19.557 17 INFO nova.scheduler.host_manager [req-57069fa5-5f51-4c9a-9364-206f1c66813c 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:28:19.588 18 INFO nova.scheduler.host_manager [req-baaa9577-e5b1-453d-8d62-5fe66fb3d593 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:28:22.173 16 INFO nova.scheduler.host_manager [req-e20b0fb4-fa1c-41ae-a952-9426629db73b 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:28:48.130 20 INFO nova.scheduler.host_manager [req-3d1c2dc4-e254-4fab-be84-9e53537dad1f 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:28:48.248 19 INFO nova.scheduler.host_manager [req-8be32769-63bd-45d7-a0ac-864b73020c06 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:28:52.036 17 INFO nova.scheduler.host_manager [req-6498248a-ce52-46d7-a00f-18376d0ecbf8 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:28:56.418 20 INFO nova.scheduler.host_manager [req-e7c44686-80df-489b-8ed1-a7d7678df36e - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:28:56.420 19 INFO nova.scheduler.host_manager [req-e7c44686-80df-489b-8ed1-a7d7678df36e - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:28:56.422 16 INFO nova.scheduler.host_manager [req-e7c44686-80df-489b-8ed1-a7d7678df36e - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:28:56.422 18 INFO nova.scheduler.host_manager [req-e7c44686-80df-489b-8ed1-a7d7678df36e - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:28:56.427 17 INFO nova.scheduler.host_manager [req-e7c44686-80df-489b-8ed1-a7d7678df36e - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:29:10.329 18 INFO nova.scheduler.host_manager [req-f4d8f049-e763-415b-8c47-027f24ee5803 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:29:27.518 16 INFO nova.scheduler.host_manager [req-d58d9741-fafc-45f7-8560-94713b6afcfa 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:29:31.670 20 INFO nova.scheduler.host_manager [req-9cc2c19a-9fd6-44dc-849b-42b6814d6067 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:29:46.820 19 INFO nova.scheduler.host_manager [req-efcaa336-b770-46e7-945c-c719f123eb97 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:29:47.023 17 INFO nova.scheduler.host_manager [req-a38f8a1e-5c29-4fd7-b258-e4fa0e40795e 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:29:50.941 18 INFO nova.scheduler.host_manager [req-d17e320b-5725-4321-826f-a2701cd4d83b 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:29:51.732 16 INFO nova.scheduler.host_manager [req-5b641eef-c1c3-4255-ac7b-741c0ea607ca 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:29:59.317 20 INFO nova.scheduler.host_manager [req-78c2fee2-f61e-4a82-8a1a-a3b166bedc15 3c66eac5966a42888816ec8f4e165e4d 4002ba4f6a7c4c7baa8be701523b08c9 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:33:59.605 19 INFO nova.scheduler.host_manager [req-68a68ced-0de6-4a73-9bf9-88f4bcbf000d 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:01.735 17 INFO nova.scheduler.host_manager [req-11615620-6f0a-45be-967b-d3d432e61463 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:07.016 18 INFO nova.scheduler.host_manager [req-56931a94-b223-4b86-b393-fb8d9c88ab2d 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:08.166 16 INFO nova.scheduler.host_manager [req-4d201c37-3ce6-4fd9-b3d8-25aa51439f1e 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:34.100 20 INFO nova.scheduler.host_manager [req-19e0d7b3-ba6a-44fb-adac-ad7e3683367c 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:35.802 19 INFO nova.scheduler.host_manager [req-afebe5f2-1861-4179-a4fe-b9b88b00c320 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:36.398 17 INFO nova.scheduler.host_manager [req-f991ab5c-7f8f-4b9e-b34b-80f630d63fb2 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:36.933 18 INFO nova.scheduler.host_manager [req-3944f375-bb9a-49c0-ac92-3492d7e52669 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:37.891 16 INFO nova.scheduler.host_manager [req-cf3e7293-b8ae-42b2-b088-b155b1811326 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:39.004 20 INFO nova.scheduler.host_manager [req-3124cc79-4d9c-4d2c-86ad-1a2c5ddacd87 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:39.322 19 INFO nova.scheduler.host_manager [req-9bd23cc5-f202-4eda-8be9-9f6d463182cc 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:39.570 17 INFO nova.scheduler.host_manager [req-961a88f6-7bd4-4e7b-b1da-2be9ff587e3b 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:40.957 18 INFO nova.scheduler.host_manager [req-64afa29a-0e2b-4f7f-9558-f72627d6fbf1 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:41.029 16 INFO nova.scheduler.host_manager [req-0814cc7a-f395-4abe-8364-59210e170177 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:42.071 20 INFO nova.scheduler.host_manager [req-f64ec910-a9b9-49b7-891f-0d34cbf1fac9 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:34:42.884 19 INFO nova.scheduler.host_manager [req-2b64019e-ed96-45d1-b185-4d8d93c87248 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:35:06.580 17 INFO nova.scheduler.host_manager [req-79824e65-b9f7-42e8-b64c-0a4a9e13de7c - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:35:06.581 19 INFO nova.scheduler.host_manager [req-79824e65-b9f7-42e8-b64c-0a4a9e13de7c - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:35:06.581 16 INFO nova.scheduler.host_manager [req-79824e65-b9f7-42e8-b64c-0a4a9e13de7c - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:35:06.583 20 INFO nova.scheduler.host_manager [req-79824e65-b9f7-42e8-b64c-0a4a9e13de7c - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:35:06.584 18 INFO nova.scheduler.host_manager [req-79824e65-b9f7-42e8-b64c-0a4a9e13de7c - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:35:43.259 17 INFO nova.scheduler.host_manager [req-e2abeff4-a487-4ebc-8161-2dd4957267eb 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:36:05.806 18 INFO nova.scheduler.host_manager [req-cbae0def-9818-4c7e-9a48-1ffdcee76f1d 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:36:30.361 16 INFO nova.scheduler.host_manager [req-1984288a-2a50-42b1-9ad2-95c85f33480d 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:36:52.845 20 INFO nova.scheduler.host_manager [req-ed13d92a-f9db-474d-9ad5-dccbe1d9645c 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:36:53.090 19 INFO nova.scheduler.host_manager [req-4c670a16-6ac0-44a1-8920-97d49a8f1b6c 96bd197158bc4113946fac33c1bdd0a9 3b91f92dfdff4b3683944fe6e3a48998 - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:37:01.553 18 INFO nova.scheduler.host_manager [req-4bb4a6ea-e640-4e86-ace6-b4df0f1110b5 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:37:01.554 16 INFO nova.scheduler.host_manager [req-4bb4a6ea-e640-4e86-ace6-b4df0f1110b5 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:37:01.560 17 INFO nova.scheduler.host_manager [req-4bb4a6ea-e640-4e86-ace6-b4df0f1110b5 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:37:01.561 19 INFO nova.scheduler.host_manager [req-4bb4a6ea-e640-4e86-ace6-b4df0f1110b5 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:37:01.566 20 INFO nova.scheduler.host_manager [req-4bb4a6ea-e640-4e86-ace6-b4df0f1110b5 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:41:10.558 17 INFO nova.scheduler.host_manager [req-68e42128-3324-4b5b-ab50-7be10fdef8ed - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:41:10.559 16 INFO nova.scheduler.host_manager [req-68e42128-3324-4b5b-ab50-7be10fdef8ed - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:41:10.559 19 INFO nova.scheduler.host_manager [req-68e42128-3324-4b5b-ab50-7be10fdef8ed - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:41:10.559 18 INFO nova.scheduler.host_manager [req-68e42128-3324-4b5b-ab50-7be10fdef8ed - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:41:10.559 20 INFO nova.scheduler.host_manager [req-68e42128-3324-4b5b-ab50-7be10fdef8ed - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 13:57:20.689 17 INFO nova.scheduler.host_manager [req-8e772e92-99bf-408c-a231-7bdad4f43462 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:57:54.568 18 INFO nova.scheduler.host_manager [req-1c41ae93-99be-4604-98f6-e9ed532a80cb 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:58:28.872 16 INFO nova.scheduler.host_manager [req-84ad2a1f-f434-4a84-8fb8-dd92bf3f01ee 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:59:05.514 20 INFO nova.scheduler.host_manager [req-3f3c82ff-5d24-40bf-99bc-fb3ba8f42560 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 13:59:38.645 19 INFO nova.scheduler.host_manager [req-fa69b0c9-c8d0-415a-ba16-609e5e4e499f 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 14:00:09.967 17 INFO nova.scheduler.host_manager [req-ec2a259d-f720-4c82-b3ad-8cdf89b2ad77 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 14:00:48.201 18 INFO nova.scheduler.host_manager [req-0a4ffa00-d8cb-4f69-9ec4-c23cb7154452 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 14:01:21.855 16 INFO nova.scheduler.host_manager [req-e65e6fab-4ae8-4b8e-a8a1-001ab41f8e5e 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 14:01:55.968 20 INFO nova.scheduler.host_manager [req-e210d2c5-bd88-48db-badb-3851f309bb3a 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 14:02:31.938 19 INFO nova.scheduler.host_manager [req-174d45ce-af91-4712-86c3-cdfa9f361517 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 14:03:06.353 17 INFO nova.scheduler.host_manager [req-251792cd-95c7-4ced-92a6-94ada8c3b0c1 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 14:03:40.677 18 INFO nova.scheduler.host_manager [req-d1a522b5-260c-435b-9dce-71bb30b58f14 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 14:04:16.926 16 INFO nova.scheduler.host_manager [req-a163a38f-1849-40b8-92f2-fb8f263f5136 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 14:04:51.464 20 INFO nova.scheduler.host_manager [req-e927ef43-17e1-4370-b7db-b31fb747bbc6 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 14:05:25.230 19 INFO nova.scheduler.host_manager [req-144eac53-f904-4a96-bd1e-3fd79a5572d4 9289af1213d245c8bbaecd107a2188ae 777d9cbafadf4549af703fbfa47634bc - default default] Host filter forcing available hosts to wally096
+2021-06-16 14:24:35.028 20 INFO nova.scheduler.host_manager [req-c2ca919a-2575-4a5f-a396-f42e65b9a680 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:24:35.034 17 INFO nova.scheduler.host_manager [req-c2ca919a-2575-4a5f-a396-f42e65b9a680 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:24:35.043 18 INFO nova.scheduler.host_manager [req-c2ca919a-2575-4a5f-a396-f42e65b9a680 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:24:35.045 16 INFO nova.scheduler.host_manager [req-c2ca919a-2575-4a5f-a396-f42e65b9a680 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:24:35.046 19 INFO nova.scheduler.host_manager [req-c2ca919a-2575-4a5f-a396-f42e65b9a680 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:26:02.556 18 INFO nova.scheduler.host_manager [req-6e6737dc-a185-4c83-a48e-38566e7a7901 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:26:02.560 17 INFO nova.scheduler.host_manager [req-6e6737dc-a185-4c83-a48e-38566e7a7901 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:26:02.572 16 INFO nova.scheduler.host_manager [req-6e6737dc-a185-4c83-a48e-38566e7a7901 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:26:02.574 20 INFO nova.scheduler.host_manager [req-6e6737dc-a185-4c83-a48e-38566e7a7901 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:26:02.573 19 INFO nova.scheduler.host_manager [req-6e6737dc-a185-4c83-a48e-38566e7a7901 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:26:36.094 20 INFO nova.scheduler.host_manager [req-4d142586-c103-4744-b7ff-db1689a80078 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:26:36.096 18 INFO nova.scheduler.host_manager [req-4d142586-c103-4744-b7ff-db1689a80078 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:26:36.103 17 INFO nova.scheduler.host_manager [req-4d142586-c103-4744-b7ff-db1689a80078 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:26:36.105 19 INFO nova.scheduler.host_manager [req-4d142586-c103-4744-b7ff-db1689a80078 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:26:36.106 16 INFO nova.scheduler.host_manager [req-4d142586-c103-4744-b7ff-db1689a80078 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:27:14.250 17 INFO nova.scheduler.host_manager [req-b0461f15-370e-414e-a945-08ca78abf00d - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:27:14.252 20 INFO nova.scheduler.host_manager [req-b0461f15-370e-414e-a945-08ca78abf00d - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:27:14.253 18 INFO nova.scheduler.host_manager [req-b0461f15-370e-414e-a945-08ca78abf00d - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:27:14.256 16 INFO nova.scheduler.host_manager [req-b0461f15-370e-414e-a945-08ca78abf00d - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:27:14.256 19 INFO nova.scheduler.host_manager [req-b0461f15-370e-414e-a945-08ca78abf00d - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:28:04.554 20 INFO nova.scheduler.host_manager [req-fa3abe9c-30ec-46a1-857a-e88b8c2e365e - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:28:04.554 16 INFO nova.scheduler.host_manager [req-fa3abe9c-30ec-46a1-857a-e88b8c2e365e - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:28:04.556 19 INFO nova.scheduler.host_manager [req-fa3abe9c-30ec-46a1-857a-e88b8c2e365e - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:28:04.557 18 INFO nova.scheduler.host_manager [req-fa3abe9c-30ec-46a1-857a-e88b8c2e365e - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:28:04.563 17 INFO nova.scheduler.host_manager [req-fa3abe9c-30ec-46a1-857a-e88b8c2e365e - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:29:16.244 19 INFO nova.scheduler.host_manager [req-7f0a2be5-e4a8-4022-bafe-a7640416aee4 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:29:16.244 18 INFO nova.scheduler.host_manager [req-7f0a2be5-e4a8-4022-bafe-a7640416aee4 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:29:16.244 16 INFO nova.scheduler.host_manager [req-7f0a2be5-e4a8-4022-bafe-a7640416aee4 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:29:16.245 17 INFO nova.scheduler.host_manager [req-7f0a2be5-e4a8-4022-bafe-a7640416aee4 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:29:16.245 20 INFO nova.scheduler.host_manager [req-7f0a2be5-e4a8-4022-bafe-a7640416aee4 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:30:42.025 20 INFO nova.scheduler.host_manager [req-c94beb61-4596-43a9-bfc8-244b8c9bcd45 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:30:42.028 18 INFO nova.scheduler.host_manager [req-c94beb61-4596-43a9-bfc8-244b8c9bcd45 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:30:42.028 16 INFO nova.scheduler.host_manager [req-c94beb61-4596-43a9-bfc8-244b8c9bcd45 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:30:42.030 17 INFO nova.scheduler.host_manager [req-c94beb61-4596-43a9-bfc8-244b8c9bcd45 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:30:42.032 19 INFO nova.scheduler.host_manager [req-c94beb61-4596-43a9-bfc8-244b8c9bcd45 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-16 14:33:21.245 20 INFO nova.scheduler.host_manager [req-dc3af94e-dd92-4722-afa1-5a32ce98c4b8 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:33:21.246 16 INFO nova.scheduler.host_manager [req-dc3af94e-dd92-4722-afa1-5a32ce98c4b8 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:33:21.246 19 INFO nova.scheduler.host_manager [req-dc3af94e-dd92-4722-afa1-5a32ce98c4b8 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:33:21.246 17 INFO nova.scheduler.host_manager [req-dc3af94e-dd92-4722-afa1-5a32ce98c4b8 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:33:21.247 18 INFO nova.scheduler.host_manager [req-dc3af94e-dd92-4722-afa1-5a32ce98c4b8 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-16 14:52:39.684 20 INFO nova.scheduler.host_manager [req-c364b3e9-fdca-4999-87b2-2e7f0408ea71 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:52:39.684 16 INFO nova.scheduler.host_manager [req-c364b3e9-fdca-4999-87b2-2e7f0408ea71 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:52:39.685 17 INFO nova.scheduler.host_manager [req-c364b3e9-fdca-4999-87b2-2e7f0408ea71 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:52:39.686 18 INFO nova.scheduler.host_manager [req-c364b3e9-fdca-4999-87b2-2e7f0408ea71 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:52:39.686 19 INFO nova.scheduler.host_manager [req-c364b3e9-fdca-4999-87b2-2e7f0408ea71 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:54:44.617 18 INFO nova.scheduler.host_manager [req-a697d04b-d5ca-4f30-a59f-990b060d71d3 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:54:44.618 20 INFO nova.scheduler.host_manager [req-a697d04b-d5ca-4f30-a59f-990b060d71d3 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:54:44.618 19 INFO nova.scheduler.host_manager [req-a697d04b-d5ca-4f30-a59f-990b060d71d3 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:54:44.620 16 INFO nova.scheduler.host_manager [req-a697d04b-d5ca-4f30-a59f-990b060d71d3 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:54:44.621 17 INFO nova.scheduler.host_manager [req-a697d04b-d5ca-4f30-a59f-990b060d71d3 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:56:47.566 16 INFO nova.scheduler.host_manager [req-f73f809b-6768-4f93-b0ee-1290e93794da - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:56:47.569 20 INFO nova.scheduler.host_manager [req-f73f809b-6768-4f93-b0ee-1290e93794da - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:56:47.569 18 INFO nova.scheduler.host_manager [req-f73f809b-6768-4f93-b0ee-1290e93794da - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:56:47.572 19 INFO nova.scheduler.host_manager [req-f73f809b-6768-4f93-b0ee-1290e93794da - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:56:47.572 17 INFO nova.scheduler.host_manager [req-f73f809b-6768-4f93-b0ee-1290e93794da - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:58:51.544 17 INFO nova.scheduler.host_manager [req-b40c6f6a-83af-464f-ae75-e9eaf1708abf - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:58:51.545 19 INFO nova.scheduler.host_manager [req-b40c6f6a-83af-464f-ae75-e9eaf1708abf - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:58:51.546 16 INFO nova.scheduler.host_manager [req-b40c6f6a-83af-464f-ae75-e9eaf1708abf - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:58:51.547 18 INFO nova.scheduler.host_manager [req-b40c6f6a-83af-464f-ae75-e9eaf1708abf - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 14:58:51.548 20 INFO nova.scheduler.host_manager [req-b40c6f6a-83af-464f-ae75-e9eaf1708abf - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 15:04:58.544 17 INFO nova.scheduler.host_manager [req-f44115c2-56a5-4fca-ac7f-8cfa344e6841 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 15:04:58.545 18 INFO nova.scheduler.host_manager [req-f44115c2-56a5-4fca-ac7f-8cfa344e6841 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 15:04:58.545 19 INFO nova.scheduler.host_manager [req-f44115c2-56a5-4fca-ac7f-8cfa344e6841 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 15:04:58.545 16 INFO nova.scheduler.host_manager [req-f44115c2-56a5-4fca-ac7f-8cfa344e6841 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-16 15:04:58.545 20 INFO nova.scheduler.host_manager [req-f44115c2-56a5-4fca-ac7f-8cfa344e6841 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:11:55.266 16 INFO nova.scheduler.host_manager [req-5239ec53-445d-40d0-992c-541255ad08bf - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:11:55.266 17 INFO nova.scheduler.host_manager [req-5239ec53-445d-40d0-992c-541255ad08bf - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:11:55.267 20 INFO nova.scheduler.host_manager [req-5239ec53-445d-40d0-992c-541255ad08bf - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:11:55.268 19 INFO nova.scheduler.host_manager [req-5239ec53-445d-40d0-992c-541255ad08bf - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:11:55.272 18 INFO nova.scheduler.host_manager [req-5239ec53-445d-40d0-992c-541255ad08bf - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:13:56.310 16 INFO nova.scheduler.host_manager [req-a3d84a43-e944-48f8-80dd-b92d55a09c77 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:13:56.312 19 INFO nova.scheduler.host_manager [req-a3d84a43-e944-48f8-80dd-b92d55a09c77 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:13:56.316 18 INFO nova.scheduler.host_manager [req-a3d84a43-e944-48f8-80dd-b92d55a09c77 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:13:56.320 20 INFO nova.scheduler.host_manager [req-a3d84a43-e944-48f8-80dd-b92d55a09c77 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:13:56.319 17 INFO nova.scheduler.host_manager [req-a3d84a43-e944-48f8-80dd-b92d55a09c77 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:15:57.246 18 INFO nova.scheduler.host_manager [req-997b3da6-0a0d-4628-a955-6d3cfd837386 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:15:57.246 20 INFO nova.scheduler.host_manager [req-997b3da6-0a0d-4628-a955-6d3cfd837386 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:15:57.246 16 INFO nova.scheduler.host_manager [req-997b3da6-0a0d-4628-a955-6d3cfd837386 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:15:57.246 17 INFO nova.scheduler.host_manager [req-997b3da6-0a0d-4628-a955-6d3cfd837386 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:15:57.250 19 INFO nova.scheduler.host_manager [req-997b3da6-0a0d-4628-a955-6d3cfd837386 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:16:45.541 16 INFO nova.scheduler.host_manager [req-1c9df316-0abf-42a5-a87e-4d7414242da0 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:16:45.541 20 INFO nova.scheduler.host_manager [req-1c9df316-0abf-42a5-a87e-4d7414242da0 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:16:45.543 17 INFO nova.scheduler.host_manager [req-1c9df316-0abf-42a5-a87e-4d7414242da0 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:16:45.548 18 INFO nova.scheduler.host_manager [req-1c9df316-0abf-42a5-a87e-4d7414242da0 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:16:45.548 19 INFO nova.scheduler.host_manager [req-1c9df316-0abf-42a5-a87e-4d7414242da0 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:18:00.247 16 INFO nova.scheduler.host_manager [req-6a1b2e41-af8c-4fc9-8861-47298a3f032b - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:18:00.247 18 INFO nova.scheduler.host_manager [req-6a1b2e41-af8c-4fc9-8861-47298a3f032b - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:18:00.247 17 INFO nova.scheduler.host_manager [req-6a1b2e41-af8c-4fc9-8861-47298a3f032b - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:18:00.247 19 INFO nova.scheduler.host_manager [req-6a1b2e41-af8c-4fc9-8861-47298a3f032b - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:18:00.247 20 INFO nova.scheduler.host_manager [req-6a1b2e41-af8c-4fc9-8861-47298a3f032b - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:22:50.546 19 INFO nova.scheduler.host_manager [req-12584fa4-0f2d-4ef2-96e5-3c6fc225ad48 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:22:50.546 20 INFO nova.scheduler.host_manager [req-12584fa4-0f2d-4ef2-96e5-3c6fc225ad48 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:22:50.546 17 INFO nova.scheduler.host_manager [req-12584fa4-0f2d-4ef2-96e5-3c6fc225ad48 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:22:50.546 18 INFO nova.scheduler.host_manager [req-12584fa4-0f2d-4ef2-96e5-3c6fc225ad48 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:22:50.546 16 INFO nova.scheduler.host_manager [req-12584fa4-0f2d-4ef2-96e5-3c6fc225ad48 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:29:02.556 17 INFO nova.scheduler.host_manager [req-8d642636-4afd-46a2-8057-13faee54a792 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:29:02.556 16 INFO nova.scheduler.host_manager [req-8d642636-4afd-46a2-8057-13faee54a792 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:29:02.556 19 INFO nova.scheduler.host_manager [req-8d642636-4afd-46a2-8057-13faee54a792 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:29:02.557 20 INFO nova.scheduler.host_manager [req-8d642636-4afd-46a2-8057-13faee54a792 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:29:02.557 18 INFO nova.scheduler.host_manager [req-8d642636-4afd-46a2-8057-13faee54a792 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:31:05.557 20 INFO nova.scheduler.host_manager [req-6338bafa-4a43-4f72-a48b-241f4083e1f4 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:31:05.560 16 INFO nova.scheduler.host_manager [req-6338bafa-4a43-4f72-a48b-241f4083e1f4 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:31:05.561 17 INFO nova.scheduler.host_manager [req-6338bafa-4a43-4f72-a48b-241f4083e1f4 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:31:05.564 19 INFO nova.scheduler.host_manager [req-6338bafa-4a43-4f72-a48b-241f4083e1f4 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:31:05.566 18 INFO nova.scheduler.host_manager [req-6338bafa-4a43-4f72-a48b-241f4083e1f4 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:33:08.548 20 INFO nova.scheduler.host_manager [req-91518047-de80-4018-8656-c49df632d3fb - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:33:08.549 19 INFO nova.scheduler.host_manager [req-91518047-de80-4018-8656-c49df632d3fb - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:33:08.549 18 INFO nova.scheduler.host_manager [req-91518047-de80-4018-8656-c49df632d3fb - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:33:08.549 17 INFO nova.scheduler.host_manager [req-91518047-de80-4018-8656-c49df632d3fb - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:33:08.555 16 INFO nova.scheduler.host_manager [req-91518047-de80-4018-8656-c49df632d3fb - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:35:12.548 18 INFO nova.scheduler.host_manager [req-e7be3e17-e98f-4eeb-861c-1332f45442b9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:35:12.548 17 INFO nova.scheduler.host_manager [req-e7be3e17-e98f-4eeb-861c-1332f45442b9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:35:12.548 16 INFO nova.scheduler.host_manager [req-e7be3e17-e98f-4eeb-861c-1332f45442b9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:35:12.549 19 INFO nova.scheduler.host_manager [req-e7be3e17-e98f-4eeb-861c-1332f45442b9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:35:12.549 20 INFO nova.scheduler.host_manager [req-e7be3e17-e98f-4eeb-861c-1332f45442b9 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:37:12.553 18 INFO nova.scheduler.host_manager [req-f9750166-62a7-4167-8c04-be47576a7de5 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:37:12.553 19 INFO nova.scheduler.host_manager [req-f9750166-62a7-4167-8c04-be47576a7de5 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:37:12.554 20 INFO nova.scheduler.host_manager [req-f9750166-62a7-4167-8c04-be47576a7de5 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:37:12.554 16 INFO nova.scheduler.host_manager [req-f9750166-62a7-4167-8c04-be47576a7de5 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:37:12.554 17 INFO nova.scheduler.host_manager [req-f9750166-62a7-4167-8c04-be47576a7de5 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:41:19.543 20 INFO nova.scheduler.host_manager [req-9bb22aa8-aece-4dc3-bed7-6ddb99195053 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:41:19.543 19 INFO nova.scheduler.host_manager [req-9bb22aa8-aece-4dc3-bed7-6ddb99195053 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:41:19.544 16 INFO nova.scheduler.host_manager [req-9bb22aa8-aece-4dc3-bed7-6ddb99195053 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:41:19.544 18 INFO nova.scheduler.host_manager [req-9bb22aa8-aece-4dc3-bed7-6ddb99195053 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:41:19.544 17 INFO nova.scheduler.host_manager [req-9bb22aa8-aece-4dc3-bed7-6ddb99195053 - - - - -] The instance sync for host 'wally096' did not match. Re-created its InstanceList.
+2021-06-23 01:56:51.024 17 INFO nova.scheduler.host_manager [req-06ccc138-fe6e-45f6-8525-464f1f1e187b - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 01:56:51.025 20 INFO nova.scheduler.host_manager [req-06ccc138-fe6e-45f6-8525-464f1f1e187b - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 01:56:51.026 18 INFO nova.scheduler.host_manager [req-06ccc138-fe6e-45f6-8525-464f1f1e187b - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 01:56:51.028 19 INFO nova.scheduler.host_manager [req-06ccc138-fe6e-45f6-8525-464f1f1e187b - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 01:56:51.028 16 INFO nova.scheduler.host_manager [req-06ccc138-fe6e-45f6-8525-464f1f1e187b - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 01:56:54.257 16 INFO nova.scheduler.host_manager [req-6646f656-41d4-4581-800a-13884302e29d - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:56:54.257 17 INFO nova.scheduler.host_manager [req-6646f656-41d4-4581-800a-13884302e29d - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:56:54.257 20 INFO nova.scheduler.host_manager [req-6646f656-41d4-4581-800a-13884302e29d - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:56:54.258 18 INFO nova.scheduler.host_manager [req-6646f656-41d4-4581-800a-13884302e29d - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 01:56:54.260 19 INFO nova.scheduler.host_manager [req-6646f656-41d4-4581-800a-13884302e29d - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:00:59.025 20 INFO nova.scheduler.host_manager [req-e3a7acab-d844-4bae-954d-bd2dbebb0bfb - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:00:59.026 19 INFO nova.scheduler.host_manager [req-e3a7acab-d844-4bae-954d-bd2dbebb0bfb - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:00:59.027 17 INFO nova.scheduler.host_manager [req-e3a7acab-d844-4bae-954d-bd2dbebb0bfb - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:00:59.027 16 INFO nova.scheduler.host_manager [req-e3a7acab-d844-4bae-954d-bd2dbebb0bfb - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:00:59.031 18 INFO nova.scheduler.host_manager [req-e3a7acab-d844-4bae-954d-bd2dbebb0bfb - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:02:58.251 16 INFO nova.scheduler.host_manager [req-d571ad37-4619-49f2-bea6-e294e2872c10 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:02:58.254 17 INFO nova.scheduler.host_manager [req-d571ad37-4619-49f2-bea6-e294e2872c10 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:02:58.253 20 INFO nova.scheduler.host_manager [req-d571ad37-4619-49f2-bea6-e294e2872c10 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:02:58.259 18 INFO nova.scheduler.host_manager [req-d571ad37-4619-49f2-bea6-e294e2872c10 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:02:58.261 19 INFO nova.scheduler.host_manager [req-d571ad37-4619-49f2-bea6-e294e2872c10 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:03:02.574 18 INFO nova.scheduler.host_manager [req-4e176583-0b09-472f-a216-f493704571cc - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:03:02.575 19 INFO nova.scheduler.host_manager [req-4e176583-0b09-472f-a216-f493704571cc - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:03:02.577 20 INFO nova.scheduler.host_manager [req-4e176583-0b09-472f-a216-f493704571cc - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:03:02.579 16 INFO nova.scheduler.host_manager [req-4e176583-0b09-472f-a216-f493704571cc - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:03:02.579 17 INFO nova.scheduler.host_manager [req-4e176583-0b09-472f-a216-f493704571cc - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:09:05.516 16 INFO nova.scheduler.host_manager [req-97447349-6255-464d-a381-349c6e346fe7 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:09:05.517 17 INFO nova.scheduler.host_manager [req-97447349-6255-464d-a381-349c6e346fe7 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:09:05.518 18 INFO nova.scheduler.host_manager [req-97447349-6255-464d-a381-349c6e346fe7 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:09:05.520 20 INFO nova.scheduler.host_manager [req-97447349-6255-464d-a381-349c6e346fe7 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:09:05.524 19 INFO nova.scheduler.host_manager [req-97447349-6255-464d-a381-349c6e346fe7 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:09:07.014 17 INFO nova.scheduler.host_manager [req-a3177c7c-8c7a-4028-81ae-d75c4dbe6b15 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:09:07.014 18 INFO nova.scheduler.host_manager [req-a3177c7c-8c7a-4028-81ae-d75c4dbe6b15 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:09:07.014 20 INFO nova.scheduler.host_manager [req-a3177c7c-8c7a-4028-81ae-d75c4dbe6b15 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:09:07.014 19 INFO nova.scheduler.host_manager [req-a3177c7c-8c7a-4028-81ae-d75c4dbe6b15 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:09:07.015 16 INFO nova.scheduler.host_manager [req-a3177c7c-8c7a-4028-81ae-d75c4dbe6b15 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:11:13.112 16 INFO nova.scheduler.host_manager [req-c5dacff9-0a87-4d5c-b1ff-3b82884843a1 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:11:13.114 18 INFO nova.scheduler.host_manager [req-c5dacff9-0a87-4d5c-b1ff-3b82884843a1 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:11:13.115 17 INFO nova.scheduler.host_manager [req-c5dacff9-0a87-4d5c-b1ff-3b82884843a1 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:11:13.122 19 INFO nova.scheduler.host_manager [req-c5dacff9-0a87-4d5c-b1ff-3b82884843a1 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:11:13.126 20 INFO nova.scheduler.host_manager [req-c5dacff9-0a87-4d5c-b1ff-3b82884843a1 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:13:13.289 17 INFO nova.scheduler.host_manager [req-b5205e29-f484-49b9-b331-9760d1571421 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:13:13.291 16 INFO nova.scheduler.host_manager [req-b5205e29-f484-49b9-b331-9760d1571421 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:13:13.291 19 INFO nova.scheduler.host_manager [req-b5205e29-f484-49b9-b331-9760d1571421 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:13:13.294 18 INFO nova.scheduler.host_manager [req-b5205e29-f484-49b9-b331-9760d1571421 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:13:13.294 20 INFO nova.scheduler.host_manager [req-b5205e29-f484-49b9-b331-9760d1571421 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:15:11.336 19 INFO nova.scheduler.host_manager [req-956fda1c-7461-4516-87be-575159276624 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:15:11.337 17 INFO nova.scheduler.host_manager [req-956fda1c-7461-4516-87be-575159276624 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:15:11.337 20 INFO nova.scheduler.host_manager [req-956fda1c-7461-4516-87be-575159276624 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:15:11.340 16 INFO nova.scheduler.host_manager [req-956fda1c-7461-4516-87be-575159276624 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:15:11.341 18 INFO nova.scheduler.host_manager [req-956fda1c-7461-4516-87be-575159276624 - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-23 02:15:18.738 20 INFO nova.scheduler.host_manager [req-3eab2db3-35bc-48cf-a28e-1441c8294921 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:15:18.738 19 INFO nova.scheduler.host_manager [req-3eab2db3-35bc-48cf-a28e-1441c8294921 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:15:18.764 18 INFO nova.scheduler.host_manager [req-3eab2db3-35bc-48cf-a28e-1441c8294921 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:15:18.766 16 INFO nova.scheduler.host_manager [req-3eab2db3-35bc-48cf-a28e-1441c8294921 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:15:18.771 17 INFO nova.scheduler.host_manager [req-3eab2db3-35bc-48cf-a28e-1441c8294921 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:17:23.430 19 INFO nova.scheduler.host_manager [req-fd89302e-435a-4c6f-8c6a-c2fb4bb88133 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:17:23.430 20 INFO nova.scheduler.host_manager [req-fd89302e-435a-4c6f-8c6a-c2fb4bb88133 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:17:23.430 16 INFO nova.scheduler.host_manager [req-fd89302e-435a-4c6f-8c6a-c2fb4bb88133 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:17:23.431 18 INFO nova.scheduler.host_manager [req-fd89302e-435a-4c6f-8c6a-c2fb4bb88133 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:17:23.431 17 INFO nova.scheduler.host_manager [req-fd89302e-435a-4c6f-8c6a-c2fb4bb88133 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:21:27.001 17 INFO nova.scheduler.host_manager [req-6f339cb5-458c-4bf1-aad6-bd8727a23c79 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:21:27.002 16 INFO nova.scheduler.host_manager [req-6f339cb5-458c-4bf1-aad6-bd8727a23c79 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:21:27.002 19 INFO nova.scheduler.host_manager [req-6f339cb5-458c-4bf1-aad6-bd8727a23c79 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:21:27.002 20 INFO nova.scheduler.host_manager [req-6f339cb5-458c-4bf1-aad6-bd8727a23c79 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:21:27.004 18 INFO nova.scheduler.host_manager [req-6f339cb5-458c-4bf1-aad6-bd8727a23c79 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:25:34.015 19 INFO nova.scheduler.host_manager [req-77b99671-88b6-4509-a8fc-793934258c4c - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:25:34.016 17 INFO nova.scheduler.host_manager [req-77b99671-88b6-4509-a8fc-793934258c4c - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:25:34.019 16 INFO nova.scheduler.host_manager [req-77b99671-88b6-4509-a8fc-793934258c4c - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:25:34.019 20 INFO nova.scheduler.host_manager [req-77b99671-88b6-4509-a8fc-793934258c4c - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:25:34.033 18 INFO nova.scheduler.host_manager [req-77b99671-88b6-4509-a8fc-793934258c4c - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:29:37.013 18 INFO nova.scheduler.host_manager [req-381efc17-7938-4521-8787-3a1a316d1329 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:29:37.015 19 INFO nova.scheduler.host_manager [req-381efc17-7938-4521-8787-3a1a316d1329 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:29:37.016 17 INFO nova.scheduler.host_manager [req-381efc17-7938-4521-8787-3a1a316d1329 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:29:37.018 16 INFO nova.scheduler.host_manager [req-381efc17-7938-4521-8787-3a1a316d1329 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 02:29:37.021 20 INFO nova.scheduler.host_manager [req-381efc17-7938-4521-8787-3a1a316d1329 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 11:32:36.008 17 INFO nova.scheduler.host_manager [req-d134cfa5-0383-4829-bbbc-39bf17a9f2ff - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 11:32:36.009 16 INFO nova.scheduler.host_manager [req-d134cfa5-0383-4829-bbbc-39bf17a9f2ff - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 11:32:36.010 18 INFO nova.scheduler.host_manager [req-d134cfa5-0383-4829-bbbc-39bf17a9f2ff - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 11:32:36.010 20 INFO nova.scheduler.host_manager [req-d134cfa5-0383-4829-bbbc-39bf17a9f2ff - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 11:32:36.010 19 INFO nova.scheduler.host_manager [req-d134cfa5-0383-4829-bbbc-39bf17a9f2ff - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 11:34:39.014 16 INFO nova.scheduler.host_manager [req-b9e522c5-4f54-4193-8f65-7bfc164255f1 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 11:34:39.014 20 INFO nova.scheduler.host_manager [req-b9e522c5-4f54-4193-8f65-7bfc164255f1 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 11:34:39.014 18 INFO nova.scheduler.host_manager [req-b9e522c5-4f54-4193-8f65-7bfc164255f1 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 11:34:39.014 17 INFO nova.scheduler.host_manager [req-b9e522c5-4f54-4193-8f65-7bfc164255f1 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-23 11:34:39.014 19 INFO nova.scheduler.host_manager [req-b9e522c5-4f54-4193-8f65-7bfc164255f1 - - - - -] The instance sync for host 'wally099' did not match. Re-created its InstanceList.
+2021-06-26 22:38:00.242 18 INFO nova.scheduler.host_manager [req-3852527b-60f7-42e3-84fe-4c82be3e4dcf - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-26 22:38:00.243 20 INFO nova.scheduler.host_manager [req-3852527b-60f7-42e3-84fe-4c82be3e4dcf - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-26 22:38:00.243 17 INFO nova.scheduler.host_manager [req-3852527b-60f7-42e3-84fe-4c82be3e4dcf - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-26 22:38:00.243 19 INFO nova.scheduler.host_manager [req-3852527b-60f7-42e3-84fe-4c82be3e4dcf - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-26 22:38:00.243 16 INFO nova.scheduler.host_manager [req-3852527b-60f7-42e3-84fe-4c82be3e4dcf - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-26 22:40:05.243 17 INFO nova.scheduler.host_manager [req-4c0340be-4a48-4937-ab57-2cc3d23d493b - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-26 22:40:05.243 16 INFO nova.scheduler.host_manager [req-4c0340be-4a48-4937-ab57-2cc3d23d493b - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-26 22:40:05.243 20 INFO nova.scheduler.host_manager [req-4c0340be-4a48-4937-ab57-2cc3d23d493b - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-26 22:40:05.244 19 INFO nova.scheduler.host_manager [req-4c0340be-4a48-4937-ab57-2cc3d23d493b - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.
+2021-06-26 22:40:05.244 18 INFO nova.scheduler.host_manager [req-4c0340be-4a48-4937-ab57-2cc3d23d493b - - - - -] The instance sync for host 'wally098' did not match. Re-created its InstanceList.

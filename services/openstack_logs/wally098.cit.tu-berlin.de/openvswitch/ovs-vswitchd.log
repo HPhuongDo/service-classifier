@@ -1,0 +1,588 @@
+2021-06-09T12:27:14.241Z|00001|vlog|INFO|opened log file /var/log/kolla/openvswitch/ovs-vswitchd.log
+2021-06-09T12:27:14.244Z|00002|ovs_numa|INFO|Discovered 8 CPU cores on NUMA node 0
+2021-06-09T12:27:14.244Z|00003|ovs_numa|INFO|Discovered 1 NUMA nodes and 8 CPU cores
+2021-06-09T12:27:14.244Z|00004|reconnect|INFO|unix:/run/openvswitch/db.sock: connecting...
+2021-06-09T12:27:14.244Z|00005|reconnect|INFO|unix:/run/openvswitch/db.sock: connected
+2021-06-09T12:27:14.260Z|00006|bridge|INFO|ovs-vswitchd (Open vSwitch) 2.15.0
+2021-06-09T12:27:44.240Z|00007|memory|INFO|13144 kB peak resident set size after 30.0 seconds
+2021-06-09T12:33:37.243Z|00008|ofproto_dpif|INFO|system@ovs-system: Datapath supports recirculation
+2021-06-09T12:33:37.243Z|00009|ofproto_dpif|INFO|system@ovs-system: VLAN header stack length probed as 2
+2021-06-09T12:33:37.243Z|00010|ofproto_dpif|INFO|system@ovs-system: MPLS label stack length probed as 1
+2021-06-09T12:33:37.243Z|00011|ofproto_dpif|INFO|system@ovs-system: Datapath supports truncate action
+2021-06-09T12:33:37.243Z|00012|ofproto_dpif|INFO|system@ovs-system: Datapath supports unique flow ids
+2021-06-09T12:33:37.243Z|00013|ofproto_dpif|INFO|system@ovs-system: Datapath does not support clone action
+2021-06-09T12:33:37.243Z|00014|ofproto_dpif|INFO|system@ovs-system: Max sample nesting level probed as 10
+2021-06-09T12:33:37.243Z|00015|ofproto_dpif|INFO|system@ovs-system: Datapath supports eventmask in conntrack action
+2021-06-09T12:33:37.243Z|00016|ofproto_dpif|INFO|system@ovs-system: Datapath supports ct_clear action
+2021-06-09T12:33:37.243Z|00017|ofproto_dpif|INFO|system@ovs-system: Max dp_hash algorithm probed to be 0
+2021-06-09T12:33:37.243Z|00018|ofproto_dpif|INFO|system@ovs-system: Datapath does not support check_pkt_len action
+2021-06-09T12:33:37.243Z|00019|ofproto_dpif|INFO|system@ovs-system: Datapath does not support timeout policy in conntrack action
+2021-06-09T12:33:37.243Z|00020|ofproto_dpif|INFO|system@ovs-system: Datapath supports ct_state
+2021-06-09T12:33:37.243Z|00021|ofproto_dpif|INFO|system@ovs-system: Datapath supports ct_zone
+2021-06-09T12:33:37.243Z|00022|ofproto_dpif|INFO|system@ovs-system: Datapath supports ct_mark
+2021-06-09T12:33:37.243Z|00023|ofproto_dpif|INFO|system@ovs-system: Datapath supports ct_label
+2021-06-09T12:33:37.244Z|00024|ofproto_dpif|INFO|system@ovs-system: Datapath supports ct_state_nat
+2021-06-09T12:33:37.244Z|00025|ofproto_dpif|INFO|system@ovs-system: Datapath supports ct_orig_tuple
+2021-06-09T12:33:37.244Z|00026|ofproto_dpif|INFO|system@ovs-system: Datapath supports ct_orig_tuple6
+2021-06-09T12:33:37.244Z|00027|ofproto_dpif|INFO|system@ovs-system: Datapath does not support IPv6 ND Extensions
+2021-06-09T12:33:37.259Z|00028|dpif_netlink|INFO|dpif_netlink_meter_transact get failed
+2021-06-09T12:33:37.259Z|00029|dpif_netlink|INFO|The kernel module has a broken meter implementation.
+2021-06-09T12:33:37.364Z|00030|bridge|INFO|bridge br-int: added interface br-int on port 65534
+2021-06-09T12:33:37.364Z|00031|bridge|INFO|bridge br-int: using datapath ID 0000f2cd882b0343
+2021-06-09T12:33:37.364Z|00032|connmgr|INFO|br-int: added service controller "punix:/var/run/openvswitch/br-int.mgmt"
+2021-06-09T12:33:37.376Z|00033|rconn|INFO|br-int<->tcp:127.0.0.1:6633: connecting...
+2021-06-09T12:33:37.376Z|00034|connmgr|INFO|br-int: added primary controller "tcp:127.0.0.1:6633"
+2021-06-09T12:33:37.380Z|00035|rconn|INFO|br-int<->tcp:127.0.0.1:6633: connected
+2021-06-09T12:33:37.396Z|00036|bridge|INFO|bridge br-tun: added interface br-tun on port 65534
+2021-06-09T12:33:37.397Z|00037|bridge|INFO|bridge br-tun: using datapath ID 0000daa85a40a845
+2021-06-09T12:33:37.397Z|00038|connmgr|INFO|br-tun: added service controller "punix:/var/run/openvswitch/br-tun.mgmt"
+2021-06-09T12:33:37.405Z|00039|rconn|INFO|br-tun<->tcp:127.0.0.1:6633: connecting...
+2021-06-09T12:33:37.405Z|00040|connmgr|INFO|br-tun: added primary controller "tcp:127.0.0.1:6633"
+2021-06-09T12:33:37.409Z|00041|rconn|INFO|br-tun<->tcp:127.0.0.1:6633: connected
+2021-06-09T12:33:37.414Z|00042|bridge|INFO|bridge br-int: added interface patch-tun on port 1
+2021-06-09T12:33:37.419Z|00043|bridge|INFO|bridge br-tun: added interface patch-int on port 1
+2021-06-09T12:33:47.368Z|00044|memory|INFO|peak resident set size grew 564% in last 363.1 seconds, from 13144 kB to 87324 kB
+2021-06-09T12:33:47.368Z|00045|memory|INFO|handlers:5 ofconns:2 ports:4 revalidators:3 rules:26
+2021-06-09T12:33:47.389Z|00046|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 6 flow_mods 10 s ago (6 adds)
+2021-06-09T12:33:47.427Z|00047|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 12 flow_mods 10 s ago (12 adds)
+2021-06-16T09:05:00.284Z|00048|bridge|INFO|bridge br-int: added interface qvoc724b616-5e on port 2
+2021-06-16T09:05:00.926Z|00049|bridge|INFO|bridge br-int: added interface qvo6b024613-5e on port 3
+2021-06-16T09:05:00.955Z|00050|bridge|INFO|bridge br-int: added interface qvo0f7e10fb-58 on port 4
+2021-06-16T09:05:00.955Z|00001|ofproto_dpif_upcall(handler1)|INFO|received packet on unassociated datapath port 5
+2021-06-16T09:05:03.430Z|00051|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 2
+2021-06-16T09:05:12.191Z|00052|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 31 flow_mods in the 4 s starting 10 s ago (31 adds)
+2021-06-16T09:05:12.800Z|00053|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 42 flow_mods in the 2 s starting 10 s ago (36 adds, 6 deletes)
+2021-06-16T09:05:13.091Z|00054|bridge|INFO|bridge br-int: deleted interface qvo0f7e10fb-58 on port 4
+2021-06-16T09:05:15.003Z|00055|bridge|INFO|bridge br-int: deleted interface qvo6b024613-5e on port 3
+2021-06-16T09:05:15.866Z|00056|bridge|INFO|bridge br-int: deleted interface qvoc724b616-5e on port 2
+2021-06-16T09:05:17.482Z|00057|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 2
+2021-06-16T09:05:17.486Z|00001|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x221,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=6,vlan_tci=0x0000,dl_src=fa:16:3e:fb:ec:4e,dl_dst=fa:16:3e:6a:57:f8,nw_src=10.0.3.2,nw_dst=10.0.3.125,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-16T09:05:17.486Z|00002|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x320,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=6,vlan_tci=0x0000,dl_src=fa:16:3e:01:e2:79,dl_dst=fa:16:3e:77:46:ac,nw_src=10.0.1.2,nw_dst=10.0.1.17,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-16T09:05:17.486Z|00003|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x20e,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=6,vlan_tci=0x0000,dl_src=fa:16:3e:65:17:fc,dl_dst=fa:16:3e:b0:03:6e,nw_src=10.0.2.2,nw_dst=10.0.2.128,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-16T09:05:17.486Z|00004|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x320,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=6,vlan_tci=0x0000,dl_src=fa:16:3e:01:e2:79,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.1.2,arp_tpa=10.0.1.1,arp_op=1,arp_sha=fa:16:3e:01:e2:79,arp_tha=00:00:00:00:00:00)
+2021-06-16T09:05:49.423Z|00058|bridge|INFO|bridge br-int: added interface qvod22bb69f-3e on port 5
+2021-06-16T09:05:50.213Z|00059|bridge|INFO|bridge br-int: added interface qvof794025b-95 on port 6
+2021-06-16T09:05:52.022Z|00060|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 3
+2021-06-16T09:06:00.375Z|00061|bridge|INFO|bridge br-int: deleted interface qvof794025b-95 on port 6
+2021-06-16T09:06:05.577Z|00062|bridge|INFO|bridge br-int: deleted interface qvod22bb69f-3e on port 5
+2021-06-16T09:06:07.631Z|00063|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 3
+2021-06-16T09:06:07.635Z|00005|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x6a,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=5,vlan_tci=0x0000,dl_src=fa:16:3e:26:21:08,dl_dst=fa:16:3e:f0:e5:35,nw_src=10.0.6.2,nw_dst=10.0.6.202,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-16T09:06:12.191Z|00064|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 43 flow_mods in the 53 s starting 58 s ago (21 adds, 22 deletes)
+2021-06-16T09:06:12.791Z|00065|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 48 flow_mods in the 54 s starting 59 s ago (24 adds, 24 deletes)
+2021-06-16T09:06:17.926Z|00066|bridge|INFO|bridge br-int: added interface qvo48d1b639-91 on port 7
+2021-06-16T09:06:20.146Z|00067|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 4
+2021-06-16T09:06:29.199Z|00068|bridge|INFO|bridge br-int: deleted interface qvo48d1b639-91 on port 7
+2021-06-16T09:06:30.080Z|00069|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 4
+2021-06-16T09:06:30.086Z|00006|tunnel(revalidator7)|WARN|Dropped 3 log messages in last 23 seconds (most recently, 23 seconds ago) due to excessive rate
+2021-06-16T09:06:30.086Z|00007|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x2,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:fa:c7:72,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.10.2,arp_tpa=10.0.10.1,arp_op=1,arp_sha=fa:16:3e:fa:c7:72,arp_tha=00:00:00:00:00:00)
+2021-06-16T09:06:40.066Z|00070|bridge|INFO|bridge br-int: added interface qvo47a39558-37 on port 8
+2021-06-16T09:06:41.303Z|00071|bridge|INFO|bridge br-int: added interface qvoc8785a39-f3 on port 9
+2021-06-16T09:06:41.381Z|00072|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 5
+2021-06-16T09:06:50.823Z|00073|bridge|INFO|bridge br-int: deleted interface qvo47a39558-37 on port 8
+2021-06-16T09:06:53.530Z|00074|bridge|INFO|bridge br-int: deleted interface qvoc8785a39-f3 on port 9
+2021-06-16T09:06:54.748Z|00075|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 5
+2021-06-16T09:07:05.987Z|00076|bridge|INFO|bridge br-int: added interface qvo0a8bbf28-94 on port 10
+2021-06-16T09:07:08.368Z|00077|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 6
+2021-06-16T09:07:12.192Z|00078|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 60 flow_mods in the 50 s starting 52 s ago (46 adds, 14 deletes)
+2021-06-16T09:07:12.791Z|00079|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 68 flow_mods in the 49 s starting 53 s ago (48 adds, 20 deletes)
+2021-06-16T09:07:17.530Z|00080|bridge|INFO|bridge br-int: deleted interface qvo0a8bbf28-94 on port 10
+2021-06-16T09:07:18.308Z|00081|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 6
+2021-06-16T09:07:18.309Z|00008|tunnel(revalidator7)|WARN|Dropped 6 log messages in last 48 seconds (most recently, 23 seconds ago) due to excessive rate
+2021-06-16T09:07:18.309Z|00009|tunnel(revalidator7)|WARN|receive tunnel port not found (icmp6,tun_id=0x11b,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:03:f0:5f,dl_dst=33:33:00:00:00:16,ipv6_src=::,ipv6_dst=ff02::16,ipv6_label=0x00000,nw_tos=0,nw_ecn=0,nw_ttl=1,icmp_type=143,icmp_code=0)
+2021-06-16T09:07:28.741Z|00082|bridge|INFO|bridge br-int: added interface qvo57024ec7-80 on port 11
+2021-06-16T09:07:29.099Z|00083|bridge|INFO|bridge br-int: added interface qvofc9eac9f-ec on port 12
+2021-06-16T09:07:29.099Z|00002|ofproto_dpif_upcall(handler1)|INFO|received packet on unassociated datapath port 4
+2021-06-16T09:07:30.490Z|00084|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 7
+2021-06-16T09:07:37.128Z|00085|bridge|INFO|bridge br-int: deleted interface qvofc9eac9f-ec on port 12
+2021-06-16T09:07:39.865Z|00086|bridge|INFO|bridge br-int: deleted interface qvo57024ec7-80 on port 11
+2021-06-16T09:07:42.059Z|00087|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 7
+2021-06-16T09:07:53.986Z|00088|bridge|INFO|bridge br-int: added interface qvo3e549004-61 on port 13
+2021-06-16T09:07:57.540Z|00089|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 8
+2021-06-16T09:08:05.614Z|00090|bridge|INFO|bridge br-int: deleted interface qvo3e549004-61 on port 13
+2021-06-16T09:08:06.958Z|00091|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 8
+2021-06-16T09:08:08.178Z|00092|bridge|INFO|bridge br-int: added interface qvo09ee3355-aa on port 14
+2021-06-16T09:08:10.669Z|00093|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 9
+2021-06-16T09:08:12.192Z|00094|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 59 flow_mods in the 52 s starting 53 s ago (40 adds, 19 deletes)
+2021-06-16T09:08:12.791Z|00095|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 72 flow_mods in the 54 s starting 55 s ago (48 adds, 24 deletes)
+2021-06-16T09:08:17.490Z|00096|bridge|INFO|bridge br-int: deleted interface qvo09ee3355-aa on port 14
+2021-06-16T09:08:18.614Z|00097|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 9
+2021-06-16T09:08:18.618Z|00010|tunnel(revalidator7)|WARN|Dropped 11 log messages in last 60 seconds (most recently, 11 seconds ago) due to excessive rate
+2021-06-16T09:08:18.618Z|00011|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x111,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:97:73:8c,dl_dst=fa:16:3e:fc:95:b8,nw_src=10.0.24.2,nw_dst=10.0.24.238,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-16T09:08:32.763Z|00098|bridge|INFO|bridge br-int: added interface qvo7de04998-89 on port 15
+2021-06-16T09:08:34.716Z|00099|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 10
+2021-06-16T09:08:43.678Z|00100|bridge|INFO|bridge br-int: deleted interface qvo7de04998-89 on port 15
+2021-06-16T09:08:44.882Z|00101|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 10
+2021-06-16T09:08:55.713Z|00102|bridge|INFO|bridge br-int: added interface qvo648cd700-65 on port 16
+2021-06-16T09:08:55.912Z|00103|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 11
+2021-06-16T09:09:05.432Z|00104|bridge|INFO|bridge br-int: deleted interface qvo648cd700-65 on port 16
+2021-06-16T09:09:05.970Z|00105|bridge|INFO|bridge br-int: added interface qvo7e9ef422-cd on port 17
+2021-06-16T09:09:06.361Z|00106|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 11
+2021-06-16T09:09:08.889Z|00107|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 12
+2021-06-16T09:09:12.192Z|00108|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 54 flow_mods in the 57 s starting 59 s ago (39 adds, 15 deletes)
+2021-06-16T09:09:12.791Z|00109|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 54 flow_mods in the 52 s starting 54 s ago (36 adds, 18 deletes)
+2021-06-16T09:09:16.737Z|00110|bridge|INFO|bridge br-int: deleted interface qvo7e9ef422-cd on port 17
+2021-06-16T09:09:18.216Z|00111|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 12
+2021-06-16T09:09:18.219Z|00012|tunnel(revalidator7)|WARN|Dropped 8 log messages in last 60 seconds (most recently, 12 seconds ago) due to excessive rate
+2021-06-16T09:09:18.219Z|00013|tunnel(revalidator7)|WARN|receive tunnel port not found (icmp6,tun_id=0x3b7,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:36:f5:6f,dl_dst=33:33:00:00:00:16,ipv6_src=::,ipv6_dst=ff02::16,ipv6_label=0x00000,nw_tos=0,nw_ecn=0,nw_ttl=1,icmp_type=143,icmp_code=0)
+2021-06-16T09:09:29.639Z|00112|bridge|INFO|bridge br-int: added interface qvo89376cf7-5c on port 18
+2021-06-16T09:09:29.639Z|00003|ofproto_dpif_upcall(handler1)|INFO|received packet on unassociated datapath port 3
+2021-06-16T09:09:30.806Z|00113|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 13
+2021-06-16T09:09:39.426Z|00114|bridge|INFO|bridge br-int: deleted interface qvo89376cf7-5c on port 18
+2021-06-16T09:09:40.143Z|00115|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 13
+2021-06-16T09:10:12.192Z|00116|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 21 flow_mods in the 21 s starting 53 s ago (11 adds, 10 deletes)
+2021-06-16T09:10:12.790Z|00117|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 22 flow_mods in the 22 s starting 54 s ago (12 adds, 10 deletes)
+2021-06-16T12:24:22.982Z|00118|bridge|INFO|bridge br-int: added interface qvo8516602f-bc on port 19
+2021-06-16T12:24:25.578Z|00119|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 14
+2021-06-16T12:24:34.691Z|00120|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 11 flow_mods in the 2 s starting 10 s ago (11 adds)
+2021-06-16T12:24:35.114Z|00121|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 14 flow_mods in the 1 s starting 10 s ago (12 adds, 2 deletes)
+2021-06-16T12:24:38.258Z|00122|bridge|INFO|bridge br-int: deleted interface qvo8516602f-bc on port 19
+2021-06-16T12:24:42.029Z|00123|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 14
+2021-06-16T12:24:42.030Z|00014|tunnel(revalidator7)|WARN|Dropped 6 log messages in last 11724 seconds (most recently, 11702 seconds ago) due to excessive rate
+2021-06-16T12:24:42.030Z|00015|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0xe2,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:a6:20:d1,dl_dst=fa:16:3e:f3:a4:e4,nw_src=10.0.1.2,nw_dst=10.0.1.131,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-16T12:24:42.030Z|00016|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0xe2,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:a6:20:d1,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.1.2,arp_tpa=10.0.1.1,arp_op=1,arp_sha=fa:16:3e:a6:20:d1,arp_tha=00:00:00:00:00:00)
+2021-06-16T12:24:56.862Z|00124|bridge|INFO|bridge br-int: added interface qvo5a0d5616-db on port 20
+2021-06-16T12:25:00.445Z|00125|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 15
+2021-06-16T12:25:12.994Z|00126|bridge|INFO|bridge br-int: deleted interface qvo5a0d5616-db on port 20
+2021-06-16T12:25:14.558Z|00127|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 15
+2021-06-16T12:25:14.560Z|00017|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0xf9,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:2f:56:bf,dl_dst=fa:16:3e:ae:97:92,arp_spa=10.0.3.2,arp_tpa=10.0.3.41,arp_op=1,arp_sha=fa:16:3e:2f:56:bf,arp_tha=00:00:00:00:00:00)
+2021-06-16T12:25:14.560Z|00018|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0xf9,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:2f:56:bf,dl_dst=fa:16:3e:ae:97:92,nw_src=10.0.3.2,nw_dst=10.0.3.41,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-16T12:25:14.560Z|00019|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0xf9,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:2f:56:bf,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.3.2,arp_tpa=10.0.3.1,arp_op=1,arp_sha=fa:16:3e:2f:56:bf,arp_tha=00:00:00:00:00:00)
+2021-06-16T12:25:34.690Z|00128|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 21 flow_mods in the 32 s starting 52 s ago (11 adds, 10 deletes)
+2021-06-16T12:25:35.115Z|00129|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 22 flow_mods in the 34 s starting 56 s ago (12 adds, 10 deletes)
+2021-06-16T12:25:47.780Z|00130|bridge|INFO|bridge br-int: added interface qvof99d3f56-03 on port 21
+2021-06-16T12:25:51.004Z|00131|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 16
+2021-06-16T12:26:06.644Z|00132|bridge|INFO|bridge br-int: deleted interface qvof99d3f56-03 on port 21
+2021-06-16T12:26:07.674Z|00133|bridge|INFO|bridge br-int: added interface qvoa45c6d3e-23 on port 22
+2021-06-16T12:26:25.147Z|00134|bridge|INFO|bridge br-int: added interface qvode3ed7bc-50 on port 23
+2021-06-16T12:26:26.327Z|00135|bridge|INFO|bridge br-int: deleted interface qvoa45c6d3e-23 on port 22
+2021-06-16T12:26:34.691Z|00136|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 47 flow_mods in the 40 s starting 44 s ago (39 adds, 8 deletes)
+2021-06-16T12:26:35.115Z|00137|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 50 flow_mods in the 37 s starting 45 s ago (36 adds, 14 deletes)
+2021-06-16T12:26:39.205Z|00138|bridge|INFO|bridge br-int: deleted interface qvode3ed7bc-50 on port 23
+2021-06-16T12:26:43.802Z|00139|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 16
+2021-06-16T12:26:45.529Z|00140|bridge|INFO|bridge br-int: added interface qvoe01985e4-71 on port 24
+2021-06-16T12:26:46.863Z|00141|bridge|INFO|bridge br-int: added interface qvo8843d111-18 on port 25
+2021-06-16T12:26:46.863Z|00001|ofproto_dpif_upcall(handler3)|INFO|received packet on unassociated datapath port 4
+2021-06-16T12:26:46.954Z|00142|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 17
+2021-06-16T12:26:58.062Z|00143|bridge|INFO|bridge br-int: deleted interface qvoe01985e4-71 on port 24
+2021-06-16T12:27:02.745Z|00144|bridge|INFO|bridge br-int: deleted interface qvo8843d111-18 on port 25
+2021-06-16T12:27:06.391Z|00145|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 17
+2021-06-16T12:27:06.395Z|00020|tunnel(revalidator7)|WARN|receive tunnel port not found (icmp6,tun_id=0x77,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=5,vlan_tci=0x0000,dl_src=fa:16:3e:79:0e:61,dl_dst=33:33:ff:fe:a9:fe,ipv6_src=::,ipv6_dst=ff02::1:fffe:a9fe,ipv6_label=0x00000,nw_tos=0,nw_ecn=0,nw_ttl=255,icmp_type=135,icmp_code=0,nd_target=fe80::a9fe:a9fe,nd_sll=00:00:00:00:00:00,nd_tll=00:00:00:00:00:00)
+2021-06-16T12:27:06.395Z|00021|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x35a,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=5,vlan_tci=0x0000,dl_src=fa:16:3e:3a:bd:de,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.35.2,arp_tpa=10.0.35.1,arp_op=1,arp_sha=fa:16:3e:3a:bd:de,arp_tha=00:00:00:00:00:00)
+2021-06-16T12:27:17.968Z|00146|bridge|INFO|bridge br-int: added interface qvoce1f95fa-31 on port 26
+2021-06-16T12:27:19.326Z|00147|bridge|INFO|bridge br-int: added interface qvo5127ab67-e2 on port 27
+2021-06-16T12:27:19.971Z|00148|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 18
+2021-06-16T12:27:31.874Z|00149|bridge|INFO|bridge br-int: deleted interface qvoce1f95fa-31 on port 26
+2021-06-16T12:27:33.314Z|00150|bridge|INFO|bridge br-int: deleted interface qvo5127ab67-e2 on port 27
+2021-06-16T12:27:34.691Z|00151|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 62 flow_mods in the 49 s starting 50 s ago (44 adds, 18 deletes)
+2021-06-16T12:27:35.115Z|00152|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 76 flow_mods in the last 55 s (48 adds, 28 deletes)
+2021-06-16T12:27:35.199Z|00153|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 18
+2021-06-16T12:27:46.837Z|00154|bridge|INFO|bridge br-int: added interface qvoef7f45c0-93 on port 28
+2021-06-16T12:27:49.638Z|00155|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 19
+2021-06-16T12:27:54.347Z|00156|bridge|INFO|bridge br-int: added interface qvo8e4d6282-a4 on port 29
+2021-06-16T12:27:59.521Z|00157|bridge|INFO|bridge br-int: deleted interface qvoef7f45c0-93 on port 28
+2021-06-16T12:28:06.363Z|00158|bridge|INFO|bridge br-int: deleted interface qvo8e4d6282-a4 on port 29
+2021-06-16T12:28:07.617Z|00159|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 19
+2021-06-16T12:28:07.622Z|00022|tunnel(revalidator7)|WARN|Dropped 4 log messages in last 32 seconds (most recently, 32 seconds ago) due to excessive rate
+2021-06-16T12:28:07.622Z|00023|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x1,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:b7:ea:eb,dl_dst=fa:16:3e:7c:8e:9d,nw_src=10.0.48.2,nw_dst=10.0.48.75,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-16T12:28:17.485Z|00160|bridge|INFO|bridge br-int: added interface qvodafadea6-3f on port 30
+2021-06-16T12:28:26.217Z|00161|bridge|INFO|bridge br-int: added interface qvo316561e9-78 on port 31
+2021-06-16T12:28:27.115Z|00162|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 20
+2021-06-16T12:28:34.690Z|00163|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 51 flow_mods in the 54 s starting 59 s ago (37 adds, 14 deletes)
+2021-06-16T12:28:35.114Z|00164|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 57 flow_mods in the 41 s starting 47 s ago (42 adds, 15 deletes)
+2021-06-16T12:28:40.856Z|00165|bridge|INFO|bridge br-int: deleted interface qvo316561e9-78 on port 31
+2021-06-16T12:28:42.819Z|00166|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 20
+2021-06-16T12:28:42.823Z|00024|tunnel(revalidator7)|WARN|Dropped 3 log messages in last 36 seconds (most recently, 36 seconds ago) due to excessive rate
+2021-06-16T12:28:42.823Z|00025|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x8a,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=5,vlan_tci=0x0000,dl_src=fa:16:3e:ab:88:d1,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.62.2,arp_tpa=10.0.62.1,arp_op=1,arp_sha=fa:16:3e:ab:88:d1,arp_tha=00:00:00:00:00:00)
+2021-06-16T12:28:50.147Z|00002|ofproto_dpif_upcall(handler3)|INFO|received packet on unassociated datapath port 4
+2021-06-16T12:28:50.147Z|00167|bridge|INFO|bridge br-int: added interface qvo129d35ce-e9 on port 32
+2021-06-16T12:28:51.272Z|00168|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 21
+2021-06-16T12:29:01.159Z|00169|bridge|INFO|bridge br-int: deleted interface qvo129d35ce-e9 on port 32
+2021-06-16T12:29:02.939Z|00170|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 21
+2021-06-16T12:29:12.527Z|00171|bridge|INFO|bridge br-int: added interface qvo09a0bacd-55 on port 33
+2021-06-16T12:29:13.274Z|00172|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 22
+2021-06-16T12:29:22.825Z|00173|bridge|INFO|bridge br-int: deleted interface qvo09a0bacd-55 on port 33
+2021-06-16T12:29:24.864Z|00174|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 22
+2021-06-16T12:29:34.691Z|00175|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 37 flow_mods in the 42 s starting 51 s ago (22 adds, 15 deletes)
+2021-06-16T12:29:35.115Z|00176|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 40 flow_mods in the 42 s starting 52 s ago (24 adds, 16 deletes)
+2021-06-16T12:29:35.715Z|00177|bridge|INFO|bridge br-int: added interface qvof28c7d92-01 on port 34
+2021-06-16T12:29:35.715Z|00004|ofproto_dpif_upcall(handler1)|INFO|received packet on unassociated datapath port 4
+2021-06-16T12:29:37.422Z|00178|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 23
+2021-06-16T12:29:46.643Z|00179|bridge|INFO|bridge br-int: deleted interface qvof28c7d92-01 on port 34
+2021-06-16T12:29:47.392Z|00180|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 23
+2021-06-16T12:29:47.395Z|00026|tunnel(revalidator7)|WARN|Dropped 15 log messages in last 64 seconds (most recently, 22 seconds ago) due to excessive rate
+2021-06-16T12:29:47.395Z|00027|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x367,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=5,vlan_tci=0x0000,dl_src=fa:16:3e:92:fc:e6,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.74.2,arp_tpa=10.0.74.1,arp_op=1,arp_sha=fa:16:3e:92:fc:e6,arp_tha=00:00:00:00:00:00)
+2021-06-16T12:30:03.780Z|00181|bridge|INFO|bridge br-int: added interface qvoa35ae93c-d8 on port 35
+2021-06-16T12:30:05.523Z|00182|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 24
+2021-06-16T12:30:14.358Z|00183|bridge|INFO|bridge br-int: deleted interface qvoa35ae93c-d8 on port 35
+2021-06-16T12:30:15.665Z|00184|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 24
+2021-06-16T12:30:34.690Z|00185|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 32 flow_mods in the 38 s starting 57 s ago (22 adds, 10 deletes)
+2021-06-16T12:30:35.115Z|00186|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 36 flow_mods in the 37 s starting 58 s ago (24 adds, 12 deletes)
+2021-06-16T12:33:18.386Z|00187|bridge|INFO|bridge br-int: deleted interface qvodafadea6-3f on port 30
+2021-06-16T12:33:28.843Z|00188|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 4 flow_mods 10 s ago (4 deletes)
+2021-06-16T12:33:29.255Z|00189|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 4 flow_mods 10 s ago (4 deletes)
+2021-06-22T23:10:46.038Z|00190|bridge|INFO|bridge br-int: added interface qvoa8e44482-76 on port 36
+2021-06-22T23:10:46.956Z|00191|bridge|INFO|bridge br-int: added interface qvo5168d1e6-f0 on port 37
+2021-06-22T23:10:48.478Z|00192|bridge|INFO|bridge br-int: added interface qvo430d887b-d5 on port 38
+2021-06-22T23:10:48.512Z|00193|bridge|INFO|bridge br-int: added interface qvo1a83a2e6-37 on port 39
+2021-06-22T23:10:49.346Z|00194|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 25
+2021-06-22T23:10:50.837Z|00195|bridge|INFO|bridge br-int: added interface qvo403e9649-c3 on port 40
+2021-06-22T23:10:50.918Z|00196|bridge|INFO|bridge br-int: added interface qvo1abccf52-64 on port 41
+2021-06-22T23:10:51.968Z|00197|bridge|INFO|bridge br-int: added interface qvoa675a54d-50 on port 42
+2021-06-22T23:10:54.316Z|00198|bridge|INFO|bridge br-int: added interface qvo4b6d8f2a-da on port 43
+2021-06-22T23:10:56.917Z|00199|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 47 flow_mods in the 9 s starting 10 s ago (47 adds)
+2021-06-22T23:10:57.337Z|00200|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 91 flow_mods in the 9 s starting 10 s ago (78 adds, 13 deletes)
+2021-06-22T23:10:58.730Z|00201|bridge|INFO|bridge br-int: deleted interface qvoa8e44482-76 on port 36
+2021-06-22T23:11:01.197Z|00202|bridge|INFO|bridge br-int: deleted interface qvo5168d1e6-f0 on port 37
+2021-06-22T23:11:03.124Z|00203|bridge|INFO|bridge br-int: deleted interface qvo403e9649-c3 on port 40
+2021-06-22T23:11:04.483Z|00204|bridge|INFO|bridge br-int: deleted interface qvoa675a54d-50 on port 42
+2021-06-22T23:11:11.123Z|00205|bridge|INFO|bridge br-int: deleted interface qvo4b6d8f2a-da on port 43
+2021-06-22T23:11:11.148Z|00206|bridge|INFO|bridge br-int: deleted interface qvo1abccf52-64 on port 41
+2021-06-22T23:11:12.513Z|00207|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 25
+2021-06-22T23:11:12.514Z|00001|tunnel(revalidator8)|WARN|Dropped 13 log messages in last 556885 seconds (most recently, 556857 seconds ago) due to excessive rate
+2021-06-22T23:11:12.514Z|00002|tunnel(revalidator8)|WARN|receive tunnel port not found (udp,tun_id=0x30f,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=7,vlan_tci=0x0000,dl_src=fa:16:3e:f0:66:d9,dl_dst=fa:16:3e:88:2b:7b,nw_src=10.0.11.2,nw_dst=10.0.11.82,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-22T23:11:12.514Z|00003|tunnel(revalidator8)|WARN|receive tunnel port not found (udp,tun_id=0x1d1,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=7,vlan_tci=0x0000,dl_src=fa:16:3e:fe:4c:02,dl_dst=fa:16:3e:2d:63:87,nw_src=10.0.2.2,nw_dst=10.0.2.232,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-22T23:11:12.514Z|00004|tunnel(revalidator8)|WARN|receive tunnel port not found (icmp6,tun_id=0x113,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=7,vlan_tci=0x0000,dl_src=fa:16:3e:25:6b:44,dl_dst=33:33:00:00:00:16,ipv6_src=fe80::f816:3eff:fe25:6b44,ipv6_dst=ff02::16,ipv6_label=0x00000,nw_tos=0,nw_ecn=0,nw_ttl=1,icmp_type=143,icmp_code=0)
+2021-06-22T23:11:12.514Z|00005|tunnel(revalidator8)|WARN|receive tunnel port not found (udp,tun_id=0x2f,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=7,vlan_tci=0x0000,dl_src=fa:16:3e:b3:d9:ac,dl_dst=fa:16:3e:99:9f:75,nw_src=10.0.4.2,nw_dst=10.0.4.166,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-22T23:11:12.514Z|00006|tunnel(revalidator8)|WARN|receive tunnel port not found (udp,tun_id=0x2e,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=7,vlan_tci=0x0000,dl_src=fa:16:3e:0d:e2:31,dl_dst=fa:16:3e:9e:cc:8f,nw_src=10.0.3.2,nw_dst=10.0.3.219,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-22T23:11:15.522Z|00208|bridge|INFO|bridge br-int: added interface qvo531675b7-cc on port 44
+2021-06-22T23:11:16.575Z|00209|bridge|INFO|bridge br-int: added interface qvoc6ec5044-3b on port 45
+2021-06-22T23:11:17.194Z|00210|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 26
+2021-06-22T23:11:24.488Z|00211|bridge|INFO|bridge br-int: deleted interface qvo531675b7-cc on port 44
+2021-06-22T23:11:29.265Z|00212|bridge|INFO|bridge br-int: added interface qvo2220d347-0d on port 46
+2021-06-22T23:11:31.381Z|00213|bridge|INFO|bridge br-int: deleted interface qvoc6ec5044-3b on port 45
+2021-06-22T23:11:40.512Z|00214|bridge|INFO|bridge br-int: deleted interface qvo2220d347-0d on port 46
+2021-06-22T23:11:42.607Z|00215|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 26
+2021-06-22T23:11:49.348Z|00216|bridge|INFO|bridge br-int: added interface qvo33a1b26b-89 on port 47
+2021-06-22T23:11:50.937Z|00217|bridge|INFO|bridge br-int: added interface qvob1f6a262-4f on port 48
+2021-06-22T23:11:50.989Z|00218|bridge|INFO|bridge br-int: added interface qvo6e1dfc33-65 on port 49
+2021-06-22T23:11:51.111Z|00219|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 27
+2021-06-22T23:11:55.042Z|00220|bridge|INFO|bridge br-int: added interface qvof12d2006-54 on port 50
+2021-06-22T23:11:56.917Z|00221|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 123 flow_mods in the last 59 s (85 adds, 38 deletes)
+2021-06-22T23:11:57.337Z|00222|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 134 flow_mods in the last 56 s (84 adds, 50 deletes)
+2021-06-22T23:12:01.900Z|00223|bridge|INFO|bridge br-int: deleted interface qvo33a1b26b-89 on port 47
+2021-06-22T23:12:02.369Z|00224|bridge|INFO|bridge br-int: deleted interface qvo6e1dfc33-65 on port 49
+2021-06-22T23:12:05.626Z|00225|bridge|INFO|bridge br-int: deleted interface qvob1f6a262-4f on port 48
+2021-06-22T23:12:07.001Z|00226|bridge|INFO|bridge br-int: deleted interface qvof12d2006-54 on port 50
+2021-06-22T23:12:08.824Z|00227|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 27
+2021-06-22T23:12:11.619Z|00228|bridge|INFO|bridge br-int: added interface qvofaeee180-9f on port 51
+2021-06-22T23:12:13.260Z|00229|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 28
+2021-06-22T23:12:13.761Z|00230|bridge|INFO|bridge br-int: added interface qvo726ba922-9d on port 52
+2021-06-22T23:12:22.152Z|00231|bridge|INFO|bridge br-int: deleted interface qvofaeee180-9f on port 51
+2021-06-22T23:12:23.078Z|00232|bridge|INFO|bridge br-int: added interface qvo045359b6-b8 on port 53
+2021-06-22T23:12:24.074Z|00233|bridge|INFO|bridge br-int: deleted interface qvo726ba922-9d on port 52
+2021-06-22T23:12:25.689Z|00234|bridge|INFO|bridge br-int: added interface qvof21f9e7d-4f on port 54
+2021-06-22T23:12:35.891Z|00235|bridge|INFO|bridge br-int: deleted interface qvo045359b6-b8 on port 53
+2021-06-22T23:12:36.681Z|00236|bridge|INFO|bridge br-int: added interface qvoe8bc7782-99 on port 55
+2021-06-22T23:12:37.735Z|00237|bridge|INFO|bridge br-int: deleted interface qvof21f9e7d-4f on port 54
+2021-06-22T23:12:46.632Z|00238|bridge|INFO|bridge br-int: added interface qvo7c99e31a-71 on port 56
+2021-06-22T23:12:46.867Z|00239|bridge|INFO|bridge br-int: added interface qvo5a0cae4a-9a on port 57
+2021-06-22T23:12:47.313Z|00240|bridge|INFO|bridge br-int: deleted interface qvoe8bc7782-99 on port 55
+2021-06-22T23:12:50.542Z|00241|bridge|INFO|bridge br-int: added interface qvoaca3c7eb-12 on port 58
+2021-06-22T23:12:56.308Z|00242|bridge|INFO|bridge br-int: deleted interface qvo7c99e31a-71 on port 56
+2021-06-22T23:12:56.917Z|00243|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 152 flow_mods in the 57 s starting 59 s ago (115 adds, 37 deletes)
+2021-06-22T23:12:57.337Z|00244|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 155 flow_mods in the 55 s starting 58 s ago (102 adds, 53 deletes)
+2021-06-22T23:13:00.300Z|00245|bridge|INFO|bridge br-int: added interface qvob5868cb1-ba on port 59
+2021-06-22T23:13:00.761Z|00246|bridge|INFO|bridge br-int: deleted interface qvo5a0cae4a-9a on port 57
+2021-06-22T23:13:02.077Z|00247|bridge|INFO|bridge br-int: deleted interface qvoaca3c7eb-12 on port 58
+2021-06-22T23:13:06.199Z|00248|bridge|INFO|bridge br-int: added interface qvo7de1ec66-1c on port 60
+2021-06-22T23:13:06.199Z|00005|ofproto_dpif_upcall(handler1)|INFO|received packet on unassociated datapath port 3
+2021-06-22T23:13:12.475Z|00249|bridge|INFO|bridge br-int: deleted interface qvob5868cb1-ba on port 59
+2021-06-22T23:13:12.485Z|00250|bridge|INFO|bridge br-int: added interface qvo3e5d63c9-b4 on port 61
+2021-06-22T23:13:13.042Z|00251|bridge|INFO|bridge br-int: added interface qvoa8a52d65-d5 on port 62
+2021-06-22T23:13:16.922Z|00252|bridge|INFO|bridge br-int: deleted interface qvo7de1ec66-1c on port 60
+2021-06-22T23:13:21.722Z|00253|bridge|INFO|bridge br-int: added interface qvo283480ff-4a on port 63
+2021-06-22T23:13:25.521Z|00254|bridge|INFO|bridge br-int: deleted interface qvoa8a52d65-d5 on port 62
+2021-06-22T23:13:27.582Z|00255|bridge|INFO|bridge br-int: deleted interface qvo3e5d63c9-b4 on port 61
+2021-06-22T23:13:33.111Z|00256|bridge|INFO|bridge br-int: deleted interface qvo283480ff-4a on port 63
+2021-06-22T23:13:34.861Z|00257|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 28
+2021-06-22T23:13:34.862Z|00028|tunnel(revalidator7)|WARN|Dropped 17 log messages in last 143 seconds (most recently, 86 seconds ago) due to excessive rate
+2021-06-22T23:13:34.862Z|00029|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x6d,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:3f:ca:90,dl_dst=fa:16:3e:bf:49:4e,nw_src=10.0.41.2,nw_dst=10.0.41.102,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-22T23:13:34.862Z|00030|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x6d,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:3f:ca:90,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.41.2,arp_tpa=10.0.41.1,arp_op=1,arp_sha=fa:16:3e:3f:ca:90,arp_tha=00:00:00:00:00:00)
+2021-06-22T23:13:36.339Z|00258|bridge|INFO|bridge br-int: added interface qvo596a37ef-b9 on port 64
+2021-06-22T23:13:37.784Z|00259|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 29
+2021-06-22T23:13:39.072Z|00260|bridge|INFO|bridge br-int: added interface qvo3819a7e5-85 on port 65
+2021-06-22T23:13:42.806Z|00261|bridge|INFO|bridge br-int: added interface qvo9f084fa3-fd on port 66
+2021-06-22T23:13:43.779Z|00262|bridge|INFO|bridge br-int: added interface qvoef774c32-a9 on port 67
+2021-06-22T23:13:46.793Z|00263|bridge|INFO|bridge br-int: deleted interface qvo596a37ef-b9 on port 64
+2021-06-22T23:13:53.014Z|00264|bridge|INFO|bridge br-int: deleted interface qvo3819a7e5-85 on port 65
+2021-06-22T23:13:55.401Z|00265|bridge|INFO|bridge br-int: deleted interface qvoef774c32-a9 on port 67
+2021-06-22T23:13:56.216Z|00266|bridge|INFO|bridge br-int: deleted interface qvo9f084fa3-fd on port 66
+2021-06-22T23:13:56.918Z|00267|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 146 flow_mods in the 56 s starting 58 s ago (105 adds, 41 deletes)
+2021-06-22T23:13:57.338Z|00268|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 174 flow_mods in the 58 s starting 59 s ago (108 adds, 66 deletes)
+2021-06-22T23:13:58.477Z|00269|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 29
+2021-06-22T23:14:01.366Z|00270|bridge|INFO|bridge br-int: added interface qvo2fb3a529-30 on port 68
+2021-06-22T23:14:03.864Z|00271|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 30
+2021-06-22T23:14:06.614Z|00272|bridge|INFO|bridge br-int: added interface qvo26625cb5-02 on port 69
+2021-06-22T23:14:07.796Z|00273|bridge|INFO|bridge br-int: added interface qvo5ab35778-39 on port 70
+2021-06-22T23:14:09.940Z|00274|bridge|INFO|bridge br-int: added interface qvod511329f-5d on port 71
+2021-06-22T23:14:13.430Z|00275|bridge|INFO|bridge br-int: deleted interface qvo2fb3a529-30 on port 68
+2021-06-22T23:14:15.742Z|00276|bridge|INFO|bridge br-int: deleted interface qvo26625cb5-02 on port 69
+2021-06-22T23:14:21.432Z|00277|bridge|INFO|bridge br-int: deleted interface qvo5ab35778-39 on port 70
+2021-06-22T23:14:21.450Z|00278|bridge|INFO|bridge br-int: deleted interface qvod511329f-5d on port 71
+2021-06-22T23:14:22.994Z|00279|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 30
+2021-06-22T23:14:22.999Z|00031|tunnel(revalidator7)|WARN|Dropped 10 log messages in last 48 seconds (most recently, 25 seconds ago) due to excessive rate
+2021-06-22T23:14:22.999Z|00032|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x37c,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:33:ea:71,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.51.2,arp_tpa=10.0.51.1,arp_op=1,arp_sha=fa:16:3e:33:ea:71,arp_tha=00:00:00:00:00:00)
+2021-06-22T23:14:30.134Z|00280|bridge|INFO|bridge br-int: added interface qvoae040845-f7 on port 72
+2021-06-22T23:14:31.955Z|00281|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 31
+2021-06-22T23:14:36.584Z|00282|bridge|INFO|bridge br-int: added interface qvo3d54b73e-68 on port 73
+2021-06-22T23:14:37.470Z|00283|bridge|INFO|bridge br-int: added interface qvof9cb3540-d0 on port 74
+2021-06-22T23:14:38.917Z|00284|bridge|INFO|bridge br-int: added interface qvo70d48ab6-4f on port 75
+2021-06-22T23:14:43.753Z|00285|bridge|INFO|bridge br-int: deleted interface qvoae040845-f7 on port 72
+2021-06-22T23:14:47.221Z|00286|bridge|INFO|bridge br-int: deleted interface qvo3d54b73e-68 on port 73
+2021-06-22T23:14:49.359Z|00287|bridge|INFO|bridge br-int: deleted interface qvof9cb3540-d0 on port 74
+2021-06-22T23:14:50.982Z|00288|bridge|INFO|bridge br-int: deleted interface qvo70d48ab6-4f on port 75
+2021-06-22T23:14:50.990Z|00289|netdev_linux|INFO|ioctl(SIOCGIFHWADDR) on qvo70d48ab6-4f device failed: No such device
+2021-06-22T23:14:52.934Z|00290|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 31
+2021-06-22T23:14:56.424Z|00291|bridge|INFO|bridge br-int: added interface qvo457ef217-d2 on port 76
+2021-06-22T23:14:56.918Z|00292|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 138 flow_mods in the last 58 s (95 adds, 43 deletes)
+2021-06-22T23:14:57.091Z|00293|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 32
+2021-06-22T23:14:57.338Z|00294|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 151 flow_mods in the last 54 s (102 adds, 49 deletes)
+2021-06-22T23:14:57.943Z|00295|bridge|INFO|bridge br-int: added interface qvo5f2a6b7d-62 on port 77
+2021-06-22T23:15:05.290Z|00296|bridge|INFO|bridge br-int: added interface qvoaf8e9801-b3 on port 78
+2021-06-22T23:15:09.951Z|00297|bridge|INFO|bridge br-int: deleted interface qvo457ef217-d2 on port 76
+2021-06-22T23:15:10.944Z|00298|bridge|INFO|bridge br-int: added interface qvoe4222871-4a on port 79
+2021-06-22T23:15:14.370Z|00299|bridge|INFO|bridge br-int: deleted interface qvo5f2a6b7d-62 on port 77
+2021-06-22T23:15:16.265Z|00300|bridge|INFO|bridge br-int: deleted interface qvoaf8e9801-b3 on port 78
+2021-06-22T23:15:20.662Z|00301|bridge|INFO|bridge br-int: deleted interface qvoe4222871-4a on port 79
+2021-06-22T23:15:22.541Z|00302|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 32
+2021-06-22T23:15:22.545Z|00033|tunnel(revalidator7)|WARN|Dropped 14 log messages in last 59 seconds (most recently, 29 seconds ago) due to excessive rate
+2021-06-22T23:15:22.545Z|00034|tunnel(revalidator7)|WARN|receive tunnel port not found (icmp6,tun_id=0x295,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:f1:80:40,dl_dst=33:33:00:00:00:16,ipv6_src=fe80::f816:3eff:fef1:8040,ipv6_dst=ff02::16,ipv6_label=0x00000,nw_tos=0,nw_ecn=0,nw_ttl=1,icmp_type=143,icmp_code=0)
+2021-06-22T23:15:22.670Z|00303|bridge|INFO|bridge br-int: added interface qvo9a10fabb-86 on port 80
+2021-06-22T23:15:25.022Z|00304|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 33
+2021-06-22T23:15:33.868Z|00305|bridge|INFO|bridge br-int: added interface qvoc0d9687c-d3 on port 81
+2021-06-22T23:15:34.884Z|00306|bridge|INFO|bridge br-int: deleted interface qvo9a10fabb-86 on port 80
+2021-06-22T23:15:42.576Z|00307|bridge|INFO|bridge br-int: added interface qvo09a5af5b-51 on port 82
+2021-06-22T23:15:43.751Z|00308|bridge|INFO|bridge br-int: deleted interface qvoc0d9687c-d3 on port 81
+2021-06-22T23:15:49.630Z|00309|bridge|INFO|bridge br-int: deleted interface qvo430d887b-d5 on port 38
+2021-06-22T23:15:49.861Z|00310|bridge|INFO|bridge br-int: deleted interface qvo1a83a2e6-37 on port 39
+2021-06-22T23:15:55.271Z|00311|bridge|INFO|bridge br-int: deleted interface qvo09a5af5b-51 on port 82
+2021-06-22T23:15:56.643Z|00312|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 33
+2021-06-22T23:15:56.918Z|00313|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 120 flow_mods in the last 59 s (82 adds, 38 deletes)
+2021-06-22T23:15:57.338Z|00314|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 127 flow_mods in the 55 s starting 56 s ago (78 adds, 49 deletes)
+2021-06-22T23:56:45.247Z|00315|bridge|INFO|bridge br-int: added interface qvoc3528d6d-cc on port 83
+2021-06-22T23:56:45.890Z|00316|bridge|INFO|bridge br-int: added interface qvo31f96821-9c on port 84
+2021-06-22T23:56:46.562Z|00317|bridge|INFO|bridge br-int: added interface qvo3db2693f-e1 on port 85
+2021-06-22T23:56:47.190Z|00318|bridge|INFO|bridge br-int: added interface qvoda17a953-50 on port 86
+2021-06-22T23:56:47.247Z|00319|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 34
+2021-06-22T23:56:47.551Z|00320|bridge|INFO|bridge br-int: added interface qvo39ecb347-04 on port 87
+2021-06-22T23:56:47.551Z|00001|ofproto_dpif_upcall(handler2)|INFO|received packet on unassociated datapath port 8
+2021-06-22T23:56:56.696Z|00321|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 41 flow_mods in the 7 s starting 10 s ago (41 adds)
+2021-06-22T23:56:57.605Z|00322|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 56 flow_mods in the 1 s starting 10 s ago (48 adds, 8 deletes)
+2021-06-22T23:57:11.864Z|00323|bridge|INFO|bridge br-int: deleted interface qvo31f96821-9c on port 84
+2021-06-22T23:57:13.370Z|00324|bridge|INFO|bridge br-int: deleted interface qvo39ecb347-04 on port 87
+2021-06-22T23:57:13.408Z|00325|bridge|INFO|bridge br-int: deleted interface qvo3db2693f-e1 on port 85
+2021-06-22T23:57:14.211Z|00326|bridge|INFO|bridge br-int: deleted interface qvoc3528d6d-cc on port 83
+2021-06-22T23:57:21.730Z|00327|bridge|INFO|bridge br-int: deleted interface qvoda17a953-50 on port 86
+2021-06-22T23:57:23.931Z|00328|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 34
+2021-06-22T23:57:23.934Z|00035|tunnel(revalidator7)|WARN|Dropped 9 log messages in last 2522 seconds (most recently, 2488 seconds ago) due to excessive rate
+2021-06-22T23:57:23.934Z|00036|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x300,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=7,vlan_tci=0x0000,dl_src=fa:16:3e:f8:40:88,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.6.2,arp_tpa=10.0.6.1,arp_op=1,arp_sha=fa:16:3e:f8:40:88,arp_tha=00:00:00:00:00:00)
+2021-06-22T23:57:23.934Z|00037|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x300,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=7,vlan_tci=0x0000,dl_src=fa:16:3e:f8:40:88,dl_dst=fa:16:3e:94:64:cb,nw_src=10.0.6.2,nw_dst=10.0.6.73,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-22T23:57:23.934Z|00038|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x350,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=7,vlan_tci=0x0000,dl_src=fa:16:3e:21:c1:fc,dl_dst=fa:16:3e:a9:42:a6,nw_src=10.0.9.2,nw_dst=10.0.9.171,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-22T23:57:23.934Z|00039|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0xcf,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=7,vlan_tci=0x0000,dl_src=fa:16:3e:bd:6a:69,dl_dst=fa:16:3e:63:26:8f,nw_src=10.0.8.2,nw_dst=10.0.8.12,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-22T23:57:23.935Z|00040|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x69,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=7,vlan_tci=0x0000,dl_src=fa:16:3e:b6:10:d3,dl_dst=fa:16:3e:2f:71:c7,nw_src=10.0.4.2,nw_dst=10.0.4.162,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-22T23:57:56.695Z|00329|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 54 flow_mods in the 27 s starting 59 s ago (33 adds, 21 deletes)
+2021-06-22T23:57:57.606Z|00330|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 55 flow_mods in the 20 s starting 53 s ago (30 adds, 25 deletes)
+2021-06-22T23:58:11.353Z|00331|bridge|INFO|bridge br-int: added interface qvo78d23639-f8 on port 88
+2021-06-22T23:58:11.940Z|00332|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 35
+2021-06-22T23:58:24.073Z|00333|bridge|INFO|bridge br-int: deleted interface qvo78d23639-f8 on port 88
+2021-06-22T23:58:25.227Z|00334|bridge|INFO|bridge br-int: added interface qvo45d4bfb9-2f on port 89
+2021-06-22T23:58:26.344Z|00335|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 35
+2021-06-22T23:58:26.348Z|00041|tunnel(revalidator7)|WARN|receive tunnel port not found (icmp6,tun_id=0x4e,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:f1:fa:74,dl_dst=33:33:00:00:00:16,ipv6_src=::,ipv6_dst=ff02::16,ipv6_label=0x00000,nw_tos=0,nw_ecn=0,nw_ttl=1,icmp_type=143,icmp_code=0)
+2021-06-22T23:58:28.252Z|00336|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 36
+2021-06-22T23:58:28.791Z|00337|bridge|INFO|bridge br-int: added interface qvo5d861133-3a on port 90
+2021-06-22T23:58:38.428Z|00338|bridge|INFO|bridge br-int: added interface qvodd2079c3-f4 on port 91
+2021-06-22T23:58:38.804Z|00339|bridge|INFO|bridge br-int: deleted interface qvo45d4bfb9-2f on port 89
+2021-06-22T23:58:41.194Z|00340|bridge|INFO|bridge br-int: deleted interface qvo5d861133-3a on port 90
+2021-06-22T23:58:51.254Z|00341|bridge|INFO|bridge br-int: deleted interface qvodd2079c3-f4 on port 91
+2021-06-22T23:58:52.706Z|00342|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 36
+2021-06-22T23:58:56.696Z|00343|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 68 flow_mods in the 41 s starting 44 s ago (50 adds, 18 deletes)
+2021-06-22T23:58:57.606Z|00344|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 72 flow_mods in the 40 s starting 45 s ago (48 adds, 24 deletes)
+2021-06-22T23:59:00.393Z|00345|bridge|INFO|bridge br-int: added interface qvo675e8cb0-c5 on port 92
+2021-06-22T23:59:01.623Z|00346|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 37
+2021-06-22T23:59:11.383Z|00347|bridge|INFO|bridge br-int: added interface qvo55c026b6-26 on port 93
+2021-06-22T23:59:15.514Z|00348|bridge|INFO|bridge br-int: deleted interface qvo675e8cb0-c5 on port 92
+2021-06-22T23:59:21.900Z|00349|bridge|INFO|bridge br-int: added interface qvo19d0d2ec-e2 on port 94
+2021-06-22T23:59:26.234Z|00350|bridge|INFO|bridge br-int: deleted interface qvo55c026b6-26 on port 93
+2021-06-22T23:59:33.754Z|00351|bridge|INFO|bridge br-int: deleted interface qvo19d0d2ec-e2 on port 94
+2021-06-22T23:59:35.593Z|00352|bridge|INFO|bridge br-int: added interface qvof6fd9d1f-32 on port 95
+2021-06-22T23:59:36.244Z|00353|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 37
+2021-06-22T23:59:36.246Z|00042|tunnel(revalidator7)|WARN|Dropped 4 log messages in last 70 seconds (most recently, 44 seconds ago) due to excessive rate
+2021-06-22T23:59:36.246Z|00043|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x26e,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:88:60:18,dl_dst=fa:16:3e:a6:43:98,nw_src=10.0.25.2,nw_dst=10.0.25.134,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-22T23:59:39.674Z|00354|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 38
+2021-06-22T23:59:45.305Z|00355|bridge|INFO|bridge br-int: added interface qvoe0d069c7-d2 on port 96
+2021-06-22T23:59:51.779Z|00356|bridge|INFO|bridge br-int: deleted interface qvof6fd9d1f-32 on port 95
+2021-06-22T23:59:53.339Z|00357|bridge|INFO|bridge br-int: added interface qvoe92200d5-40 on port 97
+2021-06-22T23:59:53.339Z|00006|ofproto_dpif_upcall(handler1)|INFO|received packet on unassociated datapath port 3
+2021-06-22T23:59:56.695Z|00358|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 86 flow_mods in the 55 s starting 56 s ago (69 adds, 17 deletes)
+2021-06-22T23:59:57.606Z|00359|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 100 flow_mods in the 55 s starting 56 s ago (72 adds, 28 deletes)
+2021-06-23T00:00:04.486Z|00360|bridge|INFO|bridge br-int: deleted interface qvoe0d069c7-d2 on port 96
+2021-06-23T00:00:07.983Z|00361|bridge|INFO|bridge br-int: deleted interface qvoe92200d5-40 on port 97
+2021-06-23T00:00:11.301Z|00362|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 38
+2021-06-23T00:00:15.605Z|00363|bridge|INFO|bridge br-int: added interface qvo890b051e-06 on port 98
+2021-06-23T00:00:18.607Z|00364|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 39
+2021-06-23T00:00:23.358Z|00365|bridge|INFO|bridge br-int: added interface qvo55fcffb6-3b on port 99
+2021-06-23T00:00:28.296Z|00366|bridge|INFO|bridge br-int: deleted interface qvo890b051e-06 on port 98
+2021-06-23T00:00:33.914Z|00367|bridge|INFO|bridge br-int: deleted interface qvo55fcffb6-3b on port 99
+2021-06-23T00:00:35.681Z|00368|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 39
+2021-06-23T00:00:35.682Z|00044|tunnel(revalidator7)|WARN|Dropped 6 log messages in last 59 seconds (most recently, 24 seconds ago) due to excessive rate
+2021-06-23T00:00:35.682Z|00045|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x134,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:6c:b6:94,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.32.2,arp_tpa=10.0.32.1,arp_op=1,arp_sha=fa:16:3e:6c:b6:94,arp_tha=00:00:00:00:00:00)
+2021-06-23T00:00:45.129Z|00369|bridge|INFO|bridge br-int: added interface qvoded93b8f-c3 on port 100
+2021-06-23T00:00:45.406Z|00370|bridge|INFO|bridge br-int: added interface qvo1a43271d-a1 on port 101
+2021-06-23T00:00:47.467Z|00371|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 40
+2021-06-23T00:00:56.696Z|00372|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 85 flow_mods in the 58 s starting 59 s ago (67 adds, 18 deletes)
+2021-06-23T00:00:57.606Z|00373|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 65 flow_mods in the 50 s starting 53 s ago (42 adds, 23 deletes)
+2021-06-23T00:01:05.611Z|00374|bridge|INFO|bridge br-int: deleted interface qvo1a43271d-a1 on port 101
+2021-06-23T00:01:06.739Z|00375|bridge|INFO|bridge br-int: deleted interface qvoded93b8f-c3 on port 100
+2021-06-23T00:01:08.277Z|00376|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 40
+2021-06-23T00:01:12.524Z|00377|bridge|INFO|bridge br-int: added interface qvo430f6203-5f on port 102
+2021-06-23T00:01:14.501Z|00378|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 41
+2021-06-23T00:01:28.384Z|00379|bridge|INFO|bridge br-int: added interface qvob43740f0-23 on port 103
+2021-06-23T00:01:28.410Z|00380|bridge|INFO|bridge br-int: added interface qvoc7fa7f02-d2 on port 104
+2021-06-23T00:01:40.329Z|00381|bridge|INFO|bridge br-int: deleted interface qvo430f6203-5f on port 102
+2021-06-23T00:01:44.407Z|00382|bridge|INFO|bridge br-int: deleted interface qvob43740f0-23 on port 103
+2021-06-23T00:01:44.443Z|00383|bridge|INFO|bridge br-int: deleted interface qvoc7fa7f02-d2 on port 104
+2021-06-23T00:01:47.322Z|00384|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 41
+2021-06-23T00:01:47.324Z|00046|tunnel(revalidator7)|WARN|Dropped 6 log messages in last 72 seconds (most recently, 39 seconds ago) due to excessive rate
+2021-06-23T00:01:47.324Z|00047|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x33d,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:95:8f:7e,dl_dst=fa:16:3e:a8:9c:45,nw_src=10.0.42.2,nw_dst=10.0.42.245,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-23T00:01:56.696Z|00385|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 61 flow_mods in the 50 s starting 59 s ago (39 adds, 22 deletes)
+2021-06-23T00:01:57.606Z|00386|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 69 flow_mods in the 47 s starting 58 s ago (42 adds, 27 deletes)
+2021-06-23T00:01:59.987Z|00387|bridge|INFO|bridge br-int: added interface qvoa515b52c-d6 on port 105
+2021-06-23T00:02:02.053Z|00388|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 42
+2021-06-23T00:02:05.538Z|00389|bridge|INFO|bridge br-int: added interface qvo2a70c7a9-a7 on port 106
+2021-06-23T00:02:10.798Z|00390|bridge|INFO|bridge br-int: deleted interface qvoa515b52c-d6 on port 105
+2021-06-23T00:02:18.545Z|00391|bridge|INFO|bridge br-int: deleted interface qvo2a70c7a9-a7 on port 106
+2021-06-23T00:02:21.220Z|00392|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 42
+2021-06-23T00:02:27.759Z|00393|bridge|INFO|bridge br-int: added interface qvo5ac84ae5-73 on port 107
+2021-06-23T00:02:29.961Z|00394|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 43
+2021-06-23T00:02:31.238Z|00395|bridge|INFO|bridge br-int: added interface qvo8ca4b45a-c8 on port 108
+2021-06-23T00:02:41.599Z|00396|bridge|INFO|bridge br-int: deleted interface qvo5ac84ae5-73 on port 107
+2021-06-23T00:02:43.139Z|00397|bridge|INFO|bridge br-int: added interface qvoc16b28d0-ea on port 109
+2021-06-23T00:02:44.710Z|00398|bridge|INFO|bridge br-int: deleted interface qvo8ca4b45a-c8 on port 108
+2021-06-23T00:02:56.696Z|00399|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 78 flow_mods in the 51 s starting 56 s ago (61 adds, 17 deletes)
+2021-06-23T00:02:57.605Z|00400|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 86 flow_mods in the 47 s starting 56 s ago (60 adds, 26 deletes)
+2021-06-23T00:02:58.807Z|00401|bridge|INFO|bridge br-int: deleted interface qvoc16b28d0-ea on port 109
+2021-06-23T00:03:00.970Z|00402|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 43
+2021-06-23T00:03:00.973Z|00048|tunnel(revalidator7)|WARN|Dropped 9 log messages in last 74 seconds (most recently, 40 seconds ago) due to excessive rate
+2021-06-23T00:03:00.973Z|00049|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x34d,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:55:b1:05,dl_dst=fa:16:3e:c0:eb:6b,nw_src=10.0.57.2,nw_dst=10.0.57.234,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-23T00:03:02.311Z|00403|bridge|INFO|bridge br-int: added interface qvocaf762a0-ff on port 110
+2021-06-23T00:03:04.567Z|00404|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 44
+2021-06-23T00:03:14.614Z|00405|bridge|INFO|bridge br-int: deleted interface qvocaf762a0-ff on port 110
+2021-06-23T00:03:18.010Z|00406|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 44
+2021-06-23T00:03:28.497Z|00407|bridge|INFO|bridge br-int: added interface qvo8a6fb8ed-f4 on port 111
+2021-06-23T00:03:29.148Z|00408|bridge|INFO|bridge br-int: added interface qvod8186b5c-43 on port 112
+2021-06-23T00:03:31.798Z|00409|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 45
+2021-06-23T00:03:40.027Z|00410|bridge|INFO|bridge br-int: added interface qvo3635e5f8-08 on port 113
+2021-06-23T00:03:40.584Z|00411|bridge|INFO|bridge br-int: deleted interface qvo8a6fb8ed-f4 on port 111
+2021-06-23T00:03:45.619Z|00412|bridge|INFO|bridge br-int: deleted interface qvod8186b5c-43 on port 112
+2021-06-23T00:03:54.704Z|00413|bridge|INFO|bridge br-int: deleted interface qvo3635e5f8-08 on port 113
+2021-06-23T00:03:56.123Z|00414|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 45
+2021-06-23T00:03:56.126Z|00050|tunnel(revalidator7)|WARN|Dropped 6 log messages in last 55 seconds (most recently, 38 seconds ago) due to excessive rate
+2021-06-23T00:03:56.126Z|00051|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x24f,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=5,vlan_tci=0x0000,dl_src=fa:16:3e:f2:1a:59,dl_dst=fa:16:3e:5d:7b:0d,nw_src=10.0.66.2,nw_dst=10.0.66.216,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-23T00:03:56.695Z|00415|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 72 flow_mods in the last 55 s (49 adds, 23 deletes)
+2021-06-23T00:03:57.605Z|00416|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 76 flow_mods in the 55 s starting 57 s ago (48 adds, 28 deletes)
+2021-06-23T00:04:03.728Z|00417|bridge|INFO|bridge br-int: added interface qvocd0fc1f9-30 on port 114
+2021-06-23T00:04:05.848Z|00418|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 46
+2021-06-23T00:04:08.260Z|00419|bridge|INFO|bridge br-int: added interface qvoee288720-a7 on port 115
+2021-06-23T00:04:14.119Z|00420|bridge|INFO|bridge br-int: deleted interface qvocd0fc1f9-30 on port 114
+2021-06-23T00:04:18.647Z|00421|bridge|INFO|bridge br-int: deleted interface qvoee288720-a7 on port 115
+2021-06-23T00:04:19.916Z|00422|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 46
+2021-06-23T00:04:56.696Z|00423|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 40 flow_mods in the 14 s starting 51 s ago (31 adds, 9 deletes)
+2021-06-23T00:04:57.606Z|00424|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 36 flow_mods in the 13 s starting 52 s ago (24 adds, 12 deletes)
+2021-06-23T00:08:34.446Z|00425|bridge|INFO|bridge br-int: added interface qvo18682086-87 on port 116
+2021-06-23T00:08:39.439Z|00426|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 47
+2021-06-23T00:08:45.270Z|00427|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 8 flow_mods in the 8 s starting 10 s ago (8 adds)
+2021-06-23T00:08:46.371Z|00428|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 14 flow_mods in the 7 s starting 10 s ago (12 adds, 2 deletes)
+2021-06-23T00:08:50.023Z|00429|bridge|INFO|bridge br-int: added interface qvo6ad03b05-8c on port 117
+2021-06-23T00:08:51.240Z|00430|bridge|INFO|bridge br-int: added interface qvoa6084b2a-4e on port 118
+2021-06-23T00:08:55.035Z|00431|bridge|INFO|bridge br-int: deleted interface qvo18682086-87 on port 116
+2021-06-23T00:09:02.118Z|00432|bridge|INFO|bridge br-int: added interface qvodee2c94a-26 on port 119
+2021-06-23T00:09:08.067Z|00433|bridge|INFO|bridge br-int: deleted interface qvoa6084b2a-4e on port 118
+2021-06-23T00:09:08.749Z|00434|bridge|INFO|bridge br-int: deleted interface qvo6ad03b05-8c on port 117
+2021-06-23T00:09:09.660Z|00435|bridge|INFO|bridge br-int: added interface qvo854e2b21-cb on port 120
+2021-06-23T00:09:11.396Z|00436|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 47
+2021-06-23T00:09:11.398Z|00052|tunnel(revalidator7)|WARN|Dropped 7 log messages in last 315 seconds (most recently, 291 seconds ago) due to excessive rate
+2021-06-23T00:09:11.398Z|00053|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x351,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:1b:11:5e,dl_dst=fa:16:3e:08:fd:4b,nw_src=10.0.3.2,nw_dst=10.0.3.251,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-23T00:09:11.398Z|00054|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x297,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:35:e3:de,dl_dst=fa:16:3e:eb:ba:0e,nw_src=10.0.4.2,nw_dst=10.0.4.80,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-23T00:09:11.398Z|00055|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x297,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:35:e3:de,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.4.2,arp_tpa=10.0.4.1,arp_op=1,arp_sha=fa:16:3e:35:e3:de,arp_tha=00:00:00:00:00:00)
+2021-06-23T00:09:11.398Z|00056|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x351,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:1b:11:5e,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.3.2,arp_tpa=10.0.3.1,arp_op=1,arp_sha=fa:16:3e:1b:11:5e,arp_tha=00:00:00:00:00:00)
+2021-06-23T00:09:45.270Z|00437|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 42 flow_mods in the 25 s starting 59 s ago (29 adds, 13 deletes)
+2021-06-23T00:09:46.371Z|00438|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 54 flow_mods in the 18 s starting 54 s ago (36 adds, 18 deletes)
+2021-06-23T00:10:06.383Z|00439|bridge|INFO|bridge br-int: added interface qvod2e56a23-6f on port 121
+2021-06-23T00:10:09.136Z|00440|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 48
+2021-06-23T00:10:15.034Z|00441|bridge|INFO|bridge br-int: added interface qvodd6d262c-27 on port 122
+2021-06-23T00:10:24.292Z|00442|bridge|INFO|bridge br-int: deleted interface qvod2e56a23-6f on port 121
+2021-06-23T00:10:32.685Z|00443|bridge|INFO|bridge br-int: deleted interface qvodd6d262c-27 on port 122
+2021-06-23T00:10:34.282Z|00444|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 48
+2021-06-23T00:10:34.284Z|00057|tunnel(revalidator7)|WARN|receive tunnel port not found (icmp6,tun_id=0x9b,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=6,vlan_tci=0x0000,dl_src=fa:16:3e:2e:3e:e6,dl_dst=33:33:ff:2e:3e:e6,ipv6_src=::,ipv6_dst=ff02::1:ff2e:3ee6,ipv6_label=0x00000,nw_tos=0,nw_ecn=0,nw_ttl=255,icmp_type=135,icmp_code=0,nd_target=fe80::f816:3eff:fe2e:3ee6,nd_sll=00:00:00:00:00:00,nd_tll=00:00:00:00:00:00)
+2021-06-23T00:10:34.284Z|00058|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x38f,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=6,vlan_tci=0x0000,dl_src=fa:16:3e:7d:9b:33,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.22.2,arp_tpa=10.0.22.1,arp_op=1,arp_sha=fa:16:3e:7d:9b:33,arp_tha=00:00:00:00:00:00)
+2021-06-23T00:10:42.835Z|00445|bridge|INFO|bridge br-int: added interface qvoa4b0fd6f-71 on port 123
+2021-06-23T00:10:43.401Z|00446|bridge|INFO|bridge br-int: added interface qvo1968f3ce-d7 on port 124
+2021-06-23T00:10:44.502Z|00447|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 49
+2021-06-23T00:10:45.269Z|00448|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 40 flow_mods in the 36 s starting 37 s ago (31 adds, 9 deletes)
+2021-06-23T00:10:46.371Z|00449|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 50 flow_mods in the 35 s starting 38 s ago (36 adds, 14 deletes)
+2021-06-23T00:10:53.699Z|00450|bridge|INFO|bridge br-int: deleted interface qvoa4b0fd6f-71 on port 123
+2021-06-23T00:10:56.157Z|00451|bridge|INFO|bridge br-int: deleted interface qvo1968f3ce-d7 on port 124
+2021-06-23T00:10:57.988Z|00452|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 49
+2021-06-23T00:11:31.654Z|00453|bridge|INFO|bridge br-int: added interface qvo369246bd-82 on port 125
+2021-06-23T00:11:32.610Z|00454|bridge|INFO|bridge br-int: added interface qvob5fda920-e2 on port 126
+2021-06-23T00:11:33.926Z|00455|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 50
+2021-06-23T00:11:45.291Z|00456|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 42 flow_mods in the 53 s starting 59 s ago (33 adds, 9 deletes)
+2021-06-23T00:11:45.559Z|00457|bridge|INFO|bridge br-int: deleted interface qvob5fda920-e2 on port 126
+2021-06-23T00:11:46.371Z|00458|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 50 flow_mods in the 48 s starting 59 s ago (36 adds, 14 deletes)
+2021-06-23T00:11:46.813Z|00459|bridge|INFO|bridge br-int: deleted interface qvo369246bd-82 on port 125
+2021-06-23T00:11:49.397Z|00460|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 50
+2021-06-23T00:11:49.401Z|00059|tunnel(revalidator7)|WARN|Dropped 8 log messages in last 75 seconds (most recently, 51 seconds ago) due to excessive rate
+2021-06-23T00:11:49.401Z|00060|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x10c,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=7,vlan_tci=0x0000,dl_src=fa:16:3e:a8:43:ca,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.36.2,arp_tpa=10.0.36.1,arp_op=1,arp_sha=fa:16:3e:a8:43:ca,arp_tha=00:00:00:00:00:00)
+2021-06-23T00:12:10.827Z|00461|bridge|INFO|bridge br-int: added interface qvo688df7f5-d3 on port 127
+2021-06-23T00:12:12.329Z|00462|bridge|INFO|bridge br-int: added interface qvo73d0bd2c-a9 on port 128
+2021-06-23T00:12:13.715Z|00463|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 51
+2021-06-23T00:12:23.274Z|00464|bridge|INFO|bridge br-int: deleted interface qvo688df7f5-d3 on port 127
+2021-06-23T00:12:24.321Z|00465|bridge|INFO|bridge br-int: deleted interface qvo73d0bd2c-a9 on port 128
+2021-06-23T00:12:26.336Z|00466|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 51
+2021-06-23T00:12:26.338Z|00061|tunnel(revalidator7)|WARN|Dropped 4 log messages in last 37 seconds (most recently, 37 seconds ago) due to excessive rate
+2021-06-23T00:12:26.338Z|00062|tunnel(revalidator7)|WARN|receive tunnel port not found (icmp6,tun_id=0x253,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=7,vlan_tci=0x0000,dl_src=fa:16:3e:b1:bf:58,dl_dst=33:33:00:00:00:16,ipv6_src=fe80::f816:3eff:feb1:bf58,ipv6_dst=ff02::16,ipv6_label=0x00000,nw_tos=0,nw_ecn=0,nw_ttl=1,icmp_type=143,icmp_code=0)
+2021-06-23T00:12:44.974Z|00467|bridge|INFO|bridge br-int: added interface qvof8caca09-c2 on port 129
+2021-06-23T00:12:45.270Z|00468|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 40 flow_mods in the last 56 s (22 adds, 18 deletes)
+2021-06-23T00:12:46.370Z|00469|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 51 flow_mods in the 58 s starting 59 s ago (30 adds, 21 deletes)
+2021-06-23T00:12:46.463Z|00470|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 52
+2021-06-23T00:12:57.804Z|00471|bridge|INFO|bridge br-int: deleted interface qvof8caca09-c2 on port 129
+2021-06-23T00:12:59.829Z|00472|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 52
+2021-06-23T00:13:02.970Z|00473|bridge|INFO|bridge br-int: added interface qvod06cf321-49 on port 130
+2021-06-23T00:13:04.533Z|00474|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 53
+2021-06-23T00:13:19.250Z|00475|bridge|INFO|bridge br-int: deleted interface qvod06cf321-49 on port 130
+2021-06-23T00:13:22.177Z|00476|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 53
+2021-06-23T00:13:22.180Z|00063|tunnel(revalidator7)|WARN|Dropped 8 log messages in last 56 seconds (most recently, 22 seconds ago) due to excessive rate
+2021-06-23T00:13:22.180Z|00064|tunnel(revalidator7)|WARN|receive tunnel port not found (icmp6,tun_id=0x3bc,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=6,vlan_tci=0x0000,dl_src=fa:16:3e:3a:be:2c,dl_dst=33:33:ff:3a:be:2c,ipv6_src=::,ipv6_dst=ff02::1:ff3a:be2c,ipv6_label=0x00000,nw_tos=0,nw_ecn=0,nw_ttl=255,icmp_type=135,icmp_code=0,nd_target=fe80::f816:3eff:fe3a:be2c,nd_sll=00:00:00:00:00:00,nd_tll=00:00:00:00:00:00)
+2021-06-23T00:13:43.168Z|00477|bridge|INFO|bridge br-int: added interface qvo96ea3ded-66 on port 131
+2021-06-23T00:13:45.270Z|00478|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 32 flow_mods in the 57 s starting 58 s ago (22 adds, 10 deletes)
+2021-06-23T00:13:45.744Z|00479|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 54
+2021-06-23T00:13:46.371Z|00480|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 36 flow_mods in the 57 s starting 59 s ago (24 adds, 12 deletes)
+2021-06-23T00:13:53.382Z|00481|bridge|INFO|bridge br-int: added interface qvo9a8f60c9-4c on port 132
+2021-06-23T00:13:54.120Z|00482|bridge|INFO|bridge br-int: deleted interface qvo96ea3ded-66 on port 131
+2021-06-23T00:13:56.084Z|00483|bridge|INFO|bridge br-int: added interface qvo9b18d1d4-1d on port 133
+2021-06-23T00:14:03.156Z|00484|bridge|INFO|bridge br-int: deleted interface qvodee2c94a-26 on port 119
+2021-06-23T00:14:03.516Z|00485|bridge|INFO|bridge br-int: deleted interface qvo9a8f60c9-4c on port 132
+2021-06-23T00:14:07.899Z|00486|bridge|INFO|bridge br-int: deleted interface qvo9b18d1d4-1d on port 133
+2021-06-23T00:14:10.013Z|00487|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 54
+2021-06-23T00:14:10.669Z|00488|bridge|INFO|bridge br-int: deleted interface qvo854e2b21-cb on port 120
+2021-06-23T00:14:45.269Z|00489|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 53 flow_mods in the 26 s starting 59 s ago (32 adds, 21 deletes)
+2021-06-23T00:14:46.371Z|00490|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 55 flow_mods in the 24 s starting 59 s ago (30 adds, 25 deletes)
+2021-06-26T20:50:53.188Z|00491|bridge|INFO|bridge br-int: added interface qvo1c922e33-13 on port 134
+2021-06-26T20:50:54.555Z|00492|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 55
+2021-06-26T20:51:02.428Z|00493|bridge|INFO|bridge br-int: deleted interface qvo1c922e33-13 on port 134
+2021-06-26T20:51:03.713Z|00494|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 11 flow_mods in the 2 s starting 10 s ago (11 adds)
+2021-06-26T20:51:04.115Z|00495|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 18 flow_mods in the 9 s starting 10 s ago (12 adds, 6 deletes)
+2021-06-26T20:51:04.130Z|00496|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 55
+2021-06-26T20:51:04.133Z|00065|tunnel(revalidator7)|WARN|Dropped 7 log messages in last 333462 seconds (most recently, 333414 seconds ago) due to excessive rate
+2021-06-26T20:51:04.133Z|00066|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x205,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:2c:0e:6b,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.0.2,arp_tpa=10.0.0.1,arp_op=1,arp_sha=fa:16:3e:2c:0e:6b,arp_tha=00:00:00:00:00:00)
+2021-06-26T20:51:04.133Z|00067|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x205,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:2c:0e:6b,dl_dst=fa:16:3e:7f:46:40,nw_src=10.0.0.2,nw_dst=10.0.0.139,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-26T20:52:03.713Z|00497|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 5 flow_mods 59 s ago (5 deletes)
+2021-06-26T21:05:52.971Z|00498|bridge|INFO|bridge br-int: added interface qvod2f6822f-34 on port 135
+2021-06-26T21:05:55.499Z|00499|bridge|INFO|bridge br-tun: added interface vxlan-8295f96a on port 56
+2021-06-26T21:06:02.978Z|00500|bridge|INFO|bridge br-int: deleted interface qvod2f6822f-34 on port 135
+2021-06-26T21:06:04.600Z|00501|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 11 flow_mods in the 2 s starting 10 s ago (11 adds)
+2021-06-26T21:06:04.821Z|00502|bridge|INFO|bridge br-tun: deleted interface vxlan-8295f96a on port 56
+2021-06-26T21:06:04.826Z|00068|tunnel(revalidator7)|WARN|receive tunnel port not found (udp,tun_id=0x38b,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:72:e5:94,dl_dst=fa:16:3e:97:6f:e2,nw_src=10.0.0.2,nw_dst=10.0.0.46,nw_tos=192,nw_ecn=0,nw_ttl=64,tp_src=67,tp_dst=68)
+2021-06-26T21:06:04.826Z|00069|tunnel(revalidator7)|WARN|receive tunnel port not found (arp,tun_id=0x38b,tun_src=130.149.249.106,tun_dst=130.149.249.108,tun_ipv6_src=::,tun_ipv6_dst=::,tun_gbp_id=0,tun_gbp_flags=0,tun_tos=0,tun_ttl=64,tun_erspan_ver=0,gtpu_flags=0,gtpu_msgtype=0,tun_flags=key,in_port=4,vlan_tci=0x0000,dl_src=fa:16:3e:72:e5:94,dl_dst=ff:ff:ff:ff:ff:ff,arp_spa=10.0.0.2,arp_tpa=10.0.0.1,arp_op=1,arp_sha=fa:16:3e:72:e5:94,arp_tha=00:00:00:00:00:00)
+2021-06-26T21:06:05.019Z|00503|connmgr|INFO|br-int<->tcp:127.0.0.1:6633: 18 flow_mods in the 9 s starting 10 s ago (12 adds, 6 deletes)
+2021-06-26T21:07:04.599Z|00504|connmgr|INFO|br-tun<->tcp:127.0.0.1:6633: 5 flow_mods 59 s ago (5 deletes)

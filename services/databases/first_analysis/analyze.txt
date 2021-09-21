@@ -1,8 +1,0 @@
-mysql vs postgres: ['', 'server', 'warning:', 'are', 'time', '2021-02-04', 'shutdown', 'user', 'script', 'has', 'configuration', 'is', 'to', '|\x1b[0m', 'starting', 'files', 'initialization', 'for', 'ready', 'database', 'this', 'start', 'init', 'connections', 'down', 'shutting', 'received', 'with', 'process', 'the', 'now']
-mysql vs mongo: ['', 'configuration', 'down', 'all', '1', 'with', 'shutting', 'is', '|\x1b[0m', 'are', 'for', 'to', 'the', 'starting', 'this', 'configured']
-mongo vs postgres: ['', 'waiting', 'are', 'was', 'configuration', 'is', 'to', '|\x1b[0m', 'starting', 'socket', 'listening', 'on', 'for', 'by', 'this', 'next', 'data', 'set', 'down', 'shutting', 'with', 'at', 'the', 'running', 'existing', 'and']
-
-relevant/helpful words:
-mysql vs postgres: ['server', 'warning:', 'database', 'connections', 'received', 'process']
-mysql vs mongo: []
-mongo vs postgres: ['socket', 'listening', ]

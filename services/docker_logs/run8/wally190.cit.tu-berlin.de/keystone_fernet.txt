@@ -1,0 +1,36 @@
+2021-05-26T01:01:49.887176908Z  + sudo -E kolla_set_configs
+2021-05-26T01:01:49.933681565Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T01:01:49.933716780Z  INFO:__main__:Validating config file
+2021-05-26T01:01:49.933759901Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T01:01:49.933802218Z  INFO:__main__:Copying service configuration files
+2021-05-26T01:01:49.933946477Z  INFO:__main__:Deleting /etc/keystone/keystone.conf
+2021-05-26T01:01:49.934070706Z  INFO:__main__:Copying /var/lib/kolla/config_files/keystone.conf to /etc/keystone/keystone.conf
+2021-05-26T01:01:49.934607038Z  INFO:__main__:Setting permission for /etc/keystone/keystone.conf
+2021-05-26T01:01:49.934760853Z  INFO:__main__:Copying /var/lib/kolla/config_files/crontab to /var/spool/cron/crontabs/root
+2021-05-26T01:01:49.935075484Z  INFO:__main__:Setting permission for /var/spool/cron/crontabs/root
+2021-05-26T01:01:49.935234064Z  INFO:__main__:Copying /var/lib/kolla/config_files/fernet-rotate.sh to /usr/bin/fernet-rotate.sh
+2021-05-26T01:01:49.935507693Z  INFO:__main__:Setting permission for /usr/bin/fernet-rotate.sh
+2021-05-26T01:01:49.935683215Z  INFO:__main__:Copying /var/lib/kolla/config_files/fernet-node-sync.sh to /usr/bin/fernet-node-sync.sh
+2021-05-26T01:01:49.935875004Z  INFO:__main__:Setting permission for /usr/bin/fernet-node-sync.sh
+2021-05-26T01:01:49.936008506Z  INFO:__main__:Copying /var/lib/kolla/config_files/fernet-push.sh to /usr/bin/fernet-push.sh
+2021-05-26T01:01:49.936213177Z  INFO:__main__:Setting permission for /usr/bin/fernet-push.sh
+2021-05-26T01:01:49.936456801Z  INFO:__main__:Copying /var/lib/kolla/config_files/ssh_config to /var/lib/keystone/.ssh/config
+2021-05-26T01:01:49.936656363Z  INFO:__main__:Setting permission for /var/lib/keystone/.ssh/config
+2021-05-26T01:01:49.936779001Z  INFO:__main__:Copying /var/lib/kolla/config_files/id_rsa to /var/lib/keystone/.ssh/id_rsa
+2021-05-26T01:01:49.936990746Z  INFO:__main__:Setting permission for /var/lib/keystone/.ssh/id_rsa
+2021-05-26T01:01:49.937053982Z  INFO:__main__:Writing out command to execute
+2021-05-26T01:01:49.937256809Z  INFO:__main__:Setting permission for /etc/keystone/fernet-keys
+2021-05-26T01:01:49.942618977Z  ++ cat /run_command
+2021-05-26T01:01:49.943506140Z  + CMD='cron -f'
+2021-05-26T01:01:49.943525628Z  + ARGS=
+2021-05-26T01:01:49.943534601Z  + sudo kolla_copy_cacerts
+2021-05-26T01:01:49.950773251Z  + [[ ! -n '' ]]
+2021-05-26T01:01:49.950798199Z  + . kolla_extend_start
+2021-05-26T01:01:49.950842071Z  ++ FERNET_SYNC=/usr/bin/fernet-node-sync.sh
+2021-05-26T01:01:49.950860210Z  ++ FERNET_TOKEN_DIR=/etc/keystone/fernet-keys
+2021-05-26T01:01:49.950869138Z  ++ [[ -f /usr/bin/fernet-node-sync.sh ]]
+2021-05-26T01:01:49.950875000Z  ++ /usr/bin/fernet-node-sync.sh
+2021-05-26T01:01:49.953087555Z  +++ stat -c %U:%G /etc/keystone/fernet-keys
+2021-05-26T01:01:49.954126258Z  ++ [[ keystone:keystone != \k\e\y\s\t\o\n\e\:\k\e\y\s\t\o\n\e ]]
+2021-05-26T01:01:49.954146873Z  + echo 'Running command: '\''cron -f'\'''
+2021-05-26T01:01:49.954169255Z  + exec cron -f

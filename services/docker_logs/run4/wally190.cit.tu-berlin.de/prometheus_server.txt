@@ -1,0 +1,41 @@
+2021-05-25T22:59:52.559768312Z  + sudo -E kolla_set_configs
+2021-05-25T22:59:52.607493503Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:59:52.607765343Z  INFO:__main__:Validating config file
+2021-05-25T22:59:52.607778784Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:59:52.607808872Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:59:52.608023761Z  INFO:__main__:Copying /var/lib/kolla/config_files/prometheus.yml to /etc/prometheus/prometheus.yml
+2021-05-25T22:59:52.608623782Z  INFO:__main__:Setting permission for /etc/prometheus/prometheus.yml
+2021-05-25T22:59:52.608999958Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:59:52.609210453Z  INFO:__main__:Setting permission for /data
+2021-05-25T22:59:52.614460427Z  ++ cat /run_command
+2021-05-25T22:59:52.615367997Z  + CMD='/opt/prometheus/prometheus --config.file /etc/prometheus/prometheus.yml --web.listen-address 130.149.249.200:9091 --web.external-url=http://130.149.249.200:9091 --storage.tsdb.path /var/lib/prometheus'
+2021-05-25T22:59:52.615386776Z  + ARGS=
+2021-05-25T22:59:52.615446828Z  + sudo kolla_copy_cacerts
+2021-05-25T22:59:52.622834438Z  + [[ ! -n '' ]]
+2021-05-25T22:59:52.622869295Z  + . kolla_extend_start
+2021-05-25T22:59:52.622981403Z  ++ [[ ! -d /var/log/kolla/prometheus ]]
+2021-05-25T22:59:52.622989634Z  ++ mkdir -p /var/log/kolla/prometheus
+2021-05-25T22:59:52.624788911Z  +++ stat -c %a /var/log/kolla/prometheus
+2021-05-25T22:59:52.625883548Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:59:52.625905806Z  ++ chmod 755 /var/log/kolla/prometheus
+2021-05-25T22:59:52.627155132Z  + echo 'Running command: '\''/opt/prometheus/prometheus --config.file /etc/prometheus/prometheus.yml --web.listen-address 130.149.249.200:9091 --web.external-url=http://130.149.249.200:9091 --storage.tsdb.path /var/lib/prometheus'\'''
+2021-05-25T22:59:52.627201264Z  + exec /opt/prometheus/prometheus --config.file /etc/prometheus/prometheus.yml --web.listen-address 130.149.249.200:9091 --web.external-url=http://130.149.249.200:9091 --storage.tsdb.path /var/lib/prometheus
+2021-05-25T22:59:52.660593294Z  level=info ts=2021-05-25T22:59:52.660Z caller=main.go:380 msg="No time or size retention was set so using the default time retention" duration=15d
+2021-05-25T22:59:52.660617862Z  level=info ts=2021-05-25T22:59:52.660Z caller=main.go:418 msg="Starting Prometheus" version="(version=2.26.1, branch=HEAD, revision=6eeded0fdf760e81af75d9c44ce539ab77da4505)"
+2021-05-25T22:59:52.660624181Z  level=info ts=2021-05-25T22:59:52.660Z caller=main.go:423 build_context="(go=go1.16.4, user=root@fbbecd6363ee, date=20210518-13:33:20)"
+2021-05-25T22:59:52.660646437Z  level=info ts=2021-05-25T22:59:52.660Z caller=main.go:424 host_details="(Linux 5.4.0-66-generic #74-Ubuntu SMP Wed Jan 27 22:54:38 UTC 2021 x86_64 wally190 (none))"
+2021-05-25T22:59:52.660667608Z  level=info ts=2021-05-25T22:59:52.660Z caller=main.go:425 fd_limits="(soft=1048576, hard=1048576)"
+2021-05-25T22:59:52.660675305Z  level=info ts=2021-05-25T22:59:52.660Z caller=main.go:426 vm_limits="(soft=unlimited, hard=unlimited)"
+2021-05-25T22:59:52.662576354Z  level=info ts=2021-05-25T22:59:52.662Z caller=web.go:540 component=web msg="Start listening for connections" address=130.149.249.200:9091
+2021-05-25T22:59:52.662926612Z  level=info ts=2021-05-25T22:59:52.662Z caller=main.go:795 msg="Starting TSDB ..."
+2021-05-25T22:59:52.663782593Z  level=info ts=2021-05-25T22:59:52.663Z caller=tls_config.go:191 component=web msg="TLS is disabled." http2=false
+2021-05-25T22:59:52.667218001Z  level=info ts=2021-05-25T22:59:52.667Z caller=head.go:696 component=tsdb msg="Replaying on-disk memory mappable chunks if any"
+2021-05-25T22:59:52.667232613Z  level=info ts=2021-05-25T22:59:52.667Z caller=head.go:710 component=tsdb msg="On-disk memory mappable chunks replay completed" duration=4.04µs
+2021-05-25T22:59:52.667240008Z  level=info ts=2021-05-25T22:59:52.667Z caller=head.go:716 component=tsdb msg="Replaying WAL, this may take a while"
+2021-05-25T22:59:52.668093139Z  level=info ts=2021-05-25T22:59:52.667Z caller=head.go:768 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=0
+2021-05-25T22:59:52.668107642Z  level=info ts=2021-05-25T22:59:52.668Z caller=head.go:773 component=tsdb msg="WAL replay completed" checkpoint_replay_duration=36.183µs wal_replay_duration=795.866µs total_replay_duration=883.348µs
+2021-05-25T22:59:52.669539175Z  level=info ts=2021-05-25T22:59:52.669Z caller=main.go:815 fs_type=EXT4_SUPER_MAGIC
+2021-05-25T22:59:52.669558491Z  level=info ts=2021-05-25T22:59:52.669Z caller=main.go:818 msg="TSDB started"
+2021-05-25T22:59:52.669569823Z  level=info ts=2021-05-25T22:59:52.669Z caller=main.go:944 msg="Loading configuration file" filename=/etc/prometheus/prometheus.yml
+2021-05-25T22:59:52.670444404Z  level=info ts=2021-05-25T22:59:52.670Z caller=main.go:975 msg="Completed loading of configuration file" filename=/etc/prometheus/prometheus.yml totalDuration=864.252µs remote_storage=1.741µs web_handler=395ns query_engine=865ns scrape=220.169µs scrape_sd=127.003µs notify=15.636µs notify_sd=42.159µs rules=1.858µs
+2021-05-25T22:59:52.670463642Z  level=info ts=2021-05-25T22:59:52.670Z caller=main.go:767 msg="Server is ready to receive web requests."

@@ -1,0 +1,60 @@
+Log file created at: 2021/06/09 14:07:24
+Running on machine: wally096
+Binary: Built with gc go1.13.4 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0609 14:07:24.464088       6 manager.go:256] Could not configure a source for OOM detection, disabling OOM events: open /dev/kmsg: no such file or directory
+W0609 14:07:24.587029       6 container.go:412] Failed to create summary reader for "/docker/91648ac98fb8fa5798443f647b77632f2d0d3538046277fa7806f7880e4d88dd": none of the resources are being tracked.
+W0609 14:07:24.587290       6 container.go:412] Failed to create summary reader for "/system.slice/system-getty.slice/getty@tty1.service": none of the resources are being tracked.
+W0609 14:07:24.587518       6 container.go:412] Failed to create summary reader for "/system.slice/system-lvm2\\x2dpvscan.slice/lvm2-pvscan@9:1.service": none of the resources are being tracked.
+W0609 14:07:24.587770       6 container.go:412] Failed to create summary reader for "/system.slice/system-postgresql.slice/postgresql@10-main.service": none of the resources are being tracked.
+W0609 14:07:24.588106       6 container.go:412] Failed to create summary reader for "/system.slice/system-systemd\\x2dfsck.slice/systemd-fsck@dev-disk-by\\x2duuid-50cb899e\\x2d6fab\\x2d4e48\\x2d8e52\\x2d34c5d1900d2c.service": none of the resources are being tracked.
+W0609 14:07:24.588355       6 container.go:412] Failed to create summary reader for "/system.slice/system-systemd\\x2dfsck.slice/systemd-fsck@dev-mapper-vg0\\x2ddata.service": none of the resources are being tracked.
+W0609 14:07:24.588596       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-45983.scope": none of the resources are being tracked.
+W0609 14:07:24.588825       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-51280.scope": none of the resources are being tracked.
+W0609 14:07:24.589046       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/user@1001.service": none of the resources are being tracked.
+W0614 13:31:34.798036       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-52759.scope": none of the resources are being tracked.
+W0614 13:51:42.334196       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-52763.scope": none of the resources are being tracked.
+W0614 14:11:25.899223       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-52767.scope": none of the resources are being tracked.
+W0614 14:44:34.422315       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-52776.scope": none of the resources are being tracked.
+W0614 15:04:01.283409       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-52780.scope": none of the resources are being tracked.
+W0614 15:21:56.584905       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-52787.scope": none of the resources are being tracked.
+E0616 11:37:24.728399       6 info.go:92] Failed to get network devices: open /sys/class/net/tapee39ac6b-b2/address: no such file or directory
+W0625 10:21:37.539481       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-55982.scope": none of the resources are being tracked.
+W0625 10:22:35.769577       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-55983.scope": none of the resources are being tracked.
+W0625 10:35:31.010957       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-55986.scope": none of the resources are being tracked.
+W0625 12:20:23.882496       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56009.scope": none of the resources are being tracked.
+W0626 22:48:25.837416       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56429.scope": none of the resources are being tracked.
+W0626 23:03:25.183138       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56432.scope": none of the resources are being tracked.
+W0626 23:16:24.338697       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56436.scope": none of the resources are being tracked.
+W0627 22:43:23.770855       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56733.scope": none of the resources are being tracked.
+W0627 22:50:55.874636       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56735.scope": none of the resources are being tracked.
+W0627 22:51:17.804839       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56736.scope": none of the resources are being tracked.
+W0627 22:52:43.883782       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56737.scope": none of the resources are being tracked.
+W0627 22:53:49.503954       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56738.scope": none of the resources are being tracked.
+W0627 22:53:58.308425       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56739.scope": none of the resources are being tracked.
+W0627 23:14:08.761103       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56744.scope": none of the resources are being tracked.
+W0627 23:14:19.275711       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56745.scope": none of the resources are being tracked.
+W0627 23:18:32.796010       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56750.scope": none of the resources are being tracked.
+W0627 23:18:41.609050       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56751.scope": none of the resources are being tracked.
+W0627 23:20:22.568908       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56753.scope": none of the resources are being tracked.
+W0627 23:36:30.663196       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56756.scope": none of the resources are being tracked.
+W0627 23:36:39.252007       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56757.scope": none of the resources are being tracked.
+W0628 00:11:16.914840       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56764.scope": none of the resources are being tracked.
+W0628 00:11:25.761204       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56765.scope": none of the resources are being tracked.
+W0628 00:19:34.299870       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56770.scope": none of the resources are being tracked.
+W0628 00:19:40.337395       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56771.scope": none of the resources are being tracked.
+W0628 00:22:02.598487       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56773.scope": none of the resources are being tracked.
+W0628 00:22:08.713995       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56774.scope": none of the resources are being tracked.
+W0628 00:23:47.826629       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56775.scope": none of the resources are being tracked.
+W0628 00:24:26.316021       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56776.scope": none of the resources are being tracked.
+W0628 00:29:15.003740       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56778.scope": none of the resources are being tracked.
+W0628 00:29:20.872751       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56779.scope": none of the resources are being tracked.
+W0628 00:33:30.102072       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56780.scope": none of the resources are being tracked.
+W0628 00:33:36.022328       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56781.scope": none of the resources are being tracked.
+W0628 00:34:34.569315       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56782.scope": none of the resources are being tracked.
+W0628 00:36:09.302961       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56784.scope": none of the resources are being tracked.
+W0628 00:36:16.186089       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56785.scope": none of the resources are being tracked.
+W0628 00:37:28.193517       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56786.scope": none of the resources are being tracked.
+W0628 00:37:34.218764       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56787.scope": none of the resources are being tracked.
+W0628 00:38:37.205120       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56788.scope": none of the resources are being tracked.
+W0628 00:38:43.386801       6 container.go:412] Failed to create summary reader for "/user.slice/user-1001.slice/session-56789.scope": none of the resources are being tracked.

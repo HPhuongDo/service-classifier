@@ -1,0 +1,136 @@
+2021-05-25T23:28:24.814668404Z  + sudo -E kolla_set_configs
+2021-05-25T23:28:24.862599762Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T23:28:24.862833734Z  INFO:__main__:Validating config file
+2021-05-25T23:28:24.862868732Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T23:28:24.862905726Z  INFO:__main__:Copying service configuration files
+2021-05-25T23:28:24.863006519Z  INFO:__main__:Deleting /etc/mysql/my.cnf
+2021-05-25T23:28:24.863256597Z  INFO:__main__:Copying /var/lib/kolla/config_files/galera.cnf to /etc/mysql/my.cnf
+2021-05-25T23:28:24.863807808Z  INFO:__main__:Setting permission for /etc/mysql/my.cnf
+2021-05-25T23:28:24.863846275Z  INFO:__main__:Writing out command to execute
+2021-05-25T23:28:24.864175407Z  INFO:__main__:Setting permission for /var/log/kolla/mariadb
+2021-05-25T23:28:24.864308656Z  INFO:__main__:Setting permission for /var/log/kolla/mariadb/mariadb.log
+2021-05-25T23:28:24.864459273Z  INFO:__main__:Setting permission for /var/lib/mysql
+2021-05-25T23:28:24.864577923Z  INFO:__main__:Setting permission for /var/lib/mysql/performance_schema
+2021-05-25T23:28:24.864673614Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql
+2021-05-25T23:28:24.864748164Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql-bin.index
+2021-05-25T23:28:24.864843528Z  INFO:__main__:Setting permission for /var/lib/mysql/ib_logfile1
+2021-05-25T23:28:24.864904194Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql-bin.000001
+2021-05-25T23:28:24.864969183Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql-bin.000002
+2021-05-25T23:28:24.865025995Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql-bin.000003
+2021-05-25T23:28:24.865079988Z  INFO:__main__:Setting permission for /var/lib/mysql/ibdata1
+2021-05-25T23:28:24.865144363Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql-bin.state
+2021-05-25T23:28:24.865195923Z  INFO:__main__:Setting permission for /var/lib/mysql/multi-master.info
+2021-05-25T23:28:24.865264114Z  INFO:__main__:Setting permission for /var/lib/mysql/galera.cache
+2021-05-25T23:28:24.865314015Z  INFO:__main__:Setting permission for /var/lib/mysql/aria_log_control
+2021-05-25T23:28:24.865394187Z  INFO:__main__:Setting permission for /var/lib/mysql/aria_log.00000001
+2021-05-25T23:28:24.865430784Z  INFO:__main__:Setting permission for /var/lib/mysql/ib_buffer_pool
+2021-05-25T23:28:24.865499876Z  INFO:__main__:Setting permission for /var/lib/mysql/ib_logfile0
+2021-05-25T23:28:24.865550319Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql-bin.000004
+2021-05-25T23:28:24.865618134Z  INFO:__main__:Setting permission for /var/lib/mysql/grastate.dat
+2021-05-25T23:28:24.865705236Z  INFO:__main__:Setting permission for /var/lib/mysql/performance_schema/db.opt
+2021-05-25T23:28:24.865912165Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone_transition_type.MYD
+2021-05-25T23:28:24.865967505Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/general_log.CSM
+2021-05-25T23:28:24.866033782Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/db.frm
+2021-05-25T23:28:24.866100098Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/db.MYD
+2021-05-25T23:28:24.866158177Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/db.MYI
+2021-05-25T23:28:24.866220643Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/user.MYI
+2021-05-25T23:28:24.866274021Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone_transition_type.MYI
+2021-05-25T23:28:24.866343456Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/plugin.MYI
+2021-05-25T23:28:24.866393747Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/servers.MYI
+2021-05-25T23:28:24.866465747Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/gtid_slave_pos.frm
+2021-05-25T23:28:24.866520826Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/slow_log.frm
+2021-05-25T23:28:24.866580165Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/innodb_index_stats.ibd
+2021-05-25T23:28:24.866645871Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/proxies_priv.MYI
+2021-05-25T23:28:24.866700752Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/proxies_priv.frm
+2021-05-25T23:28:24.866765109Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/proc.frm
+2021-05-25T23:28:24.866818586Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/help_relation.frm
+2021-05-25T23:28:24.866883664Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/plugin.frm
+2021-05-25T23:28:24.866937908Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/host.frm
+2021-05-25T23:28:24.867001456Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/table_stats.MYI
+2021-05-25T23:28:24.867056202Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone_name.MYD
+2021-05-25T23:28:24.867135084Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/columns_priv.MYI
+2021-05-25T23:28:24.867186037Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/roles_mapping.MYI
+2021-05-25T23:28:24.867253477Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/innodb_index_stats.frm
+2021-05-25T23:28:24.867304202Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/help_topic.MYD
+2021-05-25T23:28:24.867372347Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/host.MYD
+2021-05-25T23:28:24.867422655Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/servers.MYD
+2021-05-25T23:28:24.867493446Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone_leap_second.MYI
+2021-05-25T23:28:24.867543474Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/transaction_registry.frm
+2021-05-25T23:28:24.867612463Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone_transition.MYD
+2021-05-25T23:28:24.867663322Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/func.frm
+2021-05-25T23:28:24.867729578Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/help_topic.MYI
+2021-05-25T23:28:24.867783187Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/help_category.frm
+2021-05-25T23:28:24.867847453Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/event.frm
+2021-05-25T23:28:24.867919807Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/help_topic.frm
+2021-05-25T23:28:24.867968864Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/general_log.CSV
+2021-05-25T23:28:24.868026619Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/columns_priv.MYD
+2021-05-25T23:28:24.868085388Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone_leap_second.MYD
+2021-05-25T23:28:24.868159879Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone_transition.frm
+2021-05-25T23:28:24.868223920Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/user.MYD
+2021-05-25T23:28:24.868296073Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/procs_priv.frm
+2021-05-25T23:28:24.868368593Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone_transition.MYI
+2021-05-25T23:28:24.868443119Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/roles_mapping.frm
+2021-05-25T23:28:24.868515419Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/help_keyword.MYD
+2021-05-25T23:28:24.868589380Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone_name.frm
+2021-05-25T23:28:24.868666670Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/slow_log.CSV
+2021-05-25T23:28:24.868737343Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/index_stats.frm
+2021-05-25T23:28:24.868812197Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/transaction_registry.ibd
+2021-05-25T23:28:24.868884142Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/tables_priv.MYI
+2021-05-25T23:28:24.868967079Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/procs_priv.MYD
+2021-05-25T23:28:24.869042864Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/index_stats.MYD
+2021-05-25T23:28:24.869118925Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/tables_priv.frm
+2021-05-25T23:28:24.869192686Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/help_category.MYD
+2021-05-25T23:28:24.869270725Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/user.frm
+2021-05-25T23:28:24.869342830Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/proxies_priv.MYD
+2021-05-25T23:28:24.869418340Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone.frm
+2021-05-25T23:28:24.869495931Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/slow_log.CSM
+2021-05-25T23:28:24.869565697Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/table_stats.frm
+2021-05-25T23:28:24.869642905Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/plugin.MYD
+2021-05-25T23:28:24.869715203Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/help_relation.MYI
+2021-05-25T23:28:24.869795148Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/func.MYD
+2021-05-25T23:28:24.869868559Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/general_log.frm
+2021-05-25T23:28:24.869943050Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/table_stats.MYD
+2021-05-25T23:28:24.870011839Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/columns_priv.frm
+2021-05-25T23:28:24.870089676Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone_leap_second.frm
+2021-05-25T23:28:24.870168652Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/help_keyword.frm
+2021-05-25T23:28:24.870247810Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone.MYD
+2021-05-25T23:28:24.870320896Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/servers.frm
+2021-05-25T23:28:24.870397806Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/help_category.MYI
+2021-05-25T23:28:24.870469004Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/proc.MYI
+2021-05-25T23:28:24.870541118Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/tables_priv.MYD
+2021-05-25T23:28:24.870610386Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/event.MYI
+2021-05-25T23:28:24.870677955Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/event.MYD
+2021-05-25T23:28:24.870749127Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/func.MYI
+2021-05-25T23:28:24.870817096Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/column_stats.frm
+2021-05-25T23:28:24.870884611Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/column_stats.MYD
+2021-05-25T23:28:24.870951960Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/column_stats.MYI
+2021-05-25T23:28:24.871022816Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone_transition_type.frm
+2021-05-25T23:28:24.871104405Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/db.opt
+2021-05-25T23:28:24.871184244Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/innodb_table_stats.ibd
+2021-05-25T23:28:24.871250418Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/roles_mapping.MYD
+2021-05-25T23:28:24.871324334Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/gtid_slave_pos.ibd
+2021-05-25T23:28:24.871386889Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/index_stats.MYI
+2021-05-25T23:28:24.871457961Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/proc.MYD
+2021-05-25T23:28:24.871517875Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone_name.MYI
+2021-05-25T23:28:24.871586520Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/time_zone.MYI
+2021-05-25T23:28:24.871650146Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/help_keyword.MYI
+2021-05-25T23:28:24.871716345Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/procs_priv.MYI
+2021-05-25T23:28:24.871777485Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/innodb_table_stats.frm
+2021-05-25T23:28:24.871846001Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/host.MYI
+2021-05-25T23:28:24.871904508Z  INFO:__main__:Setting permission for /var/lib/mysql/mysql/help_relation.MYD
+2021-05-25T23:28:24.878585299Z  ++ cat /run_command
+2021-05-25T23:28:24.879346315Z  + CMD=/usr/bin/mysqld_safe
+2021-05-25T23:28:24.879357513Z  + ARGS=
+2021-05-25T23:28:24.879361574Z  + sudo kolla_copy_cacerts
+2021-05-25T23:28:24.887012771Z  + [[ ! -n '' ]]
+2021-05-25T23:28:24.887040183Z  + . kolla_extend_start
+2021-05-25T23:28:24.887068996Z  ++ : /var/log/kolla/mariadb
+2021-05-25T23:28:24.887327821Z  ++ [[ ! -d /var/log/kolla/mariadb ]]
+2021-05-25T23:28:24.887637098Z  +++ stat -c %a /var/log/kolla/mariadb
+2021-05-25T23:28:24.888549356Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T23:28:24.888563117Z  ++ chmod 755 /var/log/kolla/mariadb
+2021-05-25T23:28:24.889303023Z  ++ [[ -n '' ]]
+2021-05-25T23:28:24.889344599Z  ++ [[ -n '' ]]
+2021-05-25T23:28:24.889354293Z  ++ [[ -n '' ]]
+2021-05-25T23:28:24.889385540Z  + echo 'Running command: '\''/usr/bin/mysqld_safe'\'''
+2021-05-25T23:28:24.889410411Z  + exec /usr/bin/mysqld_safe

@@ -1,0 +1,17 @@
+2021-05-25T21:59:25.384203374Z  + sudo -E kolla_set_configs
+2021-05-25T21:59:25.429318778Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T21:59:25.429621983Z  INFO:__main__:Validating config file
+2021-05-25T21:59:25.429662177Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T21:59:25.429776050Z  INFO:__main__:Copying service configuration files
+2021-05-25T21:59:25.429918126Z  INFO:__main__:Deleting /etc/logrotate.conf
+2021-05-25T21:59:25.430072658Z  INFO:__main__:Copying /var/lib/kolla/config_files/logrotate.conf to /etc/logrotate.conf
+2021-05-25T21:59:25.430582846Z  INFO:__main__:Setting permission for /etc/logrotate.conf
+2021-05-25T21:59:25.430652574Z  INFO:__main__:Writing out command to execute
+2021-05-25T21:59:25.435565783Z  ++ cat /run_command
+2021-05-25T21:59:25.436621912Z  + CMD='cron -f'
+2021-05-25T21:59:25.436644034Z  + ARGS=
+2021-05-25T21:59:25.436655333Z  + sudo kolla_copy_cacerts
+2021-05-25T21:59:25.442863413Z  + [[ ! -n '' ]]
+2021-05-25T21:59:25.442894512Z  + . kolla_extend_start
+2021-05-25T21:59:25.443070231Z  + echo 'Running command: '\''cron -f'\'''
+2021-05-25T21:59:25.443096029Z  + exec cron -f

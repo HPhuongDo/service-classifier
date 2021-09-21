@@ -3,11 +3,12 @@
 case "$1" in 
 start)
     # only run databases first
-    log_path=$(dirname $0)/classifier/ServiceClassifier/src/main/resources/logs    # later log in resources folder
+    log_path=$(dirname $0)/logs/simple/
     docker_path=$2
     time=$(date +%y%m%d-%H%M)
 
-    docker-compose -f $docker_path up -d
+    #docker-compose -f $docker_path up -d
+    docker-compose -f $docker_path --env-file ./config/.env up -d
 
     # create logs for all the containers
     containers=$(docker ps --format "{{.Names}}")
@@ -23,7 +24,6 @@ stop)
    docker stop $(docker ps -q)
    ;;
 *)
-#    echo "Usage: $0 {start|stop} {databases|webapi|microservices-demo/deploy/docker-compose}"
     echo "Usage: $0 {start|stop} relative-path-to-docker-compose.yml"
 esac
 

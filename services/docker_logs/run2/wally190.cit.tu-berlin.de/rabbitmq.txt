@@ -1,0 +1,32 @@
+2021-05-25T22:01:29.699360943Z  + sudo -E kolla_set_configs
+2021-05-25T22:01:29.745417538Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:01:29.745699744Z  INFO:__main__:Validating config file
+2021-05-25T22:01:29.745739446Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:01:29.745791348Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:01:29.745928379Z  INFO:__main__:Copying /var/lib/kolla/config_files/rabbitmq-env.conf to /etc/rabbitmq/rabbitmq-env.conf
+2021-05-25T22:01:29.746552123Z  INFO:__main__:Setting permission for /etc/rabbitmq/rabbitmq-env.conf
+2021-05-25T22:01:29.746682982Z  INFO:__main__:Copying /var/lib/kolla/config_files/rabbitmq.conf to /etc/rabbitmq/rabbitmq.conf
+2021-05-25T22:01:29.746915857Z  INFO:__main__:Setting permission for /etc/rabbitmq/rabbitmq.conf
+2021-05-25T22:01:29.747036223Z  INFO:__main__:Copying /var/lib/kolla/config_files/erl_inetrc to /etc/rabbitmq/erl_inetrc
+2021-05-25T22:01:29.747286562Z  INFO:__main__:Setting permission for /etc/rabbitmq/erl_inetrc
+2021-05-25T22:01:29.747402654Z  INFO:__main__:Copying /var/lib/kolla/config_files/definitions.json to /etc/rabbitmq/definitions.json
+2021-05-25T22:01:29.747618858Z  INFO:__main__:Setting permission for /etc/rabbitmq/definitions.json
+2021-05-25T22:01:29.747678039Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:01:29.747922327Z  INFO:__main__:Setting permission for /var/lib/rabbitmq
+2021-05-25T22:01:29.748076191Z  INFO:__main__:Setting permission for /var/lib/rabbitmq/.erlang.cookie
+2021-05-25T22:01:29.753284920Z  ++ cat /run_command
+2021-05-25T22:01:29.754100386Z  + CMD=/usr/sbin/rabbitmq-server
+2021-05-25T22:01:29.754118304Z  + ARGS=
+2021-05-25T22:01:29.754127001Z  + sudo kolla_copy_cacerts
+2021-05-25T22:01:29.762037897Z  + [[ ! -n '' ]]
+2021-05-25T22:01:29.762062896Z  + . kolla_extend_start
+2021-05-25T22:01:29.762200435Z  ++ : /var/log/kolla/rabbitmq
+2021-05-25T22:01:29.762369068Z  ++ [[ -n '' ]]
+2021-05-25T22:01:29.762426528Z  ++ [[ ! -d /var/log/kolla/rabbitmq ]]
+2021-05-25T22:01:29.762438205Z  ++ mkdir -p /var/log/kolla/rabbitmq
+2021-05-25T22:01:29.765231030Z  +++ stat -c %a /var/log/kolla/rabbitmq
+2021-05-25T22:01:29.766106979Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:01:29.766121148Z  ++ chmod 755 /var/log/kolla/rabbitmq
+2021-05-25T22:01:29.767140834Z  + echo 'Running command: '\''/usr/sbin/rabbitmq-server'\'''
+2021-05-25T22:01:29.767162126Z  + exec /usr/sbin/rabbitmq-server
+2021-05-25T22:01:30.938599286Z  Configuring logger redirection

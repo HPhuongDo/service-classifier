@@ -1,0 +1,723 @@
+2021-06-09 12:25:34.087+0000: 15077: info : libvirt version: 6.0.0, package: 0ubuntu8.9 (Christian Ehrhardt <christian.ehrhardt@canonical.com> Wed, 07 Apr 2021 13:33:46 +0200)
+2021-06-09 12:25:34.087+0000: 15077: info : hostname: wally099
+2021-06-09 12:25:34.087+0000: 15077: error : dnsmasqCapsRefreshInternal:714 : Cannot check dnsmasq binary /usr/sbin/dnsmasq: No such file or directory
+2021-06-09 12:26:01.361+0000: 15063: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-alpha' on this host
+2021-06-09 12:26:01.363+0000: 15064: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-arm' on this host
+2021-06-09 12:26:01.364+0000: 15062: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-arm' on this host
+2021-06-09 12:26:01.365+0000: 15065: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-arm' on this host
+2021-06-09 12:26:01.366+0000: 15066: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-aarch64' on this host
+2021-06-09 12:26:01.367+0000: 15063: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-cris' on this host
+2021-06-09 12:26:01.378+0000: 15063: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-lm32' on this host
+2021-06-09 12:26:01.380+0000: 15064: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-m68k' on this host
+2021-06-09 12:26:01.381+0000: 15062: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-microblaze' on this host
+2021-06-09 12:26:01.382+0000: 15065: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-microblazeel' on this host
+2021-06-09 12:26:01.383+0000: 15066: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mips' on this host
+2021-06-09 12:26:01.385+0000: 15063: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mipsel' on this host
+2021-06-09 12:26:01.386+0000: 15064: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mips64' on this host
+2021-06-09 12:26:01.387+0000: 15062: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mips64el' on this host
+2021-06-09 12:26:01.388+0000: 15065: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc' on this host
+2021-06-09 12:26:01.389+0000: 15066: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64' on this host
+2021-06-09 12:26:01.390+0000: 15063: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64' on this host
+2021-06-09 12:26:01.392+0000: 15064: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64' on this host
+2021-06-09 12:26:01.393+0000: 15062: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64le' on this host
+2021-06-09 12:26:01.394+0000: 15065: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64le' on this host
+2021-06-09 12:26:01.395+0000: 15066: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64le' on this host
+2021-06-09 12:26:01.396+0000: 15063: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-riscv32' on this host
+2021-06-09 12:26:01.397+0000: 15064: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-riscv64' on this host
+2021-06-09 12:26:01.398+0000: 15062: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-s390x' on this host
+2021-06-09 12:26:01.400+0000: 15065: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sh4' on this host
+2021-06-09 12:26:01.401+0000: 15066: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sh4eb' on this host
+2021-06-09 12:26:01.402+0000: 15063: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sparc' on this host
+2021-06-09 12:26:01.403+0000: 15064: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sparc64' on this host
+2021-06-09 12:26:01.404+0000: 15062: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-unicore32' on this host
+2021-06-09 12:26:01.414+0000: 15062: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-xtensa' on this host
+2021-06-09 12:26:01.416+0000: 15065: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-xtensaeb' on this host
+2021-06-09 12:44:35.521+0000: 15065: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:45:08.301+0000: 15064: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:45:40.724+0000: 15066: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:45:43.594+0000: 15066: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/14004746-066f-40c7-a146-8073fdd86d3f/disk': No such file or directory
+2021-06-09 12:46:11.443+0000: 15063: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:46:45.018+0000: 15065: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:47:15.663+0000: 15065: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:47:48.973+0000: 15066: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:48:25.083+0000: 15065: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:48:57.552+0000: 15064: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:49:30.210+0000: 15064: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:50:03.331+0000: 15063: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:50:36.361+0000: 15065: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:51:08.377+0000: 15064: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:51:11.289+0000: 15062: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/869735f2-e8fa-4205-b856-457eb17130ce/disk': No such file or directory
+2021-06-09 12:51:41.106+0000: 15066: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:52:13.365+0000: 15062: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:52:45.102+0000: 15063: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:53:17.819+0000: 15062: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:53:49.351+0000: 28445: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-09 12:53:52.245+0000: 15065: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/714d8d14-2a9e-4a03-9049-a7bd75a19b6b/disk': No such file or directory
+2021-06-09 12:54:23.023+0000: 15062: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-14 12:04:47.669+0000: 21740: info : libvirt version: 6.0.0, package: 0ubuntu8.9 (Christian Ehrhardt <christian.ehrhardt@canonical.com> Wed, 07 Apr 2021 13:33:46 +0200)
+2021-06-14 12:04:47.669+0000: 21740: info : hostname: wally099
+2021-06-14 12:04:47.669+0000: 21740: error : dnsmasqCapsRefreshInternal:714 : Cannot check dnsmasq binary /usr/sbin/dnsmasq: No such file or directory
+2021-06-14 12:05:06.418+0000: 21728: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-alpha' on this host
+2021-06-14 12:05:06.419+0000: 21725: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-arm' on this host
+2021-06-14 12:05:06.420+0000: 21726: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-arm' on this host
+2021-06-14 12:05:06.421+0000: 21729: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-arm' on this host
+2021-06-14 12:05:06.422+0000: 21724: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-aarch64' on this host
+2021-06-14 12:05:06.423+0000: 21728: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-cris' on this host
+2021-06-14 12:05:06.433+0000: 21728: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-lm32' on this host
+2021-06-14 12:05:06.434+0000: 21725: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-m68k' on this host
+2021-06-14 12:05:06.435+0000: 21726: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-microblaze' on this host
+2021-06-14 12:05:06.437+0000: 21729: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-microblazeel' on this host
+2021-06-14 12:05:06.438+0000: 21724: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mips' on this host
+2021-06-14 12:05:06.439+0000: 21728: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mipsel' on this host
+2021-06-14 12:05:06.440+0000: 21725: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mips64' on this host
+2021-06-14 12:05:06.442+0000: 21726: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mips64el' on this host
+2021-06-14 12:05:06.443+0000: 21729: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc' on this host
+2021-06-14 12:05:06.444+0000: 21724: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64' on this host
+2021-06-14 12:05:06.445+0000: 21728: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64' on this host
+2021-06-14 12:05:06.445+0000: 21725: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64' on this host
+2021-06-14 12:05:06.446+0000: 21726: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64le' on this host
+2021-06-14 12:05:06.447+0000: 21729: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64le' on this host
+2021-06-14 12:05:06.455+0000: 21724: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64le' on this host
+2021-06-14 12:05:06.456+0000: 21725: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-riscv32' on this host
+2021-06-14 12:05:06.457+0000: 21724: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-riscv64' on this host
+2021-06-14 12:05:06.458+0000: 21729: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-s390x' on this host
+2021-06-14 12:05:06.459+0000: 21726: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sh4' on this host
+2021-06-14 12:05:06.460+0000: 21728: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sh4eb' on this host
+2021-06-14 12:05:06.461+0000: 21725: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sparc' on this host
+2021-06-14 12:05:06.463+0000: 21724: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sparc64' on this host
+2021-06-14 12:05:06.464+0000: 21729: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-unicore32' on this host
+2021-06-14 12:05:06.474+0000: 21729: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-xtensa' on this host
+2021-06-14 12:05:06.476+0000: 21726: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-xtensaeb' on this host
+2021-06-14 12:57:24.503+0000: 9921: info : libvirt version: 6.0.0, package: 0ubuntu8.9 (Christian Ehrhardt <christian.ehrhardt@canonical.com> Wed, 07 Apr 2021 13:33:46 +0200)
+2021-06-14 12:57:24.503+0000: 9921: info : hostname: wally099
+2021-06-14 12:57:24.503+0000: 9921: error : dnsmasqCapsRefreshInternal:714 : Cannot check dnsmasq binary /usr/sbin/dnsmasq: No such file or directory
+2021-06-14 12:57:42.753+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-alpha' on this host
+2021-06-14 12:57:42.754+0000: 9904: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-arm' on this host
+2021-06-14 12:57:42.755+0000: 9907: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-arm' on this host
+2021-06-14 12:57:42.756+0000: 9910: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-arm' on this host
+2021-06-14 12:57:42.757+0000: 9906: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-aarch64' on this host
+2021-06-14 12:57:42.758+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-cris' on this host
+2021-06-14 12:57:42.767+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-lm32' on this host
+2021-06-14 12:57:42.768+0000: 9904: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-m68k' on this host
+2021-06-14 12:57:42.770+0000: 9907: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-microblaze' on this host
+2021-06-14 12:57:42.771+0000: 9910: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-microblazeel' on this host
+2021-06-14 12:57:42.772+0000: 9906: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mips' on this host
+2021-06-14 12:57:42.773+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mipsel' on this host
+2021-06-14 12:57:42.774+0000: 9904: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mips64' on this host
+2021-06-14 12:57:42.775+0000: 9907: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mips64el' on this host
+2021-06-14 12:57:42.777+0000: 9910: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc' on this host
+2021-06-14 12:57:42.778+0000: 9906: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64' on this host
+2021-06-14 12:57:42.779+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64' on this host
+2021-06-14 12:57:42.780+0000: 9904: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64' on this host
+2021-06-14 12:57:42.781+0000: 9907: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64le' on this host
+2021-06-14 12:57:42.782+0000: 9910: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64le' on this host
+2021-06-14 12:57:42.784+0000: 9906: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64le' on this host
+2021-06-14 12:57:42.785+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-riscv32' on this host
+2021-06-14 12:57:42.786+0000: 9904: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-riscv64' on this host
+2021-06-14 12:57:42.787+0000: 9907: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-s390x' on this host
+2021-06-14 12:57:42.789+0000: 9910: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sh4' on this host
+2021-06-14 12:57:42.790+0000: 9906: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sh4eb' on this host
+2021-06-14 12:57:42.791+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sparc' on this host
+2021-06-14 12:57:42.792+0000: 9904: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sparc64' on this host
+2021-06-14 12:57:42.794+0000: 9907: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-unicore32' on this host
+2021-06-14 12:57:42.804+0000: 9907: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-xtensa' on this host
+2021-06-14 12:57:42.805+0000: 9910: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-xtensaeb' on this host
+2021-06-14 13:34:15.132+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-14 13:34:18.583+0000: 9910: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-alpha' on this host
+2021-06-14 13:34:18.584+0000: 9904: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-arm' on this host
+2021-06-14 13:34:18.586+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-arm' on this host
+2021-06-14 13:34:18.587+0000: 9907: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-arm' on this host
+2021-06-14 13:34:18.589+0000: 9906: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-aarch64' on this host
+2021-06-14 13:34:18.590+0000: 9910: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-cris' on this host
+2021-06-14 13:34:18.599+0000: 9910: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-lm32' on this host
+2021-06-14 13:34:18.601+0000: 9904: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-m68k' on this host
+2021-06-14 13:34:18.602+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-microblaze' on this host
+2021-06-14 13:34:18.603+0000: 9907: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-microblazeel' on this host
+2021-06-14 13:34:18.605+0000: 9906: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mips' on this host
+2021-06-14 13:34:18.606+0000: 9910: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mipsel' on this host
+2021-06-14 13:34:18.607+0000: 9904: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mips64' on this host
+2021-06-14 13:34:18.609+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-mips64el' on this host
+2021-06-14 13:34:18.610+0000: 9907: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc' on this host
+2021-06-14 13:34:18.611+0000: 9906: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64' on this host
+2021-06-14 13:34:18.612+0000: 9910: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64' on this host
+2021-06-14 13:34:18.613+0000: 9904: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64' on this host
+2021-06-14 13:34:18.615+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64le' on this host
+2021-06-14 13:34:18.616+0000: 9907: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64le' on this host
+2021-06-14 13:34:18.617+0000: 9906: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-ppc64le' on this host
+2021-06-14 13:34:18.618+0000: 9910: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-riscv32' on this host
+2021-06-14 13:34:18.619+0000: 9904: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-riscv64' on this host
+2021-06-14 13:34:18.621+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-s390x' on this host
+2021-06-14 13:34:18.622+0000: 9907: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sh4' on this host
+2021-06-14 13:34:18.623+0000: 9906: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sh4eb' on this host
+2021-06-14 13:34:18.624+0000: 9910: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sparc' on this host
+2021-06-14 13:34:18.626+0000: 9904: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-sparc64' on this host
+2021-06-14 13:34:18.627+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-unicore32' on this host
+2021-06-14 13:34:18.636+0000: 9909: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-xtensa' on this host
+2021-06-14 13:34:18.638+0000: 9907: error : virQEMUCapsCacheLookupDefault:5577 : invalid argument: KVM is not supported by '/usr/bin/qemu-system-xtensaeb' on this host
+2021-06-16 09:05:01.810+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 09:05:42.522+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 09:05:45.476+0000: 9904: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/436bef77-f6bd-46fa-9765-1043de49755a/disk': No such file or directory
+2021-06-16 09:06:12.596+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 09:06:36.791+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 09:07:04.536+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 09:07:22.378+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 09:07:42.042+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 09:08:10.529+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 09:08:36.578+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 09:08:57.824+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 09:09:00.784+0000: 9904: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/cbf643d5-8249-41dc-85b3-d4779b215a95/disk': No such file or directory
+2021-06-16 09:09:20.387+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 09:09:41.263+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 12:24:26.371+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 12:24:56.025+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 12:25:20.151+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 12:25:25.809+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 12:25:28.778+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 12:25:29.107+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-16 12:25:32.490+0000: 9870: error : qemuMonitorIOWrite:464 : Unable to write to monitor: Broken pipe
+2021-06-22 23:57:04.436+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:57:06.853+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:57:14.632+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:57:14.776+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:57:18.743+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:57:49.388+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:58:13.514+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:58:15.338+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:58:17.332+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:58:22.995+0000: 9904: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/b79abaf1-bb6f-44a2-a54d-9988edb0bfbc/disk': No such file or directory
+2021-06-22 23:58:36.639+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:58:39.616+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:58:47.761+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:58:51.418+0000: 22439: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/baadab9b-d99f-4718-9c4b-498b8ca271ad/disk': No such file or directory
+2021-06-22 23:59:17.876+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:59:22.187+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:59:54.290+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-22 23:59:56.084+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:00:05.885+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:00:12.260+0000: 9910: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/44c240d1-bbd0-4f26-a8c9-0714d0f788c5/disk': No such file or directory
+2021-06-23 00:00:27.505+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:00:31.063+0000: 9870: error : qemuMonitorIORead:509 : Unable to read from monitor: Connection reset by peer
+2021-06-23 00:00:31.358+0000: 9907: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/2a20cd52-a932-4c9b-9e7c-2bffa521ded1/disk': No such file or directory
+2021-06-23 00:00:32.703+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:00:37.645+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:01:08.867+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:01:14.662+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:01:19.360+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:01:37.148+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:01:44.527+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:01:54.052+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:02:13.773+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:02:29.168+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:02:29.723+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:02:50.822+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:02:53.276+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:02:56.983+0000: 9910: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/950d38c2-3e5c-48aa-b333-19644691b1e8/disk': No such file or directory
+2021-06-23 00:03:06.260+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:03:18.547+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:03:26.394+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:03:45.365+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:03:53.931+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:03:57.491+0000: 9904: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/63b86828-82dd-4533-b5c7-4a5a474b1864/disk': No such file or directory
+2021-06-23 00:04:01.856+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:04:09.807+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:08:43.562+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:08:56.491+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:09:01.512+0000: 22439: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/c1cb81ee-089c-4235-b164-942ce42cb810/disk': No such file or directory
+2021-06-23 00:09:07.671+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:09:11.211+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:09:13.690+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:09:14.117+0000: 9910: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/05ec2430-72b8-4618-8ba7-a8b66c717b9b/disk': No such file or directory
+2021-06-23 00:09:19.140+0000: 9904: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/b308825f-3ff5-4677-baf2-3e160707e73d/disk': No such file or directory
+2021-06-23 00:09:45.135+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:09:56.130+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:10:00.750+0000: 9910: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/bd4624ee-2232-40d1-b36a-2def5f66b673/disk': No such file or directory
+2021-06-23 00:10:11.685+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:10:13.097+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:10:13.354+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:10:17.821+0000: 9870: error : qemuMonitorIORead:509 : Unable to read from monitor: Connection reset by peer
+2021-06-23 00:10:18.195+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:10:24.867+0000: 9907: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/a1b967de-d163-486c-848d-69a5b35a7512/disk': No such file or directory
+2021-06-23 00:10:33.370+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:10:39.158+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:10:42.664+0000: 9906: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/8f13433c-1ced-477e-b98c-a9f05e690cf0/disk': No such file or directory
+2021-06-23 00:10:48.655+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:10:53.658+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:11:07.634+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:11:08.363+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:11:11.559+0000: 9870: error : qemuMonitorIORead:509 : Unable to read from monitor: Connection reset by peer
+2021-06-23 00:11:11.559+0000: 9910: warning : qemuGetProcessInfo:1424 : cannot parse process status data
+2021-06-23 00:11:11.853+0000: 9907: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/9438654b-d47d-42a1-87a6-693d0acc385f/disk': No such file or directory
+2021-06-23 00:11:26.080+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:11:29.929+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:11:34.450+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:11:39.429+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:11:43.261+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:12:01.582+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:12:06.609+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:12:13.873+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:12:15.355+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:12:20.664+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:12:27.338+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:12:34.349+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:12:41.641+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:12:45.307+0000: 9906: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/0bd3811b-22c9-4f70-a0d4-f40f77a7426c/disk': No such file or directory
+2021-06-23 00:12:53.361+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:12:57.987+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:12:58.433+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:13:08.487+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:13:30.565+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:13:36.149+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:13:40.732+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:13:47.179+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:13:49.967+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:13:52.457+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:14:10.299+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:14:15.800+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:14:22.908+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:14:26.813+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:14:31.622+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:14:31.696+0000: 9909: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/4cec0803-105e-44e1-a19a-d5eb5b0ef21c/disk': No such file or directory
+2021-06-23 00:14:59.724+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:03.262+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:04.351+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:06.467+0000: 9907: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/8baa17d9-25f3-4dff-83f4-688bddb10fa0/disk': No such file or directory
+2021-06-23 00:15:07.525+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:09.223+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:10.498+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:14.690+0000: 9870: error : qemuMonitorIOWrite:464 : Unable to write to monitor: Broken pipe
+2021-06-23 00:15:14.988+0000: 9909: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/ba1d6c3f-4b75-485c-9e0f-2364b46d6e52/disk': No such file or directory
+2021-06-23 00:15:18.268+0000: 2068: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:23.064+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:33.150+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:38.787+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:40.427+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:41.363+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:42.101+0000: 9909: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/883b5a1a-a013-4f7d-aed3-938c508d0bf1/disk': No such file or directory
+2021-06-23 00:15:43.354+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:50.358+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:15:53.793+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:16:03.035+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:16:08.640+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:16:09.606+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:16:12.889+0000: 9909: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/16df0bca-1acf-4c7e-84a1-f3e051202da6/disk': No such file or directory
+2021-06-23 00:16:16.160+0000: 2068: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:16:19.434+0000: 2068: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/cd469b4e-5fca-4465-ae12-99734ac6995e/disk': No such file or directory
+2021-06-23 00:16:19.561+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:16:20.474+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:16:23.531+0000: 2068: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/989ad22a-b3fe-4272-a605-b1dac4d49aa0/disk': No such file or directory
+2021-06-23 00:25:21.292+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:25:42.337+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:25:45.562+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:25:49.779+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:25:50.159+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:26:03.070+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:26:07.778+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:26:09.643+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:26:12.486+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:26:13.834+0000: 2068: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:26:18.107+0000: 22439: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/330ae5cc-9bd3-4d87-8e1b-f592058c71e0/disk': No such file or directory
+2021-06-23 00:26:32.666+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:26:34.263+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:26:38.234+0000: 9904: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/d91d6686-5377-4a86-bdad-48c253cfc4e8/disk': No such file or directory
+2021-06-23 00:26:48.476+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:26:49.555+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:26:52.958+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:26:53.298+0000: 9870: error : qemuMonitorIO:618 : internal error: End of file from qemu monitor
+2021-06-23 00:26:53.298+0000: 9906: warning : qemuGetProcessInfo:1424 : cannot parse process status data
+2021-06-23 00:27:06.301+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:27:07.109+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:27:29.722+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:27:33.488+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:27:35.179+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:27:38.609+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:27:41.056+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:27:42.891+0000: 2068: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/f3d2225b-0c27-4a4c-8f8f-c7d099e94217/disk': No such file or directory
+2021-06-23 00:28:02.298+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:28:11.116+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:28:14.835+0000: 9907: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:28:17.275+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:28:28.874+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:28:55.217+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:28:57.481+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:28:57.510+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:28:58.707+0000: 2068: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:29:01.985+0000: 9870: error : qemuMonitorIO:618 : internal error: End of file from qemu monitor
+2021-06-23 00:29:01.986+0000: 9904: warning : qemuGetProcessInfo:1424 : cannot parse process status data
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.689+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.690+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.691+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.692+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.693+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.694+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:02.695+0000: 9870: error : virNetSocketReadWire:1833 : End of file while reading data: Input/output error
+2021-06-23 00:29:22.767+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:29:25.869+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:29:26.397+0000: 9909: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/80fc1f22-4af6-471a-a1fa-4b6e8bf2ffae/disk': No such file or directory
+2021-06-23 00:29:35.996+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:29:39.580+0000: 2068: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:29:48.856+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:29:52.253+0000: 2068: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:29:55.111+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:29:58.878+0000: 9910: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/ee79ddea-cf3d-4c75-95e5-ab3dd34c3bce/disk': No such file or directory
+2021-06-23 00:30:15.649+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:30:17.673+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:30:20.225+0000: 9870: error : qemuMonitorIORead:509 : Unable to read from monitor: Connection reset by peer
+2021-06-23 00:30:20.524+0000: 9910: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/4c963a70-a42c-42c1-8eed-0282d12bbbb3/disk': No such file or directory
+2021-06-23 00:30:22.394+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:30:52.556+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:30:54.063+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:30:56.221+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:31:02.885+0000: 2068: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/cb09f7bd-9989-44e2-85e5-d6f1aa0b19e3/disk': No such file or directory
+2021-06-23 00:31:29.315+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:31:35.839+0000: 2068: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:31:43.102+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:32:01.691+0000: 9909: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:32:01.715+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:32:04.085+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:32:05.264+0000: 9870: error : qemuMonitorIORead:509 : Unable to read from monitor: Connection reset by peer
+2021-06-23 00:32:05.264+0000: 2068: warning : qemuGetProcessInfo:1424 : cannot parse process status data
+2021-06-23 00:32:27.225+0000: 9906: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:32:27.851+0000: 9910: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:32:30.137+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:32:34.253+0000: 9907: error : qemuOpenFileAs:3161 : Failed to open file '/var/lib/nova/instances/1ff4027f-50c0-480f-9ca5-c530e9946669/disk': No such file or directory
+2021-06-23 00:32:54.867+0000: 22439: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured
+2021-06-23 00:32:58.022+0000: 9904: error : qemuDomainAgentAvailable:12339 : argument unsupported: QEMU guest agent is not configured

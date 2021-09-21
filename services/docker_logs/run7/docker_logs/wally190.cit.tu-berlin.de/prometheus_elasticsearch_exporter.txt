@@ -1,0 +1,23 @@
+2021-05-26T00:29:27.458854373Z  + sudo -E kolla_set_configs
+2021-05-26T00:29:27.506420582Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T00:29:27.506678448Z  INFO:__main__:Validating config file
+2021-05-26T00:29:27.506700914Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T00:29:27.506732943Z  INFO:__main__:Copying service configuration files
+2021-05-26T00:29:27.506764553Z  INFO:__main__:Writing out command to execute
+2021-05-26T00:29:27.507398590Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus
+2021-05-26T00:29:27.507583757Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus/cadvisor.WARNING
+2021-05-26T00:29:27.507654375Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus/cadvisor.wally190.root.log.WARNING.20210526-022921.7
+2021-05-26T00:29:27.507774258Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus/cadvisor.INFO
+2021-05-26T00:29:27.507806356Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus/cadvisor.wally190.root.log.INFO.20210526-022921.7
+2021-05-26T00:29:27.512789930Z  ++ cat /run_command
+2021-05-26T00:29:27.513650591Z  + CMD='/opt/elasticsearch_exporter/elasticsearch_exporter --es.uri http://130.149.249.200:9200 --web.listen-address 130.149.249.200:9108'
+2021-05-26T00:29:27.513672589Z  + ARGS=
+2021-05-26T00:29:27.513713509Z  + sudo kolla_copy_cacerts
+2021-05-26T00:29:27.521727881Z  + [[ ! -n '' ]]
+2021-05-26T00:29:27.521756038Z  + . kolla_extend_start
+2021-05-26T00:29:27.521882348Z  ++ [[ ! -d /var/log/kolla/prometheus ]]
+2021-05-26T00:29:27.522285530Z  +++ stat -c %a /var/log/kolla/prometheus
+2021-05-26T00:29:27.523725749Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T00:29:27.523738466Z  ++ chmod 755 /var/log/kolla/prometheus
+2021-05-26T00:29:27.524472547Z  + echo 'Running command: '\''/opt/elasticsearch_exporter/elasticsearch_exporter --es.uri http://130.149.249.200:9200 --web.listen-address 130.149.249.200:9108'\'''
+2021-05-26T00:29:27.524505555Z  + exec /opt/elasticsearch_exporter/elasticsearch_exporter --es.uri http://130.149.249.200:9200 --web.listen-address 130.149.249.200:9108

@@ -1,0 +1,31 @@
+2021-05-25T20:30:55.916062404Z  + sudo -E kolla_set_configs
+2021-05-25T20:30:55.958966407Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T20:30:55.959263503Z  INFO:__main__:Validating config file
+2021-05-25T20:30:55.959278320Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T20:30:55.959309373Z  INFO:__main__:Copying service configuration files
+2021-05-25T20:30:55.959565318Z  INFO:__main__:Copying /var/lib/kolla/config_files/my.cnf to /etc/prometheus/my.cnf
+2021-05-25T20:30:55.960075771Z  INFO:__main__:Setting permission for /etc/prometheus/my.cnf
+2021-05-25T20:30:55.960123272Z  INFO:__main__:Writing out command to execute
+2021-05-25T20:30:55.960384435Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus
+2021-05-25T20:30:55.965670698Z  ++ cat /run_command
+2021-05-25T20:30:55.966592545Z  + CMD='/opt/mysqld_exporter/mysqld_exporter --config.my-cnf /etc/prometheus/my.cnf --web.listen-address 130.149.249.200:9104'
+2021-05-25T20:30:55.966612813Z  + ARGS=
+2021-05-25T20:30:55.966620505Z  + sudo kolla_copy_cacerts
+2021-05-25T20:30:55.974749141Z  + [[ ! -n '' ]]
+2021-05-25T20:30:55.974790753Z  + . kolla_extend_start
+2021-05-25T20:30:55.974920333Z  ++ [[ ! -d /var/log/kolla/prometheus ]]
+2021-05-25T20:30:55.975356820Z  +++ stat -c %a /var/log/kolla/prometheus
+2021-05-25T20:30:55.976602599Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T20:30:55.976622405Z  ++ chmod 755 /var/log/kolla/prometheus
+2021-05-25T20:30:55.977679205Z  + echo 'Running command: '\''/opt/mysqld_exporter/mysqld_exporter --config.my-cnf /etc/prometheus/my.cnf --web.listen-address 130.149.249.200:9104'\'''
+2021-05-25T20:30:55.977743110Z  + exec /opt/mysqld_exporter/mysqld_exporter --config.my-cnf /etc/prometheus/my.cnf --web.listen-address 130.149.249.200:9104
+2021-05-25T20:30:56.000983154Z  time="2021-05-25T22:30:56+02:00" level=info msg="Starting mysqld_exporter (version=0.12.1, branch=HEAD, revision=48667bf7c3b438b5e93b259f3d17b70a7c9aff96)" source="mysqld_exporter.go:257"
+2021-05-25T20:30:56.001017550Z  time="2021-05-25T22:30:56+02:00" level=info msg="Build context (go=go1.12.7, user=root@0b3e56a7bc0a, date=20190729-12:35:58)" source="mysqld_exporter.go:258"
+2021-05-25T20:30:56.001130188Z  time="2021-05-25T22:30:56+02:00" level=info msg="Enabled scrapers:" source="mysqld_exporter.go:269"
+2021-05-25T20:30:56.001157427Z  time="2021-05-25T22:30:56+02:00" level=info msg=" --collect.global_status" source="mysqld_exporter.go:273"
+2021-05-25T20:30:56.001211005Z  time="2021-05-25T22:30:56+02:00" level=info msg=" --collect.global_variables" source="mysqld_exporter.go:273"
+2021-05-25T20:30:56.001241329Z  time="2021-05-25T22:30:56+02:00" level=info msg=" --collect.slave_status" source="mysqld_exporter.go:273"
+2021-05-25T20:30:56.001258339Z  time="2021-05-25T22:30:56+02:00" level=info msg=" --collect.info_schema.innodb_cmp" source="mysqld_exporter.go:273"
+2021-05-25T20:30:56.001293311Z  time="2021-05-25T22:30:56+02:00" level=info msg=" --collect.info_schema.innodb_cmpmem" source="mysqld_exporter.go:273"
+2021-05-25T20:30:56.001300032Z  time="2021-05-25T22:30:56+02:00" level=info msg=" --collect.info_schema.query_response_time" source="mysqld_exporter.go:273"
+2021-05-25T20:30:56.001389377Z  time="2021-05-25T22:30:56+02:00" level=info msg="Listening on 130.149.249.200:9104" source="mysqld_exporter.go:283"

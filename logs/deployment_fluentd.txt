@@ -1,0 +1,32 @@
+2021-05-25T20:29:08.512233933Z  + sudo -E kolla_set_configs
+2021-05-25T20:29:08.579007522Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T20:29:08.579472650Z  INFO:__main__:Validating config file
+2021-05-25T20:29:08.579530077Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T20:29:08.579641401Z  INFO:__main__:Copying service configuration files
+2021-05-25T20:29:08.579772700Z  INFO:__main__:Deleting /etc/td-agent/td-agent.conf
+2021-05-25T20:29:08.579996481Z  INFO:__main__:Copying /var/lib/kolla/config_files/td-agent.conf to /etc/td-agent/td-agent.conf
+2021-05-25T20:29:08.580628778Z  INFO:__main__:Setting permission for /etc/td-agent/td-agent.conf
+2021-05-25T20:29:08.580722977Z  INFO:__main__:Writing out command to execute
+2021-05-25T20:29:08.581327700Z  INFO:__main__:Setting permission for /var/lib/fluentd/data
+2021-05-25T20:29:08.588238375Z  ++ cat /run_command
+2021-05-25T20:29:08.589036968Z  + CMD='/usr/sbin/td-agent -o /var/log/kolla/fluentd/fluentd.log'
+2021-05-25T20:29:08.589053144Z  + ARGS=
+2021-05-25T20:29:08.589060840Z  + sudo kolla_copy_cacerts
+2021-05-25T20:29:08.604802857Z  + [[ ! -n '' ]]
+2021-05-25T20:29:08.604829232Z  + . kolla_extend_start
+2021-05-25T20:29:08.604978847Z  ++ [[ x86_64 == \x\8\6\_\6\4 ]]
+2021-05-25T20:29:08.604996918Z  ++ [[ ubuntu != \d\e\b\i\a\n ]]
+2021-05-25T20:29:08.605005899Z  ++ USERGROUP=td-agent:kolla
+2021-05-25T20:29:08.605012170Z  ++ FLUENTD=td-agent
+2021-05-25T20:29:08.605017359Z  ++ '[' '!' -d /var/log/kolla ']'
+2021-05-25T20:29:08.605365947Z  +++ stat -c %U:%G /var/log/kolla
+2021-05-25T20:29:08.606772679Z  ++ [[ root:kolla != \t\d\-\a\g\e\n\t\:\k\o\l\l\a ]]
+2021-05-25T20:29:08.606791113Z  ++ sudo chown td-agent:kolla /var/log/kolla
+2021-05-25T20:29:08.613854077Z  +++ stat -c %a /var/log/kolla
+2021-05-25T20:29:08.615315377Z  ++ [[ 2775 != \2\7\7\5 ]]
+2021-05-25T20:29:08.615340931Z  ++ [[ -d /var/lib/td-agent ]]
+2021-05-25T20:29:08.615731508Z  +++ stat -c %U:%G /var/lib/td-agent
+2021-05-25T20:29:08.617210737Z  ++ [[ td-agent:td-agent != \t\d\-\a\g\e\n\t\:\k\o\l\l\a ]]
+2021-05-25T20:29:08.617227574Z  ++ sudo chown td-agent:kolla /var/lib/td-agent
+2021-05-25T20:29:08.625310631Z  + echo 'Running command: '\''/usr/sbin/td-agent -o /var/log/kolla/fluentd/fluentd.log'\'''
+2021-05-25T20:29:08.625329167Z  + exec /usr/sbin/td-agent -o /var/log/kolla/fluentd/fluentd.log

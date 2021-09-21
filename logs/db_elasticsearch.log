@@ -1,0 +1,39 @@
+[2021-06-09T14:12:55,950][INFO ][o.e.n.Node               ] [130.149.249.106] version[7.10.2], pid[6], build[oss/deb/747e1cc71def077253878a59143c1f785afa92b9/2021-01-13T00:42:12.435326Z], OS[Linux/4.15.0-128-generic/amd64], JVM[Ubuntu/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9-Ubuntu-0ubuntu2.20.04]
+[2021-06-09T14:12:55,954][INFO ][o.e.n.Node               ] [130.149.249.106] JVM home [/usr/lib/jvm/java-11-openjdk-amd64], using bundled JDK [false]
+[2021-06-09T14:12:55,954][INFO ][o.e.n.Node               ] [130.149.249.106] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=SPI,COMPAT, -Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/tmp/elasticsearch-10386123627080363861, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=/var/lib/elasticsearch, -XX:ErrorFile=/var/log/elasticsearch/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=/var/log/elasticsearch/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Xms1G, -Xmx1G, -XX:MaxDirectMemorySize=536870912, -Des.path.home=/usr/share/elasticsearch, -Des.path.conf=/etc/elasticsearch, -Des.distribution.flavor=oss, -Des.distribution.type=deb, -Des.bundled_jdk=true]
+[2021-06-09T14:12:56,734][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [aggs-matrix-stats]
+[2021-06-09T14:12:56,734][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [analysis-common]
+[2021-06-09T14:12:56,734][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [geo]
+[2021-06-09T14:12:56,735][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [ingest-common]
+[2021-06-09T14:12:56,735][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [ingest-geoip]
+[2021-06-09T14:12:56,735][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [ingest-user-agent]
+[2021-06-09T14:12:56,736][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [kibana]
+[2021-06-09T14:12:56,736][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [lang-expression]
+[2021-06-09T14:12:56,736][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [lang-mustache]
+[2021-06-09T14:12:56,736][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [lang-painless]
+[2021-06-09T14:12:56,737][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [mapper-extras]
+[2021-06-09T14:12:56,737][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [parent-join]
+[2021-06-09T14:12:56,737][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [percolator]
+[2021-06-09T14:12:56,737][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [rank-eval]
+[2021-06-09T14:12:56,738][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [reindex]
+[2021-06-09T14:12:56,738][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [repository-url]
+[2021-06-09T14:12:56,738][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [systemd]
+[2021-06-09T14:12:56,738][INFO ][o.e.p.PluginsService     ] [130.149.249.106] loaded module [transport-netty4]
+[2021-06-09T14:12:56,739][INFO ][o.e.p.PluginsService     ] [130.149.249.106] no plugins loaded
+[2021-06-09T14:12:56,774][INFO ][o.e.e.NodeEnvironment    ] [130.149.249.106] using [1] data paths, mounts [[/var/lib/elasticsearch/data (/dev/mapper/vg0-root)]], net usable_space [57gb], net total_space [91.1gb], types [ext4]
+[2021-06-09T14:12:56,775][INFO ][o.e.e.NodeEnvironment    ] [130.149.249.106] heap size [989.8mb], compressed ordinary object pointers [true]
+[2021-06-09T14:12:56,823][INFO ][o.e.n.Node               ] [130.149.249.106] node name [130.149.249.106], node ID [G20kZpPPTcmdNCLQdYeSug], cluster name [kolla_logging], roles [master, remote_cluster_client, data, ingest]
+[2021-06-09T14:13:00,364][INFO ][o.e.t.NettyAllocator     ] [130.149.249.106] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=989.8mb}]
+[2021-06-09T14:13:00,427][INFO ][o.e.d.DiscoveryModule    ] [130.149.249.106] using discovery type [zen] and seed hosts providers [settings]
+[2021-06-09T14:13:00,671][WARN ][o.e.g.DanglingIndicesState] [130.149.249.106] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2021-06-09T14:13:00,823][INFO ][o.e.n.Node               ] [130.149.249.106] initialized
+[2021-06-09T14:13:00,823][INFO ][o.e.n.Node               ] [130.149.249.106] starting ...
+[2021-06-09T14:13:00,929][INFO ][o.e.t.TransportService   ] [130.149.249.106] publish_address {130.149.249.106:9300}, bound_addresses {130.149.249.106:9300}
+[2021-06-09T14:13:01,362][INFO ][o.e.b.BootstrapChecks    ] [130.149.249.106] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2021-06-09T14:13:01,372][INFO ][o.e.c.c.Coordinator      ] [130.149.249.106] setting initial configuration to VotingConfiguration{G20kZpPPTcmdNCLQdYeSug}
+[2021-06-09T14:13:01,681][INFO ][o.e.c.s.MasterService    ] [130.149.249.106] elected-as-master ([1] nodes joined)[{130.149.249.106}{G20kZpPPTcmdNCLQdYeSug}{COBjx89CRc2bUHe-cnrZjw}{130.149.249.106}{130.149.249.106:9300}{dimr} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 1, version: 1, delta: master node changed {previous [], current [{130.149.249.106}{G20kZpPPTcmdNCLQdYeSug}{COBjx89CRc2bUHe-cnrZjw}{130.149.249.106}{130.149.249.106:9300}{dimr}]}
+[2021-06-09T14:13:01,854][INFO ][o.e.c.c.CoordinationState] [130.149.249.106] cluster UUID set to [sk9r5SO-QgWZ4IhzR9yTMg]
+[2021-06-09T14:13:02,266][INFO ][o.e.c.s.ClusterApplierService] [130.149.249.106] master node changed {previous [], current [{130.149.249.106}{G20kZpPPTcmdNCLQdYeSug}{COBjx89CRc2bUHe-cnrZjw}{130.149.249.106}{130.149.249.106:9300}{dimr}]}, term: 1, version: 1, reason: Publication{term=1, version=1}
+[2021-06-09T14:13:02,284][INFO ][o.e.h.AbstractHttpServerTransport] [130.149.249.106] publish_address {130.149.249.106:9200}, bound_addresses {130.149.249.106:9200}
+[2021-06-09T14:13:02,284][INFO ][o.e.n.Node               ] [130.149.249.106] started
+[2021-06-09T14:13:02,357][INFO ][o.e.g.GatewayService     ] [130.149.249.106] recovered [0] indices into cluster_state

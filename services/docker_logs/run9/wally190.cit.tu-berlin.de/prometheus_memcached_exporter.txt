@@ -1,0 +1,22 @@
+2021-05-26T01:30:13.961311723Z  + sudo -E kolla_set_configs
+2021-05-26T01:30:14.008289522Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T01:30:14.008583762Z  INFO:__main__:Validating config file
+2021-05-26T01:30:14.008602010Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T01:30:14.008625202Z  INFO:__main__:Copying service configuration files
+2021-05-26T01:30:14.008632722Z  INFO:__main__:Writing out command to execute
+2021-05-26T01:30:14.009175067Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus
+2021-05-26T01:30:14.014658155Z  ++ cat /run_command
+2021-05-26T01:30:14.015565577Z  + CMD='/opt/memcached_exporter/memcached_exporter --web.listen-address 130.149.249.200:9150 --memcached.address 130.149.249.200:11211'
+2021-05-26T01:30:14.015588605Z  + ARGS=
+2021-05-26T01:30:14.015597034Z  + sudo kolla_copy_cacerts
+2021-05-26T01:30:14.024618003Z  + [[ ! -n '' ]]
+2021-05-26T01:30:14.024669275Z  + . kolla_extend_start
+2021-05-26T01:30:14.024861169Z  ++ [[ ! -d /var/log/kolla/prometheus ]]
+2021-05-26T01:30:14.025418762Z  +++ stat -c %a /var/log/kolla/prometheus
+2021-05-26T01:30:14.026522716Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T01:30:14.026541547Z  ++ chmod 755 /var/log/kolla/prometheus
+2021-05-26T01:30:14.027907101Z  + echo 'Running command: '\''/opt/memcached_exporter/memcached_exporter --web.listen-address 130.149.249.200:9150 --memcached.address 130.149.249.200:11211'\'''
+2021-05-26T01:30:14.027927915Z  + exec /opt/memcached_exporter/memcached_exporter --web.listen-address 130.149.249.200:9150 --memcached.address 130.149.249.200:11211
+2021-05-26T01:30:14.031245666Z  time="2021-05-26T03:30:14+02:00" level=info msg="Starting memcached_exporter (version=0.6.0, branch=HEAD, revision=d7eadc3523ec9731b7865a188093f70140d54a8d)" source="main.go:795"
+2021-05-26T01:30:14.031304690Z  time="2021-05-26T03:30:14+02:00" level=info msg="Build context (go=go1.12.8, user=root@7c7caf19d4fb, date=20190826-16:56:12)" source="main.go:796"
+2021-05-26T01:30:14.031824202Z  time="2021-05-26T03:30:14+02:00" level=info msg="Starting HTTP server on 130.149.249.200:9150" source="main.go:827"

@@ -1,0 +1,35 @@
+---
+  ScenarioPlugin.complete_test_run:
+    -
+      args:
+        image_location: "http://download.cirros-cloud.net/0.3.5/cirros-0.3.5-x86_64-disk.img"
+        container_format: "bare"
+        disk_format: "qcow2"
+        network_create_args: {}
+      runner:
+        type: "constant_for_duration"
+        concurrency: 1
+        duration: 360
+        timeout: 1000
+      hooks:
+        - name: sys_call
+          args: ansible-playbook -i ./multinode ../../../../../rally_files/restart_nova.yaml
+          trigger:
+            name: event
+            args:
+              unit: time
+              at: [ 60,180 ]
+        - name: sys_call
+          args: ansible-playbook -i ./multinode ../../../../../rally_files/restart_neutron.yaml
+          trigger:
+            name: event
+            args:
+              unit: time
+              at: [ 120,180 ]
+        - name: sys_call
+          args: ansible-playbook -i ./multinode ../../../../../rally_files/extract_docker_logs.yaml
+          trigger:
+            name: event
+            args:
+              unit: time
+              at: [ 240 ]

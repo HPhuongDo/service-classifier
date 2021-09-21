@@ -1,0 +1,315 @@
+2021-05-25T22:34:50.672592262Z  + sudo -E kolla_set_configs
+2021-05-25T22:34:50.718706560Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:34:50.718744798Z  INFO:__main__:Validating config file
+2021-05-25T22:34:50.718766666Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:34:50.718830074Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:34:50.718930006Z  INFO:__main__:Deleting /etc/glance/glance-api.conf
+2021-05-25T22:34:50.719185656Z  INFO:__main__:Copying /var/lib/kolla/config_files/glance-api.conf to /etc/glance/glance-api.conf
+2021-05-25T22:34:50.719695192Z  INFO:__main__:Setting permission for /etc/glance/glance-api.conf
+2021-05-25T22:34:50.719769109Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:34:50.719991366Z  INFO:__main__:Setting permission for /var/lib/glance
+2021-05-25T22:34:50.720107827Z  INFO:__main__:Setting permission for /var/lib/glance/.cache
+2021-05-25T22:34:50.720154987Z  INFO:__main__:Setting permission for /var/lib/glance/image-cache
+2021-05-25T22:34:50.720220092Z  INFO:__main__:Setting permission for /var/lib/glance/images
+2021-05-25T22:34:50.720314884Z  INFO:__main__:Setting permission for /var/lib/glance/.cache/python-entrypoints
+2021-05-25T22:34:50.720403458Z  INFO:__main__:Setting permission for /var/lib/glance/.cache/python-entrypoints/a23ef0ac0ff936f89a85f7ca69f47cb2ddcbc28f2d35e978b009504796066d41
+2021-05-25T22:34:50.720496532Z  INFO:__main__:Setting permission for /var/lib/glance/image-cache/invalid
+2021-05-25T22:34:50.720548256Z  INFO:__main__:Setting permission for /var/lib/glance/image-cache/queue
+2021-05-25T22:34:50.720611479Z  INFO:__main__:Setting permission for /var/lib/glance/image-cache/incomplete
+2021-05-25T22:34:50.720822785Z  INFO:__main__:Setting permission for /var/log/kolla/glance
+2021-05-25T22:34:50.720904295Z  INFO:__main__:Setting permission for /var/log/kolla/glance/glance-api.log
+2021-05-25T22:34:50.726303263Z  ++ cat /run_command
+2021-05-25T22:34:50.727043403Z  + CMD=glance-api
+2021-05-25T22:34:50.727055330Z  + ARGS=
+2021-05-25T22:34:50.727069796Z  + sudo kolla_copy_cacerts
+2021-05-25T22:34:50.743971725Z  + [[ ! -n '' ]]
+2021-05-25T22:34:50.744005007Z  + . kolla_extend_start
+2021-05-25T22:34:50.744012886Z  ++ [[ ! -d /var/log/kolla/glance ]]
+2021-05-25T22:34:50.744356115Z  +++ stat -c %a /var/log/kolla/glance
+2021-05-25T22:34:50.745264856Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:34:50.745283779Z  ++ chmod 755 /var/log/kolla/glance
+2021-05-25T22:34:50.745994133Z  ++ . /usr/local/bin/kolla_glance_extend_start
+2021-05-25T22:34:50.746055463Z  +++ [[ -n '' ]]
+2021-05-25T22:34:50.746135528Z  +++ [[ -n '' ]]
+2021-05-25T22:34:50.746174188Z  + echo 'Running command: '\''glance-api'\'''
+2021-05-25T22:34:50.746219064Z  + exec glance-api
+2021-05-25T22:35:47.661733579Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "default":"role:admin" was deprecated in Ussuri in favor of "default":"". Reason: In order to allow operators to accept the default policies from code by not defining them in the policy file, while still working with old policy files that rely on the ``default`` rule for policies that are not specified in the policy file, the ``default`` rule must now be explicitly set to ``"role:admin"`` when that is the desired default for unspecified rules.. Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661765291Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661770459Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "add_image":"rule:default" was deprecated in W in favor of "add_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.661775485Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661779388Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661783652Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661787462Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "delete_image":"rule:default" was deprecated in W in favor of "delete_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.661792105Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661795908Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661799947Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661803660Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_image":"rule:default" was deprecated in W in favor of "get_image":"role:admin or (role:reader and (project_id:%(project_id)s or project_id:%(member_id)s or "community":%(visibility)s or "public":%(visibility)s))". Reason: 
+2021-05-25T22:35:47.661808768Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661813378Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661817602Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661821332Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_images":"rule:default" was deprecated in W in favor of "get_images":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.661825854Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661829704Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661833778Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661837441Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "modify_image":"rule:default" was deprecated in W in favor of "modify_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.661851533Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661855466Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661859248Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661862894Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "communitize_image":"rule:default" was deprecated in W in favor of "communitize_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.661867138Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661870587Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661874287Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661877658Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "download_image":"rule:default" was deprecated in W in favor of "download_image":"role:admin or (role:member and (project_id:%(project_id)s or project_id:%(member_id)s or "community":%(visibility)s or "public":%(visibility)s))". Reason: 
+2021-05-25T22:35:47.661882232Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661885657Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661889305Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661893122Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "upload_image":"rule:default" was deprecated in W in favor of "upload_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.661897328Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661900682Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661904310Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661907614Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "delete_image_location":"rule:default" was deprecated in W in favor of "delete_image_location":"role:admin". Reason: 
+2021-05-25T22:35:47.661911712Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661915064Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661918725Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661922007Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_image_location":"rule:default" was deprecated in W in favor of "get_image_location":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.661926204Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661932763Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661936713Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661940087Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "set_image_location":"rule:default" was deprecated in W in favor of "set_image_location":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.661944285Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661947645Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661951292Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661954569Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "add_member":"rule:default" was deprecated in W in favor of "add_member":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.661958685Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661962455Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661966204Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661969513Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "delete_member":"rule:default" was deprecated in W in favor of "delete_member":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.661973585Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661976859Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661980413Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661983649Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_member":"rule:default" was deprecated in W in favor of "get_member":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.661987751Z  The image API now supports and default roles.
+2021-05-25T22:35:47.661991143Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.661994828Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.661998134Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_members":"rule:default" was deprecated in W in favor of "get_members":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.662002176Z  The image API now supports and default roles.
+2021-05-25T22:35:47.662005447Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.662009018Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.662012249Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "modify_member":"rule:default" was deprecated in W in favor of "modify_member":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.662019191Z  The image API now supports and default roles.
+2021-05-25T22:35:47.662022903Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.662026613Z    warnings.warn(deprecated_msg)
+2021-05-25T22:35:47.662030292Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "deactivate":"rule:default" was deprecated in W in favor of "deactivate":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:35:47.662034529Z  The image API now supports and default roles.
+2021-05-25T22:35:47.662037952Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:35:47.662041547Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005023638Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "default":"role:admin" was deprecated in Ussuri in favor of "default":"". Reason: In order to allow operators to accept the default policies from code by not defining them in the policy file, while still working with old policy files that rely on the ``default`` rule for policies that are not specified in the policy file, the ``default`` rule must now be explicitly set to ``"role:admin"`` when that is the desired default for unspecified rules.. Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005062178Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005066873Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "add_image":"rule:default" was deprecated in W in favor of "add_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005071843Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005075663Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005079786Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005084145Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "delete_image":"rule:default" was deprecated in W in favor of "delete_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005088885Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005092827Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005096899Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005100705Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_image":"rule:default" was deprecated in W in favor of "get_image":"role:admin or (role:reader and (project_id:%(project_id)s or project_id:%(member_id)s or "community":%(visibility)s or "public":%(visibility)s))". Reason: 
+2021-05-25T22:47:36.005117007Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005121843Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005125800Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005129340Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_images":"rule:default" was deprecated in W in favor of "get_images":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005133607Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005137000Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005140642Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005144023Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "modify_image":"rule:default" was deprecated in W in favor of "modify_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005148143Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005151563Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005155190Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005158461Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "communitize_image":"rule:default" was deprecated in W in favor of "communitize_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005162650Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005165993Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005169587Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005172869Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "download_image":"rule:default" was deprecated in W in favor of "download_image":"role:admin or (role:member and (project_id:%(project_id)s or project_id:%(member_id)s or "community":%(visibility)s or "public":%(visibility)s))". Reason: 
+2021-05-25T22:47:36.005177422Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005180849Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005184526Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005188606Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "upload_image":"rule:default" was deprecated in W in favor of "upload_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005192772Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005196153Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005202638Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005206313Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "delete_image_location":"rule:default" was deprecated in W in favor of "delete_image_location":"role:admin". Reason: 
+2021-05-25T22:47:36.005210649Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005213992Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005217639Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005220909Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_image_location":"rule:default" was deprecated in W in favor of "get_image_location":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005225197Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005228641Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005232289Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005235558Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "set_image_location":"rule:default" was deprecated in W in favor of "set_image_location":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005239886Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005243225Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005246812Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005250063Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "add_member":"rule:default" was deprecated in W in favor of "add_member":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005254052Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005257833Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005261593Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005264877Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "delete_member":"rule:default" was deprecated in W in favor of "delete_member":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005268994Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005272413Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005276044Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005279274Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_member":"rule:default" was deprecated in W in favor of "get_member":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005283330Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005289394Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005293404Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005296913Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_members":"rule:default" was deprecated in W in favor of "get_members":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005301112Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005304530Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005308244Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005311546Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "modify_member":"rule:default" was deprecated in W in favor of "modify_member":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005315626Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005318971Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005322607Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:36.005326254Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "deactivate":"rule:default" was deprecated in W in favor of "deactivate":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:36.005330369Z  The image API now supports and default roles.
+2021-05-25T22:47:36.005333751Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:36.005337404Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222350768Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "default":"role:admin" was deprecated in Ussuri in favor of "default":"". Reason: In order to allow operators to accept the default policies from code by not defining them in the policy file, while still working with old policy files that rely on the ``default`` rule for policies that are not specified in the policy file, the ``default`` rule must now be explicitly set to ``"role:admin"`` when that is the desired default for unspecified rules.. Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222380973Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222385254Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "add_image":"rule:default" was deprecated in W in favor of "add_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222389727Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222393322Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222409444Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222413437Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "delete_image":"rule:default" was deprecated in W in favor of "delete_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222417775Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222421256Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222424960Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222428456Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_image":"rule:default" was deprecated in W in favor of "get_image":"role:admin or (role:reader and (project_id:%(project_id)s or project_id:%(member_id)s or "community":%(visibility)s or "public":%(visibility)s))". Reason: 
+2021-05-25T22:47:43.222433058Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222437326Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222441311Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222444774Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_images":"rule:default" was deprecated in W in favor of "get_images":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222448976Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222452484Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222456177Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222459532Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "modify_image":"rule:default" was deprecated in W in favor of "modify_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222463756Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222467233Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222470968Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222474282Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "communitize_image":"rule:default" was deprecated in W in favor of "communitize_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222478525Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222481902Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222485557Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222488859Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "download_image":"rule:default" was deprecated in W in favor of "download_image":"role:admin or (role:member and (project_id:%(project_id)s or project_id:%(member_id)s or "community":%(visibility)s or "public":%(visibility)s))". Reason: 
+2021-05-25T22:47:43.222497235Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222501041Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222504843Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222508525Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "upload_image":"rule:default" was deprecated in W in favor of "upload_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222512777Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222516246Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222519967Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222523315Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "delete_image_location":"rule:default" was deprecated in W in favor of "delete_image_location":"role:admin". Reason: 
+2021-05-25T22:47:43.222527436Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222530797Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222534488Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222537847Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_image_location":"rule:default" was deprecated in W in favor of "get_image_location":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222542060Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222545464Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222549144Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222552451Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "set_image_location":"rule:default" was deprecated in W in favor of "set_image_location":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222556581Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222559954Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222563601Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222566923Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "add_member":"rule:default" was deprecated in W in favor of "add_member":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222571022Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222574704Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222581380Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222585131Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "delete_member":"rule:default" was deprecated in W in favor of "delete_member":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222589285Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222592677Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222596332Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222599645Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_member":"rule:default" was deprecated in W in favor of "get_member":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222603691Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222607062Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222610717Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222614078Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_members":"rule:default" was deprecated in W in favor of "get_members":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222618259Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222629732Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222638680Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222644376Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "modify_member":"rule:default" was deprecated in W in favor of "modify_member":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222651066Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222655497Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222659426Z    warnings.warn(deprecated_msg)
+2021-05-25T22:47:43.222663526Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "deactivate":"rule:default" was deprecated in W in favor of "deactivate":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:47:43.222667786Z  The image API now supports and default roles.
+2021-05-25T22:47:43.222671284Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:47:43.222675008Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055490549Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "default":"role:admin" was deprecated in Ussuri in favor of "default":"". Reason: In order to allow operators to accept the default policies from code by not defining them in the policy file, while still working with old policy files that rely on the ``default`` rule for policies that are not specified in the policy file, the ``default`` rule must now be explicitly set to ``"role:admin"`` when that is the desired default for unspecified rules.. Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055546636Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055555793Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "add_image":"rule:default" was deprecated in W in favor of "add_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055564376Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055570837Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055577443Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055583122Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "delete_image":"rule:default" was deprecated in W in favor of "delete_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055590034Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055596114Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055602189Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055607676Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_image":"rule:default" was deprecated in W in favor of "get_image":"role:admin or (role:reader and (project_id:%(project_id)s or project_id:%(member_id)s or "community":%(visibility)s or "public":%(visibility)s))". Reason: 
+2021-05-25T22:48:37.055615120Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055621687Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055628417Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055634122Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_images":"rule:default" was deprecated in W in favor of "get_images":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055641432Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055647156Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055653314Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055658798Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "modify_image":"rule:default" was deprecated in W in favor of "modify_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055665480Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055671060Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055683023Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055689120Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "communitize_image":"rule:default" was deprecated in W in favor of "communitize_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055696115Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055701912Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055707836Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055713626Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "download_image":"rule:default" was deprecated in W in favor of "download_image":"role:admin or (role:member and (project_id:%(project_id)s or project_id:%(member_id)s or "community":%(visibility)s or "public":%(visibility)s))". Reason: 
+2021-05-25T22:48:37.055721786Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055727479Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055733946Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055740430Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "upload_image":"rule:default" was deprecated in W in favor of "upload_image":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055747876Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055753588Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055760423Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055766720Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "delete_image_location":"rule:default" was deprecated in W in favor of "delete_image_location":"role:admin". Reason: 
+2021-05-25T22:48:37.055774163Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055779914Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055786205Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055791571Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_image_location":"rule:default" was deprecated in W in favor of "get_image_location":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055798870Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055804570Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055810770Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055815795Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "set_image_location":"rule:default" was deprecated in W in favor of "set_image_location":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055828441Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055834437Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055840644Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055846308Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "add_member":"rule:default" was deprecated in W in favor of "add_member":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055853373Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055860290Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055867283Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055873253Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "delete_member":"rule:default" was deprecated in W in favor of "delete_member":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055880474Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055886111Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055892118Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055898159Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_member":"rule:default" was deprecated in W in favor of "get_member":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055905472Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055910888Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055916520Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055921549Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "get_members":"rule:default" was deprecated in W in favor of "get_members":"role:admin or (role:reader and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055928467Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055933986Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055939954Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055945287Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "modify_member":"rule:default" was deprecated in W in favor of "modify_member":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055951286Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055956308Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055967041Z    warnings.warn(deprecated_msg)
+2021-05-25T22:48:37.055973192Z  /usr/lib/python3/dist-packages/oslo_policy/policy.py:775: UserWarning: Policy "deactivate":"rule:default" was deprecated in W in favor of "deactivate":"role:admin or (role:member and project_id:%(project_id)s)". Reason: 
+2021-05-25T22:48:37.055979466Z  The image API now supports and default roles.
+2021-05-25T22:48:37.055984604Z  . Either ensure your deployment is ready for the new default or copy/paste the deprecated policy into your policy file and maintain it manually.
+2021-05-25T22:48:37.055989967Z    warnings.warn(deprecated_msg)

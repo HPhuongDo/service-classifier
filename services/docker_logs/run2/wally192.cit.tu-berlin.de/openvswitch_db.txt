@@ -1,0 +1,25 @@
+2021-05-25T22:12:19.313850801Z  + sudo -E kolla_set_configs
+2021-05-25T22:12:19.360779410Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:12:19.361051343Z  INFO:__main__:Validating config file
+2021-05-25T22:12:19.361099793Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:12:19.361139044Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:12:19.361323045Z  INFO:__main__:Copying /var/lib/kolla/config_files/start-ovsdb-server to /usr/local/bin/start-ovsdb-server
+2021-05-25T22:12:19.361850491Z  INFO:__main__:Setting permission for /usr/local/bin/start-ovsdb-server
+2021-05-25T22:12:19.361909305Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:12:19.367356827Z  ++ cat /run_command
+2021-05-25T22:12:19.368020620Z  + CMD='start-ovsdb-server 127.0.0.1'
+2021-05-25T22:12:19.368030360Z  + ARGS=
+2021-05-25T22:12:19.368057336Z  + sudo kolla_copy_cacerts
+2021-05-25T22:12:19.375626567Z  + [[ ! -n '' ]]
+2021-05-25T22:12:19.375657671Z  + . kolla_extend_start
+2021-05-25T22:12:19.375691855Z  ++ [[ ! -d /var/log/kolla/openvswitch ]]
+2021-05-25T22:12:19.375697975Z  ++ mkdir -p /var/log/kolla/openvswitch
+2021-05-25T22:12:19.376924736Z  +++ stat -c %a /var/log/kolla/openvswitch
+2021-05-25T22:12:19.377708148Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:12:19.377722508Z  ++ chmod 755 /var/log/kolla/openvswitch
+2021-05-25T22:12:19.378365869Z  ++ . /usr/local/bin/kolla_openvswitch_extend_start
+2021-05-25T22:12:19.378405039Z  +++ mkdir -p /run/openvswitch
+2021-05-25T22:12:19.379335062Z  +++ [[ ! -e /var/lib/openvswitch/conf.db ]]
+2021-05-25T22:12:19.379349579Z  +++ ovsdb-tool create /var/lib/openvswitch/conf.db
+2021-05-25T22:12:19.437706204Z  + echo 'Running command: '\''start-ovsdb-server 127.0.0.1'\'''
+2021-05-25T22:12:19.437749609Z  + exec start-ovsdb-server 127.0.0.1

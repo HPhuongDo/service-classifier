@@ -1,0 +1,55 @@
+2021-05-26T01:30:05.108844635Z  + sudo -E kolla_set_configs
+2021-05-26T01:30:05.154498518Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T01:30:05.154747572Z  INFO:__main__:Validating config file
+2021-05-26T01:30:05.154761013Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T01:30:05.154770103Z  INFO:__main__:Copying service configuration files
+2021-05-26T01:30:05.154790451Z  INFO:__main__:Writing out command to execute
+2021-05-26T01:30:05.155411476Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus
+2021-05-26T01:30:05.160583068Z  ++ cat /run_command
+2021-05-26T01:30:05.161450672Z  + CMD='/opt/node_exporter/node_exporter --path.procfs /host/proc --path.sysfs /host/sys --web.listen-address 130.149.249.200:9100'
+2021-05-26T01:30:05.161479369Z  + ARGS=
+2021-05-26T01:30:05.161487193Z  + sudo kolla_copy_cacerts
+2021-05-26T01:30:05.169146945Z  + [[ ! -n '' ]]
+2021-05-26T01:30:05.169190219Z  + . kolla_extend_start
+2021-05-26T01:30:05.169338517Z  ++ [[ ! -d /var/log/kolla/prometheus ]]
+2021-05-26T01:30:05.169691815Z  +++ stat -c %a /var/log/kolla/prometheus
+2021-05-26T01:30:05.171016966Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T01:30:05.171043690Z  ++ chmod 755 /var/log/kolla/prometheus
+2021-05-26T01:30:05.171951256Z  + echo 'Running command: '\''/opt/node_exporter/node_exporter --path.procfs /host/proc --path.sysfs /host/sys --web.listen-address 130.149.249.200:9100'\'''
+2021-05-26T01:30:05.172063799Z  + exec /opt/node_exporter/node_exporter --path.procfs /host/proc --path.sysfs /host/sys --web.listen-address 130.149.249.200:9100
+2021-05-26T01:30:05.176872533Z  time="2021-05-26T03:30:05+02:00" level=info msg="Starting node_exporter (version=0.18.1, branch=HEAD, revision=3db77732e925c08f675d7404a8c46466b2ece83e)" source="node_exporter.go:156"
+2021-05-26T01:30:05.176894518Z  time="2021-05-26T03:30:05+02:00" level=info msg="Build context (go=go1.12.5, user=root@b50852a1acba, date=20190604-16:41:18)" source="node_exporter.go:157"
+2021-05-26T01:30:05.177986986Z  time="2021-05-26T03:30:05+02:00" level=info msg="Enabled collectors:" source="node_exporter.go:97"
+2021-05-26T01:30:05.178011965Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - arp" source="node_exporter.go:104"
+2021-05-26T01:30:05.178029908Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - bcache" source="node_exporter.go:104"
+2021-05-26T01:30:05.178040327Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - bonding" source="node_exporter.go:104"
+2021-05-26T01:30:05.178051718Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - conntrack" source="node_exporter.go:104"
+2021-05-26T01:30:05.178061700Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - cpu" source="node_exporter.go:104"
+2021-05-26T01:30:05.178072987Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - cpufreq" source="node_exporter.go:104"
+2021-05-26T01:30:05.178101929Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - diskstats" source="node_exporter.go:104"
+2021-05-26T01:30:05.178115654Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - edac" source="node_exporter.go:104"
+2021-05-26T01:30:05.178125947Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - entropy" source="node_exporter.go:104"
+2021-05-26T01:30:05.178137489Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - filefd" source="node_exporter.go:104"
+2021-05-26T01:30:05.178148553Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - filesystem" source="node_exporter.go:104"
+2021-05-26T01:30:05.178183399Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - hwmon" source="node_exporter.go:104"
+2021-05-26T01:30:05.178207084Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - infiniband" source="node_exporter.go:104"
+2021-05-26T01:30:05.178222351Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - ipvs" source="node_exporter.go:104"
+2021-05-26T01:30:05.178235451Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - loadavg" source="node_exporter.go:104"
+2021-05-26T01:30:05.178246607Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - mdadm" source="node_exporter.go:104"
+2021-05-26T01:30:05.178294398Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - meminfo" source="node_exporter.go:104"
+2021-05-26T01:30:05.178312995Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - netclass" source="node_exporter.go:104"
+2021-05-26T01:30:05.178324686Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - netdev" source="node_exporter.go:104"
+2021-05-26T01:30:05.178332037Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - netstat" source="node_exporter.go:104"
+2021-05-26T01:30:05.178373978Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - nfs" source="node_exporter.go:104"
+2021-05-26T01:30:05.178390996Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - nfsd" source="node_exporter.go:104"
+2021-05-26T01:30:05.178403251Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - pressure" source="node_exporter.go:104"
+2021-05-26T01:30:05.178413304Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - sockstat" source="node_exporter.go:104"
+2021-05-26T01:30:05.178424517Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - stat" source="node_exporter.go:104"
+2021-05-26T01:30:05.178434104Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - textfile" source="node_exporter.go:104"
+2021-05-26T01:30:05.178457162Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - time" source="node_exporter.go:104"
+2021-05-26T01:30:05.178496266Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - timex" source="node_exporter.go:104"
+2021-05-26T01:30:05.178522835Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - uname" source="node_exporter.go:104"
+2021-05-26T01:30:05.178533794Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - vmstat" source="node_exporter.go:104"
+2021-05-26T01:30:05.178551132Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - xfs" source="node_exporter.go:104"
+2021-05-26T01:30:05.178559033Z  time="2021-05-26T03:30:05+02:00" level=info msg=" - zfs" source="node_exporter.go:104"
+2021-05-26T01:30:05.178692687Z  time="2021-05-26T03:30:05+02:00" level=info msg="Listening on 130.149.249.200:9100" source="node_exporter.go:170"

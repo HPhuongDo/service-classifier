@@ -1,0 +1,19 @@
+2021-05-25T22:30:25.983272768Z  + sudo -E kolla_set_configs
+2021-05-25T22:30:26.030497007Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T22:30:26.030720646Z  INFO:__main__:Validating config file
+2021-05-25T22:30:26.030759936Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T22:30:26.030821066Z  INFO:__main__:Copying service configuration files
+2021-05-25T22:30:26.030849758Z  INFO:__main__:Writing out command to execute
+2021-05-25T22:30:26.031408398Z  INFO:__main__:Setting permission for /var/log/kolla/prometheus
+2021-05-25T22:30:26.036497829Z  ++ cat /run_command
+2021-05-25T22:30:26.037382773Z  + CMD='/opt/cadvisor --port=18080 --log_dir=/var/log/kolla/prometheus'
+2021-05-25T22:30:26.037400667Z  + ARGS=
+2021-05-25T22:30:26.037414980Z  + sudo kolla_copy_cacerts
+2021-05-25T22:30:26.044853784Z  + [[ ! -n '' ]]
+2021-05-25T22:30:26.044875530Z  + . kolla_extend_start
+2021-05-25T22:30:26.044993142Z  ++ [[ ! -d /var/log/kolla/prometheus ]]
+2021-05-25T22:30:26.045413657Z  +++ stat -c %a /var/log/kolla/prometheus
+2021-05-25T22:30:26.046757738Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T22:30:26.046777543Z  ++ chmod 755 /var/log/kolla/prometheus
+2021-05-25T22:30:26.048031694Z  + echo 'Running command: '\''/opt/cadvisor --port=18080 --log_dir=/var/log/kolla/prometheus'\'''
+2021-05-25T22:30:26.048046393Z  + exec /opt/cadvisor --port=18080 --log_dir=/var/log/kolla/prometheus

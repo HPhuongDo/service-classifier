@@ -1,0 +1,58 @@
+2021-05-26T00:45:57.095310801Z  + sudo -E kolla_set_configs
+2021-05-26T00:45:57.148872297Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T00:45:57.148922396Z  INFO:__main__:Validating config file
+2021-05-26T00:45:57.148981189Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T00:45:57.149026215Z  INFO:__main__:Copying service configuration files
+2021-05-26T00:45:57.149177415Z  INFO:__main__:Deleting /etc/heat/heat.conf
+2021-05-26T00:45:57.149436734Z  INFO:__main__:Copying /var/lib/kolla/config_files/heat.conf to /etc/heat/heat.conf
+2021-05-26T00:45:57.149880522Z  INFO:__main__:Setting permission for /etc/heat/heat.conf
+2021-05-26T00:45:57.150024248Z  INFO:__main__:Copying /var/lib/kolla/config_files/wsgi-heat-api-cfn.conf to /etc/apache2/conf-enabled/wsgi-heat-api-cfn.conf
+2021-05-26T00:45:57.150304783Z  INFO:__main__:Setting permission for /etc/apache2/conf-enabled/wsgi-heat-api-cfn.conf
+2021-05-26T00:45:57.150381825Z  INFO:__main__:Writing out command to execute
+2021-05-26T00:45:57.150596601Z  INFO:__main__:Setting permission for /var/log/kolla/heat
+2021-05-26T00:45:57.150692203Z  INFO:__main__:Setting permission for /var/log/kolla/heat/apache-error.log
+2021-05-26T00:45:57.150749492Z  INFO:__main__:Setting permission for /var/log/kolla/heat/heat-api-access.log
+2021-05-26T00:45:57.150805699Z  INFO:__main__:Setting permission for /var/log/kolla/heat/heat-api-error.log
+2021-05-26T00:45:57.150860177Z  INFO:__main__:Setting permission for /var/log/kolla/heat/apache-access.log
+2021-05-26T00:45:57.161115610Z  ++ cat /run_command
+2021-05-26T00:45:57.161909433Z  + CMD='/usr/sbin/apache2 -DFOREGROUND'
+2021-05-26T00:45:57.161922265Z  + ARGS=
+2021-05-26T00:45:57.161929960Z  + sudo kolla_copy_cacerts
+2021-05-26T00:45:57.170190570Z  + [[ ! -n '' ]]
+2021-05-26T00:45:57.170222821Z  + . kolla_extend_start
+2021-05-26T00:45:57.170325020Z  ++ [[ ! -d /var/log/kolla/heat ]]
+2021-05-26T00:45:57.170762158Z  +++ stat -c %a /var/log/kolla/heat
+2021-05-26T00:45:57.172268744Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T00:45:57.172286812Z  ++ chmod 755 /var/log/kolla/heat
+2021-05-26T00:45:57.173361805Z  ++ . /usr/local/bin/kolla_heat_extend_start
+2021-05-26T00:45:57.173403479Z  +++ . /usr/local/bin/kolla_httpd_setup
+2021-05-26T00:45:57.173941054Z  +++++ whoami
+2021-05-26T00:45:57.174824290Z  ++++ [[ root == \r\o\o\t ]]
+2021-05-26T00:45:57.174835230Z  ++++ [[ ubuntu =~ debian|ubuntu ]]
+2021-05-26T00:45:57.174895956Z  ++++ APACHE_CONFDIR=
+2021-05-26T00:45:57.174903833Z  ++++ . /etc/apache2/envvars
+2021-05-26T00:45:57.174961237Z  +++++ unset HOME
+2021-05-26T00:45:57.175016941Z  +++++ '[' '' '!=' '' ']'
+2021-05-26T00:45:57.175024154Z  +++++ SUFFIX=
+2021-05-26T00:45:57.175062446Z  +++++ export APACHE_RUN_USER=www-data
+2021-05-26T00:45:57.175148217Z  +++++ APACHE_RUN_USER=www-data
+2021-05-26T00:45:57.175172928Z  +++++ export APACHE_RUN_GROUP=www-data
+2021-05-26T00:45:57.175181965Z  +++++ APACHE_RUN_GROUP=www-data
+2021-05-26T00:45:57.175194115Z  +++++ export APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-26T00:45:57.175201426Z  +++++ APACHE_PID_FILE=/var/run/apache2/apache2.pid
+2021-05-26T00:45:57.175241952Z  +++++ export APACHE_RUN_DIR=/var/run/apache2
+2021-05-26T00:45:57.175257551Z  +++++ APACHE_RUN_DIR=/var/run/apache2
+2021-05-26T00:45:57.175266018Z  +++++ export APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-26T00:45:57.175279852Z  +++++ APACHE_LOCK_DIR=/var/lock/apache2
+2021-05-26T00:45:57.175318013Z  +++++ export APACHE_LOG_DIR=/var/log/apache2
+2021-05-26T00:45:57.175326045Z  +++++ APACHE_LOG_DIR=/var/log/apache2
+2021-05-26T00:45:57.175330422Z  +++++ export LANG=C
+2021-05-26T00:45:57.175334589Z  +++++ LANG=C
+2021-05-26T00:45:57.175408372Z  +++++ export LANG
+2021-05-26T00:45:57.175505330Z  ++++ install -d /var/run/apache2/
+2021-05-26T00:45:57.177373608Z  ++++ rm -rf '/var/run/apache2/*'
+2021-05-26T00:45:57.178340523Z  ++++ [[ ubuntu = centos ]]
+2021-05-26T00:45:57.178461069Z  + echo 'Running command: '\''/usr/sbin/apache2 -DFOREGROUND'\'''
+2021-05-26T00:45:57.178471355Z  + exec /usr/sbin/apache2 -DFOREGROUND
+2021-05-26T00:45:57.202667642Z  [Wed May 26 02:45:57.202500 2021] [core:warn] [pid 7:tid 140533628996672] AH00114: Useless use of AllowOverride in line 11 of /etc/apache2/conf-enabled/wsgi-heat-api-cfn.conf.
+2021-05-26T00:45:57.203008137Z  AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 130.149.249.200. Set the 'ServerName' directive globally to suppress this message

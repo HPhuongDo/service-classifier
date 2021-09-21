@@ -1,0 +1,22 @@
+2021-05-26T00:11:06.747649148Z  + sudo -E kolla_set_configs
+2021-05-26T00:11:06.788819572Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-26T00:11:06.789068234Z  INFO:__main__:Validating config file
+2021-05-26T00:11:06.789134498Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-26T00:11:06.789190619Z  INFO:__main__:Copying service configuration files
+2021-05-26T00:11:06.789301468Z  INFO:__main__:Copying /var/lib/kolla/config_files/start-ovs to /usr/local/bin/start-ovs
+2021-05-26T00:11:06.789881835Z  INFO:__main__:Setting permission for /usr/local/bin/start-ovs
+2021-05-26T00:11:06.789961853Z  INFO:__main__:Writing out command to execute
+2021-05-26T00:11:06.794821613Z  ++ cat /run_command
+2021-05-26T00:11:06.795735156Z  + CMD=start-ovs
+2021-05-26T00:11:06.795755062Z  + ARGS=
+2021-05-26T00:11:06.795769591Z  + sudo kolla_copy_cacerts
+2021-05-26T00:11:06.803039303Z  + [[ ! -n '' ]]
+2021-05-26T00:11:06.803067231Z  + . kolla_extend_start
+2021-05-26T00:11:06.803106592Z  ++ [[ ! -d /var/log/kolla/openvswitch ]]
+2021-05-26T00:11:06.803474637Z  +++ stat -c %a /var/log/kolla/openvswitch
+2021-05-26T00:11:06.804589493Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-26T00:11:06.804601318Z  ++ chmod 755 /var/log/kolla/openvswitch
+2021-05-26T00:11:06.805705433Z  ++ . /usr/local/bin/kolla_openvswitch_extend_start
+2021-05-26T00:11:06.805729995Z  +++ modprobe openvswitch
+2021-05-26T00:11:06.807418566Z  + echo 'Running command: '\''start-ovs'\'''
+2021-05-26T00:11:06.807438442Z  + exec start-ovs

@@ -1,0 +1,114 @@
+Using bundled JDK: /usr/share/logstash/jdk
+Sending Logstash logs to /usr/share/logstash/logs which is now configured via log4j2.properties
+[2021-09-07T21:21:49,725][INFO ][logstash.runner          ] Starting Logstash {"logstash.version"=>"7.10.1", "jruby.version"=>"jruby 9.2.13.0 (2.5.7) 2020-08-03 9a89c94bcc OpenJDK 64-Bit Server VM 11.0.8+10 on 11.0.8+10 +indy +jit [linux-x86_64]"}
+[2021-09-07T21:21:49,758][INFO ][logstash.setting.writabledirectory] Creating directory {:setting=>"path.queue", :path=>"/usr/share/logstash/data/queue"}
+[2021-09-07T21:21:49,769][INFO ][logstash.setting.writabledirectory] Creating directory {:setting=>"path.dead_letter_queue", :path=>"/usr/share/logstash/data/dead_letter_queue"}
+[2021-09-07T21:21:50,069][WARN ][logstash.config.source.multilocal] Ignoring the 'pipelines.yml' file because modules or command line options are specified
+[2021-09-07T21:21:50,091][INFO ][logstash.agent           ] No persistent UUID file found. Generating new UUID {:uuid=>"f4e12fda-d065-4439-b525-ef8eaff1279c", :path=>"/usr/share/logstash/data/uuid"}
+[2021-09-07T21:21:51,775][INFO ][org.reflections.Reflections] Reflections took 50 ms to scan 1 urls, producing 23 keys and 47 values 
+[2021-09-07T21:21:52,333][WARN ][deprecation.logstash.outputs.elasticsearch] Relying on default value of `pipeline.ecs_compatibility`, which may change in a future major release of Logstash. To avoid unexpected changes when upgrading Logstash, please explicitly declare your desired ECS Compatibility mode.
+[2021-09-07T21:21:52,702][INFO ][logstash.outputs.elasticsearch][main] Elasticsearch pool URLs updated {:changes=>{:removed=>[], :added=>[http://elasticsearch:9200/]}}
+[2021-09-07T21:21:52,850][WARN ][logstash.outputs.elasticsearch][main] Restored connection to ES instance {:url=>"http://elasticsearch:9200/"}
+[2021-09-07T21:21:52,910][INFO ][logstash.outputs.elasticsearch][main] ES Output version determined {:es_version=>7}
+[2021-09-07T21:21:52,912][WARN ][logstash.outputs.elasticsearch][main] Detected a 6.x and above cluster: the `type` event field won't be used to determine the document _type {:es_version=>7}
+[2021-09-07T21:21:52,981][INFO ][logstash.outputs.elasticsearch][main] New Elasticsearch output {:class=>"LogStash::Outputs::ElasticSearch", :hosts=>["http://elasticsearch:9200"]}
+[2021-09-07T21:21:53,032][INFO ][logstash.outputs.elasticsearch][main] Using a default mapping template {:es_version=>7, :ecs_compatibility=>:disabled}
+[2021-09-07T21:21:53,078][INFO ][logstash.outputs.elasticsearch][main] Attempting to install template {:manage_template=>{"index_patterns"=>"logstash-*", "version"=>60001, "settings"=>{"index.refresh_interval"=>"5s", "number_of_shards"=>1}, "mappings"=>{"dynamic_templates"=>[{"message_field"=>{"path_match"=>"message", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false}}}, {"string_fields"=>{"match"=>"*", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false, "fields"=>{"keyword"=>{"type"=>"keyword", "ignore_above"=>256}}}}}], "properties"=>{"@timestamp"=>{"type"=>"date"}, "@version"=>{"type"=>"keyword"}, "geoip"=>{"dynamic"=>true, "properties"=>{"ip"=>{"type"=>"ip"}, "location"=>{"type"=>"geo_point"}, "latitude"=>{"type"=>"half_float"}, "longitude"=>{"type"=>"half_float"}}}}}}}
+[2021-09-07T21:21:53,103][INFO ][logstash.outputs.elasticsearch][main] Installing elasticsearch template to _template/logstash
+[2021-09-07T21:21:53,176][INFO ][logstash.filters.geoip   ][main] Using geoip database {:path=>"/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-filter-geoip-6.0.3-java/vendor/GeoLite2-City.mmdb"}
+[2021-09-07T21:21:53,259][INFO ][logstash.javapipeline    ][main] Starting pipeline {:pipeline_id=>"main", "pipeline.workers"=>12, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>50, "pipeline.max_inflight"=>1500, "pipeline.sources"=>["/usr/share/logstash/pipeline/logstash.conf"], :thread=>"#<Thread:0x26fd66de run>"}
+[2021-09-07T21:21:54,290][INFO ][logstash.javapipeline    ][main] Pipeline Java execution initialization time {"seconds"=>1.03}
+[2021-09-07T21:21:54,313][INFO ][logstash.inputs.beats    ][main] Beats inputs: Starting input listener {:address=>"0.0.0.0:5044"}
+[2021-09-07T21:21:54,335][INFO ][logstash.javapipeline    ][main] Pipeline started {"pipeline.id"=>"main"}
+[2021-09-07T21:21:54,498][INFO ][logstash.agent           ] Pipelines running {:count=>1, :running_pipelines=>[:main], :non_running_pipelines=>[]}
+[2021-09-07T21:21:54,511][INFO ][org.logstash.beats.Server][main][d0a0a8c5bb140e8c06bceba20e40e5ade4864048bad265070c55c5f3037bd79c] Starting server on port: 5044
+[2021-09-07T21:21:54,534][INFO ][org.apache.kafka.clients.consumer.ConsumerConfig][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = logstash-0
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = logstash
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 50
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 40000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2021-09-07T21:21:54,701][INFO ][org.apache.kafka.common.utils.AppInfoParser][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] Kafka version: 2.4.1
+[2021-09-07T21:21:54,701][INFO ][org.apache.kafka.common.utils.AppInfoParser][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] Kafka commitId: c57222ae8cd7866b
+[2021-09-07T21:21:54,701][INFO ][org.apache.kafka.common.utils.AppInfoParser][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] Kafka startTimeMs: 1631049714697
+[2021-09-07T21:21:54,717][INFO ][org.apache.kafka.clients.consumer.KafkaConsumer][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] [Consumer clientId=logstash-0, groupId=logstash] Subscribed to topic(s): log
+[2021-09-07T21:21:54,985][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2021-09-07T21:21:55,161][INFO ][org.apache.kafka.clients.Metadata][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] [Consumer clientId=logstash-0, groupId=logstash] Cluster ID: CUpqynL8TiWvTR64rmgqeA
+[2021-09-07T21:21:55,162][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] [Consumer clientId=logstash-0, groupId=logstash] Discovered group coordinator kafka:9092 (id: 2147482646 rack: null)
+[2021-09-07T21:21:55,166][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] [Consumer clientId=logstash-0, groupId=logstash] (Re-)joining group
+[2021-09-07T21:21:55,193][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] [Consumer clientId=logstash-0, groupId=logstash] (Re-)joining group
+[2021-09-07T21:21:55,207][INFO ][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] [Consumer clientId=logstash-0, groupId=logstash] Finished assignment for group at generation 9: {logstash-0-0d464587-7aca-4685-8977-37de5f6d8b18=Assignment(partitions=[log-0])}
+[2021-09-07T21:21:55,257][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] [Consumer clientId=logstash-0, groupId=logstash] Successfully joined group with generation 9
+[2021-09-07T21:21:55,264][INFO ][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] [Consumer clientId=logstash-0, groupId=logstash] Adding newly assigned partitions: log-0
+[2021-09-07T21:21:55,279][INFO ][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] [Consumer clientId=logstash-0, groupId=logstash] Setting offset for partition log-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=kafka:9092 (id: 1001 rack: null), epoch=0}}
+[2021-09-07T21:22:34,015][WARN ][logstash.runner          ] SIGTERM received. Shutting down.
+[2021-09-07T21:22:34,072][INFO ][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] [Consumer clientId=logstash-0, groupId=logstash] Revoke previously assigned partitions log-0
+[2021-09-07T21:22:34,072][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][main][9d5fb13f45a135212304f7c17a56dad2d92f46ec7ab86de0522862b0fba09d3f] [Consumer clientId=logstash-0, groupId=logstash] Member logstash-0-0d464587-7aca-4685-8977-37de5f6d8b18 sending LeaveGroup request to coordinator kafka:9092 (id: 2147482646 rack: null) due to the consumer is being closed
+[2021-09-07T21:22:41,013][INFO ][logstash.javapipeline    ][main] Pipeline terminated {"pipeline.id"=>"main"}
+[2021-09-07T21:22:41,176][INFO ][logstash.runner          ] Logstash shut down.

@@ -1,0 +1,1418 @@
+2021-06-14 14:10:14,925 p=20 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T12:10:14.916347Z",
+                    "start": "2021-06-14T12:10:13.971517Z"
+                },
+                "id": "00259075-f93c-ec7d-896a-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_keystone_service",
+                            "changed": false,
+                            "id": "0202c8430ed44af2b8a3448bbab578e8",
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "description": "Openstack Networking",
+                                    "enabled": true,
+                                    "interface": "admin",
+                                    "name": "neutron",
+                                    "region_name": "RegionOne",
+                                    "service_type": "network",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            },
+                            "service": {
+                                "description": "Openstack Networking",
+                                "enabled": true,
+                                "id": "0202c8430ed44af2b8a3448bbab578e8",
+                                "name": "neutron",
+                                "service_type": "network",
+                                "type": "network"
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T12:10:14.916347Z",
+                            "start": "2021-06-14T12:10:14.008145Z"
+                        },
+                        "id": "00259075-f93c-ec7d-896a-000000000009",
+                        "name": "os_keystone_service"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 14:10:18,630 p=52 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T12:10:18.620424Z",
+                    "start": "2021-06-14T12:10:17.647721Z"
+                },
+                "id": "00259075-f93c-e0e7-f560-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_keystone_endpoint",
+                            "changed": false,
+                            "endpoint": {
+                                "enabled": true,
+                                "id": "de41a79e134d4b588f3aa06dad470a10",
+                                "interface": "admin",
+                                "links": {
+                                    "self": "http://130.149.249.106:35357/v3/endpoints/de41a79e134d4b588f3aa06dad470a10"
+                                },
+                                "region": "RegionOne",
+                                "region_id": "RegionOne",
+                                "service_id": "0202c8430ed44af2b8a3448bbab578e8",
+                                "url": "http://130.149.249.106:9696"
+                            },
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "enabled": true,
+                                    "endpoint_interface": "admin",
+                                    "interface": "admin",
+                                    "region": "RegionOne",
+                                    "region_name": "RegionOne",
+                                    "service": "neutron",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "url": "http://130.149.249.106:9696",
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T12:10:18.620424Z",
+                            "start": "2021-06-14T12:10:17.683223Z"
+                        },
+                        "id": "00259075-f93c-e0e7-f560-000000000009",
+                        "name": "os_keystone_endpoint"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 14:10:22,188 p=84 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T12:10:22.177877Z",
+                    "start": "2021-06-14T12:10:21.198748Z"
+                },
+                "id": "00259075-f93c-a6db-d8d1-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_keystone_endpoint",
+                            "changed": false,
+                            "endpoint": {
+                                "enabled": true,
+                                "id": "7f0ec7d2f3b74213bee3d21df590c2bb",
+                                "interface": "internal",
+                                "links": {
+                                    "self": "http://130.149.249.106:35357/v3/endpoints/7f0ec7d2f3b74213bee3d21df590c2bb"
+                                },
+                                "region": "RegionOne",
+                                "region_id": "RegionOne",
+                                "service_id": "0202c8430ed44af2b8a3448bbab578e8",
+                                "url": "http://130.149.249.106:9696"
+                            },
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "enabled": true,
+                                    "endpoint_interface": "internal",
+                                    "interface": "admin",
+                                    "region": "RegionOne",
+                                    "region_name": "RegionOne",
+                                    "service": "neutron",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "url": "http://130.149.249.106:9696",
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T12:10:22.177877Z",
+                            "start": "2021-06-14T12:10:21.233986Z"
+                        },
+                        "id": "00259075-f93c-a6db-d8d1-000000000009",
+                        "name": "os_keystone_endpoint"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 14:10:25,874 p=116 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T12:10:25.865927Z",
+                    "start": "2021-06-14T12:10:24.910351Z"
+                },
+                "id": "00259075-f93c-9020-8507-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_keystone_endpoint",
+                            "changed": false,
+                            "endpoint": {
+                                "enabled": true,
+                                "id": "ee805c7216fb46ea90a1f9241913dcfd",
+                                "interface": "public",
+                                "links": {
+                                    "self": "http://130.149.249.106:35357/v3/endpoints/ee805c7216fb46ea90a1f9241913dcfd"
+                                },
+                                "region": "RegionOne",
+                                "region_id": "RegionOne",
+                                "service_id": "0202c8430ed44af2b8a3448bbab578e8",
+                                "url": "http://130.149.249.106:9696"
+                            },
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "enabled": true,
+                                    "endpoint_interface": "public",
+                                    "interface": "admin",
+                                    "region": "RegionOne",
+                                    "region_name": "RegionOne",
+                                    "service": "neutron",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "url": "http://130.149.249.106:9696",
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T12:10:25.865927Z",
+                            "start": "2021-06-14T12:10:24.945478Z"
+                        },
+                        "id": "00259075-f93c-9020-8507-000000000009",
+                        "name": "os_keystone_endpoint"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 14:10:29,347 p=148 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T12:10:29.339497Z",
+                    "start": "2021-06-14T12:10:28.383142Z"
+                },
+                "id": "00259075-f93c-6242-a22c-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_project",
+                            "changed": false,
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "description": null,
+                                    "domain": "default",
+                                    "domain_id": "default",
+                                    "enabled": true,
+                                    "interface": "admin",
+                                    "name": "service",
+                                    "properties": {},
+                                    "region_name": "RegionOne",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            },
+                            "project": {
+                                "description": null,
+                                "domain_id": "default",
+                                "enabled": true,
+                                "id": "2727452a4d5d41878b6c84df938683e6",
+                                "is_domain": false,
+                                "is_enabled": true,
+                                "location": {
+                                    "cloud": "defaults",
+                                    "project": {
+                                        "domain_id": "default",
+                                        "domain_name": null,
+                                        "id": "default",
+                                        "name": null
+                                    },
+                                    "region_name": null,
+                                    "zone": null
+                                },
+                                "name": "service",
+                                "options": {},
+                                "parent_id": "default",
+                                "properties": {
+                                    "options": {},
+                                    "tags": []
+                                },
+                                "tags": []
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T12:10:29.339497Z",
+                            "start": "2021-06-14T12:10:28.419584Z"
+                        },
+                        "id": "00259075-f93c-6242-a22c-000000000009",
+                        "name": "os_project"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 14:10:33,092 p=180 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T12:10:33.083954Z",
+                    "start": "2021-06-14T12:10:32.072717Z"
+                },
+                "id": "00259075-f93c-dd76-6068-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_user",
+                            "changed": false,
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "default_project": "service",
+                                    "description": null,
+                                    "domain": "default",
+                                    "email": null,
+                                    "enabled": true,
+                                    "interface": "admin",
+                                    "name": "neutron",
+                                    "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                    "region_name": "RegionOne",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "update_password": null,
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            },
+                            "user": {
+                                "default_project_id": "2727452a4d5d41878b6c84df938683e6",
+                                "description": null,
+                                "domain_id": "default",
+                                "email": null,
+                                "enabled": true,
+                                "id": "2ac55b319a904709a70eeb2de252fa2f",
+                                "name": "neutron",
+                                "username": null
+                            },
+                            "warnings": [
+                                "Module did not set no_log for update_password"
+                            ]
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T12:10:33.083954Z",
+                            "start": "2021-06-14T12:10:32.108131Z"
+                        },
+                        "id": "00259075-f93c-dd76-6068-000000000009",
+                        "name": "os_user"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 14:10:36,737 p=212 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T12:10:36.728517Z",
+                    "start": "2021-06-14T12:10:35.782968Z"
+                },
+                "id": "00259075-f93c-3b90-dd65-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_keystone_role",
+                            "changed": false,
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "interface": "admin",
+                                    "name": "admin",
+                                    "region_name": "RegionOne",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            },
+                            "role": {
+                                "domain_id": null,
+                                "id": "0ffaafee6cc248ff8fd447e26f5f83a4",
+                                "location": {
+                                    "cloud": "defaults",
+                                    "project": {
+                                        "domain_id": null,
+                                        "domain_name": null,
+                                        "id": null,
+                                        "name": null
+                                    },
+                                    "region_name": null,
+                                    "zone": null
+                                },
+                                "name": "admin",
+                                "properties": {}
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T12:10:36.728517Z",
+                            "start": "2021-06-14T12:10:35.818239Z"
+                        },
+                        "id": "00259075-f93c-3b90-dd65-000000000009",
+                        "name": "os_keystone_role"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 14:10:40,482 p=245 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T12:10:40.472711Z",
+                    "start": "2021-06-14T12:10:39.412740Z"
+                },
+                "id": "00259075-f93c-d953-f0ba-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_user_role",
+                            "changed": false,
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "domain": "default",
+                                    "group": null,
+                                    "interface": "admin",
+                                    "project": "service",
+                                    "region_name": "RegionOne",
+                                    "role": "admin",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "user": "neutron",
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T12:10:40.472711Z",
+                            "start": "2021-06-14T12:10:39.448132Z"
+                        },
+                        "id": "00259075-f93c-d953-f0ba-000000000009",
+                        "name": "os_user_role"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 15:02:50,543 p=277 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T13:02:50.535714Z",
+                    "start": "2021-06-14T13:02:49.566441Z"
+                },
+                "id": "00259075-f93c-9dbb-3a1c-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_keystone_service",
+                            "changed": false,
+                            "id": "0202c8430ed44af2b8a3448bbab578e8",
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "description": "Openstack Networking",
+                                    "enabled": true,
+                                    "interface": "admin",
+                                    "name": "neutron",
+                                    "region_name": "RegionOne",
+                                    "service_type": "network",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            },
+                            "service": {
+                                "description": "Openstack Networking",
+                                "enabled": true,
+                                "id": "0202c8430ed44af2b8a3448bbab578e8",
+                                "name": "neutron",
+                                "service_type": "network",
+                                "type": "network"
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T13:02:50.535714Z",
+                            "start": "2021-06-14T13:02:49.601684Z"
+                        },
+                        "id": "00259075-f93c-9dbb-3a1c-000000000009",
+                        "name": "os_keystone_service"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 15:02:54,168 p=309 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T13:02:54.158717Z",
+                    "start": "2021-06-14T13:02:53.194287Z"
+                },
+                "id": "00259075-f93c-cab0-adeb-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_keystone_endpoint",
+                            "changed": false,
+                            "endpoint": {
+                                "enabled": true,
+                                "id": "de41a79e134d4b588f3aa06dad470a10",
+                                "interface": "admin",
+                                "links": {
+                                    "self": "http://130.149.249.106:35357/v3/endpoints/de41a79e134d4b588f3aa06dad470a10"
+                                },
+                                "region": "RegionOne",
+                                "region_id": "RegionOne",
+                                "service_id": "0202c8430ed44af2b8a3448bbab578e8",
+                                "url": "http://130.149.249.106:9696"
+                            },
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "enabled": true,
+                                    "endpoint_interface": "admin",
+                                    "interface": "admin",
+                                    "region": "RegionOne",
+                                    "region_name": "RegionOne",
+                                    "service": "neutron",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "url": "http://130.149.249.106:9696",
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T13:02:54.158717Z",
+                            "start": "2021-06-14T13:02:53.229510Z"
+                        },
+                        "id": "00259075-f93c-cab0-adeb-000000000009",
+                        "name": "os_keystone_endpoint"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 15:02:57,735 p=341 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T13:02:57.724997Z",
+                    "start": "2021-06-14T13:02:56.754670Z"
+                },
+                "id": "00259075-f93c-b5c6-2897-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_keystone_endpoint",
+                            "changed": false,
+                            "endpoint": {
+                                "enabled": true,
+                                "id": "7f0ec7d2f3b74213bee3d21df590c2bb",
+                                "interface": "internal",
+                                "links": {
+                                    "self": "http://130.149.249.106:35357/v3/endpoints/7f0ec7d2f3b74213bee3d21df590c2bb"
+                                },
+                                "region": "RegionOne",
+                                "region_id": "RegionOne",
+                                "service_id": "0202c8430ed44af2b8a3448bbab578e8",
+                                "url": "http://130.149.249.106:9696"
+                            },
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "enabled": true,
+                                    "endpoint_interface": "internal",
+                                    "interface": "admin",
+                                    "region": "RegionOne",
+                                    "region_name": "RegionOne",
+                                    "service": "neutron",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "url": "http://130.149.249.106:9696",
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T13:02:57.724997Z",
+                            "start": "2021-06-14T13:02:56.790025Z"
+                        },
+                        "id": "00259075-f93c-b5c6-2897-000000000009",
+                        "name": "os_keystone_endpoint"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 15:03:01,307 p=373 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T13:03:01.297381Z",
+                    "start": "2021-06-14T13:03:00.348268Z"
+                },
+                "id": "00259075-f93c-2616-0413-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_keystone_endpoint",
+                            "changed": false,
+                            "endpoint": {
+                                "enabled": true,
+                                "id": "ee805c7216fb46ea90a1f9241913dcfd",
+                                "interface": "public",
+                                "links": {
+                                    "self": "http://130.149.249.106:35357/v3/endpoints/ee805c7216fb46ea90a1f9241913dcfd"
+                                },
+                                "region": "RegionOne",
+                                "region_id": "RegionOne",
+                                "service_id": "0202c8430ed44af2b8a3448bbab578e8",
+                                "url": "http://130.149.249.106:9696"
+                            },
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "enabled": true,
+                                    "endpoint_interface": "public",
+                                    "interface": "admin",
+                                    "region": "RegionOne",
+                                    "region_name": "RegionOne",
+                                    "service": "neutron",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "url": "http://130.149.249.106:9696",
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T13:03:01.297381Z",
+                            "start": "2021-06-14T13:03:00.383008Z"
+                        },
+                        "id": "00259075-f93c-2616-0413-000000000009",
+                        "name": "os_keystone_endpoint"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 15:03:04,958 p=405 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T13:03:04.949302Z",
+                    "start": "2021-06-14T13:03:03.995431Z"
+                },
+                "id": "00259075-f93c-a1a5-4af6-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_project",
+                            "changed": false,
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "description": null,
+                                    "domain": "default",
+                                    "domain_id": "default",
+                                    "enabled": true,
+                                    "interface": "admin",
+                                    "name": "service",
+                                    "properties": {},
+                                    "region_name": "RegionOne",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            },
+                            "project": {
+                                "description": null,
+                                "domain_id": "default",
+                                "enabled": true,
+                                "id": "2727452a4d5d41878b6c84df938683e6",
+                                "is_domain": false,
+                                "is_enabled": true,
+                                "location": {
+                                    "cloud": "defaults",
+                                    "project": {
+                                        "domain_id": "default",
+                                        "domain_name": null,
+                                        "id": "default",
+                                        "name": null
+                                    },
+                                    "region_name": null,
+                                    "zone": null
+                                },
+                                "name": "service",
+                                "options": {},
+                                "parent_id": "default",
+                                "properties": {
+                                    "options": {},
+                                    "tags": []
+                                },
+                                "tags": []
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T13:03:04.949302Z",
+                            "start": "2021-06-14T13:03:04.030132Z"
+                        },
+                        "id": "00259075-f93c-a1a5-4af6-000000000009",
+                        "name": "os_project"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 15:03:08,637 p=437 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T13:03:08.628129Z",
+                    "start": "2021-06-14T13:03:07.597511Z"
+                },
+                "id": "00259075-f93c-3610-0339-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_user",
+                            "changed": false,
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "default_project": "service",
+                                    "description": null,
+                                    "domain": "default",
+                                    "email": null,
+                                    "enabled": true,
+                                    "interface": "admin",
+                                    "name": "neutron",
+                                    "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                    "region_name": "RegionOne",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "update_password": null,
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            },
+                            "user": {
+                                "default_project_id": "2727452a4d5d41878b6c84df938683e6",
+                                "description": null,
+                                "domain_id": "default",
+                                "email": null,
+                                "enabled": true,
+                                "id": "2ac55b319a904709a70eeb2de252fa2f",
+                                "name": "neutron",
+                                "username": null
+                            },
+                            "warnings": [
+                                "Module did not set no_log for update_password"
+                            ]
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T13:03:08.628129Z",
+                            "start": "2021-06-14T13:03:07.633841Z"
+                        },
+                        "id": "00259075-f93c-3610-0339-000000000009",
+                        "name": "os_user"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 15:03:12,216 p=469 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T13:03:12.207426Z",
+                    "start": "2021-06-14T13:03:11.257638Z"
+                },
+                "id": "00259075-f93c-0a36-ddeb-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_keystone_role",
+                            "changed": false,
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "interface": "admin",
+                                    "name": "admin",
+                                    "region_name": "RegionOne",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            },
+                            "role": {
+                                "domain_id": null,
+                                "id": "0ffaafee6cc248ff8fd447e26f5f83a4",
+                                "location": {
+                                    "cloud": "defaults",
+                                    "project": {
+                                        "domain_id": null,
+                                        "domain_name": null,
+                                        "id": null,
+                                        "name": null
+                                    },
+                                    "region_name": null,
+                                    "zone": null
+                                },
+                                "name": "admin",
+                                "properties": {}
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T13:03:12.207426Z",
+                            "start": "2021-06-14T13:03:11.293453Z"
+                        },
+                        "id": "00259075-f93c-0a36-ddeb-000000000009",
+                        "name": "os_keystone_role"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}
+2021-06-14 15:03:15,976 p=501 u=ansible n=ansible | {
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2021-06-14T13:03:15.967472Z",
+                    "start": "2021-06-14T13:03:14.896935Z"
+                },
+                "id": "00259075-f93c-c445-cddf-000000000007",
+                "name": "Ansible Ad-Hoc"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false,
+                            "action": "os_user_role",
+                            "changed": false,
+                            "invocation": {
+                                "module_args": {
+                                    "api_timeout": null,
+                                    "auth": {
+                                        "auth_url": "http://130.149.249.106:35357",
+                                        "domain_name": "default",
+                                        "password": "AIsfzrkjjttoER46GeSQtsbTRYZbjObkLSWT9WnI",
+                                        "project_name": "admin",
+                                        "user_domain_name": "default",
+                                        "username": "admin"
+                                    },
+                                    "auth_type": null,
+                                    "availability_zone": null,
+                                    "ca_cert": "",
+                                    "cacert": "",
+                                    "client_cert": null,
+                                    "client_key": null,
+                                    "domain": "default",
+                                    "group": null,
+                                    "interface": "admin",
+                                    "project": "service",
+                                    "region_name": "RegionOne",
+                                    "role": "admin",
+                                    "state": "present",
+                                    "timeout": 180,
+                                    "user": "neutron",
+                                    "validate_certs": false,
+                                    "wait": true
+                                }
+                            }
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2021-06-14T13:03:15.967472Z",
+                            "start": "2021-06-14T13:03:14.932475Z"
+                        },
+                        "id": "00259075-f93c-c445-cddf-000000000009",
+                        "name": "os_user_role"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 0,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 1,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}

@@ -1,0 +1,117 @@
+2021-05-25T20:46:45.933737066Z  + sudo -E kolla_set_configs
+2021-05-25T20:46:45.980624485Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T20:46:45.980743063Z  INFO:__main__:Validating config file
+2021-05-25T20:46:45.980791894Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T20:46:45.980840384Z  INFO:__main__:Copying service configuration files
+2021-05-25T20:46:45.980967222Z  INFO:__main__:Deleting /etc/neutron/neutron.conf
+2021-05-25T20:46:45.981256816Z  INFO:__main__:Copying /var/lib/kolla/config_files/neutron.conf to /etc/neutron/neutron.conf
+2021-05-25T20:46:45.982583372Z  INFO:__main__:Setting permission for /etc/neutron/neutron.conf
+2021-05-25T20:46:45.982597066Z  INFO:__main__:Deleting /etc/neutron/plugins/ml2/openvswitch_agent.ini
+2021-05-25T20:46:45.982604023Z  INFO:__main__:Copying /var/lib/kolla/config_files/openvswitch_agent.ini to /etc/neutron/plugins/ml2/openvswitch_agent.ini
+2021-05-25T20:46:45.982610338Z  INFO:__main__:Setting permission for /etc/neutron/plugins/ml2/openvswitch_agent.ini
+2021-05-25T20:46:45.982616754Z  INFO:__main__:Writing out command to execute
+2021-05-25T20:46:45.982784390Z  INFO:__main__:Setting permission for /var/log/kolla/neutron
+2021-05-25T20:46:45.982902442Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-server.log
+2021-05-25T20:46:45.989641636Z  ++ cat /run_command
+2021-05-25T20:46:45.990239656Z  + CMD='neutron-openvswitch-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/openvswitch_agent.ini'
+2021-05-25T20:46:45.990253317Z  + ARGS=
+2021-05-25T20:46:45.990263339Z  + sudo kolla_copy_cacerts
+2021-05-25T20:46:45.996963083Z  + [[ ! -n '' ]]
+2021-05-25T20:46:45.996987820Z  + . kolla_extend_start
+2021-05-25T20:46:45.997017009Z  ++ [[ ! -d /var/log/kolla/neutron ]]
+2021-05-25T20:46:45.997267200Z  +++ stat -c %a /var/log/kolla/neutron
+2021-05-25T20:46:45.998047053Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T20:46:45.998117529Z  ++ chmod 755 /var/log/kolla/neutron
+2021-05-25T20:46:45.998761656Z  ++ [[ ubuntu == \c\e\n\t\o\s ]]
+2021-05-25T20:46:45.998776535Z  ++ export UPDATE_ALTERNATIVES=/usr/bin/update-alternatives
+2021-05-25T20:46:45.998783574Z  ++ UPDATE_ALTERNATIVES=/usr/bin/update-alternatives
+2021-05-25T20:46:45.998828427Z  ++ /usr/bin/update-alternatives --query iptables
+2021-05-25T20:46:45.999701209Z  ++ KOLLA_LEGACY_IPTABLES=false
+2021-05-25T20:46:45.999708525Z  ++ [[ false == \t\r\u\e ]]
+2021-05-25T20:46:45.999714568Z  ++ sudo /usr/bin/update-alternatives --auto iptables
+2021-05-25T20:46:46.113390859Z  ++ sudo /usr/bin/update-alternatives --auto ip6tables
+2021-05-25T20:46:46.118115112Z  ++ . /usr/local/bin/kolla_neutron_extend_start
+2021-05-25T20:46:46.118153783Z  + echo 'Running command: '\''neutron-openvswitch-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/openvswitch_agent.ini'\'''
+2021-05-25T20:46:46.118193185Z  + exec neutron-openvswitch-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/openvswitch_agent.ini
+2021-05-25T21:33:51.934826352Z  + sudo -E kolla_set_configs
+2021-05-25T21:33:51.994935784Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T21:33:51.995105932Z  INFO:__main__:Validating config file
+2021-05-25T21:33:51.995168631Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T21:33:51.995231753Z  INFO:__main__:Copying service configuration files
+2021-05-25T21:33:51.995349529Z  INFO:__main__:Deleting /etc/neutron/neutron.conf
+2021-05-25T21:33:51.995570687Z  INFO:__main__:Copying /var/lib/kolla/config_files/neutron.conf to /etc/neutron/neutron.conf
+2021-05-25T21:33:51.996227155Z  INFO:__main__:Setting permission for /etc/neutron/neutron.conf
+2021-05-25T21:33:51.996356177Z  INFO:__main__:Deleting /etc/neutron/plugins/ml2/openvswitch_agent.ini
+2021-05-25T21:33:51.996467996Z  INFO:__main__:Copying /var/lib/kolla/config_files/openvswitch_agent.ini to /etc/neutron/plugins/ml2/openvswitch_agent.ini
+2021-05-25T21:33:51.996690290Z  INFO:__main__:Setting permission for /etc/neutron/plugins/ml2/openvswitch_agent.ini
+2021-05-25T21:33:51.996755294Z  INFO:__main__:Writing out command to execute
+2021-05-25T21:33:51.997006917Z  INFO:__main__:Setting permission for /var/log/kolla/neutron
+2021-05-25T21:33:51.997103609Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-openvswitch-agent.log
+2021-05-25T21:33:51.997157506Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/privsep-helper.log
+2021-05-25T21:33:51.997216924Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-metadata-agent.log
+2021-05-25T21:33:51.997266484Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-l3-agent.log
+2021-05-25T21:33:51.997326315Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-server.log
+2021-05-25T21:33:51.997375216Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/dnsmasq.log
+2021-05-25T21:33:51.997438413Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-dhcp-agent.log
+2021-05-25T21:33:52.002739902Z  ++ cat /run_command
+2021-05-25T21:33:52.003641055Z  + CMD='neutron-openvswitch-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/openvswitch_agent.ini'
+2021-05-25T21:33:52.003664559Z  + ARGS=
+2021-05-25T21:33:52.003679343Z  + sudo kolla_copy_cacerts
+2021-05-25T21:33:52.010063472Z  + [[ ! -n '' ]]
+2021-05-25T21:33:52.010091721Z  + . kolla_extend_start
+2021-05-25T21:33:52.010113534Z  ++ [[ ! -d /var/log/kolla/neutron ]]
+2021-05-25T21:33:52.010418818Z  +++ stat -c %a /var/log/kolla/neutron
+2021-05-25T21:33:52.011301443Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T21:33:52.011314205Z  ++ chmod 755 /var/log/kolla/neutron
+2021-05-25T21:33:52.012192862Z  ++ [[ ubuntu == \c\e\n\t\o\s ]]
+2021-05-25T21:33:52.012205190Z  ++ export UPDATE_ALTERNATIVES=/usr/bin/update-alternatives
+2021-05-25T21:33:52.012212223Z  ++ UPDATE_ALTERNATIVES=/usr/bin/update-alternatives
+2021-05-25T21:33:52.012282195Z  ++ /usr/bin/update-alternatives --query iptables
+2021-05-25T21:33:52.013303576Z  ++ KOLLA_LEGACY_IPTABLES=false
+2021-05-25T21:33:52.013314295Z  ++ [[ false == \t\r\u\e ]]
+2021-05-25T21:33:52.013343204Z  ++ sudo /usr/bin/update-alternatives --auto iptables
+2021-05-25T21:33:52.018629590Z  ++ sudo /usr/bin/update-alternatives --auto ip6tables
+2021-05-25T21:33:52.023613478Z  ++ . /usr/local/bin/kolla_neutron_extend_start
+2021-05-25T21:33:52.023641242Z  + echo 'Running command: '\''neutron-openvswitch-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/openvswitch_agent.ini'\'''
+2021-05-25T21:33:52.023694784Z  + exec neutron-openvswitch-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/openvswitch_agent.ini
+2021-05-25T21:35:02.602927889Z  + sudo -E kolla_set_configs
+2021-05-25T21:35:02.646308852Z  INFO:__main__:Loading config file at /var/lib/kolla/config_files/config.json
+2021-05-25T21:35:02.646380521Z  INFO:__main__:Validating config file
+2021-05-25T21:35:02.646415126Z  INFO:__main__:Kolla config strategy set to: COPY_ALWAYS
+2021-05-25T21:35:02.646464283Z  INFO:__main__:Copying service configuration files
+2021-05-25T21:35:02.646552918Z  INFO:__main__:Deleting /etc/neutron/neutron.conf
+2021-05-25T21:35:02.646787738Z  INFO:__main__:Copying /var/lib/kolla/config_files/neutron.conf to /etc/neutron/neutron.conf
+2021-05-25T21:35:02.647332135Z  INFO:__main__:Setting permission for /etc/neutron/neutron.conf
+2021-05-25T21:35:02.647443095Z  INFO:__main__:Deleting /etc/neutron/plugins/ml2/openvswitch_agent.ini
+2021-05-25T21:35:02.647568674Z  INFO:__main__:Copying /var/lib/kolla/config_files/openvswitch_agent.ini to /etc/neutron/plugins/ml2/openvswitch_agent.ini
+2021-05-25T21:35:02.647794678Z  INFO:__main__:Setting permission for /etc/neutron/plugins/ml2/openvswitch_agent.ini
+2021-05-25T21:35:02.647854348Z  INFO:__main__:Writing out command to execute
+2021-05-25T21:35:02.648136994Z  INFO:__main__:Setting permission for /var/log/kolla/neutron
+2021-05-25T21:35:02.648236366Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-openvswitch-agent.log
+2021-05-25T21:35:02.648289806Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/privsep-helper.log
+2021-05-25T21:35:02.648350262Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-metadata-agent.log
+2021-05-25T21:35:02.648396977Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-l3-agent.log
+2021-05-25T21:35:02.648455982Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-server.log
+2021-05-25T21:35:02.648503529Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/dnsmasq.log
+2021-05-25T21:35:02.648564384Z  INFO:__main__:Setting permission for /var/log/kolla/neutron/neutron-dhcp-agent.log
+2021-05-25T21:35:02.653718136Z  ++ cat /run_command
+2021-05-25T21:35:02.654343976Z  + CMD='neutron-openvswitch-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/openvswitch_agent.ini'
+2021-05-25T21:35:02.654352683Z  + ARGS=
+2021-05-25T21:35:02.654371368Z  + sudo kolla_copy_cacerts
+2021-05-25T21:35:02.660629712Z  + [[ ! -n '' ]]
+2021-05-25T21:35:02.660649633Z  + . kolla_extend_start
+2021-05-25T21:35:02.660673356Z  ++ [[ ! -d /var/log/kolla/neutron ]]
+2021-05-25T21:35:02.660958945Z  +++ stat -c %a /var/log/kolla/neutron
+2021-05-25T21:35:02.661822806Z  ++ [[ 2755 != \7\5\5 ]]
+2021-05-25T21:35:02.661835831Z  ++ chmod 755 /var/log/kolla/neutron
+2021-05-25T21:35:02.662477484Z  ++ [[ ubuntu == \c\e\n\t\o\s ]]
+2021-05-25T21:35:02.662492883Z  ++ export UPDATE_ALTERNATIVES=/usr/bin/update-alternatives
+2021-05-25T21:35:02.662502542Z  ++ UPDATE_ALTERNATIVES=/usr/bin/update-alternatives
+2021-05-25T21:35:02.662545578Z  ++ /usr/bin/update-alternatives --query iptables
+2021-05-25T21:35:02.663573382Z  ++ KOLLA_LEGACY_IPTABLES=false
+2021-05-25T21:35:02.663586562Z  ++ [[ false == \t\r\u\e ]]
+2021-05-25T21:35:02.663604308Z  ++ sudo /usr/bin/update-alternatives --auto iptables
+2021-05-25T21:35:02.669123085Z  ++ sudo /usr/bin/update-alternatives --auto ip6tables
+2021-05-25T21:35:02.673976881Z  ++ . /usr/local/bin/kolla_neutron_extend_start
+2021-05-25T21:35:02.674014834Z  + echo 'Running command: '\''neutron-openvswitch-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/openvswitch_agent.ini'\'''
+2021-05-25T21:35:02.674041630Z  + exec neutron-openvswitch-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/openvswitch_agent.ini
